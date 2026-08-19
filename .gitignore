@@ -22,3 +22,4 @@ hip_main.dat.gz
 /prodbuild.log
 __pycache__/
 /_engine/
+/deploy.log
