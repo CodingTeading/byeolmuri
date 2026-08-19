@@ -1,0 +1,60 @@
+# 별무리 배포: 빌드 후 Cloudflare Pages 로 업로드.
+#
+# GitHub 계정(CodingTeading)과 Cloudflare 계정(hopse31c@gmail.com)이 다르지만
+# 상관없다. Pages 의 Git 연동을 쓰지 않고 API 토큰으로 직접 업로드하기 때문에
+# 두 계정을 서로 연결할 필요가 없다.
+#
+# 활성화하려면 저장소 Secrets 에 아래 둘을 등록해야 한다:
+#   CLOUDFLARE_API_TOKEN   - Cloudflare 에서 "Edit Cloudflare Workers" 템플릿으로 생성
+#   CLOUDFLARE_ACCOUNT_ID  - 028490a80b26520ff97d073f72246779
+#
+# 등록 전에는 수동 실행만 가능하도록 두었다. 등록 후 아래 push 트리거의
+# 주석을 풀면 master 에 푸시할 때마다 자동 배포된다.
+name: deploy
+
+on:
+  workflow_dispatch:
+  # push:
+  #   branches: [master]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 엔진 WASM 은 저장소에 없다 (.gitignore 대상).
+      # build-engine 워크플로가 만든 최신 아티팩트를 가져다 쓴다.
+      - name: Fetch engine build
+        uses: dawidd6/action-download-artifact@v6
+        with:
+          workflow: build-engine.yml
+          name: stellarium-web-engine
+          path: apps/web-frontend/src/assets/js
+          if_no_artifact_found: fail
+
+      - name: Prepare skydata
+        run: cp -r apps/test-skydata apps/skydata
+
+      - name: Install dependencies
+        working-directory: apps/web-frontend
+        run: yarn install --frozen-lockfile
+
+      # vue-cli-service 4.x 는 webpack 4 기반이라 Node 17+ 에서
+      # OpenSSL 문제로 죽는다. legacy provider 로 우회한다.
+      - name: Build
+        working-directory: apps/web-frontend
+        run: yarn build
+        env:
+          NODE_OPTIONS: --openssl-legacy-provider
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy apps/web-frontend/dist --project-name byeolmuri --branch master
