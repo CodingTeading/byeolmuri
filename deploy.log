@@ -1,0 +1,83 @@
+Refreshing run status every 20 seconds. Press Ctrl+C to quit.
+
+* master deploy · 32255652670
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 96076625501)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Fetch engine build
+  ✓ Prepare skydata
+  * Install dependencies
+  * Build
+  * Deploy to Cloudflare Pages
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+Refreshing run status every 20 seconds. Press Ctrl+C to quit.
+
+* master deploy · 32255652670
+Triggered via push less than a minute ago
+
+JOBS
+* deploy (ID 96076625501)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Fetch engine build
+  ✓ Prepare skydata
+  ✓ Install dependencies
+  * Build
+  * Deploy to Cloudflare Pages
+  * Post Run actions/setup-node@v4
+  * Post Run actions/checkout@v4
+X master deploy · 32255652670
+Triggered via push less than a minute ago
+
+JOBS
+X deploy in 51s (ID 96076625501)
+  ✓ Set up job
+  ✓ Run actions/checkout@v4
+  ✓ Run actions/setup-node@v4
+  ✓ Fetch engine build
+  ✓ Prepare skydata
+  ✓ Install dependencies
+  X Build
+  - Deploy to Cloudflare Pages
+  - Post Run actions/setup-node@v4
+  ✓ Post Run actions/checkout@v4
+  ✓ Complete job
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, dawidd6/action-download-artifact@v6. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+deploy: .github#2
+
+X Process completed with exit code 1.
+deploy: .github#57
+
+X Object properties must go on a new line if they aren't all on the same line
+deploy: apps/web-frontend/src/plugins/planner/astro.js#183
+
+X Object properties must go on a new line if they aren't all on the same line
+deploy: apps/web-frontend/src/plugins/planner/astro.js#183
+
+X Object properties must go on a new line if they aren't all on the same line
+deploy: apps/web-frontend/src/plugins/planner/astro.js#183
+
+X Object properties must go on a new line if they aren't all on the same line
+deploy: apps/web-frontend/src/plugins/planner/astro.js#182
+
+X Object properties must go on a new line if they aren't all on the same line
+deploy: apps/web-frontend/src/plugins/planner/astro.js#182
+
+X Object properties must go on a new line if they aren't all on the same line
+deploy: apps/web-frontend/src/plugins/planner/astro.js#182
+
+X Object properties must go on a new line if they aren't all on the same line
+deploy: apps/web-frontend/src/plugins/planner/astro.js#182
+
+X 'R2D' is assigned a value but never used                                   
+deploy: apps/web-frontend/src/plugins/planner/astro.js#9
+
+EXIT=1

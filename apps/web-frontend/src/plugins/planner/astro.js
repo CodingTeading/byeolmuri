@@ -6,7 +6,6 @@
 // 엔진을 호출하면 수천 번의 WASM 왕복이 생겨 UI 가 멈춘다.
 
 const D2R = Math.PI / 180
-const R2D = 180 / Math.PI
 
 // 하루를 5분 단위로 훑는다. 박명 시각을 분 단위로 잡기에 충분하다.
 const STEP_MIN = 5
@@ -179,6 +178,13 @@ export function visibility (ra, dec, lat, lon, night, minAlt) {
 }
 
 export default {
-  HORIZON, TWILIGHT_ASTRO, altitudeAt, findNight, moonInfo,
-  gmst, altitudeOf, transitTime, visibility
+  HORIZON,
+  TWILIGHT_ASTRO,
+  altitudeAt,
+  findNight,
+  moonInfo,
+  gmst,
+  altitudeOf,
+  transitTime,
+  visibility
 }
