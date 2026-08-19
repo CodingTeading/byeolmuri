@@ -9,8 +9,15 @@
 <template>
 <v-dialog scrollable max-width='600' v-model="$store.state.showDataCreditsDialog">
   <v-card v-if="$store.state.showDataCreditsDialog">
-    <v-card-title><div class="text-h5">Data Credits</div></v-card-title>
+    <v-card-title><div class="text-h5">별무리 정보 및 데이터 출처</div></v-card-title>
     <v-card-text style="height: 600px;">
+      <h3>별무리에 대하여</h3>
+      <p>별무리는 <a href="https://github.com/Stellarium/stellarium-web-engine" target="_blank" rel="noopener">Stellarium Web Engine</a>을
+      기반으로 만든 <b>비영리 오픈소스</b> 프로젝트입니다. 광고와 추적을 넣지 않습니다.</p>
+      <p>Stellarium 공식 프로젝트 및 Stellarium Labs 와는 <b>무관한 별개의 프로젝트</b>입니다.</p>
+      <p>이 사이트는 GNU AGPL v3 로 배포되며, 전체 소스 코드는 아래에서 받을 수 있습니다.<br>
+      <a href="https://github.com/CodingTeading/byeolmuri" target="_blank" rel="noopener">github.com/CodingTeading/byeolmuri</a></p>
+      <p>날씨 예보는 기상청 단기예보 서비스(공공데이터포털)를 이용합니다.</p>
       <h3>Stars</h3>
       <p>Combination of the following catalogues:
         <ul class="data-credits">
@@ -56,7 +63,7 @@
       <p>All other graphics by <a href="https://stellarium-labs.com" target="_blank" rel="noopener">Stellarium Labs</a></p>
     </v-card-text>
     <v-card-actions>
-      <v-spacer></v-spacer><v-btn text class="blue--text darken-1" @click.native="$store.state.showDataCreditsDialog = false">Close</v-btn>
+      <v-spacer></v-spacer><v-btn text class="blue--text darken-1" @click.native="$store.state.showDataCreditsDialog = false">닫기</v-btn>
     </v-card-actions>
   </v-card>
 </v-dialog>

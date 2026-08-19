@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <%= VUE_APP_EXTRA_HEAD_CONTENT %>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Stellarium Web Online Star Map</title>
-    <meta name="description" content="Stellarium Web is a planetarium running in your web browser. It shows a realistic star map, just like what you see with the naked eye, binoculars or a telescope.">
-    <meta name="Keywords" content="Stellarium, Stellarium Web, planetarium, star map, sky map, astronomy, software, stars, planets, constellations, meteors, universe, astro, stars, planets, realistic, sky, program, scientific, educational, free, real, time, milky way, moon, mercury, venus, mars, earth, venus, jupiter, saturn, sun, real time, 3D, openGL, graphic, GL, chart, map, twinkle, photo-realistic" />
+
+    <title>별무리 – 오늘 밤 별자리 지도와 관측 플래너</title>
+    <meta name="description" content="지금 내 위치에서 보이는 밤하늘을 실시간으로 보여줍니다. 오늘 밤 관측하기 좋은 천체를 날씨·달·고도를 따져 추천합니다. 무료, 광고 없음, 오픈소스.">
+    <meta name="keywords" content="별무리, 별자리, 별자리 지도, 밤하늘, 별지도, 천체관측, 관측계획, 플라네타리움, 오늘 밤하늘, 성운, 성단, 은하, 행성, 달, 천문">
+    <link rel="canonical" href="https://byeolmuri.codingteading.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="별무리">
+    <meta property="og:title" content="별무리 – 오늘 밤 별자리 지도와 관측 플래너">
+    <meta property="og:description" content="지금 내 위치에서 보이는 밤하늘을 실시간으로. 오늘 밤 볼 만한 천체를 날씨·달·고도를 따져 추천합니다.">
+    <meta property="og:url" content="https://byeolmuri.codingteading.com/">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="<%= BASE_URL %>favicon.svg">
     <link rel="icon" type="image/x-icon" href="<%= BASE_URL %>favicon.ico">
     <meta name="theme-color" content="#000"/>
     <style type="text/css">
@@ -27,7 +39,7 @@
   <body>
     <div id="nightmode"></div>
     <noscript>
-      <strong>We're sorry but stellarium-web doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>별무리는 자바스크립트가 있어야 동작합니다. 브라우저에서 자바스크립트를 켜주세요.</strong>
     </noscript>
     <div id="app">
       <router-view></router-view>

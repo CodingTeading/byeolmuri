@@ -9,7 +9,13 @@
   <div v-else>
     <!-- 밤 요약 -->
     <div class="pa-3 summary">
-      <div class="text-h6 white--text mb-1">{{ darkHoursText }}</div>
+      <div class="d-flex align-center mb-1">
+        <span class="text-h6" :class="verdictClass">오늘 밤 {{ verdict.text }}</span>
+        <v-spacer></v-spacer>
+        <span v-if="weather" class="text-caption grey--text">{{ weather.text }}</span>
+        <span v-else-if="weatherPending" class="text-caption grey--text">예보 확인 중…</span>
+      </div>
+      <div class="text-caption grey--text mb-2">{{ darkHoursText }}</div>
       <div class="text-caption grey--text mb-2">{{ locationText }}</div>
       <div class="times">
         <div v-for="t in nightTimes" :key="t.label" class="time-cell">
@@ -26,6 +32,18 @@
         <span class="white--text">달 {{ Math.round(moon.illumination * 100) }}%</span>
         <v-spacer></v-spacer>
         <span :class="moonClass">{{ moonText }}</span>
+      </div>
+    </div>
+
+    <!-- 시간대별 하늘 상태 -->
+    <div class="pa-3 sky-timeline" v-if="weather && weather.timeline.length">
+      <div class="text-caption grey--text mb-1">시간대별 하늘</div>
+      <div class="d-flex">
+        <div v-for="h in weather.timeline" :key="h.hour" class="sky-cell"
+             :title="h.hour + '시 ' + h.label">
+          <div class="sky-bar" :style="{ background: skyColor(h) }"></div>
+          <div class="sky-hour">{{ h.hour }}</div>
+        </div>
       </div>
     </div>
 
@@ -52,12 +70,21 @@
 <script>
 import astro from './astro'
 import targets from './targets'
+import weather from './weather'
 import swh from '@/assets/sw_helpers'
 import Moment from 'moment'
 
 export default {
   data: function () {
-    return { ready: false, night: null, moon: null, targets: [], timer: null }
+    return {
+      ready: false,
+      night: null,
+      moon: null,
+      targets: [],
+      timer: null,
+      weather: null,
+      weatherPending: false
+    }
   },
   computed: {
     darkHoursText: function () {
@@ -96,6 +123,15 @@ export default {
         { label: '일출', value: this.time(this.night.sunrise) }
       ]
     },
+    verdict: function () {
+      return weather.observingScore(this.night, this.moon, this.weather)
+    },
+    verdictClass: function () {
+      const s = this.verdict.score
+      if (s >= 0.7) return 'green--text'
+      if (s >= 0.45) return 'amber--text'
+      return 'red--text'
+    },
     moonText: function () {
       if (!this.moon) return ''
       const i = this.moon.interference
@@ -133,6 +169,28 @@ export default {
       if (this.timer) clearTimeout(this.timer)
       this.timer = setTimeout(this.compute, 300)
     },
+    skyColor: function (h) {
+      if (h.pty) return '#4a6fa5'
+      if (h.sky === 1) return '#2e7d32'
+      if (h.sky === 3) return '#b58900'
+      return '#5a5a5a'
+    },
+    loadWeather: function () {
+      const that = this
+      const o = this.observer
+      if (!o || o.latitude === undefined) return
+      this.weatherPending = true
+      weather.fetchForecast(o.latitude * 180 / Math.PI, o.longitude * 180 / Math.PI)
+        .then(f => {
+          that.weather = weather.summarize(f, that.night)
+          that.weatherPending = false
+        })
+        .catch(() => {
+          // 예보는 부가 정보다. 실패해도 나머지 계획은 그대로 보여준다.
+          that.weather = null
+          that.weatherPending = false
+        })
+    },
     compute: function () {
       const stel = this.$stel
       if (!stel) return
@@ -140,6 +198,7 @@ export default {
       if (this.night) {
         this.moon = astro.moonInfo(stel, this.night)
         this.targets = targets.recommend(stel, this.night, 12)
+        this.loadWeather()
       }
       this.ready = true
     }
@@ -169,5 +228,9 @@ export default {
 .summary { background: rgba(255, 255, 255, 0.04); }
 .moon { border-top: 1px solid rgba(255, 255, 255, 0.08); }
 .times { display: flex; justify-content: space-between; }
+.sky-timeline { border-top: 1px solid rgba(255, 255, 255, 0.08); }
+.sky-cell { flex: 1; text-align: center; min-width: 0; }
+.sky-bar { height: 18px; border-radius: 2px; margin: 0 1px; }
+.sky-hour { font-size: 9px; color: #9e9e9e; }
 .time-cell { text-align: center; flex: 1; }
 </style>
