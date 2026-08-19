@@ -5,12 +5,17 @@
 // 언어 수만큼 index.html 을 미리 구워 그 문제를 없앤다.
 //
 // dist/
-//   index.html        (감지 후 이동. 접두어 없는 예전 링크용)
-//   ko/index.html     제목·설명·canonical 이 한국어
-//   ja/index.html     ...
-//   _redirects        /ja/* 를 ja/index.html 로 넘김
+//   index.html          (접두어 없는 예전 링크용. 감지 후 이동한다)
+//   _i18n/ko.html       제목·설명·canonical 이 한국어
+//   _i18n/ja.html       ...
+//   _redirects          /ja/* 를 /_i18n/ja.html 로 넘김
 //
-// 자산 경로는 절대경로(/js/app.xxx.js)라 하위 폴더에서도 그대로 열린다.
+// 대상 파일을 _i18n/ 에 두는 이유가 있다. dist/ja/index.html 로 두면
+// 규칙이 "/ja/* -> /ja/index.html" 이 되어 대상이 다시 자기 규칙에
+// 걸린다. Cloudflare Pages 는 그런 규칙을 적용하지 않아서 /ja/ 만 열리고
+// /ja/p/learn/... 같은 깊은 주소는 전부 기본 index.html 로 떨어졌다.
+//
+// 자산 경로는 절대경로(/js/app.xxx.js)라 어느 깊이에서도 그대로 열린다.
 
 import fs from 'fs'
 import path from 'path'
@@ -48,16 +53,22 @@ function localize (html, lang) {
 }
 
 const src = fs.readFileSync(path.join(DIST, 'index.html'), 'utf8')
+const outDir = path.join(DIST, '_i18n')
+fs.mkdirSync(outDir, { recursive: true })
 for (const lang of LANGS) {
-  const dir = path.join(DIST, lang)
-  fs.mkdirSync(dir, { recursive: true })
-  fs.writeFileSync(path.join(dir, 'index.html'), localize(src, lang))
+  fs.writeFileSync(path.join(outDir, lang + '.html'), localize(src, lang))
 }
 
-// 언어 폴더 안의 모든 깊은 주소가 그 언어의 HTML 을 받도록 한다.
-// 마지막 줄은 접두어 없는 주소를 위한 기존 SPA 폴백이다.
-const redirects = LANGS.map(l => `/${l}/* /${l}/index.html 200`)
-  .concat(['/* /index.html 200']).join('\n') + '\n'
-fs.writeFileSync(path.join(DIST, '_redirects'), redirects)
+// 언어 접두어가 붙은 모든 주소가 그 언어의 HTML 을 받도록 한다.
+// /ko 와 /ko/ 도 따로 적는다. splat 이 빈 문자열을 받는지에 기대지 않는다.
+const rules = []
+for (const l of LANGS) {
+  rules.push(`/${l} /_i18n/${l}.html 200`)
+  rules.push(`/${l}/ /_i18n/${l}.html 200`)
+  rules.push(`/${l}/* /_i18n/${l}.html 200`)
+}
+// 접두어 없는 주소는 기존 SPA 폴백을 탄다. 라우터가 언어를 감지해 옮긴다.
+rules.push('/* /index.html 200')
+fs.writeFileSync(path.join(DIST, '_redirects'), rules.join(String.fromCharCode(10)) + String.fromCharCode(10))
 
 console.log(`언어별 HTML ${LANGS.length}개와 _redirects 생성: ${LANGS.join(', ')}`)
