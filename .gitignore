@@ -15,3 +15,7 @@ deltat.data
 deltat.preds
 hip_main.dat.gz
 
+
+# --- our fork ---
+/apps/skydata/
+/devserver.log

@@ -1,0 +1,44 @@
+# Builds the Stellarium Web Engine (C -> WASM) on a free GitHub-hosted runner.
+#
+# The engine is upstream code we do not modify, so it only needs to be rebuilt
+# when we merge from upstream. Download the artifact produced here and drop the
+# two files into apps/web-frontend/src/assets/js/ to develop with Node only --
+# no local Docker or emscripten required.
+name: build-engine
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'src/**'
+      - 'ext_src/**'
+      - 'SConstruct'
+      - 'Makefile'
+      - '.github/workflows/build-engine.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # Pinned emsdk: the engine uses EXTRA_EXPORTED_RUNTIME_METHODS, allocate()
+    # and writeAsciiToMemory, all removed in emscripten 2.x/3.x. Do not bump.
+    container: emscripten/emsdk:1.39.17
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install scons
+        run: apt-get update && apt-get install -y scons
+
+      - name: Build engine (ES6 module, release)
+        run: |
+          source /emsdk/emsdk_env.sh
+          make js-es6
+        shell: bash
+
+      - name: Upload engine build
+        uses: actions/upload-artifact@v4
+        with:
+          name: stellarium-web-engine
+          path: |
+            build/stellarium-web-engine.js
+            build/stellarium-web-engine.wasm
+          if-no-files-found: error
