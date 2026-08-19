@@ -43,6 +43,19 @@ function setPath (root, path, value) {
 }
 
 /*
+ * 선택과 카메라 잠금을 함께 푼다.
+ *
+ * 주의: 엔진의 객체형 속성은 null 을 넣으면 무시된다. 0 을 넣어야 비워진다.
+ * (core.selection = null 은 아무 일도 일어나지 않는다. 실측으로 확인)
+ * 그리고 pointAndLock 이 걸어둔 core.lock 까지 풀지 않으면 화면이 계속
+ * 그 천체를 따라다닌다.
+ */
+function clearTarget (stel) {
+  stel.core.lock = 0
+  stel.core.selection = 0
+}
+
+/*
  * 천체를 이름으로 찾는다. 엔진은 HiPS 타일을 비동기로 받으므로
  * 레슨을 열자마자 찾으면 아직 없을 수 있다. 잠깐 기다렸다 다시 본다.
  */
@@ -96,7 +109,7 @@ export async function apply (stel, step) {
 
   // 방위/고도를 직접 준 경우. lookAt 이 있으면 그쪽이 이긴다.
   if (!step.lookAt && (sky.az !== undefined || sky.alt !== undefined)) {
-    stel.core.selection = null
+    clearTarget(stel)
     if (sky.az !== undefined) obs.yaw = sky.az * D2R
     if (sky.alt !== undefined) obs.pitch = sky.alt * D2R
   }
@@ -116,7 +129,7 @@ export async function apply (stel, step) {
       console.warn('[learn] 찾을 수 없는 천체: ' + step.select)
     }
   } else if (step.clearSelection) {
-    stel.core.selection = null
+    clearTarget(stel)
   }
 }
 
@@ -128,7 +141,7 @@ export async function apply (stel, step) {
 export function reset (stel) {
   if (!stel) return
   stel.core.time_speed = 1
-  stel.core.selection = null
+  clearTarget(stel)
   const defaults = {
     constellationLines: false,
     constellationArt: false,
