@@ -20,8 +20,17 @@
 `stellarium-web-engine.wasm` 두 파일이 있어야 한다. (업스트림 `.gitignore` 대상)
 
 ### 방법 A — GitHub Actions (권장, 로컬 세팅 불필요)
-`.github/workflows/build-engine.yml` 를 `workflow_dispatch` 로 실행하고
-`stellarium-web-engine` 아티팩트를 받아 위 경로에 푼다. 퍼블릭 저장소는 무료.
+퍼블릭 저장소라 러너 사용은 무료다. 빌드는 약 1분 걸린다.
+
+```bash
+gh workflow run build-engine.yml -R CodingTeading/byeolmuri --ref master
+gh run list -R CodingTeading/byeolmuri --limit 1          # run id 확인
+gh run download <run-id> -R CodingTeading/byeolmuri   -n stellarium-web-engine -D ./_engine
+cp ./_engine/stellarium-web-engine.* apps/web-frontend/src/assets/js/
+```
+
+> 새 저장소는 push 후 워크플로가 Actions에 등록되기까지 1~2분 걸린다.
+> 그전에는 `gh workflow run` 이 404를 낸다.
 
 ### 방법 B — 로컬 Docker
 ```bash
@@ -68,3 +77,15 @@ NODE_OPTIONS=--openssl-legacy-provider yarn dev   # http://localhost:8080
 - `apps/web-frontend/package.json`: `"vue": "^3.0.0"` → `"^2.6.11"`.
   업스트림 master의 버그. 앱 전체가 Vue 2 API(`new Vue`, `Vue.use`)인데
   package.json이 Vue 3을 요구해서 `vue-template-compiler` 버전 불일치로 빌드가 죽는다.
+
+## 6. 동작 확인 기록
+
+2026-08-19, Windows 10 / Node 24.19 / yarn 1.22 환경에서 전 과정 검증 완료.
+
+- 엔진 빌드: GitHub Actions, 약 1분. 산출물 `stellarium-web-engine.js`(104KB) +
+  `stellarium-web-engine.wasm`(1.2MB)
+- 프론트엔드: `Compiled successfully in 6.8s`, http://localhost:8080
+- 렌더링: WebGL 컨텍스트 생성 및 실제 픽셀 출력 확인
+- 데이터 로딩: `skydata/stars/properties`, `skydata/dso/Norder0/...`,
+  `skydata/skycultures/western/index.json` 모두 200
+- 위치: GeoIP 폴백으로 서울 좌표 자동 감지 (브라우저 위치권한 없이도 동작)
