@@ -12,7 +12,7 @@ export default {
     {
       path: '/p/tonight',
       component: Tonight,
-      meta: { tabName: '오늘 밤', prio: 1 }
+      meta: { tabName: 'planner.tab', prio: 1 }
     }
   ]
 }

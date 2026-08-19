@@ -34,7 +34,8 @@ def load_constellations(korean):
         entry = {'n': names, 't': 'Con', 'v': None}
         ko = korean['constellations'].get(c.get('iau'))
         if ko:
-            entry['k'] = [ko]
+            # 언어별 이름 묶음. 지금은 한국어뿐이지만 구조를 미리 열어둔다.
+            entry['k'] = {'ko': [ko]}
         out.append(entry)
     return out
 
@@ -77,7 +78,7 @@ def main():
                 if k not in ko:
                     ko.append(k)
         if ko:
-            r['k'] = ko
+            r['k'] = {'ko': ko}
 
     records += load_constellations(korean)
 
@@ -91,7 +92,7 @@ def main():
     io.open(OUT, 'w', encoding='utf-8').write(
         json.dumps(payload, ensure_ascii=False, separators=(',', ':')))
 
-    ko_count = sum(1 for r in records if r.get('k'))
+    ko_count = sum(1 for r in records if r.get('k', {}).get('ko'))
     size = os.path.getsize(OUT)
     print('천체 %d개 (한글명 %d개), %.1f KB' % (len(records), ko_count, size / 1024))
     print('출력:', os.path.normpath(OUT))

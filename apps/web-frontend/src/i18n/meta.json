@@ -1,0 +1,18 @@
+{
+ "ko": {
+  "title": "별무리 – 오늘 밤 별자리 지도와 관측 플래너",
+  "description": "지금 내 위치에서 보이는 밤하늘을 실시간으로 보여줍니다. 오늘 밤 관측하기 좋은 천체를 날씨·달·고도를 따져 추천합니다. 무료, 광고 없음, 오픈소스."
+ },
+ "en": {
+  "title": "Byeolmuri – Tonight's Star Map and Observing Planner",
+  "description": "See the night sky above you in real time. Byeolmuri picks tonight's best targets by weather, moonlight and altitude. Free, ad-free, open source."
+ },
+ "ja": {
+  "title": "ビョルムリ – 今夜の星図と観測プランナー",
+  "description": "今いる場所の夜空をリアルタイムで表示します。天気・月明かり・高度から今夜の見どころを選びます。無料・広告なし・オープンソース。"
+ },
+ "es": {
+  "title": "Byeolmuri – Mapa estelar y planificador de observación",
+  "description": "Mira el cielo nocturno sobre ti en tiempo real. Byeolmuri elige los mejores objetos de esta noche según el tiempo, la luna y la altura. Gratis, sin anuncios, código abierto."
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "learn": {
+  "tab": "Aprender",
+  "title": "Aprender",
+  "lead": "Léelo y compruébalo en el cielo. El cielo acompaña la explicación.",
+  "loading": "Cargando la lección…",
+  "empty": "Todavía no hay lecciones.",
+  "toList": "Volver a la lista",
+  "prev": "Atrás",
+  "next": "Siguiente",
+  "finish": "Terminar",
+  "minutes": "{n} min",
+  "correct": "Correcto",
+  "wrong": "Piénsalo otra vez",
+  "notTranslated": "Esta lección aún no está traducida, se muestra en coreano."
+ }
+}

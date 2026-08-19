@@ -26,7 +26,7 @@ function radecOf (stel, obj, obs) {
  *   - 관측 가능 시간: 길수록 여유 있게 볼 수 있다.
  *   - 밝기: 밝을수록 찾기 쉽고 디테일이 산다.
  */
-export function recommend (stel, night, limit) {
+export function recommend (stel, night, limit, lang) {
   const lat = stel.core.observer.latitude
   const lon = stel.core.observer.longitude
   const obs = stel.observer.clone()
@@ -55,7 +55,7 @@ export function recommend (stel, night, limit) {
         if (!vis || vis.aboveMinutes < 30) continue
         out.push({
           names: names,
-          koreanNames: searchIndex.koreanNamesFor(names),
+          localNames: searchIndex.localNamesFor(names, lang || 'ko'),
           type: obj.getInfo('type') || '',
           vmag: typeof vmag === 'number' && isFinite(vmag) ? vmag : null,
           maxAlt: vis.maxAlt,

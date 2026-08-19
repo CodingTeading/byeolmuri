@@ -1,0 +1,17 @@
+{
+ "learn": {
+  "tab": "Learn",
+  "title": "Learn",
+  "lead": "Read it, then check it in the sky. The sky follows along.",
+  "loading": "Loading the lesson…",
+  "empty": "No lessons yet.",
+  "toList": "Back to list",
+  "prev": "Back",
+  "next": "Next",
+  "finish": "Done",
+  "minutes": "{n} min",
+  "correct": "Correct",
+  "wrong": "Think again",
+  "notTranslated": "This lesson is not translated yet, so it is shown in Korean."
+ }
+}

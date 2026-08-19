@@ -7,8 +7,19 @@
 // 하늘상태(SKY) 별 관측 적합도. 구름은 관측의 성패를 가르는 요소라
 // 흐림과 맑음의 차이를 크게 벌려둔다.
 const SKY_SCORE = { 1: 1.0, 3: 0.45, 4: 0.1 }
-const SKY_TEXT = { 1: '맑음', 3: '구름 많음', 4: '흐림' }
-const PTY_TEXT = { 0: '', 1: '비', 2: '비/눈', 3: '눈', 4: '소나기', 5: '빗방울', 6: '진눈깨비', 7: '눈날림' }
+
+// 이 모듈은 번역문을 만들지 않는다. 화면이 $t() 로 옮기도록 키만 돌려준다.
+const SKY_KEY = { 1: 'planner.skyClear', 3: 'planner.skyCloudy', 4: 'planner.skyOvercast' }
+const PTY_KEY = {
+  0: '',
+  1: 'planner.ptyRain',
+  2: 'planner.ptyRainSnow',
+  3: 'planner.ptySnow',
+  4: 'planner.ptyShower',
+  5: 'planner.ptyDrizzle',
+  6: 'planner.ptySleet',
+  7: 'planner.ptySnowFlurry'
+}
 
 // 기상청 예보 시각은 KST 기준 "YYYYMMDDHH" 문자열이다.
 function kstHourToDate (s) {
@@ -61,24 +72,24 @@ export function summarize (forecast, night) {
   }
   const score = sum / inWindow.length
 
-  let text
-  if (rain) text = '강수 예보'
-  else if (score >= 0.85) text = '맑음'
-  else if (score >= 0.55) text = '대체로 맑음'
-  else if (score >= 0.3) text = '구름 많음'
-  else text = '흐림'
+  let key
+  if (rain) key = 'planner.skyRain'
+  else if (score >= 0.85) key = 'planner.skyClear'
+  else if (score >= 0.55) key = 'planner.skyMostlyClear'
+  else if (score >= 0.3) key = 'planner.skyCloudy'
+  else key = 'planner.skyOvercast'
 
   return {
     hours: inWindow,
     score: score,
-    text: text,
+    textKey: key,
     rain: rain,
     // 시간대별 하늘 상태 (타임라인 표시용)
     timeline: inWindow.map(h => ({
       hour: Number(h.time.slice(8, 10)),
       sky: h.sky,
       pty: h.pty,
-      label: (PTY_TEXT[h.pty] || SKY_TEXT[h.sky] || '')
+      labelKey: (PTY_KEY[h.pty] || SKY_KEY[h.sky] || '')
     }))
   }
 }
@@ -88,7 +99,7 @@ export function summarize (forecast, night) {
  * 어두운 시간이 아예 없으면 0.
  */
 export function observingScore (night, moon, weather) {
-  if (!night || !night.darkHours) return { score: 0, text: '관측 불가' }
+  if (!night || !night.darkHours) return { score: 0, textKey: 'planner.impossible' }
   const moonScore = moon ? 1 - moon.interference : 1
   let score
   if (weather) {
@@ -98,12 +109,12 @@ export function observingScore (night, moon, weather) {
     // 문구에서 '달 기준'임을 밝힌다.
     score = moonScore
   }
-  let text
-  if (score >= 0.7) text = '좋음'
-  else if (score >= 0.45) text = '보통'
-  else if (score >= 0.2) text = '나쁨'
-  else text = '매우 나쁨'
-  return { score: score, text: text, weatherKnown: !!weather }
+  let key
+  if (score >= 0.7) key = 'planner.good'
+  else if (score >= 0.45) key = 'planner.fair'
+  else if (score >= 0.2) key = 'planner.poor'
+  else key = 'planner.bad'
+  return { score: score, textKey: key, weatherKnown: !!weather }
 }
 
-export default { fetchForecast, summarize, observingScore, SKY_TEXT, PTY_TEXT }
+export default { fetchForecast, summarize, observingScore, SKY_KEY, PTY_KEY }

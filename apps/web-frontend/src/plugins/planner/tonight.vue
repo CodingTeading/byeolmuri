@@ -1,19 +1,19 @@
 <template>
 <div class="planner">
-  <div v-if="!ready" class="pa-4 grey--text">오늘 밤 하늘을 계산하는 중…</div>
+  <div v-if="!ready" class="pa-4 grey--text">{{ $t('planner.computing') }}</div>
 
   <div v-else-if="!night" class="pa-4 grey--text">
-    이 위치에서는 오늘 밤 해가 지지 않습니다.
+    {{ $t('planner.noNight') }}
   </div>
 
   <div v-else>
     <!-- 밤 요약 -->
     <div class="pa-3 summary">
       <div class="d-flex align-center mb-1">
-        <span class="text-h6" :class="verdictClass">오늘 밤 {{ verdict.text }}</span>
+        <span class="text-h6" :class="verdictClass">{{ $t('planner.verdict', { v: $t(verdict.textKey) }) }}</span>
         <v-spacer></v-spacer>
-        <span v-if="weather" class="text-caption grey--text">{{ weather.text }}</span>
-        <span v-else-if="weatherPending" class="text-caption grey--text">예보 확인 중…</span>
+        <span v-if="weather" class="text-caption grey--text">{{ $t(weather.textKey) }}</span>
+        <span v-else-if="weatherPending" class="text-caption grey--text">{{ $t('planner.forecastPending') }}</span>
       </div>
       <div class="text-caption grey--text mb-2">{{ darkHoursText }}</div>
       <div class="text-caption grey--text mb-2">{{ locationText }}</div>
@@ -29,18 +29,18 @@
     <div class="pa-3 moon" v-if="moon">
       <div class="d-flex align-center">
         <v-icon small class="mr-2">mdi-moon-waning-crescent</v-icon>
-        <span class="white--text">달 {{ Math.round(moon.illumination * 100) }}%</span>
+        <span class="white--text">{{ $t('planner.moon', { p: Math.round(moon.illumination * 100) }) }}</span>
         <v-spacer></v-spacer>
         <span :class="moonClass">{{ moonText }}</span>
       </div>
     </div>
 
-    <!-- 시간대별 하늘 상태 -->
+    <!-- {{ $t('planner.skyTimeline') }} 상태 -->
     <div class="pa-3 sky-timeline" v-if="weather && weather.timeline.length">
-      <div class="text-caption grey--text mb-1">시간대별 하늘</div>
+      <div class="text-caption grey--text mb-1">{{ $t('planner.skyTimeline') }}</div>
       <div class="d-flex">
         <div v-for="h in weather.timeline" :key="h.hour" class="sky-cell"
-             :title="h.hour + '시 ' + h.label">
+             :title="$t('planner.hourTip', { h: h.hour, label: h.labelKey ? $t(h.labelKey) : '' })">
           <div class="sky-bar" :style="{ background: skyColor(h) }"></div>
           <div class="sky-hour">{{ h.hour }}</div>
         </div>
@@ -48,20 +48,20 @@
     </div>
 
     <!-- 추천 대상 -->
-    <div class="pa-3 pb-1 text-caption grey--text">오늘 밤 볼 만한 것</div>
+    <div class="pa-3 pb-1 text-caption grey--text">{{ $t('planner.targets') }}</div>
     <v-list dense class="transparent">
       <v-list-item v-for="t in targets" :key="t.names[0]" @click="select(t)">
         <v-list-item-content>
           <v-list-item-title class="white--text">{{ title(t) }}</v-list-item-title>
           <v-list-item-subtitle class="text-caption">
-            최고 {{ deg(t.maxAlt) }}° · {{ time(t.bestTime) }}
-            <span v-if="t.vmag !== null"> · {{ t.vmag.toFixed(1) }}등급</span>
+            {{ $t('planner.targetLine', { alt: deg(t.maxAlt), time: time(t.bestTime) }) }}
+            <span v-if="t.vmag !== null"> · {{ $t('planner.mag', { v: t.vmag.toFixed(1) }) }}</span>
           </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
     </v-list>
     <div v-if="!targets.length" class="pa-3 text-caption grey--text">
-      조건을 만족하는 대상이 없습니다.
+      {{ $t('planner.noTargets') }}
     </div>
   </div>
 </div>
@@ -90,9 +90,10 @@ export default {
     darkHoursText: function () {
       if (!this.night) return ''
       const h = this.night.darkHours
-      if (!h) return '천문박명이 끝나지 않는 밤'
-      return '어두운 시간 ' + Math.floor(h) + '시간 ' +
-        Math.round((h % 1) * 60) + '분'
+      if (!h) return this.$t('planner.noAstroNight')
+      return this.$t('planner.darkHours', {
+        h: Math.floor(h), m: Math.round((h % 1) * 60)
+      })
     },
     // 엔진 객체는 Vue 반응형이 아니므로 반드시 스토어를 통해 읽어야 한다.
     // 스토어의 stel 트리는 엔진 값이 바뀔 때마다 갱신된다
@@ -112,15 +113,16 @@ export default {
     // utc 는 시간이 흐르며 계속 변하므로 일 단위로 잘라서 본다.
     computeKey: function () {
       const o = this.observer
-      return [Math.floor(o.utc), o.latitude, o.longitude].join(',')
+      // 언어가 바뀌면 천체 이름이 달라지므로 다시 계산해야 한다.
+      return [Math.floor(o.utc), o.latitude, o.longitude, this.$i18n.locale].join(',')
     },
     nightTimes: function () {
       if (!this.night) return []
       return [
-        { label: '일몰', value: this.time(this.night.sunset) },
-        { label: '박명 끝', value: this.time(this.night.duskEnd) },
-        { label: '박명 시작', value: this.time(this.night.dawnStart) },
-        { label: '일출', value: this.time(this.night.sunrise) }
+        { label: this.$t('planner.sunset'), value: this.time(this.night.sunset) },
+        { label: this.$t('planner.duskEnd'), value: this.time(this.night.duskEnd) },
+        { label: this.$t('planner.dawnStart'), value: this.time(this.night.dawnStart) },
+        { label: this.$t('planner.sunrise'), value: this.time(this.night.sunrise) }
       ]
     },
     verdict: function () {
@@ -135,10 +137,10 @@ export default {
     moonText: function () {
       if (!this.moon) return ''
       const i = this.moon.interference
-      if (i < 0.1) return '방해 거의 없음'
-      if (i < 0.3) return '약간 방해'
-      if (i < 0.6) return '보통 방해'
-      return '관측 방해 큼'
+      if (i < 0.1) return this.$t('planner.moonNone')
+      if (i < 0.3) return this.$t('planner.moonSlight')
+      if (i < 0.6) return this.$t('planner.moonModerate')
+      return this.$t('planner.moonHeavy')
     },
     moonClass: function () {
       if (!this.moon) return ''
@@ -157,7 +159,7 @@ export default {
       return new Moment(d).format('HH:mm')
     },
     title: function (t) {
-      if (t.koreanNames && t.koreanNames.length) return t.koreanNames[0]
+      if (t.localNames && t.localNames.length) return t.localNames[0]
       return swh.cleanupOneSkySourceName(t.names[0])
     },
     select: function (t) {
@@ -197,7 +199,7 @@ export default {
       this.night = astro.findNight(stel)
       if (this.night) {
         this.moon = astro.moonInfo(stel, this.night)
-        this.targets = targets.recommend(stel, this.night, 12)
+        this.targets = targets.recommend(stel, this.night, 12, this.$i18n.locale)
         this.loadWeather()
       }
       this.ready = true

@@ -30,15 +30,24 @@ function toSkySource (rec, match) {
     model_data: {},
     // 표시용으로 실제 매칭된 이름을 돌려준다 (검색 결과 목록에서 사용).
     match: match || rec.n[0],
-    // 한글 이름. 원본 API 에는 없는 별무리 확장 필드.
-    koreanNames: rec.k || []
+    // 언어별 천체 이름. 원본 API 에는 없는 별무리 확장 필드.
+    localNames: rec.k || {}
   }
+}
+
+// rec.k 는 { ko: [...], ja: [...] } 형태다. 모든 언어의 이름을 색인에 넣는다.
+// 일본어 화면에서 한국어 이름으로 검색해도 찾히는 편이 낫다.
+function allLocalNames (rec) {
+  if (!rec.k) return []
+  let out = []
+  for (const lang of Object.keys(rec.k)) out = out.concat(rec.k[lang])
+  return out
 }
 
 function build (data) {
   const list = []
   for (const rec of data.objects) {
-    const names = rec.n.concat(rec.k || [])
+    const names = rec.n.concat(allLocalNames(rec))
     for (const name of names) {
       list.push({ key: normalize(name), name: name, rec: rec })
     }
@@ -108,15 +117,19 @@ export function lookupByName (name) {
   })
 }
 
-// 엔진에서 온 천체의 식별자로 한글 이름을 찾는다.
-export function koreanNamesFor (designations) {
+/*
+ * 엔진에서 온 천체의 식별자로 그 언어의 이름을 찾는다.
+ * 해당 언어 이름이 없으면 빈 배열을 준다. 다른 언어 이름을 대신 보여주면
+ * 번역된 것처럼 보여 오해를 부른다.
+ */
+export function localNamesFor (designations, lang) {
   if (!entries || !designations) return []
   for (const d of designations) {
     const key = normalize(d)
     const hit = entries.find(e => e.key === key)
-    if (hit && hit.rec.k) return hit.rec.k.slice()
+    if (hit && hit.rec.k && hit.rec.k[lang]) return hit.rec.k[lang].slice()
   }
   return []
 }
 
-export default { load, query, lookupByName, koreanNamesFor }
+export default { load, query, lookupByName, localNamesFor }

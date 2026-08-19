@@ -16,7 +16,7 @@ export default {
     {
       path: '/p/learn',
       component: LessonList,
-      meta: { tabName: '배우기', prio: 2 }
+      meta: { tabName: 'learn.tab', prio: 2 }
     },
     {
       // 레슨 본문. 탭으로는 노출하지 않는다 (meta.tabName 없음).

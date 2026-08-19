@@ -195,10 +195,10 @@ const swh = {
     }
     if (!flags) flags = 10
     let res = []
-    // 한글 이름을 맨 앞에 둔다. designationCleanup 은 카탈로그 부호를 다듬는
-    // 함수라 한글에는 적용하지 않는다.
-    if (ss.koreanNames) {
-      res = res.concat(ss.koreanNames)
+    // 그 언어의 이름을 맨 앞에 둔다. designationCleanup 은 카탈로그 부호를
+    // 다듬는 함수라 일반 명칭에는 적용하지 않는다.
+    if (ss.localNames) {
+      res = res.concat(ss.localNames)
     }
     if (ss.culturalNames) {
       for (const i in ss.culturalNames) {
@@ -239,7 +239,10 @@ const swh = {
   },
 
   getShareLink: function (context) {
-    let link = 'https://stellarium-web.org/'
+    // 예전에는 업스트림 주소(stellarium-web.org)를 만들고 있었다.
+    // 우리 사이트의 링크를, 보고 있던 언어로 만든다.
+    const lang = context.$i18n ? context.$i18n.locale : 'ko'
+    let link = window.location.origin + '/' + lang + '/'
     if (context.$store.state.selectedObject) {
       link += 'skysource/' + this.cleanupOneSkySourceName(context.$store.state.selectedObject.names[0], 5).replace(/\s+/g, '')
     }
@@ -351,8 +354,9 @@ const swh = {
     }
     ss.culturalNames = obj.culturalDesignations()
 
+    const lang = Vue.prototype.$i18nLocale ? Vue.prototype.$i18nLocale() : 'ko'
     return searchIndex.load().then(() => {
-      ss.koreanNames = searchIndex.koreanNamesFor(names)
+      ss.localNames = searchIndex.localNamesFor(names, lang)
       return ss
     }, () => ss)
   },
@@ -471,8 +475,12 @@ const swh = {
       accuracy: pos.accuracy,
       street_address: ''
     }
-    return fetch('https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=' + pos.lat + '&lon=' + pos.lng,
-      { headers: { 'Content-Type': 'application/json; charset=UTF-8' } }).then(response => {
+    // 지명도 화면 언어로 받는다. accept-language 를 주지 않으면 그 지역의
+    // 현지 표기(서울특별시 부근)가 그대로 나와 다른 언어 화면에서 튄다.
+    const geoLang = ctx.$i18n ? ctx.$i18n.locale : 'ko'
+    return fetch('https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=' +
+      pos.lat + '&lon=' + pos.lng + '&accept-language=' + geoLang,
+    { headers: { 'Content-Type': 'application/json; charset=UTF-8' } }).then(response => {
       if (response.ok) {
         return response.json().then(res => {
           const city = res.address.city ? res.address.city : (res.address.village ? res.address.village : res.name)

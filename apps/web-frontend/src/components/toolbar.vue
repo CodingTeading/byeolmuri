@@ -15,9 +15,10 @@
       <v-spacer></v-spacer>
       <target-search></target-search>
       <v-spacer></v-spacer>
+      <lang-switcher class="hidden-xs-only"></lang-switcher>
       <div v-if="$store.state.showFPS" class="subheader grey--text hidden-sm-and-down pr-2" style="user-select: none;">FPS {{ $store.state.stel ? $store.state.stel.fps.toFixed(1) : '?' }}</div>
       <div class="subheader grey--text hidden-sm-and-down" style="user-select: none;">FOV {{ fov }}</div>
-      <v-btn class="transparent" v-if="!$store.state.showSidePanel" to="/p">{{ $t('Observe') }}<v-icon>mdi-chevron-down</v-icon></v-btn>
+      <v-btn class="transparent" v-if="!$store.state.showSidePanel" :to="$lpath('/p')">{{ $t('Observe') }}<v-icon>mdi-chevron-down</v-icon></v-btn>
     </v-toolbar>
   </div>
 </template>
@@ -25,6 +26,7 @@
 <script>
 
 import TargetSearch from '@/components/target-search'
+import LangSwitcher from '@/components/lang-switcher'
 
 export default {
   data: function () {
@@ -43,7 +45,7 @@ export default {
       this.$store.commit('toggleBool', 'showNavigationDrawer')
     }
   },
-  components: { TargetSearch }
+  components: { TargetSearch, LangSwitcher }
 }
 </script>
 

@@ -123,7 +123,9 @@ export default {
     },
     setStateFromQueryArgs: function () {
       // Check whether the observing panel must be displayed
-      this.$store.commit('setValue', { varName: 'showSidePanel', newValue: this.$route.path.startsWith('/p/') })
+      // 주소 앞에 언어가 붙으므로(/ko/p/...) 그것을 떼고 판단해야 한다.
+      const path = this.$langs.splitPath(this.$route.path).rest
+      this.$store.commit('setValue', { varName: 'showSidePanel', newValue: path.startsWith('/p/') })
 
       // Set the core's state from URL query arguments such
       // as date, location, view direction & fov
@@ -152,8 +154,9 @@ export default {
         this.initDone = true
       }
 
-      if (this.$route.path.startsWith('/skysource/')) {
-        const name = decodeURIComponent(this.$route.path.substring(11))
+      const bare = this.$langs.splitPath(this.$route.path).rest
+      if (bare.startsWith('/skysource/')) {
+        const name = decodeURIComponent(bare.substring(11))
         console.log('Will select object: ' + name)
         return swh.lookupSkySourceByName(name).then(ss => {
           if (!ss) {
