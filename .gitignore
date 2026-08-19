@@ -19,3 +19,6 @@ hip_main.dat.gz
 # --- our fork ---
 /apps/skydata/
 /devserver.log
+/prodbuild.log
+__pycache__/
+/_engine/

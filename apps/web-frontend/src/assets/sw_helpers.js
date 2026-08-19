@@ -7,6 +7,7 @@
 // repository.
 
 import Vue from 'vue'
+import searchIndex from './search-index'
 import _ from 'lodash'
 import StelWebEngine from '@/assets/js/stellarium-web-engine.js'
 import Moment from 'moment'
@@ -194,6 +195,11 @@ const swh = {
     }
     if (!flags) flags = 10
     let res = []
+    // 한글 이름을 맨 앞에 둔다. designationCleanup 은 카탈로그 부호를 다듬는
+    // 함수라 한글에는 적용하지 않는다.
+    if (ss.koreanNames) {
+      res = res.concat(ss.koreanNames)
+    }
     if (ss.culturalNames) {
       for (const i in ss.culturalNames) {
         res = res.concat(this.culturalNameToList(ss.culturalNames[i]))
@@ -252,6 +258,27 @@ const swh = {
     return link
   },
 
+  // 엔진은 HiPS 타일을 비동기로 받아오므로 시작 직후에는 아직 천체를 모른다.
+  // 딥링크(/skysource/...)로 들어온 경우 타일이 도착할 때까지 잠깐 재시도한다.
+  //
+  // 예전에는 NoctuaSky API 왕복 지연이 우연히 이 시간을 벌어줬지만,
+  // 정적 색인은 즉시 응답하기 때문에 경합이 그대로 드러난다.
+  waitForSweObj: function (ss, timeoutMs) {
+    const that = this
+    const deadline = Date.now() + (timeoutMs || 10000)
+    return new Promise(function (resolve) {
+      const attempt = function () {
+        const obj = that.skySource2SweObj(ss)
+        if (obj || Date.now() > deadline) {
+          resolve(obj)
+          return
+        }
+        setTimeout(attempt, 250)
+      }
+      attempt()
+    })
+  },
+
   // Return a SweObj matching a passed sky source JSON object if it's already instanciated in SWE
   skySource2SweObj: function (ss) {
     if (!ss || !ss.model) {
@@ -277,36 +304,26 @@ const swh = {
     return obj
   },
 
+  // 원래는 api.noctuasky.com 을 호출했다. 별무리는 정적 색인으로 대체해
+  // 백엔드 서버 없이 동작한다. searchIndex 참고.
   lookupSkySourceByName: function (name) {
-    return fetch(process.env.VUE_APP_NOCTUASKY_API_SERVER + '/api/v1/skysources/name/' + name)
-      .then(function (response) {
-        if (!response.ok) {
-          throw response.body
-        }
-        return response.json()
-      }, err => {
-        throw err.response.body
-      })
+    return searchIndex.lookupByName(name)
   },
 
   querySkySources: function (str, limit) {
-    if (!limit) {
-      limit = 10
-    }
-    return fetch(process.env.VUE_APP_NOCTUASKY_API_SERVER + '/api/v1/skysources/?q=' + str + '&limit=' + limit)
-      .then(function (response) {
-        if (!response.ok) {
-          throw response.body
-        }
-        return response.json()
-      }, err => {
-        throw err.response.body
-      })
+    return searchIndex.query(str, limit || 10)
   },
 
+  // 선택된 천체의 상세 정보를 만든다.
+  //
+  // 원래는 이름으로 NoctuaSky API 를 조회해 채웠지만, 엔진이 이미 갖고 있는
+  // jsonData 가 더 풍부하고(형태/크기/스펙트럼형) 네트워크도 타지 않는다.
+  // 따라서 엔진 데이터를 그대로 쓰고, 정적 색인에서 찾은 한글 이름만 덧붙인다.
+  //
+  // names 배열은 건드리지 않는다. names[0] 은 엔진이 천체를 다시 찾을 때
+  // 쓰는 식별자라서, 한글 이름을 끼워 넣으면 선택이 깨진다.
   sweObj2SkySource: function (obj) {
     const names = obj.designations()
-    const that = this
 
     if (!names || !names.length) {
       throw new Error("Can't find object without names")
@@ -322,42 +339,22 @@ const swh = {
       }
     }
 
-    const printErr = function (n) {
-      console.log("Couldn't find online skysource data for name: " + n)
-
-      const ss = obj.jsonData
-      if (!ss.model_data) {
-        ss.model_data = {}
-      }
-      // Names fixup
-      let i
-      for (i in ss.names) {
-        if (ss.names[i].startsWith('GAIA')) {
-          ss.names[i] = ss.names[i].replace(/^GAIA /, 'Gaia DR2 ')
-        }
-      }
-      ss.culturalNames = obj.culturalDesignations()
-      return ss
+    const ss = obj.jsonData
+    if (!ss.model_data) {
+      ss.model_data = {}
     }
+    // Names fixup
+    for (const i in ss.names) {
+      if (ss.names[i].startsWith('GAIA')) {
+        ss.names[i] = ss.names[i].replace(/^GAIA /, 'Gaia DR2 ')
+      }
+    }
+    ss.culturalNames = obj.culturalDesignations()
 
-    return that.lookupSkySourceByName(names[0]).then(res => {
-      return res
-    }, () => {
-      if (names.length === 1) return printErr(names)
-      return that.lookupSkySourceByName(names[1]).then(res => {
-        return res
-      }, () => {
-        if (names.length === 2) return printErr(names)
-        return that.lookupSkySourceByName(names[2]).then(res => {
-          return res
-        }, () => {
-          return printErr(names[2])
-        })
-      })
-    }).then(res => {
-      res.culturalNames = obj.culturalDesignations()
-      return res
-    })
+    return searchIndex.load().then(() => {
+      ss.koreanNames = searchIndex.koreanNamesFor(names)
+      return ss
+    }, () => ss)
   },
 
   setSweObjAsSelection: function (obj) {

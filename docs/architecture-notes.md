@@ -69,14 +69,17 @@ satellites → skydata/tle_satellite.jsonl.gz
 
 | 대상 | 용도 | 비용 | 우리 대응 |
 |---|---|---|---|
-| `api.noctuasky.com` | 천체 이름 조회 / 검색 (2개 엔드포인트, `sw_helpers.js:281,296`) | 남의 비공개 서버 | **교체 필요.** 정적 JSON 색인으로 대체 가능 |
+| ~~`api.noctuasky.com`~~ | 천체 이름 조회 / 검색 | 남의 비공개 서버 | **제거 완료.** 정적 색인으로 대체 → `apps/search-index/` |
 | Wikipedia API | 천체 설명문 | 무료 | 유지 |
 | Nominatim (OSM) | 위치 역지오코딩 (`sw_helpers.js:477`) | 무료(정책 준수 필요) | 유지, User-Agent 명시 |
 | OSM 타일 (leaflet) | 위치 선택 지도 | 무료(정책 준수 필요) | 유지 |
 
-NoctuaSky 의존이 **검색 2개 엔드포인트뿐**이라는 게 핵심이다.
-정적 색인 파일로 대체하면 **백엔드 서버 없이 완전 정적 배포가 가능**하고,
-그러면 GitHub Pages / Cloudflare Pages로 **호스팅 비용 0원**이 된다.
+NoctuaSky 의존이 **검색 2개 엔드포인트뿐**이라는 게 핵심이었다.
+2026-08-19 기준 정적 색인(24,623개 천체)으로 대체 완료. 이제 남은 외부 호출은
+전부 무료 공개 API 뿐이므로 **백엔드 서버 없이 완전 정적 배포가 가능**하고,
+GitHub Pages / Cloudflare Pages로 **호스팅 비용 0원**이 된다.
+
+자세한 내용은 `apps/search-index/README.md`.
 
 ## 5. 업스트림 이슈
 
