@@ -25,16 +25,10 @@ jobs:
         with:
           node-version: 20
 
-      # 엔진 WASM 은 저장소에 없다 (.gitignore 대상).
-      # build-engine 워크플로가 만든 최신 아티팩트를 가져다 쓴다.
-      - name: Fetch engine build
-        uses: dawidd6/action-download-artifact@v6
-        with:
-          workflow: build-engine.yml
-          name: stellarium-web-engine
-          path: apps/web-frontend/src/assets/js
-          if_no_artifact_found: fail
-
+      # 엔진 WASM 은 저장소에 들어 있다. 예전에는 build-engine 워크플로의
+      # 아티팩트를 받아 썼는데, GitHub 아티팩트가 90일이면 사라져서 엔진을
+      # 오래 안 고치면 배포가 통째로 깨졌다. 엔진은 거의 손대지 않으므로
+      # 바이너리를 저장소에 두는 편이 훨씬 튼튼하다.
       - name: Prepare skydata
         run: cp -r apps/test-skydata apps/skydata
 

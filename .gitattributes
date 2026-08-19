@@ -1,1 +1,5 @@
 src/assets/*.inl binary
+
+# 엔진 빌드 산출물. 빌드된 바이트 그대로 유지한다.
+*.wasm binary
+apps/web-frontend/src/assets/js/stellarium-web-engine.js -text
