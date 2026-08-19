@@ -8,14 +8,12 @@
 #   CLOUDFLARE_API_TOKEN   - Cloudflare 에서 "Edit Cloudflare Workers" 템플릿으로 생성
 #   CLOUDFLARE_ACCOUNT_ID  - 028490a80b26520ff97d073f72246779
 #
-# 등록 전에는 수동 실행만 가능하도록 두었다. 등록 후 아래 push 트리거의
-# 주석을 풀면 master 에 푸시할 때마다 자동 배포된다.
 name: deploy
 
 on:
   workflow_dispatch:
-  # push:
-  #   branches: [master]
+  push:
+    branches: [master]
 
 jobs:
   deploy:
