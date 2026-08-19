@@ -214,8 +214,14 @@ Module.afterInit(function() {
     let ret = [];
     g_ret = [];
     Module._module_list_objs2(this.v, obs.v, maxMag, 0, g_module_list_obj2);
-    for (let i = 0; i < g_ret.length; i++) {
-      let obj = new SweObj(g_ret[i]);
+    // The SweObj constructor uses g_ret too, and resets it.  We must therefore
+    // take a copy of the pointers before creating any object, otherwise the
+    // array we are iterating over is emptied after the first iteration and
+    // only one object is ever returned.
+    const ptrs = g_ret;
+    g_ret = [];
+    for (let i = 0; i < ptrs.length; i++) {
+      let obj = new SweObj(ptrs[i]);
       if (filter(obj)) {
         obj.retain();
         ret.push(obj);
