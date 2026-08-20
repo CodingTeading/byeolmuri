@@ -36,6 +36,7 @@ export function applyHead (lang, path) {
   setMeta('property', 'og:description', m.description)
   setMeta('property', 'og:locale', lang === 'ko' ? 'ko_KR' : lang)
   setMeta('property', 'og:url', SITE + path)
+  setMeta('property', 'og:image', SITE + '/og/' + lang + '.png')
 
   // 정규 주소는 언어 접두어가 붙은 쪽이다.
   const canonical = upsert('link[rel="canonical"]', () => {

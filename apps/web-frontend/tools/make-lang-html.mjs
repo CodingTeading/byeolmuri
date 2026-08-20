@@ -45,6 +45,8 @@ function localize (html, lang) {
     `$1${lang === 'ko' ? 'ko_KR' : lang}$2`)
   out = out.replace(/(<meta property="og:url" content=")[^"]*(")/, `$1${SITE}/${lang}/$2`)
   out = out.replace(/(<link rel="canonical" href=")[^"]*(")/, `$1${SITE}/${lang}/$2`)
+  out = out.replace(/(<meta property="og:image" content=")[^"]*(")/,
+    `$1${SITE}/og/${lang}.png$2`)
 
   // 언어판 상호 링크
   const alts = LANGS.map(l =>
