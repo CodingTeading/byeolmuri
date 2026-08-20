@@ -29,8 +29,12 @@ jobs:
       # 아티팩트를 받아 썼는데, GitHub 아티팩트가 90일이면 사라져서 엔진을
       # 오래 안 고치면 배포가 통째로 깨졌다. 엔진은 거의 손대지 않으므로
       # 바이너리를 저장소에 두는 편이 훨씬 튼튼하다.
+      # 업스트림 데이터 위에 우리 갱신본을 덮는다. 업스트림 파일을 직접
+      # 고치지 않아야 나중에 변경을 가져올 때 충돌이 나지 않는다.
       - name: Prepare skydata
-        run: cp -r apps/test-skydata apps/skydata
+        run: |
+          cp -r apps/test-skydata apps/skydata
+          cp -r apps/skydata-overlay/. apps/skydata/
 
       - name: Install dependencies
         working-directory: apps/web-frontend

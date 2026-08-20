@@ -1,0 +1,43 @@
+# 인공위성 궤도요소 주간 갱신
+#
+# TLE 는 며칠만 지나도 위치가 어긋나고, 몇 달이 지나면 저궤도 위성은
+# 못 쓰게 된다. 업스트림 데이터가 2020년 것이라 궤도 계산 오류가 콘솔에
+# 쏟아지던 것이 이 워크플로를 만든 이유다.
+#
+# 내용이 그대로면 커밋하지 않는다. gzip mtime 을 0 으로 고정해 두어서
+# 같은 데이터면 파일도 바이트까지 같다.
+name: refresh-tle
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 매주 월요일 새벽 (UTC 18:00 = KST 월요일 03:00)
+    - cron: '0 18 * * 0'
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch latest TLE
+        run: python apps/skydata-tools/refresh_tle.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- apps/skydata-overlay/; then
+            echo "변경 없음"
+            exit 0
+          fi
+          git config user.name "byeolmuri-bot"
+          git config user.email "146063751+CodingTeading@users.noreply.github.com"
+          git add apps/skydata-overlay/
+          git commit -m "data: 인공위성 궤도요소 갱신 ($(date -u +%Y-%m-%d))"
+          git push
