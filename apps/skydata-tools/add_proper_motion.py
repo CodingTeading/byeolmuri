@@ -14,6 +14,7 @@
 
 출력: apps/skydata-overlay/stars/
 """
+import csv
 import glob
 import gzip
 import io
@@ -85,23 +86,23 @@ def load_pm():
     """
     path = fetch_hyg()
     pm = {}
-    with gzip.open(path, 'rt', encoding='utf-8', errors='replace') as f:
-        header = f.readline().rstrip('\n').split(',')
-        idx = {name: i for i, name in enumerate(header)}
+    # 열 이름이 따옴표로 감싸여 있고 값에도 쉼표가 들어갈 수 있어
+    # 직접 자르지 않고 csv 모듈에 맡긴다.
+    with gzip.open(path, 'rt', encoding='utf-8', errors='replace', newline='') as f:
+        reader = csv.DictReader(f)
+        cols = [c.strip().strip(chr(34)) for c in (reader.fieldnames or [])]
+        reader.fieldnames = cols
         for col in ('hip', 'pmra', 'pmdec'):
-            if col not in idx:
-                raise SystemExit('HYG 에 %s 열이 없습니다: %s' % (col, header[:12]))
-        for line in f:
-            parts = line.rstrip('\n').split(',')
-            if len(parts) <= idx['pmdec']:
-                continue
-            hip = parts[idx['hip']].strip()
+            if col not in cols:
+                raise SystemExit('HYG 에 %s 열이 없습니다: %s' % (col, cols[:12]))
+        for row in reader:
+            hip = (row.get('hip') or '').strip()
             if not hip:
                 continue
             try:
-                h = int(hip)
-                ra = float(parts[idx['pmra']] or 0)
-                de = float(parts[idx['pmdec']] or 0)
+                h = int(float(hip))
+                ra = float(row.get('pmra') or 0)
+                de = float(row.get('pmdec') or 0)
             except ValueError:
                 continue
             if h and (ra or de):
@@ -138,7 +139,8 @@ def main():
                 no_plx += 1
 
         rel = os.path.relpath(path, BASE)
-        m = re.search(r'Norder(\d+)[\/].*Npix(\d+)\.eph$', rel)
+        rel_posix = rel.replace(os.sep, '/')
+        m = re.search(r'Norder(\d+)/.*Npix(\d+)\.eph$', rel_posix)
         if not m:
             sys.stderr.write('타일 이름을 알 수 없습니다: %s\n' % rel)
             continue
