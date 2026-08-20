@@ -31,7 +31,16 @@
     "equatorialGrid": false,
     "dso": false,
     "milkyway": true
-   }
+   },
+   "connect": [
+    "* eta UMa",
+    "* zet UMa",
+    "* eps UMa",
+    "* del UMa",
+    "* gam UMa",
+    "* bet UMa",
+    "* alf UMa"
+   ]
   },
   {
    "title": "국자의 시작, 두베",
@@ -47,7 +56,16 @@
    "sky": {
     "fov": 55
    },
-   "select": "* eps UMa"
+   "select": "* eps UMa",
+   "highlight": [
+    "* alf UMa",
+    "* bet UMa",
+    "* gam UMa",
+    "* del UMa",
+    "* eps UMa",
+    "* zet UMa",
+    "* eta UMa"
+   ]
   },
   {
    "title": "미자르 옆에 숨은 별",
@@ -55,7 +73,17 @@
    "sky": {
     "fov": 6
    },
-   "select": "* zet UMa"
+   "select": "* zet UMa",
+   "highlight": [
+    {
+     "target": "* zet UMa",
+     "radius": 0.07
+    },
+    {
+     "target": "* 80 UMa",
+     "radius": 0.07
+    }
+   ]
   },
   {
    "title": "북두칠성은 별자리가 아닙니다",
@@ -99,7 +127,15 @@
    "sky": {
     "fov": 80
    },
-   "select": "* alf UMi"
+   "select": "* alf UMi",
+   "connect": [
+    "* bet UMa",
+    "* alf UMa",
+    "* alf UMi"
+   ],
+   "highlight": [
+    "* alf UMi"
+   ]
   },
   {
    "title": "밤새 지켜보면",
@@ -143,5 +179,14 @@
    "clearSelection": true
   }
  ],
- "credits": "별 이름의 유래는 국제천문연맹(IAU) 항성명 목록을 따랐습니다."
+ "credits": "별 이름의 유래는 국제천문연맹(IAU) 항성명 목록을 따랐습니다.",
+ "months": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ]
 }

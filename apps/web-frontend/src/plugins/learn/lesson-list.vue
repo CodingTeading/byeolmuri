@@ -16,6 +16,7 @@
           <span class="badge">{{ l.level }}</span>
           <span class="ml-2">{{ $t('learn.minutes', { n: l.minutes }) }}</span>
           <span class="ml-2">{{ l.tags.join(' · ') }}</span>
+          <span v-if="!inSeason(l)" class="ml-2 offseason">{{ $t('learn.offSeason') }}</span>
         </div>
       </v-list-item-content>
     </v-list-item>
@@ -42,8 +43,9 @@ export default {
     return { lessons: [] }
   },
   methods: {
+    inSeason: function (l) { return loader.inSeason(l) },
     reload: function () {
-      this.lessons = loader.loadIndex(this.$i18n.locale).lessons
+      this.lessons = loader.sortBySeason(loader.loadIndex(this.$i18n.locale).lessons)
     }
   },
   watch: {
@@ -58,6 +60,7 @@ export default {
 <style scoped>
 .learn { height: 100%; overflow-y: auto; }
 .lesson-item { border-bottom: 1px solid rgba(255,255,255,0.06); }
+.offseason { color: #8d6e63; }
 .portal-link { color: #90caf9; text-decoration: none; }
 .portal-link:hover { text-decoration: underline; }
 .badge {

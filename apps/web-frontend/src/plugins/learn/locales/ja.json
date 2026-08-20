@@ -13,7 +13,8 @@
   "correct": "正解です",
   "wrong": "もう一度考えてみましょう",
   "notTranslated": "このレッスンはまだ翻訳されていないため、韓国語で表示しています。",
-  "allLessons": "レッスン一覧"
+  "allLessons": "レッスン一覧",
+  "offSeason": "今は見づらい"
  },
  "portal": {
   "brand": "ビョルムリ",

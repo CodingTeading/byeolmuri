@@ -36,4 +36,34 @@ export function loadLesson (lang, id) {
   return { lesson: base || null, translated: false }
 }
 
-export default { loadIndex, loadLesson }
+/*
+ * 이 레슨을 지금 볼 만한가.
+ *
+ * 레슨의 months 는 그 주제가 초저녁 하늘에 잘 놓이는 달이다.
+ * 8월에 오리온 레슨을 첫 화면에 띄우면 "밖에 나가 확인하라"는 마무리가
+ * 공허해진다. months 가 없으면 연중 아무 때나 볼 수 있다는 뜻이다.
+ *
+ * 남반구는 계절이 반대지만 지금은 다루지 않는다. 다루게 되면 관측지의
+ * 위도 부호를 보고 6개월을 밀면 된다.
+ */
+export function inSeason (lesson, date) {
+  const months = lesson && lesson.months
+  if (!months || !months.length) return true
+  const m = (date || new Date()).getMonth() + 1
+  return months.indexOf(m) !== -1
+}
+
+/*
+ * 지금 볼 수 있는 것을 앞으로 보낸다. 목록에서 빼지는 않는다.
+ * 겨울 레슨을 여름에 읽는 것을 막을 이유는 없다.
+ */
+export function sortBySeason (lessons, date) {
+  const d = date || new Date()
+  return lessons.slice().sort((a, b) => {
+    const ia = inSeason(a, d) ? 0 : 1
+    const ib = inSeason(b, d) ? 0 : 1
+    return ia - ib
+  })
+}
+
+export default { loadIndex, loadLesson, inSeason, sortBySeason }

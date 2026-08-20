@@ -13,7 +13,8 @@
   "correct": "맞았습니다",
   "wrong": "다시 생각해 봅시다",
   "notTranslated": "이 레슨은 아직 번역되지 않아 한국어로 표시합니다.",
-  "allLessons": "레슨 전체 보기"
+  "allLessons": "레슨 전체 보기",
+  "offSeason": "지금은 보기 어려움"
  },
  "portal": {
   "brand": "별무리",

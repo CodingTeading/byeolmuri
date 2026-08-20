@@ -51,11 +51,12 @@
 
 <script>
 import director from './director'
+import { createMarks } from './marks'
 import loader from './content/loader'
 
 export default {
   data: function () {
-    return { lesson: null, index: 0, answered: null, translated: true }
+    return { lesson: null, index: 0, answered: null, translated: true, marks: null, markTimer: null }
   },
   computed: {
     step: function () {
@@ -85,7 +86,26 @@ export default {
     },
     applyStep: function () {
       if (!this.step) return
-      director.apply(this.$stel, this.step)
+      const that = this
+      // 하늘을 옮긴 뒤에 표시를 그려야 한다. 표시 크기를 시야각으로 정하는데
+      // 시야가 아직 이전 단계 값이면 크기가 어긋난다.
+      director.apply(this.$stel, this.step).then(() => that.drawMarks())
+    },
+    drawMarks: function () {
+      const stel = this.$stel
+      if (!stel || !this.step) return
+      if (!this.marks) this.marks = createMarks(stel)
+      const stepAtCall = this.step
+      this.marks.set(stepAtCall, stel.core.fov * 180 / Math.PI).then(() => {
+        // 그리는 사이에 사용자가 단계를 넘겼으면 방금 그린 것은 버린다.
+        if (this.step !== stepAtCall) this.drawMarks()
+      })
+    },
+    // 사용자가 직접 확대·축소하면 원 크기도 따라가야 한다.
+    // 고정 크기로 두면 넓게 볼 때 안 보이고 확대하면 화면을 덮는다.
+    scheduleMarks: function () {
+      if (this.markTimer) clearTimeout(this.markTimer)
+      this.markTimer = setTimeout(this.drawMarks, 250)
     },
     // 앱이 뜨자마자 위치를 감지해 관측지를 덮어쓴다. 그 전에 레슨을 적용하면
     // 레슨이 지정한 위치가 지워진다. 위치가 정해질 때까지 잠깐 기다린다.
@@ -114,7 +134,8 @@ export default {
   },
   watch: {
     '$route.params.id': function (id) { if (id) this.load(id) },
-    '$i18n.locale': function () { if (this.$route.params.id) this.load(this.$route.params.id) }
+    '$i18n.locale': function () { if (this.$route.params.id) this.load(this.$route.params.id) },
+    '$store.state.stel.fov': function () { this.scheduleMarks() }
   },
   mounted: function () {
     // 사이드 패널을 열어 둔 채로 하늘이 보여야 한다.
