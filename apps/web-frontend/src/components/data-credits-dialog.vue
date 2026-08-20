@@ -9,15 +9,17 @@
 <template>
 <v-dialog scrollable max-width='600' v-model="$store.state.showDataCreditsDialog">
   <v-card v-if="$store.state.showDataCreditsDialog">
-    <v-card-title><div class="text-h5">별무리 정보 및 데이터 출처</div></v-card-title>
+    <v-card-title><div class="text-h5">{{ $t('credits.title') }}</div></v-card-title>
     <v-card-text style="height: 600px;">
-      <h3>별무리에 대하여</h3>
-      <p>별무리는 <a href="https://github.com/Stellarium/stellarium-web-engine" target="_blank" rel="noopener">Stellarium Web Engine</a>을
-      기반으로 만든 <b>비영리 오픈소스</b> 프로젝트입니다. 광고와 추적을 넣지 않습니다.</p>
-      <p>Stellarium 공식 프로젝트 및 Stellarium Labs 와는 <b>무관한 별개의 프로젝트</b>입니다.</p>
-      <p>이 사이트는 GNU AGPL v3 로 배포되며, 전체 소스 코드는 아래에서 받을 수 있습니다.<br>
+      <h3>{{ $t('credits.about') }}</h3>
+      <p><i18n path="credits.aboutEngine">
+        <a href="https://github.com/Stellarium/stellarium-web-engine" target="_blank" rel="noopener">Stellarium Web Engine</a>
+      </i18n></p>
+      <p><b>{{ $t('credits.aboutNotAffiliated') }}</b></p>
+      <p>{{ $t('credits.aboutLicense') }}<br>
       <a href="https://github.com/CodingTeading/byeolmuri" target="_blank" rel="noopener">github.com/CodingTeading/byeolmuri</a></p>
-      <p>날씨 예보는 기상청 단기예보 서비스(공공데이터포털)를 이용합니다.</p>
+      <h3>{{ $t('credits.sources') }}</h3>
+      <p class="credits-note">{{ $t('credits.verbatimNote') }}</p>
       <h3>Stars</h3>
       <p>Combination of the following catalogues:
         <ul class="data-credits">
@@ -57,13 +59,18 @@
       </p>
       <h3>Minor Planets</h3>
       <p>All data comes from the IAU Minor Planet Center <a href="https://www.minorplanetcenter.net/data" target="_blank" rel="noopener">https://www.minorplanetcenter.net/data</a>. <i>This research has made use of data and/or services provided by the International Astronomical Union's Minor Planet Center.</i></p>
+      <h3>Satellites</h3>
+      <p>Orbital elements from <a href="https://celestrak.org" target="_blank" rel="noopener">CelesTrak</a>,
+      derived from public data released by the United States Space Force.</p>
+      <h3>{{ $t('credits.weather') }}</h3>
+      <p>{{ $t('credits.weatherBody') }}</p>
       <h3>Others</h3>
       <p>Landscape images by Fabien Chereau</p>
       <p>Constellation lines by Fabien Chereau</p>
       <p>All other graphics by <a href="https://stellarium-labs.com" target="_blank" rel="noopener">Stellarium Labs</a></p>
     </v-card-text>
     <v-card-actions>
-      <v-spacer></v-spacer><v-btn text class="blue--text darken-1" @click.native="$store.state.showDataCreditsDialog = false">닫기</v-btn>
+      <v-spacer></v-spacer><v-btn text class="blue--text darken-1" @click.native="$store.state.showDataCreditsDialog = false">{{ $t('credits.close') }}</v-btn>
     </v-card-actions>
   </v-card>
 </v-dialog>
@@ -73,6 +80,7 @@
 </script>
 
 <style>
+.credits-note { color: #9e9e9e; font-size: 12px; }
 .data-credits {
   padding-left: 30px;
 }

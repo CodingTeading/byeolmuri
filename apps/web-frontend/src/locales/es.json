@@ -54,5 +54,17 @@
  "Moonlight": "Luz de luna",
  "Dawn": "Amanecer",
  "Twilight": "Crepúsculo",
- "Daylight": "Día"
+ "Daylight": "Día",
+ "credits": {
+  "title": "Sobre Byeolmuri y créditos de datos",
+  "about": "Sobre Byeolmuri",
+  "aboutEngine": "Byeolmuri es un proyecto de código abierto sin ánimo de lucro construido sobre {0}. No tiene anuncios ni rastreo.",
+  "aboutNotAffiliated": "No está afiliado al proyecto oficial Stellarium ni a Stellarium Labs.",
+  "aboutLicense": "Este sitio se distribuye bajo la GNU AGPL v3. El código fuente completo está disponible en:",
+  "sources": "Créditos de datos",
+  "verbatimNote": "Los agradecimientos siguientes se reproducen literalmente, tal como exigen las organizaciones que proporcionan los datos.",
+  "weather": "Previsión meteorológica",
+  "weatherBody": "Servicio de previsión a corto plazo de la Administración Meteorológica de Corea (data.go.kr)",
+  "close": "Cerrar"
+ }
 }

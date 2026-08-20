@@ -54,5 +54,17 @@
  "Moonlight": "月明かり",
  "Dawn": "夜明け",
  "Twilight": "薄明",
- "Daylight": "昼"
+ "Daylight": "昼",
+ "credits": {
+  "title": "ビョルムリについて・データ出典",
+  "about": "ビョルムリについて",
+  "aboutEngine": "ビョルムリは {0} を基に作られた非営利のオープンソースプロジェクトです。広告も追跡もありません。",
+  "aboutNotAffiliated": "Stellarium 公式プロジェクトおよび Stellarium Labs とは無関係の別プロジェクトです。",
+  "aboutLicense": "本サイトは GNU AGPL v3 で配布されており、ソースコード全体は以下から入手できます。",
+  "sources": "データ出典",
+  "verbatimNote": "以下の謝辞は、各データ提供元が原文どおりの掲載を求めているため、そのまま掲載しています。",
+  "weather": "天気予報",
+  "weatherBody": "韓国気象庁 短期予報サービス (data.go.kr)",
+  "close": "閉じる"
+ }
 }
