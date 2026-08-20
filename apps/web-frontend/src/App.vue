@@ -274,6 +274,10 @@ export default {
             core.planets.addDataSource({ url: process.env.BASE_URL + 'skydata/surveys/sso/moon', key: 'default' })
             core.comets.addDataSource({ url: process.env.BASE_URL + 'skydata/CometEls.txt', key: 'mpc_comets' })
             core.satellites.addDataSource({ url: process.env.BASE_URL + 'skydata/tle_satellite.jsonl.gz', key: 'jsonl/sat' })
+            // 유성우. 넣으면 복사점이 이름과 함께 검색·선택 가능해진다.
+            // 다만 엔진은 유성을 무작위 방향으로만 만든다 — 유성우의 zhr 과
+            // 복사점은 유성 생성에 쓰이지 않는다 (modules/meteors.c).
+            core.meteors.addDataSource({ url: process.env.BASE_URL + 'skydata/meteor-showers.json', key: 'json/meteor-showers' })
           }
         })
       } catch (e) {

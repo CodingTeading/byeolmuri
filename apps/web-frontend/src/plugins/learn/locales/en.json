@@ -14,14 +14,53 @@
   "wrong": "Think again",
   "notTranslated": "This lesson is not translated yet, so it is shown in Korean.",
   "allLessons": "See all lessons",
-  "offSeason": "hard to see now"
+  "offSeason": "hard to see now",
+  "track": {
+   "principle": "How it works",
+   "target": "What to find",
+   "measure": "How we know"
+  },
+  "trackDesc": {
+   "principle": "Questions you can only answer by winding time. Why the constellations change with the season, the phases of the Moon, the backward loops of the planets.",
+   "target": "Things you can actually find tonight. Star by star, from the bright ones down to clusters, nebulae and galaxies.",
+   "measure": "How people worked it out. The ways we learned to measure brightness, colour and distance."
+  },
+  "level": {
+   "intro": "Beginner",
+   "basic": "Basics",
+   "deep": "In depth"
+  }
  },
  "portal": {
   "brand": "Byeolmuri",
+  "badge": "Non-profit · No ads · Open source",
   "headline": "Learn to read the night sky",
   "lead": "Read the explanation, then check it in the sky right above. The sky on screen is the real sky where you are, so you can go outside tonight and find it yourself.",
+  "startLearning": "Browse lessons",
   "openSky": "Open the sky",
-  "lessons": "Lessons",
+  "statLessons": "lessons",
+  "statSteps": "steps",
+  "statLangs": "languages",
+  "tonight": "Visible tonight",
+  "tonightLead": "These sit well in the sky this time of year. Read one, walk outside, and it is there.",
+  "lessons": "All lessons",
+  "all": "All",
+  "search": "Search titles and tags",
+  "inSeasonOnly": "Visible now only",
+  "results": "{n} lessons",
+  "noResults": "No lesson matches that.",
+  "reset": "Clear filters",
+  "steps": "{n} steps",
+  "seasonNow": "visible now",
+  "allYear": "All year",
+  "how": "How it works",
+  "how1Title": "A real sky on the left",
+  "how1Body": "The sky on screen is the real sky above you. You can drag it, spin it and tap other stars while you read.",
+  "how2Title": "The sky moves with the text",
+  "how2Body": "The view swings around, zooms in, constellation art switches on, time runs hundreds of times faster. Like a teacher turning the dome in a planetarium.",
+  "how3Title": "It ends outdoors",
+  "how3Body": "Every lesson ends with something to do tonight with your own eyes. A lesson that ends on the screen is a planetarium, not observing.",
+  "language": "Language",
   "footNonprofit": "Byeolmuri is a non-profit open source project with no ads and no tracking.",
   "footDisclaimer": "Built on Stellarium Web Engine. Not affiliated with the official Stellarium project."
  }

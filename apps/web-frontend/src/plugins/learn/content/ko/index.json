@@ -1,17 +1,20 @@
 {
- "version": 1,
+ "version": 2,
  "lessons": [
   {
    "id": "big-dipper",
    "title": "북두칠성은 어디일까?",
    "subtitle": "밤하늘에서 가장 찾기 쉬운 일곱 별, 그리고 그 별들이 알려주는 것",
    "minutes": 8,
-   "level": "입문",
+   "level": "intro",
+   "track": "target",
    "tags": [
     "별자리",
     "북쪽 하늘",
     "북극성"
    ],
+   "steps": 9,
+   "updated": "2026-08-20",
    "months": [
     3,
     4,
@@ -21,6 +24,281 @@
     8,
     9
    ]
+  },
+  {
+   "id": "seasons",
+   "title": "왜 계절마다 별자리가 바뀔까?",
+   "subtitle": "같은 시각 같은 남쪽 하늘을 석 달 간격으로 세워 놓고 봅니다",
+   "minutes": 9,
+   "level": "intro",
+   "track": "principle",
+   "tags": [
+    "계절",
+    "지구의 공전",
+    "황도 12궁"
+   ],
+   "steps": 9,
+   "updated": "2026-08-20"
+  },
+  {
+   "id": "moon-phases",
+   "title": "달은 왜 모양이 변할까?",
+   "subtitle": "위상과 뜨는 시각은 사실 같은 이야기입니다",
+   "minutes": 10,
+   "level": "intro",
+   "track": "principle",
+   "tags": [
+    "달",
+    "위상",
+    "음력",
+    "28수"
+   ],
+   "steps": 9,
+   "updated": "2026-08-20"
+  },
+  {
+   "id": "summer-triangle",
+   "title": "여름 대삼각형과 은하수",
+   "subtitle": "견우와 직녀 사이에 정말 강이 흐르는지 확인합니다",
+   "minutes": 10,
+   "level": "intro",
+   "track": "target",
+   "tags": [
+    "여름",
+    "대삼각형",
+    "은하수",
+    "견우직녀"
+   ],
+   "steps": 9,
+   "updated": "2026-08-20",
+   "months": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "star-brightness",
+   "title": "별의 밝기란 무엇인가",
+   "subtitle": "가장 밝은 별 순위, 그리고 그 순위가 속이는 것",
+   "minutes": 11,
+   "level": "basic",
+   "track": "measure",
+   "tags": [
+    "등급",
+    "밝기",
+    "노인성",
+    "관측 조건"
+   ],
+   "steps": 8,
+   "updated": "2026-08-20"
+  },
+  {
+   "id": "star-colors",
+   "title": "별의 색은 온도다",
+   "subtitle": "붉은 별이 가장 차갑습니다",
+   "minutes": 9,
+   "level": "basic",
+   "track": "measure",
+   "tags": [
+    "색",
+    "온도",
+    "분광형",
+    "알비레오"
+   ],
+   "steps": 8,
+   "updated": "2026-08-20"
+  },
+  {
+   "id": "andromeda",
+   "title": "안드로메다은하 — 맨눈으로 보는 가장 먼 것",
+   "subtitle": "밝은 별을 하나씩 짚어 가며 250만 광년 밖을 찾아냅니다",
+   "minutes": 11,
+   "level": "basic",
+   "track": "target",
+   "tags": [
+    "가을",
+    "은하",
+    "안드로메다",
+    "별 짚어가기"
+   ],
+   "steps": 9,
+   "updated": "2026-08-20",
+   "months": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    1
+   ]
+  },
+  {
+   "id": "orion-nebula",
+   "title": "오리온성운 — 별이 태어나는 곳",
+   "subtitle": "겨울 하늘 최고의 대상, 그리고 우리 태양의 고향 풍경",
+   "minutes": 10,
+   "level": "intro",
+   "track": "target",
+   "tags": [
+    "겨울",
+    "성운",
+    "오리온",
+    "별의 탄생"
+   ],
+   "steps": 8,
+   "updated": "2026-08-20",
+   "months": [
+    11,
+    12,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "pleiades",
+   "title": "좀생이별 — 별 여섯 개인가 일곱 개인가",
+   "subtitle": "몇 개가 보이는지로 오늘 밤 하늘의 어둡기를 잽니다",
+   "minutes": 9,
+   "level": "intro",
+   "track": "target",
+   "tags": [
+    "겨울",
+    "산개성단",
+    "좀생이별",
+    "세시풍속"
+   ],
+   "steps": 7,
+   "updated": "2026-08-20",
+   "months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "latitude-sky",
+   "title": "위도가 하늘을 바꾼다",
+   "subtitle": "관측지를 적도와 북극과 남반구로 옮겨 가며 비교합니다",
+   "minutes": 11,
+   "level": "deep",
+   "track": "principle",
+   "tags": [
+    "위도",
+    "북극성",
+    "일주운동",
+    "남반구"
+   ],
+   "steps": 8,
+   "updated": "2026-08-20"
+  },
+  {
+   "id": "retrograde",
+   "title": "행성은 왜 거꾸로 갈까",
+   "subtitle": "시간을 몇 달치 돌려 화성이 하늘에 고리를 그리는 것을 봅니다",
+   "minutes": 11,
+   "level": "deep",
+   "track": "principle",
+   "tags": [
+    "행성",
+    "역행",
+    "충",
+    "천동설"
+   ],
+   "steps": 8,
+   "updated": "2026-08-20"
+  },
+  {
+   "id": "eclipses",
+   "title": "일식과 월식",
+   "subtitle": "왜 매달 일어나지 않는지, 그리고 다음은 언제인지",
+   "minutes": 13,
+   "level": "basic",
+   "track": "principle",
+   "tags": [
+    "일식",
+    "월식",
+    "달의 궤도",
+    "관측 계획"
+   ],
+   "steps": 9,
+   "updated": "2026-08-20"
+  },
+  {
+   "id": "polaris-changes",
+   "title": "북극성은 바뀐다",
+   "subtitle": "피라미드를 세우던 사람들의 북극성은 다른 별이었습니다",
+   "minutes": 11,
+   "level": "deep",
+   "track": "principle",
+   "tags": [
+    "세차운동",
+    "북극성",
+    "천구 북극",
+    "시간여행"
+   ],
+   "steps": 10,
+   "updated": "2026-08-20"
+  },
+  {
+   "id": "spring-arc",
+   "title": "봄철 대곡선 — 국자 손잡이를 따라가면",
+   "subtitle": "북두칠성에서 시작해 봄 하늘을 가로지르는 선 하나",
+   "minutes": 10,
+   "level": "intro",
+   "track": "target",
+   "tags": [
+    "봄",
+    "아크투루스",
+    "스피카",
+    "별 짚어가기"
+   ],
+   "steps": 9,
+   "updated": "2026-08-20",
+   "months": [
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "star-distance",
+   "title": "별까지 거리는 어떻게 재나",
+   "subtitle": "2천 년 동안 아무도 재지 못했던 것",
+   "minutes": 11,
+   "level": "deep",
+   "track": "measure",
+   "tags": [
+    "거리",
+    "시차",
+    "광년",
+    "파섹"
+   ],
+   "steps": 9,
+   "updated": "2026-08-20"
+  },
+  {
+   "id": "twilight",
+   "title": "별은 해가 지고 언제부터 보이나",
+   "subtitle": "박명 세 단계를 눈으로 건너가 봅니다",
+   "minutes": 9,
+   "level": "intro",
+   "track": "principle",
+   "tags": [
+    "박명",
+    "관측 계획",
+    "일몰",
+    "눈의 적응"
+   ],
+   "steps": 8,
+   "updated": "2026-08-20"
   }
  ]
 }

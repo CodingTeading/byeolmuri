@@ -1,0 +1,137 @@
+{
+ "_note": "IAU 유성우 목록에서 한국에서 볼 만한 주요 11개. 복사점은 극대일 기준, speed 는 km/s, zhr 은 이상적 조건 기준.",
+ "showers": [
+  {
+   "iau_code": "QUA",
+   "iau_number": 10,
+   "designation": "사분의자리 유성우",
+   "start": "12-28",
+   "peak": "01-03",
+   "finish": "01-12",
+   "ra": 230.1,
+   "dec": 48.5,
+   "speed": 41,
+   "zhr": 110
+  },
+  {
+   "iau_code": "LYR",
+   "iau_number": 6,
+   "designation": "거문고자리 유성우",
+   "start": "04-14",
+   "peak": "04-22",
+   "finish": "04-30",
+   "ra": 271.4,
+   "dec": 33.6,
+   "speed": 49,
+   "zhr": 18
+  },
+  {
+   "iau_code": "ETA",
+   "iau_number": 31,
+   "designation": "물병자리 에타 유성우",
+   "start": "04-19",
+   "peak": "05-06",
+   "finish": "05-28",
+   "ra": 338.0,
+   "dec": -1.0,
+   "speed": 66,
+   "zhr": 50
+  },
+  {
+   "iau_code": "SDA",
+   "iau_number": 5,
+   "designation": "물병자리 델타 남 유성우",
+   "start": "07-12",
+   "peak": "07-30",
+   "finish": "08-23",
+   "ra": 340.0,
+   "dec": -16.4,
+   "speed": 41,
+   "zhr": 25
+  },
+  {
+   "iau_code": "PER",
+   "iau_number": 7,
+   "designation": "페르세우스자리 유성우",
+   "start": "07-17",
+   "peak": "08-12",
+   "finish": "08-24",
+   "ra": 48.2,
+   "dec": 58.1,
+   "speed": 59,
+   "zhr": 100
+  },
+  {
+   "iau_code": "ORI",
+   "iau_number": 8,
+   "designation": "오리온자리 유성우",
+   "start": "10-02",
+   "peak": "10-21",
+   "finish": "11-07",
+   "ra": 95.2,
+   "dec": 15.8,
+   "speed": 66,
+   "zhr": 20
+  },
+  {
+   "iau_code": "STA",
+   "iau_number": 2,
+   "designation": "황소자리 남 유성우",
+   "start": "09-10",
+   "peak": "11-05",
+   "finish": "11-20",
+   "ra": 52.1,
+   "dec": 15.1,
+   "speed": 27,
+   "zhr": 5
+  },
+  {
+   "iau_code": "NTA",
+   "iau_number": 17,
+   "designation": "황소자리 북 유성우",
+   "start": "10-20",
+   "peak": "11-12",
+   "finish": "12-10",
+   "ra": 58.3,
+   "dec": 22.2,
+   "speed": 29,
+   "zhr": 5
+  },
+  {
+   "iau_code": "LEO",
+   "iau_number": 13,
+   "designation": "사자자리 유성우",
+   "start": "11-06",
+   "peak": "11-17",
+   "finish": "11-30",
+   "ra": 152.3,
+   "dec": 21.8,
+   "speed": 71,
+   "zhr": 15
+  },
+  {
+   "iau_code": "GEM",
+   "iau_number": 4,
+   "designation": "쌍둥이자리 유성우",
+   "start": "12-04",
+   "peak": "12-14",
+   "finish": "12-17",
+   "ra": 112.3,
+   "dec": 32.5,
+   "speed": 35,
+   "zhr": 150
+  },
+  {
+   "iau_code": "URS",
+   "iau_number": 15,
+   "designation": "작은곰자리 유성우",
+   "start": "12-17",
+   "peak": "12-22",
+   "finish": "12-26",
+   "ra": 217.0,
+   "dec": 75.8,
+   "speed": 33,
+   "zhr": 10
+  }
+ ]
+}

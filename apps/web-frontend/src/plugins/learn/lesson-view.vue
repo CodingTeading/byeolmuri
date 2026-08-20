@@ -89,7 +89,8 @@ export default {
       const that = this
       // 하늘을 옮긴 뒤에 표시를 그려야 한다. 표시 크기를 시야각으로 정하는데
       // 시야가 아직 이전 단계 값이면 크기가 어긋난다.
-      director.apply(this.$stel, this.step).then(() => that.drawMarks())
+      director.apply(this.$stel, this.step, this.$store.state.currentLocation)
+        .then(() => that.drawMarks())
     },
     drawMarks: function () {
       const stel = this.$stel
@@ -107,16 +108,18 @@ export default {
       if (this.markTimer) clearTimeout(this.markTimer)
       this.markTimer = setTimeout(this.drawMarks, 250)
     },
-    // 앱이 뜨자마자 위치를 감지해 관측지를 덮어쓴다. 그 전에 레슨을 적용하면
-    // 레슨이 지정한 위치가 지워진다. 위치가 정해질 때까지 잠깐 기다린다.
-    waitForLocation: function (timeoutMs) {
+    // 앱은 뜨면서 관측지를 정하고, 그다음 "해가 진 직후"로 시각을 옮긴다.
+    // 그 전에 레슨을 적용하면 레슨이 지정한 위치도 시각도 덮어쓰인다.
+    // currentLocation 만 기다리면 부족하다. 시각을 옮기는 것은 그 뒤이기 때문이다.
+    // 앱은 두 가지를 다 마친 뒤에야 initComplete 를 올린다. 그것을 기다린다.
+    waitForApp: function (timeoutMs) {
       const store = this.$store
-      if (store.state.currentLocation) return Promise.resolve()
+      if (store.state.initComplete) return Promise.resolve()
       return new Promise(resolve => {
-        const deadline = Date.now() + (timeoutMs || 5000)
+        const deadline = Date.now() + (timeoutMs || 8000)
         const check = () => {
-          if (store.state.currentLocation || Date.now() > deadline) { resolve(); return }
-          setTimeout(check, 150)
+          if (store.state.initComplete || Date.now() > deadline) { resolve(); return }
+          setTimeout(check, 100)
         }
         check()
       })
@@ -128,7 +131,7 @@ export default {
       this.index = 0
       this.answered = null
       if (this.lesson) {
-        this.waitForLocation().then(() => this.applyStep())
+        this.waitForApp().then(() => this.applyStep())
       }
     }
   },
@@ -144,7 +147,8 @@ export default {
   },
   beforeDestroy: function () {
     // 레슨이 바꿔 놓은 하늘을 평소 상태로 되돌린다.
-    director.reset(this.$stel)
+    // 관측지는 앱이 아는 값으로 되돌린다. 자세한 것은 director.reset 참고.
+    director.reset(this.$stel, this.$store.state.currentLocation)
   }
 }
 </script>

@@ -2,7 +2,7 @@
  "learn": {
   "tab": "Aprender",
   "title": "Aprender",
-  "lead": "Léelo y compruébalo en el cielo. El cielo acompaña la explicación.",
+  "lead": "Léelo y compruébalo en el cielo. El cielo sigue la explicación.",
   "loading": "Cargando la lección…",
   "empty": "Todavía no hay lecciones.",
   "toList": "Volver a la lista",
@@ -12,16 +12,55 @@
   "minutes": "{n} min",
   "correct": "Correcto",
   "wrong": "Piénsalo otra vez",
-  "notTranslated": "Esta lección aún no está traducida, se muestra en coreano.",
+  "notTranslated": "Esta lección aún no está traducida, por eso se muestra en coreano.",
   "allLessons": "Ver todas las lecciones",
-  "offSeason": "difícil de ver ahora"
+  "offSeason": "difícil de ver ahora",
+  "track": {
+   "principle": "Cómo funciona",
+   "target": "Qué buscar",
+   "measure": "Cómo lo sabemos"
+  },
+  "trackDesc": {
+   "principle": "Preguntas que solo se responden moviendo el tiempo: por qué cambian las constelaciones con la estación, las fases de la Luna, el movimiento retrógrado de los planetas.",
+   "target": "Cosas que puedes encontrar esta misma noche. Estrella a estrella, desde las más brillantes hasta cúmulos, nebulosas y galaxias.",
+   "measure": "Cómo lo averiguamos. La forma en que aprendimos a medir brillo, color y distancia."
+  },
+  "level": {
+   "intro": "Inicial",
+   "basic": "Básico",
+   "deep": "Avanzado"
+  }
  },
  "portal": {
   "brand": "Byeolmuri",
+  "badge": "Sin ánimo de lucro · Sin anuncios · Código abierto",
   "headline": "Aprende a leer el cielo nocturno",
   "lead": "Lee la explicación y compruébala en el cielo que tienes encima. El cielo de la pantalla es el cielo real de donde estás, así que esta noche puedes salir y encontrarlo.",
+  "startLearning": "Ver lecciones",
   "openSky": "Abrir el cielo",
-  "lessons": "Lecciones",
+  "statLessons": "lecciones",
+  "statSteps": "pasos",
+  "statLangs": "idiomas",
+  "tonight": "Visible esta noche",
+  "tonightLead": "Estos temas caen bien en el cielo de esta época. Léelos, sal fuera y ahí están.",
+  "lessons": "Todas las lecciones",
+  "all": "Todas",
+  "search": "Buscar por título o etiqueta",
+  "inSeasonOnly": "Solo lo visible ahora",
+  "results": "{n} lecciones",
+  "noResults": "Ninguna lección coincide.",
+  "reset": "Quitar filtros",
+  "steps": "{n} pasos",
+  "seasonNow": "visible ahora",
+  "allYear": "Todo el año",
+  "how": "Cómo se aprende",
+  "how1Title": "Un cielo real a la izquierda",
+  "how1Body": "El cielo de la pantalla es el cielo real sobre ti. Puedes girarlo y tocar otras estrellas mientras lees.",
+  "how2Title": "El cielo se mueve con el texto",
+  "how2Body": "La vista gira, se acerca, se encienden las figuras de las constelaciones y el tiempo corre cientos de veces más rápido. Como un profesor girando la cúpula de un planetario.",
+  "how3Title": "Termina al aire libre",
+  "how3Body": "Cada lección acaba con algo que hacer esta noche con tus propios ojos. Una lección que acaba en la pantalla es un planetario, no observación.",
+  "language": "Idioma",
   "footNonprofit": "Byeolmuri es un proyecto de código abierto sin ánimo de lucro, sin anuncios ni rastreo.",
   "footDisclaimer": "Construido sobre Stellarium Web Engine. No está afiliado al proyecto oficial Stellarium."
  }

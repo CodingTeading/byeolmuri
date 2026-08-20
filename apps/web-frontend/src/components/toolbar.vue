@@ -10,8 +10,10 @@
   <div id="toolbar-image">
     <v-toolbar class="transparent" dense>
       <v-app-bar-nav-icon @click="toggleNavigationDrawer"></v-app-bar-nav-icon>
-      <img class="tbtitle hidden-xs-only" id="stellarium-web-toolbar-logo" src="@/assets/images/logo.svg" width="30" height="30" alt="별무리 로고"/>
-      <span class="tbtitle hidden-sm-and-down">별무리</span>
+      <router-link :to="$lpath('/')" class="home-link" :title="$t('portal.brand')">
+        <img class="tbtitle hidden-xs-only" id="stellarium-web-toolbar-logo" src="@/assets/images/logo.svg" width="30" height="30" alt="별무리 로고"/>
+        <span class="tbtitle hidden-sm-and-down">{{ $t('portal.brand') }}</span>
+      </router-link>
       <v-spacer></v-spacer>
       <target-search></target-search>
       <v-spacer></v-spacer>
@@ -50,6 +52,8 @@ export default {
 </script>
 
 <style>
+/* 로고를 누르면 포털(홈)로 간다. */
+.home-link { display: inline-flex; align-items: center; text-decoration: none; color: inherit; }
 #toolbar-image {
   background: url("../assets/images/header.png") center;
   background-position-x: 55px;

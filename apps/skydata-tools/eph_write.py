@@ -14,6 +14,8 @@ import zlib
 
 EPH_RAD = 1 << 16
 EPH_VMAG = 3 << 16
+EPH_ARCSEC_ = 5 << 16 | 1 | 2 | 4     # 항성 목록이 쓰는 옛 단위
+EPH_RAD_PER_YEAR = 6 << 16
 
 # 기존 타일에서 그대로 읽어온 DSO 컬럼 배치. 순서와 오프셋을 바꾸지 않는다.
 DSO_COLUMNS = [
@@ -30,6 +32,21 @@ DSO_COLUMNS = [
     ('ids',  's', 0,        128, 256),
 ]
 DSO_ROW_SIZE = 384
+
+# 항성 타일의 컬럼 배치. 역시 기존 타일에서 읽어온 그대로다.
+STAR_COLUMNS = [
+    ('hip',  'i', 0,                0,   4),
+    ('hd',   'i', 0,                4,   4),
+    ('vmag', 'f', EPH_VMAG,         8,   4),
+    ('ra',   'f', EPH_RAD,          12,  4),
+    ('de',   'f', EPH_RAD,          16,  4),
+    ('plx',  'f', EPH_ARCSEC_,      20,  4),
+    ('pra',  'f', EPH_RAD_PER_YEAR, 24,  4),
+    ('pde',  'f', EPH_RAD_PER_YEAR, 28,  4),
+    ('bv',   'f', 0,                32,  4),
+    ('ids',  's', 0,                36,  256),
+]
+STAR_ROW_SIZE = 292
 
 
 def _shuffle(data, row_size, n_row):
@@ -60,8 +77,14 @@ def _pack_row(row, columns, row_size):
 
 
 def build_tile(rows, order, pix, chunk_type=b'DSO ',
-               columns=DSO_COLUMNS, row_size=DSO_ROW_SIZE):
-    """타일 하나를 .eph 파일 바이트로 만든다."""
+               columns=DSO_COLUMNS, row_size=DSO_ROW_SIZE,
+               extra_chunks=()):
+    """타일 하나를 .eph 파일 바이트로 만든다.
+
+    extra_chunks 는 데이터 청크 앞에 그대로 실어 보낼 (type, bytes) 목록이다.
+    항성 타일에는 children_mask 를 담은 JSON 청크가 붙어 있는데, 이것을
+    잃으면 엔진이 하위 타일이 있는지 몰라 더 어두운 별을 받아오지 않는다.
+    """
     n_row = len(rows)
     nuniq = 4 * (1 << (2 * order)) + pix
 
@@ -82,6 +105,11 @@ def build_tile(rows, order, pix, chunk_type=b'DSO ',
 
     out = bytearray(b'EPHE')
     out += struct.pack('<i', 2)           # 파일 버전
+    for ctype, cdata in extra_chunks:
+        out += ctype
+        out += struct.pack('<i', len(cdata))
+        out += cdata
+        out += struct.pack('<I', 0)
     out += chunk_type
     out += struct.pack('<i', len(body))
     out += body

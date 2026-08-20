@@ -13,7 +13,8 @@
         <v-list-item-title class="white--text">{{ l.title }}</v-list-item-title>
         <v-list-item-subtitle class="text-caption">{{ l.subtitle }}</v-list-item-subtitle>
         <div class="text-caption grey--text mt-1">
-          <span class="badge">{{ l.level }}</span>
+          <span class="badge" :class="'t-' + l.track">{{ $t('learn.track.' + l.track) }}</span>
+          <span class="ml-2">{{ $t('learn.level.' + l.level) }}</span>
           <span class="ml-2">{{ $t('learn.minutes', { n: l.minutes }) }}</span>
           <span class="ml-2">{{ l.tags.join(' · ') }}</span>
           <span v-if="!inSeason(l)" class="ml-2 offseason">{{ $t('learn.offSeason') }}</span>
@@ -26,9 +27,9 @@
     {{ $t('learn.empty') }}
   </div>
 
-  <!-- 하늘을 보다가 목록 전체를 훑고 싶을 때. 포털은 엔진 없이 뜬다. -->
+  <!-- 하늘을 보다가 목록 전체를 훑고 싶을 때. 포털(첫 화면)은 엔진 없이 뜬다. -->
   <div class="pa-3">
-    <router-link :to="$lpath('/learn')" class="text-caption portal-link">
+    <router-link :to="$lpath('/')" class="text-caption portal-link">
       {{ $t('learn.allLessons') }} →
     </router-link>
   </div>
@@ -64,7 +65,11 @@ export default {
 .portal-link { color: #90caf9; text-decoration: none; }
 .portal-link:hover { text-decoration: underline; }
 .badge {
-  background: rgba(100,181,246,0.2); color: #90caf9;
+  background: rgba(255,255,255,0.08); color: #b0bec5;
   padding: 1px 6px; border-radius: 3px; font-size: 11px;
 }
+/* 갈래 색은 포털과 같게 쓴다. */
+.badge.t-principle { background: rgba(167,139,250,0.18); color: #c4b5fd; }
+.badge.t-target { background: rgba(94,234,212,0.16); color: #5eead4; }
+.badge.t-measure { background: rgba(251,191,36,0.16); color: #fcd34d; }
 </style>

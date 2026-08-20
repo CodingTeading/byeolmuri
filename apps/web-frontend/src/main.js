@@ -104,10 +104,15 @@ Vue.prototype.$lpath = function (path) {
 // Setup routes for the app
 Vue.use(Router)
 // Base routes
+//
+// 하늘(엔진)은 /sky 에 있다. 최상위 주소 / 는 포털이 가져간다(learn 플러그인).
+// 첫 화면에서 3MB WASM 을 내려받지 않아야 검색엔진과 느린 회선에서 살아남고,
+// "밤하늘을 읽는 법을 배우는 곳"이라는 정체성이 주소에 드러난다.
+// 하늘로 들어오는 문은 셋이다 — /sky, /skysource/<이름>, /p/<탭>.
 let routes = [
   {
     // The main page
-    path: '/',
+    path: '/sky',
     name: 'App',
     component: App,
     children: []
@@ -115,8 +120,7 @@ let routes = [
   {
     // Main page, but centered on the passed sky source name
     path: '/skysource/:name',
-    component: App,
-    alias: '/'
+    component: App
   }
 ]
 // Routes exposed by plugins
