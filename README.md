@@ -54,11 +54,24 @@ NODE_OPTIONS=--openssl-legacy-provider yarn dev   # http://localhost:8080
 | [docs/planner.md](docs/planner.md) | 관측 플래너 계산과 기상청 연동 |
 | [apps/search-index/README.md](apps/search-index/README.md) | 정적 검색 색인 |
 | [apps/web-frontend/src/plugins/learn/README.md](apps/web-frontend/src/plugins/learn/README.md) | **레슨 쓰는 법** |
+| [docs/handoff-content.md](docs/handoff-content.md) | 레슨·포털 작업 인수인계 |
 
 ## 레슨 추가
 
 코드를 건드릴 필요가 없습니다. `content/<lang>/<id>.json` 을 쓰고 목록에
 한 줄 넣으면 됩니다. 형식은 위 학습 플러그인 문서에 있습니다.
+
+## 커밋 계정
+
+이 저장소만 `CodingTeading` 계정을 씁니다. `git config --local` 로 걸려 있어
+다른 프로젝트에는 영향이 없습니다. **전역 설정을 바꾸지 마세요.**
+
+```
+git 전역      송현종 / hopse31c@gmail.com   ← 건드리지 않는다
+이 저장소만    CodingTeading
+푸시          SSH 별칭 github-codingteading
+gh 활성 계정   hopse31c
+```
 
 ## 라이선스와 출처
 
