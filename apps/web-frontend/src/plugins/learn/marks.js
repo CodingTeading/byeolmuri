@@ -155,20 +155,6 @@ export async function buildFeatures (stel, step, fovDeg) {
     return Promise.resolve(null)
   }
 
-  for (const item of step.highlight || []) {
-    const pos = await resolve(item)
-    if (!pos) {
-      console.warn('[learn] 표시할 천체를 찾지 못했습니다:', item)
-      continue
-    }
-    const radius = (item && item.radius) || autoRadius
-    features.push({
-      type: 'Feature',
-      properties: {},
-      geometry: { type: 'Polygon', coordinates: [circleRing(pos[0], pos[1], radius)] }
-    })
-  }
-
   const legs = []
   const conn = step.connect || []
   if (conn.length && Array.isArray(conn[0])) {
@@ -176,18 +162,42 @@ export async function buildFeatures (stel, step, fovDeg) {
   } else if (conn.length >= 2) {
     legs.push(conn)
   }
-  for (const leg of legs) {
-    const pts = (await Promise.all(leg.map(resolve))).filter(Boolean)
+
+  // 대상을 한꺼번에 찾는다. 하나씩 기다리면 못 찾는 천체가 여럿일 때
+  // 재시도 시간이 그 수만큼 곱해진다. 일곱 별짜리 단계에서 40초 넘게
+  // 멈추는 일이 실제로 있었다.
+  const highlights = step.highlight || []
+  const [hlPos, legPos] = await Promise.all([
+    Promise.all(highlights.map(resolve)),
+    Promise.all(legs.map(leg => Promise.all(leg.map(resolve))))
+  ])
+
+  highlights.forEach((item, i) => {
+    const pos = hlPos[i]
+    if (!pos) {
+      console.warn('[learn] 표시할 천체를 찾지 못했습니다:', item)
+      return
+    }
+    const radius = (item && item.radius) || autoRadius
+    features.push({
+      type: 'Feature',
+      properties: {},
+      geometry: { type: 'Polygon', coordinates: [circleRing(pos[0], pos[1], radius)] }
+    })
+  })
+
+  legs.forEach((leg, i) => {
+    const pts = legPos[i].filter(Boolean)
     if (pts.length < 2) {
       console.warn('[learn] 이을 천체가 부족합니다:', leg)
-      continue
+      return
     }
     features.push({
       type: 'Feature',
       properties: {},
       geometry: { type: 'Polygon', coordinates: [pathRibbon(pts, lineWidth)] }
     })
-  }
+  })
   return features
 }
 
