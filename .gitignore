@@ -24,3 +24,4 @@ __pycache__/
 /_engine/
 /deploy.log
 /.wrangler/
+/apps/skydata-tools/cache/
