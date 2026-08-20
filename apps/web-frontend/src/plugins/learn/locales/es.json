@@ -12,6 +12,16 @@
   "minutes": "{n} min",
   "correct": "Correcto",
   "wrong": "Piénsalo otra vez",
-  "notTranslated": "Esta lección aún no está traducida, se muestra en coreano."
+  "notTranslated": "Esta lección aún no está traducida, se muestra en coreano.",
+  "allLessons": "Ver todas las lecciones"
+ },
+ "portal": {
+  "brand": "Byeolmuri",
+  "headline": "Aprende a leer el cielo nocturno",
+  "lead": "Lee la explicación y compruébala en el cielo que tienes encima. El cielo de la pantalla es el cielo real de donde estás, así que esta noche puedes salir y encontrarlo.",
+  "openSky": "Abrir el cielo",
+  "lessons": "Lecciones",
+  "footNonprofit": "Byeolmuri es un proyecto de código abierto sin ánimo de lucro, sin anuncios ni rastreo.",
+  "footDisclaimer": "Construido sobre Stellarium Web Engine. No está afiliado al proyecto oficial Stellarium."
  }
 }

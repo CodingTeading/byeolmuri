@@ -24,6 +24,13 @@
   <div v-if="!lessons.length" class="pa-3 text-caption grey--text">
     {{ $t('learn.empty') }}
   </div>
+
+  <!-- 하늘을 보다가 목록 전체를 훑고 싶을 때. 포털은 엔진 없이 뜬다. -->
+  <div class="pa-3">
+    <router-link :to="$lpath('/learn')" class="text-caption portal-link">
+      {{ $t('learn.allLessons') }} →
+    </router-link>
+  </div>
 </div>
 </template>
 
@@ -51,6 +58,8 @@ export default {
 <style scoped>
 .learn { height: 100%; overflow-y: auto; }
 .lesson-item { border-bottom: 1px solid rgba(255,255,255,0.06); }
+.portal-link { color: #90caf9; text-decoration: none; }
+.portal-link:hover { text-decoration: underline; }
 .badge {
   background: rgba(100,181,246,0.2); color: #90caf9;
   padding: 1px 6px; border-radius: 3px; font-size: 11px;

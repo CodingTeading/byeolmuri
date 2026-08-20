@@ -9,9 +9,19 @@
 
 import LessonList from './lesson-list.vue'
 import LessonView from './lesson-view.vue'
+import Portal from './portal.vue'
 
 export default {
   name: 'learn',
+  // 최상위 라우트는 App 밖에서 그려진다. 즉 엔진(WASM)을 띄우지 않는다.
+  // 목록만 보러 온 사람에게 3MB 를 내려받게 할 이유가 없고, 검색엔진에도
+  // 가볍게 읽힌다. 레슨을 고르면 그때 하늘이 있는 쪽으로 넘어간다.
+  routes: [
+    {
+      path: '/learn',
+      component: Portal
+    }
+  ],
   panelRoutes: [
     {
       path: '/p/learn',

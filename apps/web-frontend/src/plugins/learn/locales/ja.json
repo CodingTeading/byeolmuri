@@ -12,6 +12,16 @@
   "minutes": "{n}分",
   "correct": "正解です",
   "wrong": "もう一度考えてみましょう",
-  "notTranslated": "このレッスンはまだ翻訳されていないため、韓国語で表示しています。"
+  "notTranslated": "このレッスンはまだ翻訳されていないため、韓国語で表示しています。",
+  "allLessons": "レッスン一覧"
+ },
+ "portal": {
+  "brand": "ビョルムリ",
+  "headline": "夜空の読み方を学ぶ",
+  "lead": "説明を読んで、そのまま頭上の空で確かめます。画面の空は今いる場所の実際の空なので、今夜そのまま外で探せます。",
+  "openSky": "空を開く",
+  "lessons": "レッスン",
+  "footNonprofit": "ビョルムリは広告も追跡もない非営利のオープンソースプロジェクトです。",
+  "footDisclaimer": "Stellarium Web Engine を基に作られており、Stellarium 公式プロジェクトとは無関係の別プロジェクトです。"
  }
 }

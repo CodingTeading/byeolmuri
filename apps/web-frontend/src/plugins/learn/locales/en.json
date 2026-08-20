@@ -12,6 +12,16 @@
   "minutes": "{n} min",
   "correct": "Correct",
   "wrong": "Think again",
-  "notTranslated": "This lesson is not translated yet, so it is shown in Korean."
+  "notTranslated": "This lesson is not translated yet, so it is shown in Korean.",
+  "allLessons": "See all lessons"
+ },
+ "portal": {
+  "brand": "Byeolmuri",
+  "headline": "Learn to read the night sky",
+  "lead": "Read the explanation, then check it in the sky right above. The sky on screen is the real sky where you are, so you can go outside tonight and find it yourself.",
+  "openSky": "Open the sky",
+  "lessons": "Lessons",
+  "footNonprofit": "Byeolmuri is a non-profit open source project with no ads and no tracking.",
+  "footDisclaimer": "Built on Stellarium Web Engine. Not affiliated with the official Stellarium project."
  }
 }
