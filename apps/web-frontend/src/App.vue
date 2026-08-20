@@ -344,6 +344,15 @@ html, body, #app {
   padding-right: 400px;
 }
 
+/* 좁은 화면에서는 패널이 아래로 내려가므로 하늘도 아래를 비운다.
+   observing-panel.vue 가 --byeolmuri-sheet-h 를 정한다. */
+@media (max-width: 760px) {
+  .right_panel {
+    padding-right: 0;
+    padding-bottom: var(--byeolmuri-sheet-h, 58vh);
+  }
+}
+
 .v-btn {
   margin-left: 8px;
   margin-right: 8px;
