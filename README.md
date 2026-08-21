@@ -55,6 +55,12 @@ NODE_OPTIONS=--openssl-legacy-provider yarn dev   # http://localhost:8080
 | [apps/search-index/README.md](apps/search-index/README.md) | 정적 검색 색인 |
 | [apps/web-frontend/src/plugins/learn/README.md](apps/web-frontend/src/plugins/learn/README.md) | **레슨 쓰는 법** |
 | [docs/handoff-content.md](docs/handoff-content.md) | 레슨·포털 작업 인수인계 |
+| [docs/lesson-review.md](docs/lesson-review.md) | 레슨 검수 의뢰서 — 사실·기능·오탈자 점검 |
+| [docs/lesson-review-result.md](docs/lesson-review-result.md) | 그 검수 결과 (2026-08, 반영 완료) |
+| [docs/handoff-i18n.md](docs/handoff-i18n.md) | **레슨 번역 인수인계** — 다음 다국어 작업 |
+| [docs/i18n-glossary.md](docs/i18n-glossary.md) | 태그 대역표와 언어별 문체 규칙 |
+| [docs/i18n-review.md](docs/i18n-review.md) | **다국어판 검수 의뢰서** — en·ja·es 대조와 사실 확인 |
+| [docs/i18n-review-result.md](docs/i18n-review-result.md) | 그 검수 결과 (2026-08, 반영 완료) |
 
 ## 레슨 추가
 

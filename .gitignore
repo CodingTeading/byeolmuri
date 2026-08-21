@@ -25,3 +25,4 @@ __pycache__/
 /deploy.log
 /.wrangler/
 /apps/skydata-tools/cache/
+/apps/web-frontend/.claude/
