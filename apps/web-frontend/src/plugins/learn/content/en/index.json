@@ -1,0 +1,352 @@
+{
+ "version": 2,
+ "lessons": [
+  {
+   "id": "big-dipper",
+   "title": "Where is the Big Dipper?",
+   "subtitle": "The seven stars that are easiest to find in the night sky, and what they can tell you",
+   "minutes": 8,
+   "level": "intro",
+   "track": "target",
+   "tags": [
+    "constellation",
+    "northern sky",
+    "Polaris"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21",
+   "months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "seasons",
+   "title": "Why do the constellations change with the season?",
+   "subtitle": "The same southern sky at the same hour, set side by side three months apart",
+   "minutes": 9,
+   "level": "intro",
+   "track": "principle",
+   "tags": [
+    "seasons",
+    "Earth's orbit",
+    "zodiac"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "moon-phases",
+   "title": "Why does the Moon change shape?",
+   "subtitle": "The phase and the time it rises turn out to be the same story",
+   "minutes": 10,
+   "level": "intro",
+   "track": "principle",
+   "tags": [
+    "Moon",
+    "phases",
+    "lunar calendar",
+    "28 mansions"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "summer-triangle",
+   "title": "The Summer Triangle and the Milky Way",
+   "subtitle": "Checking whether a river really does run between the Cowherd and the Weaver",
+   "minutes": 10,
+   "level": "intro",
+   "track": "target",
+   "tags": [
+    "summer",
+    "Summer Triangle",
+    "Milky Way",
+    "the Weaver and the Cowherd"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21",
+   "months": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "star-brightness",
+   "title": "What brightness means",
+   "subtitle": "The ranking of the brightest stars, and what that ranking hides",
+   "minutes": 11,
+   "level": "basic",
+   "track": "measure",
+   "tags": [
+    "magnitude",
+    "brightness",
+    "Canopus",
+    "observing conditions"
+   ],
+   "steps": 8,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "star-colors",
+   "title": "A star's colour is its temperature",
+   "subtitle": "The red ones are the coldest",
+   "minutes": 9,
+   "level": "basic",
+   "track": "measure",
+   "tags": [
+    "colour",
+    "temperature",
+    "spectral type",
+    "Albireo"
+   ],
+   "steps": 8,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "andromeda",
+   "title": "The Andromeda Galaxy — the furthest thing the eye can reach",
+   "subtitle": "Hopping from one bright star to the next until you find something 2.5 million light years away",
+   "minutes": 11,
+   "level": "basic",
+   "track": "target",
+   "tags": [
+    "autumn",
+    "galaxy",
+    "Andromeda",
+    "star hopping"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21",
+   "months": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    1
+   ]
+  },
+  {
+   "id": "orion-nebula",
+   "title": "The Orion Nebula — where stars are born",
+   "subtitle": "The finest target in the winter sky, and a picture of our own home town",
+   "minutes": 10,
+   "level": "intro",
+   "track": "target",
+   "tags": [
+    "winter",
+    "nebula",
+    "Orion",
+    "star formation"
+   ],
+   "steps": 8,
+   "updated": "2026-08-21",
+   "months": [
+    11,
+    12,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "pleiades",
+   "title": "The Seven Sisters — six stars, or seven?",
+   "subtitle": "How many you can count measures how dark your sky is tonight",
+   "minutes": 10,
+   "level": "intro",
+   "track": "target",
+   "tags": [
+    "winter",
+    "open cluster",
+    "Seven Sisters",
+    "folk customs"
+   ],
+   "steps": 8,
+   "updated": "2026-08-21",
+   "months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "latitude-sky",
+   "title": "Latitude changes the sky",
+   "subtitle": "Moving the observing site to the equator, the Pole and the southern hemisphere to compare",
+   "minutes": 11,
+   "level": "deep",
+   "track": "principle",
+   "tags": [
+    "latitude",
+    "Polaris",
+    "diurnal motion",
+    "southern hemisphere"
+   ],
+   "steps": 8,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "retrograde",
+   "title": "Why do the planets go backwards?",
+   "subtitle": "Winding time on a few months to watch Mars draw a loop in the sky",
+   "minutes": 11,
+   "level": "deep",
+   "track": "principle",
+   "tags": [
+    "planet",
+    "retrograde",
+    "opposition",
+    "geocentrism"
+   ],
+   "steps": 8,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "eclipses",
+   "title": "Eclipses of the Sun and the Moon",
+   "subtitle": "Why they do not happen every month, and when the next one is",
+   "minutes": 13,
+   "level": "basic",
+   "track": "principle",
+   "tags": [
+    "solar eclipse",
+    "lunar eclipse",
+    "lunar orbit",
+    "planning"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "polaris-changes",
+   "title": "The pole star changes",
+   "subtitle": "The people who built the pyramids had a different star at the pole",
+   "minutes": 11,
+   "level": "deep",
+   "track": "principle",
+   "tags": [
+    "precession",
+    "Polaris",
+    "north celestial pole",
+    "time travel"
+   ],
+   "steps": 10,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "spring-arc",
+   "title": "The Spring Arc — follow the handle of the dipper",
+   "subtitle": "One line that starts at the Big Dipper and crosses the whole spring sky",
+   "minutes": 10,
+   "level": "intro",
+   "track": "target",
+   "tags": [
+    "spring",
+    "Arcturus",
+    "Spica",
+    "star hopping"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21",
+   "months": [
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "star-distance",
+   "title": "How do we measure the distance to a star?",
+   "subtitle": "The thing nobody could measure for two thousand years",
+   "minutes": 11,
+   "level": "deep",
+   "track": "measure",
+   "tags": [
+    "distance",
+    "parallax",
+    "light years",
+    "parsec"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "twilight",
+   "title": "When do the stars come out after sunset?",
+   "subtitle": "Crossing the three stages of twilight with your own eyes",
+   "minutes": 9,
+   "level": "intro",
+   "track": "principle",
+   "tags": [
+    "twilight",
+    "planning",
+    "sunset",
+    "dark adaptation"
+   ],
+   "steps": 8,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "meteor-showers",
+   "title": "Why does a meteor shower pour out of one point?",
+   "subtitle": "Marking the radiant, and deciding where to look tonight",
+   "minutes": 10,
+   "level": "intro",
+   "track": "principle",
+   "tags": [
+    "meteor shower",
+    "radiant",
+    "comet",
+    "planning"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "proper-motion",
+   "title": "The constellations are not for ever",
+   "subtitle": "Looking at the Big Dipper 100,000 years from now",
+   "minutes": 10,
+   "level": "deep",
+   "track": "measure",
+   "tags": [
+    "proper motion",
+    "Big Dipper",
+    "time travel",
+    "Halley"
+   ],
+   "steps": 8,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "variable-stars",
+   "title": "Stars that change brightness",
+   "subtitle": "How to measure brightness by eye, and why amateurs are still useful",
+   "minutes": 10,
+   "level": "basic",
+   "track": "measure",
+   "tags": [
+    "variable star",
+    "Algol",
+    "eclipsing binary",
+    "observing log"
+   ],
+   "steps": 7,
+   "updated": "2026-08-21"
+  }
+ ]
+}

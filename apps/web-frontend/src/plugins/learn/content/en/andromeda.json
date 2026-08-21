@@ -1,0 +1,180 @@
+{
+ "id": "andromeda",
+ "title": "The Andromeda Galaxy — the furthest thing the eye can reach",
+ "subtitle": "Hopping from one bright star to the next until you find something 2.5 million light years away",
+ "minutes": 11,
+ "level": "basic",
+ "track": "target",
+ "tags": [
+  "autumn",
+  "galaxy",
+  "Andromeda",
+  "star hopping"
+ ],
+ "months": [
+  8,
+  9,
+  10,
+  11,
+  12,
+  1
+ ],
+ "intro": "The furthest thing you can see with the naked eye is not a star but a galaxy. The light of the Andromeda Galaxy set out 2.5 million years ago. The autumn sky is thin on bright stars, though, so it takes a knack: hopping from one guide star to the next.",
+ "steps": [
+  {
+   "title": "An autumn evening, starting from a great square",
+   "text": "<p>It is <b>9 pm in mid-October</b>, looking from the east round towards the south-east. Autumn can seem an empty season, with few bright stars in it.</p><p>What it does have instead is one very large and obvious signpost: the <b>Square of Pegasus</b>, made by four stars. It has been joined with lines. Each side runs about a fist and a half held at arm's length, and once you have picked the shape out you will not lose it again.</p><p>In East Asia these four stars were read as <b>Silsu</b>, the house, and <b>Byeoksu</b>, the wall, two of the 28 mansions. A house standing in the sky, in effect.</p>",
+   "sky": {
+    "date": "2026-10-15T21:00:00+09:00",
+    "az": 120,
+    "alt": 64,
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": true,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "connect": [
+    "* alf And",
+    "* gam Peg",
+    "* alf Peg",
+    "* bet Peg",
+    "* alf And"
+   ]
+  },
+  {
+   "title": "And one W",
+   "text": "<p>The view has turned <b>north-east</b> from the square. Five stars are set out in the shape of a <b>W</b>, or an <b>M</b>. This is <b>Cassiopeia</b>.</p><p>It is one of the few constellations that <b>never sets</b> at around 35°N. The Big Dipper very nearly manages it as well, but the tip of the handle dips briefly below the horizon. Cassiopeia sits across Polaris from the Big Dipper, so in a season such as autumn, when the Dipper lies low, Cassiopeia becomes the guide for finding Polaris.</p><p>The galaxy we are after lies <b>between this W and the Square of Pegasus</b>. If you can pick out both signposts you are half way there.</p>",
+   "sky": {
+    "az": 37,
+    "alt": 54,
+    "fov": 70
+   },
+   "connect": [
+    "* bet Cas",
+    "* alf Cas",
+    "* gam Cas",
+    "* del Cas",
+    "* eps Cas"
+   ]
+  },
+  {
+   "title": "Hopping from star to star",
+   "text": "<p>Back towards the square. There is only one way to find something faint: <b>start from a bright star and move along one step at a time</b>. This is called <b>star hopping</b>.</p><p>Follow the line.</p><ol><li>Start at <b>Alpheratz</b>, the upper-left corner of the square</li><li>Move up and to the left at a slant, <b>two steps</b>, and you reach <b>Mirach</b>. Three stars in a row make it hard to lose</li><li>From Mirach <b>turn a right angle</b> towards Cassiopeia and go two stars further</li><li>At the end of that there is a hazy smudge</li></ol><p>Follow this order and you can find it with the naked eye. Not from a city, though: it has to be somewhere without lights.</p>",
+   "sky": {
+    "az": 84,
+    "alt": 58,
+    "fov": 45
+   },
+   "connect": [
+    [
+     "* alf And",
+     "* del And",
+     "* bet And"
+    ],
+    [
+     "* bet And",
+     "* mu. And",
+     "* nu. And",
+     "M 31"
+    ]
+   ],
+   "highlight": [
+    "M 31"
+   ]
+  },
+  {
+   "title": "What the smudge turns out to be",
+   "text": "<p>Arrived. This is the <b>Andromeda Galaxy</b>, catalogue number <b>M 31</b>.</p><p>To the naked eye it is a hazy smudge the size of a fingernail. Instead of gathering to a point the way a star does, <b>it spreads</b>, and that is what marks this kind of object out. The Persian astronomer al-Sufi recorded it as 'a little cloud' in the 10th century, so people have been looking at it for more than a thousand years.</p><p>Look at the distance in the object information: <b>2.5 million light years</b>. The light that has just reached your eye set out at a time when there were no modern humans on Earth yet.</p>",
+   "sky": {
+    "fov": 12
+   },
+   "select": "M 31"
+  },
+  {
+   "title": "What it really looks like",
+   "text": "<p>Let us lay a real photograph of the sky over it. The hazy smudge turns out to have been <b>a spiral disc</b>.</p><p>Its full extent in the photograph is a little over <b>3 degrees</b>, <b>the width of six full Moons in a row</b>. That something so large still looks the size of a fingernail to the naked eye is because the outer arms are far too faint, and only <b>the brightest part at the centre</b> reaches your eye.</p><p>It is worth knowing in advance that the photograph and the eye show different things. Go outside and there are no spiral arms like the picture. One hazy, elongated smudge is all of it. Even so, no photograph can stand in for the fact that <b>light that has flown for 2.5 million years is landing directly in your eye</b>.</p>",
+   "sky": {
+    "fov": 6
+   },
+   "show": {
+    "dss": true
+   }
+  },
+  {
+   "title": "The day the universe suddenly grew",
+   "text": "<p>A hundred years ago nobody knew what this was. One side held that it was a cloud of gas inside our own galaxy, the other that it was a separate 'island universe' outside it. That was the <b>Great Debate</b> of 1920.</p><p>It was settled in 1923. <b>Hubble</b> found a <b>Cepheid variable</b> inside the smudge. Measure the period over which such a star changes brightness and you know its real brightness; set that against how bright it looks and out comes the distance. The answer landed far beyond the size of our own galaxy.</p><p>That day the universe grew beyond all reckoning overnight. Our galaxy had seemed to be the whole of it, and it turned out to be one among hundreds of billions.</p>",
+   "sky": {
+    "fov": 8
+   },
+   "quiz": {
+    "q": "How was it confirmed that the Andromeda Galaxy lies outside our own?",
+    "opts": [
+     "By magnifying it with a telescope and counting its stars one by one",
+     "By measuring the distance using a Cepheid variable inside it",
+     "Because its colour differs from the stars of our galaxy",
+     "By going there with a space telescope"
+    ],
+    "right": 1,
+    "explain": "A Cepheid variable has a fixed relationship between the period over which its brightness changes and its real brightness, which makes it usable as a ruler for distance. Magnification alone tells you nothing about distance, and colour has no bearing on it. No probe could cross 2.5 million light years."
+   },
+   "show": {
+    "dss": false
+   }
+  },
+  {
+   "title": "And it is coming towards us",
+   "text": "<p>Because the universe is expanding, most distant galaxies are <b>moving away</b> from us. The Andromeda Galaxy is one of the rare ones <b>coming closer</b>, at 110 km per second. It is a neighbour bound to us by gravity, and there the pull wins out over the expansion.</p><p>In about <b>4 billion years</b> the two galaxies will collide and merge into one. A collision of galaxies is not stars crashing into stars, though. The space between stars is so empty that the two will pass through each other <b>without a single star colliding</b>. What does collide is the gas clouds, and new stars are born in a burst.</p><p>The night sky on Earth then will be a spectacle of two galaxies tangled together. By that time, of course, the Sun will be far hotter than it is now and no oceans will be left on Earth. The Sun swelling up to swallow the Earth comes a long while after that again, <b>some 7 billion years</b> from now.</p>",
+   "sky": {
+    "fov": 15
+   }
+  },
+  {
+   "title": "A harder challenge — M 33",
+   "text": "<p>Once you have found the Andromeda Galaxy there is a next step. Go about the same distance from Mirach in the other direction and you come to the <b>Triangulum Galaxy (M 33)</b>.</p><p>At <b>magnitude 5.7</b> it is not far off the Andromeda Galaxy. Yet it is much harder to find, because its light is <b>spread over a wide area</b> and the brightness per unit of sky is low.</p><p>An important lesson comes out of this. <b>Nebulae and galaxies must never be judged by magnitude alone.</b> At the same magnitude, something packed into a small space shows well and something spread out does not. This is called <b>surface brightness</b>.</p><p>If M 33 shows to the naked eye, that is a genuinely dark sky. Among amateurs it serves as the test paper for how good a sky is.</p>",
+   "sky": {
+    "fov": 25
+   },
+   "select": "M 33",
+   "quiz": {
+    "q": "M 33 is close to M 31 in magnitude. Why is it so much harder to find?",
+    "opts": [
+     "Because it is further away",
+     "Because its light is spread over a wide area, giving it a low surface brightness",
+     "Because it is reddish and less easily caught by the eye",
+     "Because it sits lower in the sky"
+    ],
+    "right": 1,
+    "explain": "Magnitude is the total of all the light an object gives out. Spread the same amount of light over a wider area and no part of it is bright enough to stand out from the background sky. M 33 is a little further off, but that alone does not account for the difference, and the two lie close together in the sky, so they reach much the same altitude."
+   }
+  },
+  {
+   "title": "Go and find it",
+   "text": "<p>The Andromeda Galaxy is <b>the furthest object you can see with the naked eye</b>. It is worth the attempt.</p><ul><li><b>From autumn evenings through to the early evenings of winter</b> is the time. In late August it is high around midnight; in October it is high in the early evening</li><li>Get <b>somewhere without lights</b>. From a city it is hard even with binoculars</li><li>Give your eyes <b>20 minutes</b> to settle into the dark</li><li>Use <b>averted vision</b>. Look straight at it and it vanishes; glance slightly to one side and it appears. The centre of the eye is packed with cells for colour, while the edge is the part sensitive to faint light</li><li><b>Binoculars</b> make it far easier. Something like 7 by 50 is plenty</li></ul><p>When you find it, hold your gaze on it a moment. That light flew for 2.5 million years and has only just arrived.</p>",
+   "sky": {
+    "fov": 80,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "dss": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "The overlaid photograph is Digitized Sky Survey (DSS) material. The correspondence with the 28 mansions follows material from the Korea Astronomy and Space Science Institute."
+}

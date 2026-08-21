@@ -1,0 +1,197 @@
+{
+ "id": "proper-motion",
+ "title": "The constellations are not for ever",
+ "subtitle": "Looking at the Big Dipper 100,000 years from now",
+ "minutes": 10,
+ "level": "deep",
+ "track": "measure",
+ "tags": [
+  "proper motion",
+  "Big Dipper",
+  "time travel",
+  "Halley"
+ ],
+ "intro": "Stars are called fixed stars, because the whole sky appears to turn as one with the distances between them unchanged. But that is only how it looks when a human life is this short. We will wind time on 100,000 years and see what becomes of the Big Dipper.",
+ "steps": [
+  {
+   "title": "The Big Dipper as it is now",
+   "text": "<p>It is <b>9 pm in April</b>, high in the north-east. The seven stars have been joined in order and the dipper shape is unmistakable.</p><p>This shape is very old. A clay tablet from Mesopotamia around 2000 BC and Joseon Korea's <b>Cheonsang Yeolcha Bunyajido</b> both carry a dipper almost identical to today's.</p><p>Which is why we take it that constellations <b>do not change</b>. In fact it is <b>the records that are short</b>. 600 years is a moment to the sky.</p>",
+   "sky": {
+    "date": "2027-04-01T21:00:00+09:00",
+    "az": 40,
+    "alt": 52,
+    "fov": 70,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "connect": [
+    "* alf UMa",
+    "* bet UMa",
+    "* gam UMa",
+    "* del UMa",
+    "* eps UMa",
+    "* zet UMa",
+    "Alkaid"
+   ]
+  },
+  {
+   "title": "50,000 years from now",
+   "text": "<p>Time has been sent <b>50,000 years</b> forward. The view is locked onto <b>Mizar</b>, the middle star of the handle, so you can judge where the other six have gone relative to it.</p><p>It is still a dipper. Each of the seven has moved <b>between 1.2 and 2.0 degrees</b>. That is two to four times the width of the full Moon, but inside a figure 25 degrees across it hardly shows.</p><p>Ten times longer than the whole of human civilisation, and this is all it comes to. That is why stars look 'fixed'.</p>",
+   "sky": {
+    "date": "+052027-04-01T21:00:00+09:00",
+    "fov": 50
+   },
+   "show": {
+    "landscape": false
+   },
+   "lookAt": "* zet UMa",
+   "connect": [
+    "* alf UMa",
+    "* bet UMa",
+    "* gam UMa",
+    "* del UMa",
+    "* eps UMa",
+    "* zet UMa",
+    "Alkaid"
+   ]
+  },
+  {
+   "title": "100,000 years from now — the mouth of the bowl opens",
+   "text": "<p><b>100,000 years</b>. Now the difference shows.</p><p>Where it differs is the point. Measure the gaps and they run like this.</p><ul><li><b>Dubhe–Merak</b> (the mouth of the bowl) — from 5.4 degrees to <b>6.8</b>. Opened by 26%</li><li><b>Mizar–Alkaid</b> (the end of the handle) — from 6.7 degrees to <b>6.2</b>. This one has closed instead</li><li><b>Phecda–Megrez</b> (the base of the bowl) — from 4.53 degrees to <b>4.54</b>. That is 0.01 degrees in 100,000 years</li></ul><p>Each of the seven has moved <b>between 2.4 and 3.9 degrees</b>, and yet <b>some gaps open while others stay exactly as they were</b>. Had they all drifted along together the shape would have held; that it has not means something.</p><p>The two at either end go their own way while the middle will not budge. <b>The answer is in why.</b> It comes shortly.</p><p>At this rate you could not call it a dipper in a million years. If there are people then, they will give the arrangement another name. <b>Constellations belong to our own generation.</b> They are not lines drawn on the sky but a picture briefly shared by people who happen to live through the same short moment.</p>",
+   "sky": {
+    "date": "+102027-04-01T21:00:00+09:00",
+    "fov": 55
+   },
+   "lookAt": "* zet UMa",
+   "connect": [
+    "* alf UMa",
+    "* bet UMa",
+    "* gam UMa",
+    "* del UMa",
+    "* eps UMa",
+    "* zet UMa",
+    "Alkaid"
+   ],
+   "quiz": {
+    "q": "After 100,000 years the base of the bowl, Phecda–Megrez, had gone from 4.53 degrees to 4.54, barely changed at all. Why?",
+    "opts": [
+     "Because the two stars are bound to each other by gravity",
+     "Because the two were born in the same group and travel the same way at the same speed",
+     "Because the two are so far off that their proper motion is zero",
+     "Because the base of the bowl is a fixed reference point of the sky and does not move"
+    ],
+    "right": 1,
+    "explain": "The middle five stars were born together from the same cloud and are still travelling in the same direction side by side. Relative to one another they are practically at rest, so the gaps hold. There is no gravity that could hold together two stars light years apart, and their proper motion is not zero either: each of them moved nearly 3 degrees, but they moved together."
+   }
+  },
+  {
+   "title": "The phrase 'fixed stars'",
+   "text": "<p>Back to the present.</p><p>That stars move is only to be expected. Every star is going round the centre of the galaxy, our own Sun at 220 km per second. Stars run different orbits at different speeds, so <b>there is no reason for any arrangement to hold</b>.</p><p>The sky looks fixed all the same because <b>it is too far away</b>. Travel at hundreds of thousands of km an hour and, seen from tens of light years off, you do not move even one arcsecond in a year.</p><p>This movement across the sky is called <b>proper motion</b>. For most stars it does not reach <b>0.1 arcseconds</b> a year, a tenth of that coin at 4 km. A human lifetime could never catch it.</p>",
+   "sky": {
+    "date": "2027-04-01T21:00:00+09:00",
+    "az": 40,
+    "alt": 52,
+    "fov": 70
+   },
+   "show": {
+    "landscape": true
+   },
+   "clearSelection": true,
+   "connect": [
+    "* alf UMa",
+    "* bet UMa",
+    "* gam UMa",
+    "* del UMa",
+    "* eps UMa",
+    "* zet UMa",
+    "Alkaid"
+   ]
+  },
+  {
+   "title": "How Halley noticed",
+   "text": "<p>So how do you find something you cannot catch? <b>You compare records.</b></p><p>In 1718 <b>Edmond Halley</b> matched the star positions of his own day against <b>the catalogue Ptolemy had written down 1,500 years earlier</b>. Most of them agreed, but <b>three stars</b> were out: <b>Sirius, Arcturus and Aldebaran</b>.</p><p>The discrepancy was <b>more than half a degree</b>. For Arcturus it came close to <b>1 degree</b>, about twice the width of the full Moon. He could have written it off as error in an old record, but Halley noticed that it was <b>the brightest stars and no others</b> that were out. Bright usually means <b>close</b>, and a close star at the same speed appears to move further.</p><p>So he concluded that this was not error but <b>the stars genuinely moving</b>. Two thousand years of belief that they were nailed to the sky came down through a comparison with one old book.</p><p>The rule from the earlier lessons repeats here as well. <b>The closer the star, the more it moves.</b> Exactly the same principle as parallax.</p>",
+   "sky": {
+    "fov": 80
+   }
+  },
+  {
+   "title": "Why the five travel together",
+   "text": "<p>Here is the answer put off earlier. Over 100,000 years the seven stars each moved some 3 degrees, and yet the middle five — Merak, Phecda, Megrez, Alioth and Mizar — <b>kept the gaps between them</b>. Phecda to Megrez went from 4.53 degrees to 4.54: fixed, to all intents.</p><p>It is no coincidence. These five are <b>siblings born together from the same cloud</b>. They circle the galaxy in the same direction at the same speed, so the gaps between them barely change. A group like this is called a <b>moving cluster</b>, and this one is the <b>Ursa Major Moving Group</b>. It is also the nearest cluster to us.</p><p><b>Dubhe and Alkaid</b>, by contrast, have nothing to do with the group. They are strangers that happen to lie in the same direction. Which is why <b>only the two stars at either end</b> drift off on their own courses. The mouth of the bowl opening and the end of the handle closing are precisely those two places. Exactly as you saw on screen a moment ago.</p><p>In the 'Seven Sisters' lesson an open cluster scatters within a few hundred million years. The Ursa Major Moving Group is <b>at the stage where that scattering is nearly finished</b>. Its stars are spread so widely across the sky that it no longer even looks like a cluster.</p>",
+   "sky": {
+    "fov": 60
+   },
+   "highlight": [
+    {
+     "target": "* bet UMa",
+     "radius": 2
+    },
+    {
+     "target": "* gam UMa",
+     "radius": 2
+    },
+    {
+     "target": "* del UMa",
+     "radius": 2
+    },
+    {
+     "target": "* eps UMa",
+     "radius": 2
+    },
+    {
+     "target": "* zet UMa",
+     "radius": 2
+    }
+   ],
+   "quiz": {
+    "q": "Which statement about the seven stars of the Big Dipper is correct?",
+    "opts": [
+     "All seven are siblings from the same cluster",
+     "The middle five belong to one group while Dubhe and Alkaid are strangers",
+     "None of the seven has anything to do with any other",
+     "The seven are bound by one another's gravity and orbit together"
+    ],
+    "right": 1,
+    "explain": "The middle five belong to the Ursa Major Moving Group and travel the same way together. Dubhe and Alkaid have nothing to do with that group and drift off in other directions, which is why the dipper shape breaks up given long enough. The seven also range in distance from 78 to 124 light years, so they are certainly not bound by one another's gravity."
+   }
+  },
+  {
+   "title": "The fastest star",
+   "text": "<p>The star with the largest proper motion is <b>Barnard's Star</b>, moving <b>10.3 arcseconds</b> a year.</p><p>It does not sound like much, but it adds up. <b>In 180 years it covers the width of the full Moon.</b> It is the one star whose change of place in the sky is noticeable within a human lifetime, which is why it is called <b>Barnard's Runaway Star</b>.</p><p>It is fast for two reasons. It is a neighbour at only <b>6 light years</b>, and its real speed is high as well. At magnitude 9.5, though, <b>it cannot be seen with the naked eye</b>, and it is not in the star list of this view either.</p><p>Multiply the movement across the sky, the proper motion, by <b>the distance</b> and you get the real sideways speed; add the <b>radial velocity</b> measured from the spectrum and you have that star's <b>motion in three dimensions</b>. The three things needed to know a star's real path are <b>proper motion, distance and radial velocity</b>.</p><p>This is what the Gaia space telescope is doing. By measuring the positions and movements of <b>2 billion stars</b> it is retracing how our galaxy turns and how it came to be built.</p>",
+   "sky": {
+    "fov": 70
+   },
+   "clearSelection": true
+  },
+  {
+   "title": "Keep a record of tonight's sky",
+   "text": "<p>Proper motion is not something a person can confirm by eye. There are still things you can do.</p><ul><li><b>Photograph the Big Dipper</b> tonight. This arrangement belongs <b>to this age alone</b></li><li>If you get the chance to see the <b>Cheonsang Yeolcha Bunyajido</b> at an observatory or a museum, set it against the sky as it is now. The constellations of 600 years ago and today's are <b>almost identical.</b> That in itself is the evidence of how slow proper motion is</li><li>The <b>planets</b>, by contrast, change place within weeks. Exactly as 'Why do the planets go backwards?' showed. This difference in speed is what separates a star from a planet, and the name the ancients gave them, wanderers, was exact</li><li>It goes well with 'How do we measure the distance to a star?'. The same principle, that <b>the closer a star the more it moves</b>, is at work in both parallax and proper motion</li></ul>",
+   "sky": {
+    "az": 40,
+    "alt": 52,
+    "fov": 80,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "The proper motion values come from the HYG star catalogue, and the star positions on screen are calculated from them. The movement of 2.4 to 3.9 degrees per star over 100,000 years, Dubhe–Merak going from 5.4 to 6.8 degrees and Phecda–Megrez from 4.53 to 4.54 degrees, were all read directly from the engine on screen."
+}

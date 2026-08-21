@@ -1,0 +1,202 @@
+{
+ "id": "polaris-changes",
+ "title": "La estrella polar cambia",
+ "subtitle": "Quienes levantaron las pirámides tenían otra estrella en el polo",
+ "minutes": 11,
+ "level": "deep",
+ "track": "principle",
+ "tags": [
+  "precesión",
+  "Polaris",
+  "polo norte celeste",
+  "viaje en el tiempo"
+ ],
+ "intro": "Que Polaris señale el norte es una casualidad, y además de corta vida. El eje de la Tierra se bambolea como una peonza, así que cada pocos miles de años otra estrella hereda el polo. Vamos a girar el tiempo mucho hacia delante y hacia atrás para ver el relevo.",
+ "steps": [
+  {
+   "title": "La estrella polar de ahora",
+   "text": "<p>El cielo del norte. La rejilla azul es la de <b>coordenadas ecuatoriales</b>, y el punto donde convergen sus líneas es el <b>polo norte celeste</b>. Es el eje sobre el que gira el cielo.</p><p>Deja correr el tiempo. Todas las estrellas rodean ese punto. Y justo al lado está <b>Polaris</b>. Polaris se encuentra ahora mismo a <b>0.6 grados</b> del polo norte celeste, algo más que el ancho de la luna llena.</p><p>Tan cerca, es en la práctica una estrella clavada en su sitio. Por eso fue durante miles de años la brújula de marineros y viajeros.</p><p>Pero esto es solo <b>la historia de nuestra propia época</b>.</p>",
+   "sky": {
+    "date": "2027-11-15T21:00:00+09:00",
+    "az": 0,
+    "alt": 45,
+    "fov": 100,
+    "timeSpeed": 400
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationLabels": true,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": true,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "highlight": [
+    "Polaris"
+   ]
+  },
+  {
+   "title": "Cuando se levantaban las pirámides — Thuban",
+   "text": "<p>El tiempo se ha rebobinado hasta <b>2700 a. C.</b>, más o menos cuando se levantaba la Gran Pirámide en Egipto.</p><p>Mira el punto donde convergen las líneas de la rejilla. <b>Polaris no está ahí.</b> La estrella que llamamos Polaris queda a <b>26 grados</b> largos del polo, girando en un círculo grande toda la noche.</p><p>Lo que sí está fijo en el polo es <b>Thuban</b>, en el Dragón, a <b>0.5 grados</b>, más cerca todavía de lo que está Polaris hoy.</p><p>La Gran Pirámide de Guiza tiene un estrecho conducto que corre hacia el norte, y una lectura sostiene que su dirección apunta al polo celeste de la época. Para aquella gente, el clavo del cielo era Thuban.</p>",
+   "sky": {
+    "date": "-002700-06-15T21:00:00+09:00",
+    "timeSpeed": 0
+   },
+   "highlight": [
+    {
+     "target": "* alf Dra",
+     "radius": 4
+    },
+    {
+     "target": "Polaris",
+     "radius": 4
+    }
+   ],
+   "show": {
+    "landscape": false
+   }
+  },
+  {
+   "title": "1000 a. C. — una época sin estrella en el polo",
+   "text": "<p>Ahora <b>1000 a. C.</b> Thuban se ha alejado ya <b>10 grados</b> del polo, y Polaris sigue <b>17 grados</b> fuera.</p><p>Era una época sin ninguna estrella brillante adecuada cerca del polo. La más cercana de las brillantes era <b>Kochab</b>, en la Osa Menor, a <b>6.5 grados</b>. Los marineros posteriores emparejaron a Kochab con Pherkad, su vecina, las llamaron <b>las Guardianas del Polo</b> y se orientaron por ellas.</p><p>Que haya una estrella brillante en el polo no es lo habitual. <b>Nosotros tenemos suerte.</b></p>",
+   "sky": {
+    "date": "-001000-06-15T21:00:00+09:00"
+   },
+   "highlight": [
+    {
+     "target": "* bet UMi",
+     "radius": 4
+    },
+    {
+     "target": "Polaris",
+     "radius": 4
+    }
+   ]
+  },
+  {
+   "title": "1000 d. C., y el presente",
+   "text": "<p>Ahora <b>1000 d. C.</b> Polaris se ha acercado a <b>6 grados</b> del polo. Todavía dibuja un círculo apreciable a lo largo de una noche.</p><p>Este era el cielo que miraban las gentes de Goryeo y de la China de los Song. Seis grados desde el polo significa girar toda la noche en un anillo de <b>12 grados</b> de ancho. Para ellos Polaris no era «la estrella que no se mueve» sino <b>«la estrella que menos se mueve»</b>.</p><p>Polaris seguirá acercándose al polo <b>otros 100 años</b> más o menos, y a partir de ahí solo se aleja. Vivimos en la época en que Polaris es lo más parecida posible a una estrella polar.</p>",
+   "sky": {
+    "date": "+001000-06-15T21:00:00+09:00"
+   },
+   "highlight": [
+    {
+     "target": "Polaris",
+     "radius": 4
+    }
+   ]
+  },
+  {
+   "title": "4000 d. C. — Errai",
+   "text": "<p>Esta vez hacia delante. <b>4000 d. C.</b></p><p>Polaris ha quedado empujada a más de <b>10 grados</b> del polo. Ya cuesta llamarla una estrella que señala el norte.</p><p>En su lugar, <b>Errai</b>, en Cefeo, se ha metido a menos de <b>2 grados</b> del polo. Hoy el nombre no le suena a nadie, pero para la gente de aquella época esta estrella es «la estrella polar».</p>",
+   "sky": {
+    "date": "+004000-06-15T21:00:00+09:00"
+   },
+   "highlight": [
+    {
+     "target": "* gam Cep",
+     "radius": 4
+    },
+    {
+     "target": "Polaris",
+     "radius": 4
+    }
+   ]
+  },
+  {
+   "title": "10000 d. C. — Deneb",
+   "text": "<p><b>10000 d. C.</b> El polo se ha desplazado hacia la Vía Láctea.</p><p>Lo que queda ahora cerca del polo es <b>Deneb</b>, la estrella del Triángulo de Verano. A unos <b>8 grados</b> no es perfecta, pero es una época en la que una estrella muy brillante gira cerca del centro del cielo del norte.</p><p>Para la gente de entonces el Cisne no es una constelación de estación sino <b>una constelación que no se pone nunca</b>.</p>",
+   "sky": {
+    "date": "+010000-06-15T21:00:00+09:00"
+   },
+   "highlight": [
+    {
+     "target": "Deneb",
+     "radius": 5
+    }
+   ]
+  },
+  {
+   "title": "14000 d. C. — Vega se convierte en la estrella polar",
+   "text": "<p><b>14000 d. C.</b> <b>Vega</b> ha llegado a <b>6.3 grados</b> del polo.</p><p>Es una época en la que una de las cinco estrellas más brillantes del cielo nocturno hace de centro del cielo del norte. Mucho más brillante que la Polaris de hoy, que es de magnitud 2.</p><p>Cuando presentamos a Vega en la lección del «Triángulo de Verano», aquello de que <b>dentro de unos 12000 años tomará el relevo como estrella polar</b> apuntaba a esta escena. ¿Y qué será entonces del relato de la Tejedora y el Vaquero? La Tejedora queda clavada en lo más alto del cielo sin moverse, y la Vía Láctea se convierte en un río que gira a su alrededor.</p>",
+   "sky": {
+    "date": "+014000-06-15T21:00:00+09:00"
+   },
+   "highlight": [
+    {
+     "target": "Vega",
+     "radius": 5
+    }
+   ],
+   "quiz": {
+    "q": "¿Por qué cambia la estrella polar de una época a otra?",
+    "opts": [
+     "Porque las estrellas se desplazan por el cielo",
+     "Porque el eje de rotación de la Tierra se bambolea despacio trazando un cono",
+     "Porque la Tierra gira alrededor del Sol",
+     "Porque Polaris se va apagando poco a poco"
+    ],
+    "right": 1,
+    "explain": "El eje de la Tierra traza un cono una vez cada 26000 años. El punto del cielo al que apunta el eje, el polo norte celeste, recorre ese círculo, así que cambia la estrella que casualmente se encuentra ahí. Las estrellas también se mueven de verdad, pero ese efecto tarda cientos de miles de años en notarse. La órbita de la Tierra produce las estaciones y no tiene nada que ver con la dirección del eje, y nada de esto tiene que ver con el brillo de una estrella."
+   }
+  },
+  {
+   "title": "Por qué se bambolea la peonza",
+   "text": "<p>Empuja de lado una peonza que gira y no se cae: su eje empieza a girar <b>trazando un cono</b>. Con la Tierra pasa lo mismo.</p><p>La Tierra no es una esfera perfecta. Su giro hace que <b>el ecuador se abombe</b>. El Sol y la Luna tiran de esa banda abombada y, como la Tierra gira deprisa, no se vuelca: su eje traza despacio un círculo.</p><p>Una vuelta lleva <b>unos 26000 años</b>. A esto se le llama <b>precesión</b>.</p><p>Hacia 130 a. C. <b>Hiparco</b> la descubrió. Al comparar las posiciones estelares que había medido con registros de 150 años antes, las encontró todas ligeramente desplazadas. Se dio cuenta de que no era una estrella sino <b>el cielo entero</b> lo que se había corrido. Con nada más que sus ojos y unos registros viejos, pilló el bamboleo del eje de la Tierra.</p>",
+   "sky": {
+    "date": "2027-11-15T21:00:00+09:00",
+    "fov": 110
+   },
+   "show": {
+    "equatorialGrid": true,
+    "ecliptic": true
+   }
+  },
+  {
+   "title": "Por qué están desfasadas las fechas de los horóscopos",
+   "text": "<p>La precesión no solo cambia la estrella polar. <b>El punto vernal</b> se desplaza con ella. Es el punto de referencia del cielo por el que pasa el Sol en primavera.</p><p>Las fechas de los doce signos del zodíaco se fijaron respecto a la posición del Sol <b>hace dos mil años</b>. Desde entonces la precesión ha empujado el punto vernal <b>unos 30 grados</b>, el ancho de una constelación.</p><p>Así que hoy <b>las fechas de los horóscopos y la posición real del Sol están desplazadas un signo entero.</b> A quien nace el 25 de marzo se le pone «Aries», pero ese día el Sol está en realidad en Piscis.</p><p>Y añadiendo algo más: el número de constelaciones por las que pasa el Sol de verdad no es 12 sino <b>13</b>. Pasa por Ofiuco, que se quedó fuera cuando se hicieron los doce signos repartiendo el círculo en partes iguales de 30 grados.</p><p>En la lección «¿Por qué cambian las constelaciones con la estación?» miraste directamente la constelación en la que estaba el Sol. Vuelve a esa pantalla y compara la fecha con la constelación: el desfase está a la vista.</p>",
+   "sky": {
+    "fov": 100
+   },
+   "quiz": {
+    "q": "¿Cuál de estas no es consecuencia de la precesión?",
+    "opts": [
+     "La estrella polar cambia de una época a otra",
+     "El punto vernal se desplaza entre las constelaciones",
+     "Las fechas de los horóscopos y la posición real del Sol se desfasan",
+     "Las estaciones se suceden: primavera, verano, otoño, invierno"
+    ],
+    "right": 3,
+    "explain": "Las estaciones existen porque el eje de rotación está inclinado 23.4 grados respecto al plano de la órbita. La precesión cambia hacia dónde apunta ese eje inclinado y nada más: ni la inclinación misma ni la existencia de las estaciones. Las otras tres se siguen todas del desplazamiento del polo norte celeste y del punto vernal."
+   }
+  },
+  {
+   "title": "Lo que puedes ver si sales ahora",
+   "text": "<p>26000 años no es un plazo que una persona pueda esperar. Aun así, hay cosas que puedes comprobar esta noche.</p><ul><li><b>Encuentra Polaris.</b> Prolonga cinco veces las dos estrellas del extremo del cuenco del Carro. Que haya una estrella brillante en ese sitio ya es la suerte de la época</li><li>Pon una cámara en un trípode y <b>expón el cielo del norte 30 minutos o más</b>. En el centro de los arcos concéntricos que dibujan las estrellas queda un punto casi quieto. Ese es el polo norte celeste</li><li>Polaris tampoco es perfecta. A 0.6 grados de distancia dibuja <b>un círculo pequeño</b>. En una exposición larga se ve que Polaris también ha trazado un arco corto</li><li><b>Si alguna vez vas al hemisferio sur</b>, mira al cielo del sur. El polo sur celeste no tiene ninguna estrella brillante, así que hay que orientarse por la Cruz del Sur. Te enseña la suerte que tenemos</li></ul>",
+   "sky": {
+    "az": 0,
+    "alt": 45,
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "constellationLines": true,
+    "constellationLabels": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "Las distancias al polo norte celeste en cada época son resultado del cálculo de precesión del motor (para latitud 37.5 grados). Thuban 0.5 grados en 2700 a. C., Kochab 6.5 grados en 1000 a. C., Errai 2.1 grados en 4000 d. C., Vega 6.3 grados en 14000 d. C. Los valores de las épocas remotas salen de estirar el modelo de precesión IAU 2006 que usa el motor miles de años más allá de su alcance, y pueden diferir alrededor de un grado de otros modelos de precesión a largo plazo."
+}

@@ -1,0 +1,192 @@
+{
+ "id": "spring-arc",
+ "title": "El Arco de Primavera — sigue el mango del cazo",
+ "subtitle": "Una sola línea que empieza en el Carro y cruza el cielo de primavera",
+ "minutes": 10,
+ "level": "intro",
+ "track": "target",
+ "tags": [
+  "primavera",
+  "Arturo",
+  "Spica",
+  "salto de estrellas"
+ ],
+ "months": [
+  3,
+  4,
+  5,
+  6
+ ],
+ "intro": "El cielo de primavera no tiene ninguna constelación tan vistosa como las de invierno. Lo que sí tiene es una guía comodísima. Prolonga la curva del mango del Carro y las estrellas brillantes de la primavera se van enganchando en ella una detrás de otra.",
+ "steps": [
+  {
+   "title": "Empezando por el mango del cazo",
+   "text": "<p>Son <b>las 9 de la noche de mediados de mayo</b>, alto por el noreste. El Carro cuelga casi encima de tu cabeza.</p><p>Las tres estrellas del mango están unidas con una línea: <b>Alioth, Mizar, Alkaid</b> en ese orden. ¿Ves que el mango no es recto sino que <b>se curva hacia fuera</b>?</p><p>Esa curva es la guía de hoy. Vamos a prolongarla por el cielo.</p>",
+   "sky": {
+    "date": "2027-05-15T21:00:00+09:00",
+    "az": 40,
+    "alt": 65,
+    "fov": 70,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "connect": [
+    "* eps UMa",
+    "* zet UMa",
+    "Alkaid"
+   ]
+  },
+  {
+   "title": "Prolonga la curva — Arturo",
+   "text": "<p>La curva del mango se ha prolongado <b>unas tres veces</b> más la longitud del mango. Al final cuelga una <b>estrella naranja</b> muy brillante.</p><p>Es <b>Arturo</b>. Es la estrella más brillante del cielo de primavera, y la cuarta de todo el cielo nocturno.</p><p>En inglés recuerdan el truco como <b>Arc to Arcturus</b>, «del arco a Arturo». Traza esta única línea y la encuentras sin conocer ni una sola constelación.</p>",
+   "sky": {
+    "az": 80,
+    "alt": 62,
+    "fov": 95
+   },
+   "connect": [
+    "* eps UMa",
+    "* zet UMa",
+    "Alkaid",
+    "Arcturus"
+   ],
+   "highlight": [
+    "Arcturus"
+   ]
+  },
+  {
+   "title": "Daegakseong — una forastera que atraviesa la galaxia",
+   "text": "<p>Está seleccionado Arturo. <b>Magnitud -0.05</b>, distancia <b>unos 37 años luz</b>.</p><p>En Asia Oriental se le llamaba <b>Daegakseong</b> (大角星), «el gran cuerno». Esta parte del cielo se veía como un <b>dragón azul</b>, y <b>Gaksu</b> (角宿), donde está Spica, es su cuerno; Arturo se leía como un cuerno mayor puesto por encima.</p><p>¿Le ves el naranja? Tipo espectral <b>K</b>, una estrella vieja con una temperatura superficial de unos 4300 grados. No es más masiva que el Sol, pero ha gastado casi toda su vida y se ha <b>hinchado 25 veces</b> su tamaño anterior. Nuestro propio Sol tendrá este aspecto dentro de 5000 millones de años.</p><p>Esta estrella tiene otra cosa poco corriente. Mientras las demás estrellas giran juntas siguiendo el disco de la galaxia, Arturo se mueve <b>atravesando el disco</b>. Se cree que pertenece a un grupo de estrellas venidas de una galaxia pequeña que la nuestra se tragó hace mucho. <b>No es una vecina sino una visitante de paso.</b></p><p>Por eso la velocidad a la que se mueve por el cielo es notablemente alta. Dentro de unos 800 años se habrá desplazado de donde está ahora el ancho de la luna llena.</p>",
+   "sky": {
+    "fov": 45
+   },
+   "select": "Arcturus"
+  },
+  {
+   "title": "Prolóngala más — Spica",
+   "text": "<p>La misma curva se ha prolongado <b>una vez más</b>. Esta vez engancha una <b>estrella azul, casi blanca</b>.</p><p>Es <b>Spica</b>. El nombre es latín y significa «<b>espiga de trigo</b>»; es la estrella principal de Virgo. Viene de la imagen de la doncella sosteniendo una espiga en la mano.</p><p>La regla mnemotécnica inglesa sigue desde aquí: <b>Arc to Arcturus, then Speed on to Spica.</b></p><p>En Asia Oriental esta estrella es <b>Gaksu</b> (角宿), la primera de las 28 mansiones. Cuando se dividió el cielo en veintiocho, la cuenta empezaba aquí. Que esta estrella subiera al cielo de la tarde en primavera era la señal para empezar el año agrícola.</p>",
+   "sky": {
+    "az": 105,
+    "alt": 55,
+    "fov": 110
+   },
+   "connect": [
+    "Alkaid",
+    "Arcturus",
+    "Spica"
+   ],
+   "highlight": [
+    "Spica"
+   ]
+  },
+  {
+   "title": "Compara los colores de las dos",
+   "text": "<p>Está seleccionada Spica. <b>Magnitud 1.0</b>, distancia <b>250 años luz</b>.</p><p>Su tipo espectral es <b>B</b>. Una temperatura superficial de más de <b>20000 grados</b>: una estrella muy caliente y muy joven.</p><p>Arturo, que mirábamos hace un momento, era naranja a 4300 grados. Mira de una a otra. <b>Naranja frente a blanco azulado</b>, y la diferencia de color no admite duda. Están a solo 30 grados en el cielo, así que no hay mejor pareja para la comparación.</p><p>Spica son en realidad <b>dos estrellas</b>, una binaria tan pegada que se dan la vuelta en cuatro días. Ningún telescopio las separa; solo el espectro de la luz lo delata. Tiradas cada una por la gravedad de la otra, las dos orbitan <b>deformadas en forma de huevo</b>.</p>",
+   "sky": {
+    "fov": 40
+   },
+   "select": "Spica",
+   "quiz": {
+    "q": "Prolongando la curva del mango del Carro, ¿con qué estrellas te encuentras, por orden?",
+    "opts": [
+     "Sirio y luego Proción",
+     "Arturo y luego Spica",
+     "Vega y luego Altair",
+     "Polaris y luego Capella"
+    ],
+    "right": 1,
+    "explain": "Prolonga la curva del mango en el sentido en que se dobla y llegas primero a la naranja Arturo; si la prolongas más, a la blanquiazul Spica. Sirio y Proción son estrellas del cielo de invierno, y Vega y Altair pertenecen al verano. Polaris no se encuentra desde el mango: para eso se prolongan las dos estrellas exteriores del cuenco."
+   }
+  },
+  {
+   "title": "El Triángulo de Primavera",
+   "text": "<p>Añade una estrella más a Arturo y Spica y tienes un triángulo. Es <b>Denébola</b>, en la cola de Leo.</p><p>Estas tres forman el <b>Triángulo de Primavera</b>. No es tan evidente como el de Verano, pero en un cielo primaveral escaso de estrellas brillantes las tres sirven de puntos de referencia.</p><p>El nombre Denébola es árabe y significa «<b>la cola del león</b>». Comparte raíz con Deneb, en el Cisne, otro caso de un nombre puesto por los astrónomos del viejo mundo árabe que acabó siendo el que usa el mundo entero.</p>",
+   "sky": {
+    "az": 150,
+    "alt": 55,
+    "fov": 95
+   },
+   "clearSelection": true,
+   "connect": [
+    "Arcturus",
+    "Spica",
+    "* bet Leo",
+    "Arcturus"
+   ]
+  },
+  {
+   "title": "Una vela pequeña bajo Spica — el Cuervo",
+   "text": "<p>Mira el sitio que queda un poco por debajo y a la <b>derecha (el oeste)</b> de Spica. Cuatro estrellas forman un pequeño <b>trapecio</b>. Es <b>el Cuervo</b>.</p><p>No es brillante, pero la forma es lo bastante marcada como para que, una vez que la localizas, vuelvas a encontrarla. Parece una pequeña vela en el cielo del sur.</p><p>Une las dos estrellas de arriba del trapecio y prolonga la línea a la izquierda: llegas a Spica. Es otra ruta hasta Spica, llegando por el lado contrario al del Arco de Primavera.</p><p>En el mito occidental el cuervo quedó fijado en el cielo por decir una mentira mientras hacía un recado para Apolo. La Copa y la Hidra están justo al lado, y entre las tres componen una sola historia.</p>",
+   "sky": {
+    "az": 168,
+    "alt": 40,
+    "fov": 60
+   },
+   "connect": [
+    [
+     "* gam Crv",
+     "* del Crv"
+    ]
+   ],
+   "highlight": [
+    "Spica"
+   ]
+  },
+  {
+   "title": "El cielo de primavera no tiene Vía Láctea",
+   "text": "<p>El campo se amplía para abarcar el cielo de primavera entero. Hay una cosa que lo diferencia mucho del verano y del invierno: <b>no hay Vía Láctea.</b></p><p>La dirección que miramos una tarde de primavera no va a lo largo del disco de nuestra galaxia sino <b>fuera del disco, por encima de la galaxia</b>. Así que hay pocas estrellas y el cielo se ve desnudo.</p><p>A cambio, nada se interpone y <b>el exterior de la galaxia</b> queda a la vista. Hacia Virgo y Coma Berenices está el Cúmulo de Virgo, una reunión de <b>más de 1500 galaxias</b> a 60 millones de años luz.</p><p>Estas galaxias no se ven a simple vista, eso sí. Que a la primavera se la llame «la temporada de caza de galaxias» es cosa de quien tiene telescopio. Para quien observa a simple vista, la primavera es una estación en la que <b>con el Arco basta</b>.</p>",
+   "sky": {
+    "az": 120,
+    "alt": 55,
+    "fov": 120
+   },
+   "show": {
+    "dso": true
+   },
+   "clearSelection": true,
+   "quiz": {
+    "q": "¿Por qué no hay Vía Láctea en el cielo de las tardes de primavera?",
+    "opts": [
+     "Porque en primavera hay más vapor de agua en el aire",
+     "Porque esa dirección mira fuera del disco de nuestra galaxia en lugar de a lo largo de él",
+     "Porque en primavera la Vía Láctea está arriba de día",
+     "Porque la luz de la Luna es brillante"
+    ],
+    "right": 1,
+    "explain": "La Vía Láctea es la franja que sale cuando el disco de nuestra galaxia se ve de canto y las estrellas se amontonan unas detrás de otras. Una tarde de primavera miras casi en ángulo recto al disco, hacia fuera y por encima de la galaxia, así que no hay estrellas que se amontonen. La humedad y la luz de la Luna son condiciones de una noche concreta, no algo que se repita de forma fiable con la estación."
+   }
+  },
+  {
+   "title": "Traza la curva esta noche",
+   "text": "<p>El Arco de Primavera es una observación que <b>no necesita ningún equipo</b>. Usa solo estrellas brillantes, así que funciona desde una ciudad.</p><ul><li>Está en el cielo de la tarde <b>de marzo a junio</b>. A las 9 de la noche en mayo el Carro queda casi encima</li><li>Encuentra primero el Carro y después sigue con la vista <b>el sentido en que se dobla el mango</b>. Si te encuentras una estrella naranja brillante a unas tres longitudes de mango, esa es Arturo</li><li><b>La misma distancia otra vez</b> desde ahí te lleva a Spica, baja por el sur</li><li><b>Compara los colores</b> de las dos. Arturo es naranja, Spica un azul con blanco</li><li>Encuentra el trapecito del Cuervo por debajo de Spica y tu mapa del cielo de primavera queda completo</li></ul><p>Aprende esta única curva y no volverás a perderte en el cielo de primavera.</p>",
+   "sky": {
+    "az": 100,
+    "alt": 55,
+    "fov": 100,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "dso": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "El origen de los nombres de las estrellas sigue la lista de nombres estelares de la Unión Astronómica Internacional (UAI), y la correspondencia con las 28 mansiones sigue material del Instituto Coreano de Astronomía y Ciencias del Espacio."
+}

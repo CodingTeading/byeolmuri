@@ -1,0 +1,190 @@
+{
+ "id": "summer-triangle",
+ "title": "El Triángulo de Verano y la Vía Láctea",
+ "subtitle": "Comprobamos si de verdad corre un río entre la Tejedora y el Vaquero",
+ "minutes": 10,
+ "level": "intro",
+ "track": "target",
+ "tags": [
+  "verano",
+  "Triángulo de Verano",
+  "Vía Láctea",
+  "la Tejedora y el Vaquero"
+ ],
+ "months": [
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "intro": "Una tarde de verano, tres estrellas muy brillantes forman un gran triángulo sobre tu cabeza. Se ve desde el centro de una ciudad. Dos de las tres son el Vaquero y la Tejedora, y la franja neblinosa que pasa entre ellas es la Vía Láctea.",
+ "steps": [
+  {
+   "title": "Una tarde de verano, mira hacia arriba",
+   "text": "<p>Son <b>las 9 de la noche de mediados de agosto</b> y miras hacia arriba desde el este, casi al cenit. La ubicación es donde estás ahora mismo.</p><p>¿Ves tres estrellas muy brillantes formando un gran triángulo? Están unidas con líneas. Es el <b>Triángulo de Verano</b>.</p><p>Cada una de las tres es la estrella principal de una constelación distinta. <b>Vega</b> está en Lira, <b>Altair</b> en el Águila y <b>Deneb</b> en el Cisne.</p>",
+   "sky": {
+    "date": "2026-08-15T21:00:00+09:00",
+    "az": 95,
+    "alt": 68,
+    "fov": 100,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true
+   },
+   "connect": [
+    "Vega",
+    "Deneb",
+    "Altair",
+    "Vega"
+   ]
+  },
+  {
+   "title": "Vega — la más brillante del triángulo",
+   "text": "<p>Está seleccionada la más brillante de las tres. Es <b>Vega</b>, conocida en Asia Oriental como <b>la Tejedora</b>.</p><p>La información del objeto da una magnitud de alrededor de <b>0.0</b> y una distancia de <b>unos 25 años luz</b>. Eso la coloca entre las cinco más brillantes de todo el cielo nocturno.</p><p>Es la estrella principal de Lira, y justo debajo cuelga un pequeño paralelogramo de cuatro estrellas. Esa es la lira.</p><p>Conviene saberlo: <b>dentro de unos 12000 años Vega tomará el relevo como estrella polar</b>. El eje de la Tierra se bambolea como una peonza y da una vuelta cada 26000 años.</p>",
+   "sky": {
+    "fov": 45
+   },
+   "select": "Vega"
+  },
+  {
+   "title": "Altair — al otro lado de la Vía Láctea",
+   "text": "<p>El vértice sur del triángulo es <b>Altair</b>, el Vaquero. Con <b>magnitud 0.8</b> y a <b>unos 17 años luz</b>, está lo bastante cerca de Vega como para considerarla vecina.</p><p>¿Ves una estrella algo más débil pegada a cada lado? Se han leído como los bueyes que arrea el vaquero, y como las dos alas del águila.</p><p>Estas son las dos estrellas que se encuentran sobre el puente de urracas en la fiesta de Qixi. La tarde del 7.º día del 7.º mes lunar, la pareja sube a lo más alto del cielo una junto a otra, con la Vía Láctea entre ambas. El relato se construyó para encajar en esa estación.</p><p>En realidad las dos estrellas están a <b>unos 15 años luz</b> la una de la otra. Ni a la velocidad de la luz se cruza eso en menos de 15 años.</p>",
+   "sky": {
+    "fov": 35
+   },
+   "select": "Altair"
+  },
+  {
+   "title": "Deneb — la que parece más tenue y en realidad es la más brillante",
+   "text": "<p>El vértice que queda es <b>Deneb</b>, en el Cisne. Es la que más tenue parece de las tres. Con <b>magnitud 1.3</b> es unas tres veces más débil que Vega.</p><p>Pero mira las distancias. Vega está a 25 años luz y Altair a 17, mientras que Deneb está a <b>más de 1400 años luz</b>. Está tan lejos que la medida baila bastante cada vez que se toma.</p><p>Parecer igual de brillante estando más de 50 veces más lejos significa que en realidad es <b>enormemente brillante</b>. Trae a Deneb hasta donde está Vega y brillaría <b>como media Luna</b>, borrando la noche.</p><p>El brillo que ves no es el brillo que tiene una estrella. Esa historia sigue en «Qué significa el brillo».</p>",
+   "sky": {
+    "fov": 40
+   },
+   "select": "Deneb",
+   "quiz": {
+    "q": "De las tres estrellas del Triángulo de Verano, ¿cuál emite realmente más luz?",
+    "opts": [
+     "Vega, la que parece más brillante",
+     "Deneb, la que parece más tenue",
+     "Altair, la del medio",
+     "Las tres son parecidas"
+    ],
+    "right": 1,
+    "explain": "Deneb está más de 50 veces más lejos que las otras dos y aun así parece igual de brillante, lo que significa que realmente lo es. Vega parece brillante porque está cerca, a 25 años luz, y Altair está todavía más cerca. El brillo que ves sale de «brillo real dividido por la distancia al cuadrado». El doble de lejos es cuatro veces más tenue."
+   }
+  },
+  {
+   "title": "El cisne vuela siguiendo la Vía Láctea",
+   "text": "<p>Están encendidas las figuras de las constelaciones. Deneb resulta ser <b>la cola del cisne</b>. El nombre mismo significa «cola» en árabe.</p><p>El cisne vuela hacia el suroeste con el cuello bien estirado. La forma de cruz es tan clara que también se le llama <b>la Cruz del Norte</b>, un nombre emparejado con la Cruz del Sur del hemisferio sur.</p><p>Fíjate en la dirección en que vuela: va <b>siguiendo la Vía Láctea</b>.</p>",
+   "sky": {
+    "fov": 70
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationArt": true,
+    "constellationLabels": true,
+    "onlyPointedConstellation": true
+   },
+   "select": "CON western Cyg"
+  },
+  {
+   "title": "Y entre ellas corre un río",
+   "text": "<p>Las figuras están apagadas y el campo, más amplio. Una franja pálida cruza el triángulo de lado a lado. Es la <b>Vía Láctea</b>. El Vaquero y la Tejedora se miran de verdad a través de ella.</p><p>La Vía Láctea no es una nube, son <b>estrellas</b>. Están tan lejos y tan apretadas que no puedes separarlas una a una y se funden en una neblina. Galileo lo confirmó con un telescopio en 1610 y se lo contó al mundo.</p><p>Nuestra galaxia es un disco plano y nosotros estamos <b>dentro</b> de él. Mirar a lo largo del plano del disco amontona unas estrellas detrás de otras, y eso es lo que forma la franja.</p><p>Cerca del Cisne, ¿parece que la Vía Láctea se parte a lo largo? No es que falten estrellas: hay <b>una nube de polvo</b> tapando la luz de las que están detrás. Se llama <b>la Gran Grieta</b>.</p>",
+   "sky": {
+    "fov": 120
+   },
+   "show": {
+    "constellationArt": false,
+    "constellationLines": false,
+    "constellationLabels": false,
+    "onlyPointedConstellation": false,
+    "dso": true
+   },
+   "clearSelection": true,
+   "quiz": {
+    "q": "¿Por qué la Vía Láctea se ve como una franja pálida?",
+    "opts": [
+     "Porque es una nube de gas y polvo",
+     "Porque son estrellas demasiado lejanas para separarlas, amontonadas unas detrás de otras",
+     "Porque la luz de la Luna se dispersa en el aire",
+     "Porque brilla el vapor de agua de la atmósfera"
+    ],
+    "right": 1,
+    "explain": "La Vía Láctea son cientos de miles de millones de estrellas vistas amontonadas. También hay nubes de polvo interestelar, pero en lugar de dar luz tapan lo que hay detrás y forman las zonas oscuras, como la Gran Grieta. Si la causa fuera la luz de la Luna o el aire, se vería en cualquier estación y en cualquier dirección, mientras que la Vía Láctea está siempre en el mismo sitio entre las mismas estrellas."
+   }
+  },
+  {
+   "title": "El centro de la galaxia queda bajo, al sur",
+   "text": "<p>La vista ha bajado al sur, a donde la Vía Láctea es más ancha y brillante, hacia <b>Sagitario</b> y <b>Escorpio</b>.</p><p>Por ahí queda <b>el centro de nuestra galaxia</b>. Está a unos 26000 años luz, y justo en el medio hay un agujero negro de unos 4 millones de masas solares. No se ve, claro. Un polvo espeso se interpone y el centro no se alcanza en luz visible.</p><p>Lo que sí ofrece esta dirección es un montón de cosas que merecen unos prismáticos. Cúmulos y nebulosas como la <b>nebulosa de la Laguna (M 8)</b> y <b>M 22</b> se apiñan hacia el centro galáctico.</p>",
+   "sky": {
+    "az": 190,
+    "alt": 25,
+    "fov": 70
+   },
+   "highlight": [
+    {
+     "target": "M 8",
+     "radius": 2.5
+    },
+    {
+     "target": "M 22",
+     "radius": 2.5
+    }
+   ]
+  },
+  {
+   "title": "Si tienes prismáticos",
+   "text": "<p>También hay mucho que ver dentro del triángulo.</p><ul><li><b>Albireo</b> — la estrella del pico del cisne. Un telescopio pequeño la separa en una estrella dorada y otra azul, una junto a la otra. La lección «El color de una estrella es su temperatura» la mira de cerca</li><li><b>la nebulosa del Anillo (M 57)</b> — dentro de Lira. Un anillo de gas expulsado por una estrella moribunda. Un telescopio pequeño muestra la rosquilla</li><li><b>M 27</b> — la nebulosa Dumbbell, en la Zorra. Hasta con prismáticos se capta débilmente</li></ul><p>Todas están dentro de este triángulo o justo al lado. Por eso el cielo de verano es la estación de la observación amateur.</p>",
+   "sky": {
+    "az": 110,
+    "alt": 70,
+    "fov": 90
+   },
+   "highlight": [
+    {
+     "target": "* bet01 Cyg",
+     "radius": 3
+    },
+    {
+     "target": "M 57",
+     "radius": 3
+    },
+    {
+     "target": "M 27",
+     "radius": 3
+    }
+   ]
+  },
+  {
+   "title": "Mira hacia arriba esta noche",
+   "text": "<p>El Triángulo de Verano <b>se ve incluso desde una ciudad.</b> Las tres estrellas son lo bastante brillantes como para sobrevivir a casi cualquier farola.</p><ul><li>Está en el cielo de las primeras horas de la noche <b>de junio a octubre</b>. En plena noche de verano queda casi en el cenit</li><li>Busca primero la estrella más brillante: es Vega. Desde ahí ve al sur hasta Altair y al este hasta Deneb, y el triángulo se cierra</li><li><b>La Vía Láctea no se verá desde una ciudad.</b> Aléjate de las farolas y dale a tus ojos unos 20 minutos para acostumbrarse a la oscuridad. Tiene que ser una noche sin Luna</li><li>Cuando tengas la Vía Láctea, busca también <b>la Gran Grieta</b>. Es el tramo, alrededor del Cisne, donde la franja parece bifurcarse</li></ul>",
+   "sky": {
+    "fov": 100,
+    "timeSpeed": 0,
+    "az": 95,
+    "alt": 65
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "dso": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "El origen de los nombres de las estrellas sigue la lista de nombres estelares de la Unión Astronómica Internacional (UAI), y las distancias siguen las medidas de paralaje de Hiparcos y Gaia."
+}

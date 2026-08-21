@@ -1,0 +1,200 @@
+{
+ "id": "latitude-sky",
+ "title": "Latitude changes the sky",
+ "subtitle": "Moving the observing site to the equator, the Pole and the southern hemisphere to compare",
+ "minutes": 11,
+ "level": "deep",
+ "track": "principle",
+ "tags": [
+  "latitude",
+  "Polaris",
+  "diurnal motion",
+  "southern hemisphere"
+ ],
+ "intro": "The height of Polaris is the latitude of the place you are standing. Almost every rule of the night sky comes out of that one sentence. In this lesson alone the observing site moves about for the sake of comparison. Leaving the lesson brings the sky back to where you are.",
+ "steps": [
+  {
+   "title": "First, from where you are",
+   "text": "<p>You are looking <b>north</b> from where you are. The <b>azimuthal grid</b> is switched on so that you can read off altitude and azimuth.</p><p><b>Polaris</b> is selected. Look at <b>Az/Alt</b> in the object information. The azimuth is 0 degrees, which is due north. Now take note of the altitude figure.</p><p>That figure is <b>the latitude of where you are</b>. In Seoul it is about 37.5 degrees, in Busan about 35, in Tokyo about 35.7, in Madrid about 40.4. It is not a coincidence: the geometry forces it.</p><p>The place where the Earth's axis of rotation, carried out into the sky, would land is the <b>north celestial pole</b>, and Polaris sits right beside it. The further north you go on the Earth, the more the axis tilts towards the top of your sky, and Polaris climbs by exactly as much.</p>",
+   "sky": {
+    "date": "2026-11-15T21:00:00+09:00",
+    "az": 0,
+    "alt": 40,
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationLabels": true,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": true,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "select": "Polaris"
+  },
+  {
+   "title": "Stars that turn all night and never set",
+   "text": "<p>Time runs fast. Every star draws a circle around Polaris.</p><p>One rule comes out of this. Stars close to Polaris draw small circles and so <b>never drop below the horizon</b>. Such stars are called <b>circumpolar</b>. At a latitude of around 37 degrees (Seoul, Tokyo, Athens) <b>Cassiopeia</b> qualifies and never sets. The Big Dipper is a near thing: the bowl never sets, but <b>Alkaid</b> at the tip of the handle dips briefly below the horizon. The rule in the next paragraph lets you check that for yourself.</p><p>The boundary is simple. Anything inside a circle around the celestial pole <b>as wide as your own latitude</b> is circumpolar. At 37 degrees, stars within 37 degrees of the pole never set.</p><p>So <b>the higher your latitude the more stars never set</b>, and in exchange the more stars in the southern sky you can never see at all. Latitude decides how much of the sky is yours.</p>",
+   "sky": {
+    "fov": 120,
+    "timeSpeed": 500
+   },
+   "clearSelection": true
+  },
+  {
+   "title": "Down at the equator",
+   "text": "<p>The observing site has moved to <b>the equator</b>, latitude 0. The landscape is switched off so you can see below the horizon, and the azimuthal grid is on so you can read heights.</p><p>Look at Polaris. <b>It is sitting on the 0-degree line of the grid, which is to say on the horizon.</b> Altitude 0, latitude 0. The rule holds exactly.</p><p>The way the stars turn has changed completely as well. Here they rise <b>straight up</b> from the horizon and set straight down. They do not wheel at a slant; they go up and come down.</p><p>And at the equator <b>there are no circumpolar stars at all.</b> Every star rises and sets. In exchange this is the one latitude where, given a year, you can see <b>the whole sky</b>. The Southern Cross and the Big Dipper alike.</p><p>Note that the place name at the bottom left of the screen is still your saved observing site. The lesson has moved <b>the sky only</b>. Leaving the lesson brings the sky back to where you are.</p>",
+   "sky": {
+    "lat": 0,
+    "lng": 127,
+    "elev": 0,
+    "az": 0,
+    "alt": 30,
+    "fov": 110,
+    "timeSpeed": 500
+   },
+   "highlight": [
+    "Polaris"
+   ],
+   "show": {
+    "landscape": false,
+    "azimuthalGrid": true
+   }
+  },
+  {
+   "title": "Standing at the Pole",
+   "text": "<p>Now somewhere near <b>the North Pole</b>, at latitude 89 degrees.</p><p>Polaris is <b>almost at the top of the sky</b>. Altitude 89, the innermost ring of the grid.</p><p>Look at how the stars turn. They go round <b>parallel to the horizon</b>. Nothing rises and nothing sets; they simply circle at the same height.</p><p>So at the Pole you see <b>only half of the sky</b>, and that half stays <b>the same all year round</b>. Orion grazes the horizon and shows only half of itself for ever, and the stars of the southern sky can never be seen at all.</p><p>Put the other way round, the sky at the Pole <b>has no seasons</b>. The constellations do not change. What it has instead is half a year of day and half a year of night.</p>",
+   "sky": {
+    "lat": 89,
+    "alt": 60,
+    "fov": 120
+   },
+   "highlight": [
+    "Polaris"
+   ],
+   "quiz": {
+    "q": "You measure Polaris and find it about 35 degrees above the horizon. Roughly where are you?",
+    "opts": [
+     "Near the equator",
+     "Near 35°N",
+     "Near 55°N",
+     "In the southern hemisphere"
+    ],
+    "right": 1,
+    "explain": "The altitude of Polaris is the northern latitude of the site, plain and simple. At the equator it would be 0; at 55°N it would show at 55. In the southern hemisphere Polaris is below the horizon and cannot be seen at all. This is how the old navigators found their latitude from the height of a single star."
+   }
+  },
+  {
+   "title": "In the southern hemisphere the sky turns over",
+   "text": "<p>Now the <b>southern hemisphere</b>. We have moved to 34 degrees south, near Sydney, and are looking <b>north</b>. The date is January.</p><p>Orion is high up, but it stands <b>upside down</b>. The hunter is on his head. It is inverted from the way we are used to seeing it. The sky has not turned over; <b>we are standing on the other side of the Earth</b>.</p><p>January in the southern hemisphere is <b>midsummer</b>. So for people there Orion is a <b>summer constellation</b>. The same constellation is called a winter one in the north and a summer one in the south.</p><p>The direction the stars turn is reversed as well. In the northern hemisphere it is anticlockwise; in the southern hemisphere they go round <b>clockwise</b>.</p>",
+   "sky": {
+    "date": "2027-01-20T21:00:00+09:00",
+    "lat": -33.9,
+    "lng": 151.2,
+    "az": 0,
+    "alt": 55,
+    "fov": 100,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationArt": true,
+    "onlyPointedConstellation": true,
+    "azimuthalGrid": false
+   },
+   "select": "CON western Ori"
+  },
+  {
+   "title": "The southern sky has no pole star",
+   "text": "<p>Turned round to the south. Here is the <b>south celestial pole</b>, and the stars turn about this point.</p><p>But <b>there is no bright star at that spot.</b> The northern hemisphere was lucky in having Polaris happen to sit there. Southern navigators use the <b>Southern Cross</b> instead: extend the long axis of the cross 4.5 times over and you arrive at the south celestial pole. Exactly the same knack as finding Polaris from the Big Dipper.</p><p>Beside the Southern Cross are two bright stars. One of them, <b>Rigil Kentaurus</b> (Alpha Centauri), is <b>the nearest star system to the Sun</b>, at 4.4 light years. If humans ever travel to a star, it will be the first stop.</p><p>These stars <b>can never be seen</b> north of about 30°N. This is what it means to say that latitude sets the list of what you can see.</p>",
+   "sky": {
+    "az": 180,
+    "alt": 40,
+    "fov": 90
+   },
+   "show": {
+    "constellationArt": false,
+    "constellationLines": true,
+    "constellationLabels": true,
+    "onlyPointedConstellation": false
+   },
+   "connect": [
+    "* gam Cru",
+    "* alf01 Cru"
+   ],
+   "highlight": [
+    {
+     "target": "Rigel Kentaurus",
+     "radius": 2
+    },
+    {
+     "target": "* bet Cen",
+     "radius": 2
+    }
+   ]
+  },
+  {
+   "title": "The star that four degrees of latitude decides",
+   "text": "<p>Back to the middle latitudes of the northern hemisphere: <b>Jeju Island</b> in Korea, at 33.4°N. We are looking at the southern horizon on a February evening.</p><p>Just above the horizon, at a height of around <b>4 degrees</b>, one bright star is hanging. This is <b>Canopus</b>, the old man star. It is the second brightest star in the night sky, and yet a little more latitude makes it this hard to see.</p><p>Seoul lies 4 degrees further north, and from there this star <b>cannot climb above the horizon</b>. Those 4 degrees are the whole difference between a star you can see and one you cannot.</p><p>In Joseon Korea a sighting of Canopus was treated as an auspicious sign for the country and entered in the records, and seeing it was believed to bring long life. A star that showed only from Jeju and the southern coast, and even there only briefly above the horizon, was bound to be prized.</p>",
+   "sky": {
+    "date": "2027-02-10T21:30:00+09:00",
+    "lat": 33.4,
+    "lng": 126.5,
+    "az": 180,
+    "alt": 10,
+    "fov": 35
+   },
+   "show": {
+    "azimuthalGrid": true,
+    "landscape": false,
+    "constellationLines": false,
+    "constellationLabels": false
+   },
+   "highlight": [
+    {
+     "target": "* alf Car",
+     "radius": 1.5
+    }
+   ],
+   "quiz": {
+    "q": "How does the night sky change as you move to higher latitudes?",
+    "opts": [
+     "The total number of stars you can see goes up",
+     "More stars never set, but more stars in the south become permanently invisible",
+     "The stars turn faster",
+     "Nothing changes"
+    ],
+    "right": 1,
+    "explain": "As the latitude rises the celestial pole climbs higher and more of the stars around it become circumpolar. In exchange, that much of the southern sky sinks below the horizon. The area of sky available over the course of a year is greatest at the equator and shrinks towards the poles. The speed at which the stars turn is set by the Earth's rotation and is the same everywhere."
+   }
+  },
+  {
+   "title": "Measure your latitude with your fist",
+   "text": "<p>The observing site is back to <b>where you are</b>, and the sky on screen is once again the sky you will see outdoors tonight. Now it is your turn to check it.</p><ul><li>On a clear night look <b>north</b> and find Polaris. Extend the two end stars of the Big Dipper's bowl five times over</li><li>Hold your arm out straight and <b>make a fist: it is about 10 degrees across</b>. Count how many fists you can stack from the horizon up to Polaris</li><li>In Seoul that comes to <b>three or four fists</b>, which is latitude 37 degrees. You have measured your place on the Earth with no instrument at all</li><li>Measure again when you travel. <b>The further south you go the lower Polaris sits.</b> From Jeju it is about half a fist lower than from Seoul</li><li>Cross the equator by air and Polaris drops below the horizon while the Southern Cross comes up</li></ul><p>A finger is about 1 degree wide, a fist about 10 degrees, and a span from thumb to little finger about 20 degrees. With that ruler you can measure angles anywhere in the sky.</p>",
+   "sky": {
+    "az": 0,
+    "alt": 45,
+    "fov": 90,
+    "timeSpeed": 0,
+    "home": true
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "constellationLines": true
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "The record of Canopus follows the sightings of it entered in the Annals of the Joseon Dynasty. This lesson moves the observing site in order to explain, and leaving it restores the original position."
+}

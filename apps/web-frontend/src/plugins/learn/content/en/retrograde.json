@@ -1,0 +1,151 @@
+{
+ "id": "retrograde",
+ "title": "Why do the planets go backwards?",
+ "subtitle": "Winding time on a few months to watch Mars draw a loop in the sky",
+ "minutes": 11,
+ "level": "deep",
+ "track": "principle",
+ "tags": [
+  "planet",
+  "retrograde",
+  "opposition",
+  "geocentrism"
+ ],
+ "intro": "Planets travel steadily one way among the constellations. Then every few months one of them suddenly turns about, doubles back, and afterwards carries on as before. This one odd movement had people puzzling for two thousand years, and led in the end to the conclusion that it is the Earth that moves.",
+ "steps": [
+  {
+   "title": "Two objects that do not twinkle",
+   "text": "<p>It is <b>9 pm on 20 February 2027</b>, looking east. Near Leo there are <b>two</b> strikingly bright things. The brighter, whiter one above is <b>Jupiter</b> and the red one below it is <b>Mars</b>. The large object between them is the Moon.</p><p>In the real sky the easiest way to tell a planet from a star is <b>the twinkling</b>. However large a star may be, it is so far off that it shows as <b>a point</b>, and that single point is shaken wholesale by the moving air, so it flickers. A planet is near enough to show as <b>a very small disc</b>, and the shaking at different places on the disc cancels out, so it shines <b>steadily</b>.</p><p>The red line is the <b>ecliptic</b>. Planets are only ever found near this line, because the planets of the Solar System all orbit in very nearly the same plane. The Moon keeps to this path too.</p>",
+   "sky": {
+    "date": "2027-02-20T21:00:00+09:00",
+    "az": 100,
+    "alt": 40,
+    "fov": 80,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationLabels": true,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": true,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "highlight": [
+    {
+     "target": "NAME Mars",
+     "radius": 4
+    },
+    {
+     "target": "NAME Jupiter",
+     "radius": 4
+    }
+   ]
+  },
+  {
+   "title": "The wanderers",
+   "text": "<p>Mars is selected. Look at the magnitude in the object information: <b>-1.2</b>, a match for Sirius. Jupiter beside it is <b>-2.4</b>, three times brighter again.</p><p>'Planet' is Greek for <b>wanderer</b>. While all the other stars turned together, keeping the distances between them unchanged, these five alone — Mercury, Venus, Mars, Jupiter and Saturn — <b>roamed about</b> among the constellations.</p><p>For people in the ancient world this mattered a great deal. If the heavens were a perfect and unchanging place, what were these stars that went wherever they pleased?</p><p>Even that was bearable. The real trouble was that the wanderers <b>sometimes went backwards</b>.</p>",
+   "sky": {
+    "fov": 50
+   },
+   "select": "NAME Mars"
+  },
+  {
+   "title": "Watch it happen — the loop Mars draws",
+   "text": "<p>Now time runs fast, <b>a day per second</b>. Mars takes about a fortnight to turn round, so a little patience will do it. The view is locked onto <b>Regulus</b> in Leo, so the constellations stand still and <b>only the planets move</b>.</p><p>Watch for a moment. Mars travels steadily leftwards (east) among the stars, and then at some point it <b>stops and turns back</b>. It runs backwards for a good while, stops again, and sets off the way it was going before. Jupiter does the same.</p><p>No trail is left on screen, so join it up with your eye. Joined up, it draws a <b>loop</b> or a <b>zigzag</b> in the sky. This is <b>retrograde motion</b>.</p><p>In 2027 <b>Mars is retrograde from 12 January to 4 April</b> and <b>Jupiter from 15 December 2026 to 14 April 2027</b>. It is an uncommon year, with the two of them walking backwards side by side in the same sky.</p>",
+   "sky": {
+    "date": "2026-12-25T23:00:00+09:00",
+    "fov": 35,
+    "timeSpeed": 86400
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationLabels": true,
+    "atmosphere": false,
+    "landscape": false
+   },
+   "lookAt": "* alf Leo"
+  },
+  {
+   "title": "The problem that took two thousand years",
+   "text": "<p>If the Earth stands still at the centre of the universe and everything turns about it, a planet ought to go one way and one way only. In practice they double back.</p><p><b>Ptolemy</b>, in the 2nd century, solved it like this. A planet goes round a large circle centred on the Earth, and at the same time it goes round <b>a small circle riding on that large one</b>. The small circle is called an <b>epicycle</b>. Passing along the inner part of the small circle, the explanation ran, makes the planet appear to go backwards.</p><p>The model <b>worked well</b>. When it disagreed with observation you could simply add another circle. It stood as the standard of astronomy for 1,400 years. The number of circles did keep growing, though.</p><p>In 1543 <b>Copernicus</b>, instead of adding another circle, <b>changed the centre</b>. Put the Sun in the middle and retrograde motion explains itself, with no epicycles at all.</p>",
+   "sky": {
+    "timeSpeed": 0
+   }
+  },
+  {
+   "title": "What happens when you overtake",
+   "text": "<p>The answer is simple. <b>The Earth is overtaking Mars.</b></p><p>The Earth runs on the inner orbit, closer to the Sun. Inner means faster: the Earth goes round once in a year while Mars takes 1.9 years. So every 2 years and 2 months the Earth catches Mars up from the inside and passes it.</p><p>Think of overtaking a slower car in the next lane on a motorway. While you are alongside, that car seems to be moving forward, but at the moment you pass it the car seems to <b>slide backwards</b>. With hills in the distance behind it the effect is clearer still.</p><p>In the sky <b>the distant constellations are those hills</b>. Mars has never once actually gone backwards. <b>We went past it.</b></p><p>Mercury and Venus, on the inner orbits, go retrograde too. In their case it is <b>they who overtake us</b>.</p>",
+   "quiz": {
+    "q": "What is really happening while Mars is retrograde?",
+    "opts": [
+     "Mars briefly turns round in its orbit",
+     "Mars leaves its orbit and comes towards the Earth",
+     "The Earth overtakes Mars from the inner orbit",
+     "The Earth's direction of rotation reverses"
+    ],
+    "right": 2,
+    "explain": "Planets always go round the Sun the same way. Retrograde motion is an illusion of the line of sight, produced when the fast Earth on the inner orbit passes the slower Mars outside it. Nothing leaves its orbit and no rotation is reversed. To account for this illusion, ancient astronomy had to build the elaborate machinery of epicycles."
+   }
+  },
+  {
+   "title": "Which makes retrograde the peak of the observing season",
+   "text": "<p>Overtaking means the two planets are <b>passing at their closest</b>. And at that moment, seen from the Earth, that planet lies <b>directly opposite</b> the Sun. This is called <b>opposition</b>.</p><p>Three things happen at opposition at once.</p><ul><li><b>It is closest</b> → it looks largest and brightest</li><li><b>It is opposite the Sun</b> → it rises as the Sun sets and is up <b>all night</b></li><li>It reaches <b>its greatest height at midnight</b> → the air gets in the way least</li></ul><p>In 2027 Mars comes to opposition on <b>20 February</b> and Jupiter nine days earlier, on <b>11 February</b>. With the two of them reaching opposition <b>within ten days of one another</b>, the night sky of February 2027 is a rare sight for a while.</p><p>Around then Mars stands at <b>magnitude -1.2</b>, more than three times brighter than the <b>+0.2</b> of two months before.</p><p>If you want surface markings or a polar cap on Mars through a telescope, <b>this is the only window there is</b>. The next opposition of Mars is in 2029. Unlike the stars, planets make you <b>wait two years if you miss the moment</b>.</p>",
+   "sky": {
+    "date": "2027-02-20T22:00:00+09:00",
+    "az": 130,
+    "alt": 45,
+    "fov": 60,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": false,
+    "landscape": true
+   },
+   "select": "NAME Mars",
+   "quiz": {
+    "q": "When is the best time to observe an outer planet?",
+    "opts": [
+     "When it hangs low in the west in the early evening",
+     "Around opposition, when it lies opposite the Sun",
+     "When it is in the same direction as the Sun",
+     "Just after retrograde motion ends"
+    ],
+    "right": 1,
+    "explain": "At opposition the planet is closest to the Earth, so it is large and bright, and it rises as the Sun sets and passes high all night. When it lies in the same direction as the Sun it is up in daylight and cannot be seen at all. Low in the west in the early evening puts it near the horizon, where the air blurs it. Retrograde motion happens on either side of opposition, so 'it is retrograde just now' is itself a signal that this is the time to observe."
+   }
+  },
+  {
+   "title": "When Hyeonghok lingers in Simsu",
+   "text": "<p>East Asia took this movement very seriously as well. Mars was called <b>Hyeonghok</b> (熒惑), 'the glittering deceiver'. Red, and unpredictable in its motion, it had earned the name.</p><p>Mars going retrograde near the red star <b>Antares</b> in Scorpius — Simsu, one of the 28 mansions — and lingering there was called <b>hyeonghok-susim</b> and read as the most ominous sign of all. Two red objects sitting side by side was not a sight anyone could miss.</p><p>The <b>Annals of the Joseon Dynasty</b> and the <b>History of Goryeo</b> record such planetary movements in careful detail. They were kept for divination, but what came of them is centuries of <b>observational data</b> that astronomical research still uses today.</p><p>Reading the sky accurately bore directly on the legitimacy of the dynasty, so the royal observatory watched the sky every night.</p>",
+   "sky": {
+    "fov": 70
+   }
+  },
+  {
+   "title": "Go and find a planet tonight",
+   "text": "<p>Planets are <b>the easiest targets of all from a city</b>. They are bright, and moonlight does not wipe them out.</p><ul><li>Check the '<b>Tonight</b>' tab for which planets are up now and when they rise and set</li><li>Look for something very bright that <b>does not twinkle</b>. Nine times out of ten it is a planet. If it is Venus it outshines everything else, so there is no mistaking it</li><li><b>Every few weeks</b>, sketch the position of the same planet together with the stars near it. A month is enough to see that it has shifted among them. This is the observation humanity kept up for two thousand years</li><li>With luck you can even catch one turning round. <b>Saturn is retrograde from late July to mid-December 2026</b>, and <b>Jupiter from 15 December 2026 to 14 April 2027</b></li><li>Even binoculars show <b>the four moons of Jupiter</b>. They are the ones Galileo saw in 1610. Watch for a few days and the moons change places</li></ul>",
+   "sky": {
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "ecliptic": false,
+    "constellationLines": false,
+    "constellationLabels": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "The retrograde periods and opposition dates of the planets come from the orbital calculations of the engine on screen. The account of hyeonghok-susim follows the usual reading of the East Asian astronomical records."
+}

@@ -1,0 +1,153 @@
+{
+ "id": "meteor-showers",
+ "title": "¿Por qué una lluvia de meteoros cae desde un solo punto?",
+ "subtitle": "Marcamos el radiante y decidimos dónde mirar esta noche",
+ "minutes": 10,
+ "level": "intro",
+ "track": "principle",
+ "tags": [
+  "lluvia de meteoros",
+  "radiante",
+  "cometa",
+  "planificación"
+ ],
+ "intro": "La noche de una lluvia de meteoros la gente suele preguntar hacia dónde hay que mirar. La respuesta es un poco rara. Los meteoros sí salen desde un punto, pero mirar fijamente ese punto te juega en contra. Vamos a ver por qué.",
+ "steps": [
+  {
+   "title": "Agosto, de madrugada, el cielo del noreste",
+   "text": "<p>Son <b>las 3 de la madrugada del 13 de agosto</b>, mirando al noreste. Es la noche en que las <b>Perseidas</b> alcanzan su máximo.</p><p>El punto marcado con un círculo es el <b>radiante</b>, entre Perseo y Casiopea. <b>Prolonga hacia atrás el rastro de cualquier meteoro que caiga esta noche</b> y todos salen de este punto.</p><p>Conviene decirlo de entrada. <b>Esta vista no puede dibujar meteoros.</b> Las estrellas y los planetas los calcula y los coloca, pero dónde y cuándo va a caer un meteoro no se puede calcular en absoluto. Así que esta lección solo ayuda hasta decidir <b>dónde mirar y cuándo</b>. El resto tienes que hacerlo fuera.</p>",
+   "sky": {
+    "date": "2026-08-13T03:00:00+09:00",
+    "az": 40,
+    "alt": 50,
+    "fov": 85,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationLabels": true,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "highlight": [
+    {
+     "ra": 48.2,
+     "de": 58.1,
+     "radius": 6
+    }
+   ]
+  },
+  {
+   "title": "El radiante es una ilusión",
+   "text": "<p>Los meteoros no están saliendo de verdad de un solo punto. Es <b>una ilusión de perspectiva</b>.</p><p>Los fragmentos llegan <b>paralelos entre sí</b>, todos viajando en la misma dirección, y chocan con la atmósfera terrestre. Unas líneas paralelas vistas de frente parecen juntarse en un punto.</p><ul><li>Unas <b>vías de tren</b> rectas que parecen unirse en un punto a lo lejos</li><li>Las <b>luces de un túnel</b> convergiendo en un punto por delante de ti</li><li>Los <b>copos de nieve</b> saliendo de un punto del parabrisas mientras conduces</li></ul><p>La última comparación es la más exacta. La Tierra <b>se está metiendo</b> en una banda de fragmentos, y nosotros lo miramos desde dentro del parabrisas.</p><p>Por eso una lluvia de meteoros lleva el nombre de <b>la constelación en la que cae el radiante</b>. Las Perseidas no vienen de Perseo; el radiante solo aparece superpuesto en esa dirección. Los fragmentos de verdad se están quemando a <b>100 km</b> sobre la Tierra.</p>",
+   "sky": {
+    "fov": 100
+   }
+  },
+  {
+   "title": "Por qué cae en la misma fecha cada año",
+   "text": "<p>Las lluvias de meteoros se repiten en <b>fechas casi idénticas</b>. Las Perseidas caen alrededor del 12 de agosto, y las Gemínidas alrededor del 14 de diciembre.</p><p>La razón es sencilla. <b>Una banda de fragmentos dejada por un cometa</b> cruza la órbita de la Tierra, y la Tierra pasa por ese sitio una vez al año. Una fecha fija significa <b>una posición fija a lo largo de la órbita</b>.</p><p>Los cuerpos progenitores se conocen todos.</p><ul><li><b>Las Perseidas</b> — cometa Swift-Tuttle (periodo de 133 años)</li><li><b>Las Leónidas</b> — cometa Tempel-Tuttle (periodo de 33 años)</li><li><b>Las Líridas</b> — cometa Thatcher (periodo de 415 años)</li><li><b>Las Gemínidas</b> — <b>el asteroide</b> Faetón. Un caso poco común</li></ul><p>Cada vez que un cometa se acerca al Sol su hielo se derrite y suelta polvo. Ese polvo se extiende a lo largo de la órbita y forma una banda. <b>Una lluvia de meteoros es la huella que dejó un cometa por donde pasó.</b></p><p>Así que en un año en que la Tierra cruza una parte densa de los restos, los meteoros caen a chorros, y en un año en que cruza una parte fina son escasos. Se conservan registros de las Leónidas de 1833 y de 1966 dejando caer <b>decenas de miles por hora</b>, y de gente que creyó que el cielo se venía abajo.</p>",
+   "sky": {
+    "fov": 90
+   },
+   "quiz": {
+    "q": "¿Por qué los meteoros de una lluvia parecen salir de un solo punto?",
+    "opts": [
+     "Porque la constelación de esa dirección está expulsando los fragmentos",
+     "Es una ilusión de perspectiva, de ver de frente unos fragmentos paralelos",
+     "Porque el campo magnético de la Tierra los concentra en un punto",
+     "Porque el cometa está de verdad instalado en el radiante"
+    ],
+    "right": 1,
+    "explain": "Los fragmentos llegan paralelos entre sí, todos en la misma dirección. Unas líneas paralelas vistas de frente convergen en un único punto de fuga, igual que unas vías de tren parecen unirse a lo lejos. La constelación está a decenas o cientos de años luz mientras los fragmentos se queman a 100 km de altura, así que no tienen nada que ver."
+   }
+  },
+  {
+   "title": "En diciembre, desde el lado contrario del cielo",
+   "text": "<p>Son <b>las 10 de la noche del 14 de diciembre</b>. Esta vez está marcado el radiante de las <b>Gemínidas</b>, justo al lado de <b>Cástor</b>, en Géminis.</p><p>Es la lluvia más fiable del año. Más de 100 por hora y, a diferencia de otras lluvias, el radiante está arriba <b>desde primera hora de la noche</b>.</p><p>Tiene un precio. Mediados de diciembre significa que <b>hace frío.</b> Y observar una lluvia de meteoros consiste en estarse quieto tumbado mirando el cielo dos o tres horas. Abrigarse es la mitad de esta lluvia.</p><p>Las velocidades también difieren. Las Gemínidas entran a 35 km por segundo, que es lento, así que corren <b>largas y tranquilas</b>; las Perseidas entran a 59 km por segundo y pasan <b>cortas y afiladas</b>. Las brillantes a veces dejan un rastro unos segundos.</p>",
+   "sky": {
+    "date": "2026-12-14T22:00:00+09:00",
+    "az": 78,
+    "alt": 38,
+    "fov": 70
+   },
+   "highlight": [
+    {
+     "ra": 112.3,
+     "de": 32.5,
+     "radius": 5
+    }
+   ]
+  },
+  {
+   "title": "No mires al radiante",
+   "text": "<p>Volvemos ahora a la respuesta rara del principio. <b>Mirar fijamente el radiante te juega en contra.</b></p><p>Un meteoro que viene de la dirección del radiante vuela <b>directo hacia nosotros</b>, así que el rastro que deja en el cielo parece <b>un punto corto</b>. Mira en cambio una zona del cielo <b>a 30 o 60 grados</b> del radiante y los meteoros cruzan largos por tu campo de visión. Llaman la atención y son más fáciles de contar.</p><p>Así que la maña es esta.</p><ul><li><b>Sabe dónde está el radiante</b>, pero mantén la mirada un poco <b>por encima o a un lado</b></li><li>Lo mejor de todo es <b>la parte más oscura del cielo</b>, normalmente cerca del cenit</li><li><b>Usa la vista sin más.</b> Los telescopios y los prismáticos tienen un campo demasiado estrecho y solo estorban. Una lluvia de meteoros es una de las pocas observaciones que no necesita equipo</li></ul>",
+   "sky": {
+    "az": 90,
+    "alt": 60,
+    "fov": 110
+   }
+  },
+  {
+   "title": "La madrugada gana a la tarde",
+   "text": "<p>La hora también importa. Por regla general, <b>después de medianoche y cuanto más cerca del amanecer mejor</b>, caen más meteoros.</p><p>La Tierra gira sobre su eje y a la vez avanza en su órbita. <b>Pasada la medianoche, la superficie de la Tierra mira hacia donde la Tierra va</b>; el lado de la tarde mira hacia atrás.</p><p>El coche otra vez. Los copos caen a chorros sobre el parabrisas, mientras que a la luneta trasera solo llega alguno que la alcanza. <b>El cielo del amanecer es el parabrisas.</b></p><p>Así que la ventana estándar para observar una lluvia de meteoros va <b>de las 2 de la madrugada a las primeras luces</b>. Incluso en una lluvia como las Gemínidas, cuyo radiante sale pronto, la madrugada es mejor.</p><p>Y por encima de todo está <b>la Luna</b>. En una noche de luna llena, la mejor lluvia del mundo pierde todos sus meteoros tenues y solo verás un puñado. Consulta primero la fase de la Luna en la pestaña «Esta noche». Funciona exactamente como explicaba «¿Por qué cambia de forma la Luna?».</p>",
+   "sky": {
+    "date": "2026-08-13T03:00:00+09:00",
+    "az": 60,
+    "alt": 60,
+    "fov": 110
+   },
+   "quiz": {
+    "q": "¿Por qué la madrugada es mejor momento para ver una lluvia de meteoros?",
+    "opts": [
+     "Porque el aire está más limpio antes del amanecer",
+     "Porque pasada la medianoche la superficie de la Tierra mira hacia donde la Tierra va",
+     "Porque el radiante siempre está más alto antes del amanecer",
+     "Porque antes del amanecer los fragmentos están más apretados"
+    ],
+    "right": 1,
+    "explain": "El lado que mira hacia donde va la Tierra se encuentra los fragmentos de frente, así que recibe más golpes y a mayor velocidad. Es como la nieve cayendo a chorros sobre el parabrisas cuando conduces. La altura del radiante varía de una lluvia a otra, y la densidad de la banda de fragmentos no tiene nada que ver con la hora."
+   }
+  },
+  {
+   "title": "La trampa del número llamado ZHR",
+   "text": "<p>Toda descripción de una lluvia de meteoros lleva un número llamado <b>ZHR</b>: 100 para las Perseidas, 150 para las Gemínidas, y así.</p><p>Es fácil leerlo como «meteoros por hora», pero en rigor es la <b>tasa horaria cenital</b>: la cifra que saldría si se cumpliera todo lo siguiente.</p><ul><li>El radiante está en el <b>cenit</b></li><li>El cielo está perfectamente oscuro, hasta <b>magnitud 6.5</b></li><li>Nada en absoluto te tapa la vista</li></ul><p>En la práctica no se cumple nada de eso. Un radiante bajo lo reduce a la mitad o menos, y un cielo urbano lo reduce otra vez a una fracción. <b>Mira una lluvia de ZHR 100 desde las afueras y 20 o 30 por hora ya es una buena noche.</b></p><p>Saber ese número antes de salir te ahorra el disgusto. Veinte por hora es <b>uno cada 3 minutos</b>. Esperar es la mayor parte de la observación.</p>",
+   "sky": {
+    "fov": 100
+   }
+  },
+  {
+   "title": "Un calendario del año",
+   "text": "<p>Estas son las que merecen la pena. Las fechas se mueven un día o dos de un año a otro.</p><ul><li><b>3 de enero</b> — las Cuadrántidas. Se cuentan a ZHR 110, pero el máximo dura solo <b>unas horas</b>, así que acertar el momento cuesta</li><li><b>22 de abril</b> — las Líridas. Pocas en número, pero sueltan <b>meteoros brillantes</b></li><li><b>6 de mayo</b> — las Eta Acuáridas. Restos del cometa Halley</li><li><b>12 de agosto</b> — <b>las Perseidas</b>. Una noche de verano hace la observación cómoda y los números son buenos. Las mejores de todas para empezar</li><li><b>21 de octubre</b> — las Oriónidas. Restos del cometa Halley también</li><li><b>17 de noviembre</b> — las Leónidas. Tranquilas casi todos los años, pero <b>cada 33 años</b> caen en tromba</li><li><b>14 de diciembre</b> — <b>las Gemínidas</b>. Las más numerosas y las más seguras del año</li></ul><p>El nombre te dice en qué constelación cae el radiante. Mete esa constelación en el buscador y mira de antemano dónde queda, y podrás decidir qué parte del cielo tendrás a la espalda esa noche.</p><p>En Asia Oriental los meteoros se trataban como <b>seongbyeon</b> (星變), presagios entre las estrellas, y se anotaban con cuidado. Los <b>Anales de la Dinastía Joseon</b> y los <b>Diarios de la Secretaría Real</b> dejan por escrito la hora y la dirección en que apareció un meteoro, su tamaño y su color, incluso el largo de su rastro. Se llevaban para adivinar, y se han convertido en <b>siglos de observaciones de lluvias de meteoros</b>.</p>",
+   "sky": {
+    "fov": 110
+   }
+  },
+  {
+   "title": "Esta noche, empezando por tumbarte",
+   "text": "<p>Observar una lluvia de meteoros es lo que menos equipo requiere y lo que menos maña tiene.</p><ul><li><b>Acierta la fecha.</b> Un día o dos a cada lado del máximo vale</li><li><b>Comprueba la Luna.</b> Mira la fase en la pestaña «Esta noche», y si está cerca de llena, o esperas al año que viene o apuntas a después de que se ponga</li><li>Vete a <b>un sitio sin luces</b>. Casi todos los meteoros de una lluvia son tenues, así que lo oscuro que esté el cielo decide cuántos ves</li><li><b>Túmbate.</b> Una esterilla o una silla plegable ayudan. Nadie aguanta dos horas con la cabeza levantada</li><li><b>Espera 20 minutos.</b> Tus ojos tienen que acostumbrarse a la oscuridad. No mires el móvil en ese rato</li><li>Mantén la mirada en <b>una zona oscura del cielo algo apartada del radiante</b> y abarca ancho</li><li>Incluso en verano hace frío de madrugada. Llévate <b>un abrigo y algo caliente de beber</b></li></ul><p>Con suerte, algo brillante cruza el cielo y deja un rastro colgado unos segundos. La espera por ese único momento es toda la observación de una lluvia de meteoros.</p>",
+   "sky": {
+    "fov": 100,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "constellationLines": false,
+    "constellationLabels": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "La lista de lluvias y las coordenadas de los radiantes siguen los datos de lluvias de meteoros de Byeolmuri, basados en la lista de lluvias de la UAI. La pantalla no dibuja meteoros. Señalar dónde está el radiante es todo lo que esta pantalla puede hacer."
+}

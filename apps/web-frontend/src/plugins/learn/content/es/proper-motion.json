@@ -1,0 +1,197 @@
+{
+ "id": "proper-motion",
+ "title": "Las constelaciones no son para siempre",
+ "subtitle": "Miramos el Carro dentro de 100000 años",
+ "minutes": 10,
+ "level": "deep",
+ "track": "measure",
+ "tags": [
+  "movimiento propio",
+  "el Carro",
+  "viaje en el tiempo",
+  "Halley"
+ ],
+ "intro": "A las estrellas se las llama fijas, porque el cielo entero parece girar como un bloque con las distancias entre ellas intactas. Pero eso es solo cómo se ve cuando una vida humana es así de corta. Vamos a adelantar el tiempo 100000 años y ver qué pasa con el Carro.",
+ "steps": [
+  {
+   "title": "El Carro tal como está ahora",
+   "text": "<p>Son <b>las 9 de la noche de abril</b>, alto por el noreste. Las siete estrellas están unidas por orden y la forma de cazo no admite duda.</p><p>Esta forma es muy antigua. Una tablilla de arcilla de Mesopotamia de alrededor de 2000 a. C. y el <b>Cheonsang Yeolcha Bunyajido</b> de la Corea de Joseon llevan las dos un cazo casi idéntico al de hoy.</p><p>Por eso damos por hecho que las constelaciones <b>no cambian</b>. En realidad son <b>los registros los que son cortos</b>. 600 años son un instante para el cielo.</p>",
+   "sky": {
+    "date": "2027-04-01T21:00:00+09:00",
+    "az": 40,
+    "alt": 52,
+    "fov": 70,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "connect": [
+    "* alf UMa",
+    "* bet UMa",
+    "* gam UMa",
+    "* del UMa",
+    "* eps UMa",
+    "* zet UMa",
+    "Alkaid"
+   ]
+  },
+  {
+   "title": "Dentro de 50000 años",
+   "text": "<p>El tiempo se ha enviado <b>50000 años</b> hacia delante. La vista está anclada a <b>Mizar</b>, la estrella central del mango, así que puedes juzgar adónde se han ido las otras seis en relación con ella.</p><p>Sigue siendo un cazo. Cada una de las siete se ha movido <b>entre 1.2 y 2.0 grados</b>. Eso es de dos a cuatro veces el ancho de la luna llena, pero dentro de una figura de 25 grados apenas se nota.</p><p>Diez veces más que toda la civilización humana, y esto es todo lo que da de sí. Por eso las estrellas parecen «fijas».</p>",
+   "sky": {
+    "date": "+052027-04-01T21:00:00+09:00",
+    "fov": 50
+   },
+   "show": {
+    "landscape": false
+   },
+   "lookAt": "* zet UMa",
+   "connect": [
+    "* alf UMa",
+    "* bet UMa",
+    "* gam UMa",
+    "* del UMa",
+    "* eps UMa",
+    "* zet UMa",
+    "Alkaid"
+   ]
+  },
+  {
+   "title": "Dentro de 100000 años — la boca del cazo se abre",
+   "text": "<p><b>100000 años</b>. Ahora sí se nota la diferencia.</p><p>Dónde se nota es lo importante. Mide las separaciones y quedan así.</p><ul><li><b>Dubhe–Merak</b> (la boca del cazo) — de 5.4 grados a <b>6.8</b>. Se ha abierto un 26%</li><li><b>Mizar–Alkaid</b> (la punta del mango) — de 6.7 grados a <b>6.2</b>. Esta en cambio se ha cerrado</li><li><b>Phecda–Megrez</b> (el fondo del cazo) — de 4.53 grados a <b>4.54</b>. Eso son 0.01 grados en 100000 años</li></ul><p>Cada una de las siete se ha movido <b>entre 2.4 y 3.9 grados</b>, y sin embargo <b>unas separaciones se abren y otras se quedan exactamente igual</b>. Si todas hubieran ido a la deriva juntas la forma se habría mantenido; que no lo haya hecho significa algo.</p><p>Las dos de los extremos van por su cuenta mientras el medio no se mueve. <b>La respuesta está en el porqué.</b> Llega enseguida.</p><p>A este ritmo, dentro de un millón de años no podrías llamarlo cazo. Si entonces hay gente, le pondrá otro nombre a esta disposición. <b>Las constelaciones son de nuestra propia generación.</b> No son líneas trazadas en el cielo sino un dibujo compartido un rato por quienes viven el mismo instante breve.</p>",
+   "sky": {
+    "date": "+102027-04-01T21:00:00+09:00",
+    "fov": 55
+   },
+   "lookAt": "* zet UMa",
+   "connect": [
+    "* alf UMa",
+    "* bet UMa",
+    "* gam UMa",
+    "* del UMa",
+    "* eps UMa",
+    "* zet UMa",
+    "Alkaid"
+   ],
+   "quiz": {
+    "q": "Después de 100000 años, el fondo del cazo (Phecda–Megrez) había pasado de 4.53 grados a 4.54, casi sin cambiar. ¿Por qué?",
+    "opts": [
+     "Porque las dos estrellas están ligadas entre sí por la gravedad",
+     "Porque las dos nacieron en el mismo grupo y se mueven en la misma dirección a la misma velocidad",
+     "Porque las dos están tan lejos que su movimiento propio es cero",
+     "Porque el fondo del cazo es un punto de referencia fijo del cielo y no se mueve"
+    ],
+    "right": 1,
+    "explain": "Las cinco estrellas del medio nacieron juntas de la misma nube y siguen viajando en la misma dirección una al lado de otra. Unas respecto a otras están prácticamente en reposo, así que las separaciones se mantienen. No hay gravedad capaz de mantener unidas a dos estrellas separadas por años luz, y su movimiento propio tampoco es cero: cada una se movió casi 3 grados, pero se movieron juntas."
+   }
+  },
+  {
+   "title": "La expresión «estrellas fijas»",
+   "text": "<p>De vuelta al presente.</p><p>Que las estrellas se muevan es lo esperable. Todas giran alrededor del centro de la galaxia, y nuestro propio Sol a 220 km por segundo. Cada estrella recorre una órbita distinta a una velocidad distinta, así que <b>no hay ninguna razón para que una disposición se mantenga</b>.</p><p>El cielo parece fijo de todos modos porque <b>está demasiado lejos</b>. Viaja a cientos de miles de km por hora y, visto desde decenas de años luz, no te mueves ni un segundo de arco en un año.</p><p>A este movimiento por el cielo se le llama <b>movimiento propio</b>. En la mayoría de las estrellas no llega a <b>0.1 segundos de arco</b> al año, la décima parte de aquella moneda a 4 km. Una vida humana no podría captarlo jamás.</p>",
+   "sky": {
+    "date": "2027-04-01T21:00:00+09:00",
+    "az": 40,
+    "alt": 52,
+    "fov": 70
+   },
+   "show": {
+    "landscape": true
+   },
+   "clearSelection": true,
+   "connect": [
+    "* alf UMa",
+    "* bet UMa",
+    "* gam UMa",
+    "* del UMa",
+    "* eps UMa",
+    "* zet UMa",
+    "Alkaid"
+   ]
+  },
+  {
+   "title": "Cómo se dio cuenta Halley",
+   "text": "<p>¿Cómo encuentras algo que no puedes captar? <b>Comparando registros.</b></p><p>En 1718 <b>Edmond Halley</b> cotejó las posiciones estelares de su época con <b>el catálogo que Ptolomeo había anotado 1500 años antes</b>. Casi todas coincidían, pero <b>tres estrellas</b> estaban desviadas: <b>Sirio, Arturo y Aldebarán</b>.</p><p>La discrepancia era de <b>más de medio grado</b>. En Arturo se acercaba a <b>1 grado</b>, unas dos veces el ancho de la luna llena. Podría haberlo achacado a un error del registro antiguo, pero Halley se fijó en que eran <b>las estrellas más brillantes y ninguna otra</b> las desviadas. Brillante suele significar <b>cercana</b>, y una estrella cercana a la misma velocidad parece moverse más.</p><p>Así que concluyó que no era un error sino <b>que las estrellas se movían de verdad</b>. Dos mil años de creencia en que estaban clavadas en el cielo cayeron por una comparación con un libro viejo.</p><p>La regla de las lecciones anteriores se repite también aquí. <b>Cuanto más cerca está una estrella, más se mueve.</b> Exactamente el mismo principio que el paralaje.</p>",
+   "sky": {
+    "fov": 80
+   }
+  },
+  {
+   "title": "Por qué las cinco viajan juntas",
+   "text": "<p>Aquí está la respuesta que dejamos pendiente. En 100000 años las siete estrellas se movieron unos 3 grados cada una, y sin embargo las cinco del medio —Merak, Phecda, Megrez, Alioth y Mizar— <b>mantuvieron las separaciones entre ellas</b>. De Phecda a Megrez se pasó de 4.53 grados a 4.54: fijas, a todos los efectos.</p><p>No es casualidad. Estas cinco son <b>hermanas nacidas juntas de la misma nube</b>. Recorren la galaxia en la misma dirección a la misma velocidad, así que las separaciones entre ellas apenas cambian. A un grupo así se le llama <b>cúmulo en movimiento</b>, y a este el <b>Grupo Móvil de la Osa Mayor</b>. Es además el cúmulo más cercano a nosotros.</p><p><b>Dubhe y Alkaid</b>, en cambio, no tienen nada que ver con el grupo. Son forasteras que casualmente caen en la misma dirección. Por eso <b>solo las dos estrellas de los extremos</b> se van a la deriva por su cuenta. La boca del cazo abriéndose y la punta del mango cerrándose son precisamente esos dos sitios. Exactamente como lo has visto en pantalla hace un momento.</p><p>En la lección de «Las Cabrillas», un cúmulo abierto se dispersa en unos cientos de millones de años. El Grupo Móvil de la Osa Mayor está <b>en la fase en que esa dispersión casi ha terminado</b>. Sus estrellas están tan repartidas por el cielo que ya ni siquiera parece un cúmulo.</p>",
+   "sky": {
+    "fov": 60
+   },
+   "highlight": [
+    {
+     "target": "* bet UMa",
+     "radius": 2
+    },
+    {
+     "target": "* gam UMa",
+     "radius": 2
+    },
+    {
+     "target": "* del UMa",
+     "radius": 2
+    },
+    {
+     "target": "* eps UMa",
+     "radius": 2
+    },
+    {
+     "target": "* zet UMa",
+     "radius": 2
+    }
+   ],
+   "quiz": {
+    "q": "¿Cuál de estas afirmaciones sobre las siete estrellas del Carro es correcta?",
+    "opts": [
+     "Las siete son hermanas del mismo cúmulo",
+     "Las cinco del medio pertenecen a un grupo y Dubhe y Alkaid son forasteras",
+     "Ninguna de las siete tiene nada que ver con las demás",
+     "Las siete están ligadas por su gravedad mutua y orbitan juntas"
+    ],
+    "right": 1,
+    "explain": "Las cinco del medio pertenecen al Grupo Móvil de la Osa Mayor y viajan juntas en la misma dirección. Dubhe y Alkaid no tienen nada que ver con ese grupo y se van a la deriva en otras direcciones, y por eso la forma del cazo acaba deshaciéndose con suficiente tiempo. Las siete están además a distancias de entre 78 y 124 años luz, así que desde luego no están ligadas por su gravedad mutua."
+   }
+  },
+  {
+   "title": "La estrella más rápida",
+   "text": "<p>La estrella con mayor movimiento propio es <b>la estrella de Barnard</b>, que se mueve <b>10.3 segundos de arco</b> al año.</p><p>No suena a mucho, pero se acumula. <b>En 180 años recorre el ancho de la luna llena.</b> Es la única estrella cuyo cambio de sitio en el cielo se nota dentro de una vida humana, y por eso se la llama <b>«la estrella fugitiva de Barnard»</b>.</p><p>Es rápida por dos razones. Es una vecina a solo <b>6 años luz</b>, y además su velocidad real es alta. A magnitud 9.5, eso sí, <b>no se ve a simple vista</b>, y tampoco está en la lista de estrellas de esta vista.</p><p>Multiplica el movimiento por el cielo, el movimiento propio, por <b>la distancia</b> y obtienes la velocidad lateral real; añade la <b>velocidad radial</b> medida a partir del espectro y tienes el <b>movimiento en tres dimensiones</b> de esa estrella. Las tres cosas que hacen falta para conocer la trayectoria real de una estrella son <b>movimiento propio, distancia y velocidad radial</b>.</p><p>Esto es lo que hace el telescopio espacial Gaia. Midiendo las posiciones y los movimientos de <b>2000 millones de estrellas</b> está reconstruyendo cómo gira nuestra galaxia y cómo se llegó a formar.</p>",
+   "sky": {
+    "fov": 70
+   },
+   "clearSelection": true
+  },
+  {
+   "title": "Guarda el cielo de esta noche",
+   "text": "<p>El movimiento propio no es algo que una persona pueda confirmar a ojo. Aun así hay cosas que puedes hacer.</p><ul><li><b>Fotografía el Carro</b> esta noche. Esta disposición pertenece <b>solo a esta época</b></li><li>Si se te presenta la ocasión de ver el <b>Cheonsang Yeolcha Bunyajido</b> en un observatorio o un museo, compáralo con el cielo tal como está ahora. Las constelaciones de hace 600 años y las de hoy son <b>casi idénticas.</b> Eso en sí es la prueba de lo lento que es el movimiento propio</li><li>Los <b>planetas</b>, en cambio, cambian de sitio en semanas. Exactamente como enseñaba «¿Por qué los planetas van hacia atrás?». Esta diferencia de velocidad es lo que separa una estrella de un planeta, y el nombre que les pusieron los antiguos, errantes, era exacto</li><li>Va bien leerlo junto con «¿Cómo se mide la distancia a una estrella?». El mismo principio, que <b>cuanto más cerca está una estrella más se mueve</b>, actúa tanto en el paralaje como en el movimiento propio</li></ul>",
+   "sky": {
+    "az": 40,
+    "alt": 52,
+    "fov": 80,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "Los valores de movimiento propio vienen del catálogo estelar HYG, y las posiciones de las estrellas en pantalla se calculan a partir de ellos. El desplazamiento de 2.4 a 3.9 grados por estrella en 100000 años, Dubhe–Merak pasando de 5.4 a 6.8 grados y Phecda–Megrez de 4.53 a 4.54 grados, se leyeron directamente del motor en pantalla."
+}

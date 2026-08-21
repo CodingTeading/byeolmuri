@@ -1,0 +1,150 @@
+{
+ "id": "pleiades",
+ "title": "The Seven Sisters — six stars, or seven?",
+ "subtitle": "How many you can count measures how dark your sky is tonight",
+ "minutes": 10,
+ "level": "intro",
+ "track": "target",
+ "tags": [
+  "winter",
+  "open cluster",
+  "Seven Sisters",
+  "folk customs"
+ ],
+ "months": [
+  10,
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "intro": "There is a place in the winter evening sky where small stars huddle together. In Korea they are called the Jomsaengi stars, and how far they stood from the Moon was used to foretell the year's harvest. Count how many you can make out and you also learn how dark your sky is tonight.",
+ "steps": [
+  {
+   "title": "Up and to the right from the three stars of Orion",
+   "text": "<p>It is <b>9 pm in late January</b>, looking south. A line has been drawn from the three stars in a row in Orion, <b>up and to the right</b>.</p><p>Follow it and you pass the red star <b>Aldebaran</b> first, and a little further on you arrive at <b>a small huddle of stars</b>.</p><p>Those are the <b>Seven Sisters</b>, called the Jomsaengi stars in Korea. Their formal name is <b>the Pleiades</b> and the catalogue number is <b>M 45</b>.</p>",
+   "sky": {
+    "date": "2027-01-20T21:00:00+09:00",
+    "az": 185,
+    "alt": 65,
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": true,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "connect": [
+    "* zet Ori",
+    "* alf Tau",
+    "M 45"
+   ],
+   "highlight": [
+    "M 45"
+   ]
+  },
+  {
+   "title": "How many can you see?",
+   "text": "<p>Zoomed in. A handful of stars gathered into a small dipper shape. It looks like a miniature of the Big Dipper, and plenty of people take it for one.</p><p>Count them. Most people see <b>six</b>. With good eyes and a dark sky you can get to <b>seven, nine, even eleven</b>.</p><p>Yet the name is <b>seven</b> everywhere. In Greece they were the seven sisters; old Korean texts write the name as Myoseong (昴星), and people counting them aloud usually say seven. Several cultures have their own separate tale of a 'lost sister' to account for six showing where the name says seven.</p><p>Put binoculars on it and it suddenly becomes <b>dozens</b>. In fact this is a group of <b>over 1,000</b> stars.</p>",
+   "sky": {
+    "fov": 6
+   },
+   "select": "M 45"
+  },
+  {
+   "title": "Every culture has its own name for them",
+   "text": "<p>This cluster carries a name everywhere in the world. It is small and tightly packed, so it catches the eye.</p><ul><li><b>Korea</b> — <b>Jomsaengi-byeol</b>, 'a huddle of little scraps'. In the texts, Myoseong (昴星)</li><li><b>Japan</b> — <b>Subaru</b>, an old word meaning 'to gather into one'. The six stars in the car maker's badge are these</li><li><b>Greece</b> — the Pleiades, the seven daughters of Atlas</li><li><b>Māori</b> — Matariki. The day this cluster reappears before dawn is the new year</li></ul><p>They have one thing in common. In many cultures this cluster served as <b>the clock of the seasons and of farming</b>. The day it first showed just before sunrise, and the day it set in the evening, were the signals for sowing and for harvest.</p>",
+   "sky": {
+    "fov": 10
+   }
+  },
+  {
+   "title": "Watching the Jomsaengi stars — reading the gap to the Moon",
+   "text": "<p>Korea has a seasonal custom attached to this cluster: <b>watching the Jomsaengi stars</b>.</p><p>On the evening of the <b>6th day of the 2nd lunar month</b>, people judged the coming harvest by how far the cluster stood from the Moon.</p><ul><li>The Moon <b>out in front</b> with the cluster trailing well behind → a lean year</li><li>The Moon travelling <b>alongside</b> them → a good year</li></ul><p>It was read as the Moon walking ahead of children carrying their rice bowls: if it drew away from them, the year would be a hungry one.</p><p>Read astronomically, the custom rests on the fact that <b>the Moon passes near this cluster every month</b>. The Seven Sisters lie close to the ecliptic, so the Moon brushes past them once a month, and how far apart they are on the day depends on where the Moon has got to in its orbit that month. The point from the earlier lesson, that <b>the Moon shifts 13 degrees a day</b>, is exactly what is at work.</p><p>With luck you can also catch the Moon <b>covering</b> the cluster, an occultation. Through binoculars a star vanishes behind the Moon in an instant.</p>",
+   "sky": {
+    "fov": 15
+   },
+   "clearSelection": true
+  },
+  {
+   "title": "Siblings born together",
+   "text": "<p>The stars of the Seven Sisters are not merely lined up by chance. They are <b>genuinely one group</b>.</p><p>They are <b>siblings born at the same time</b> from the same cloud of gas, and they are still travelling the same way together now. A group like this is called an <b>open cluster</b>.</p><ul><li>Distance — about <b>440 light years</b></li><li>Age — about <b>100 million years</b>, which is <b>one forty-sixth</b> of the 4.6-billion-year-old Sun</li><li>Number of stars — over <b>1,000</b></li></ul><p>Note that the stars showing brightly are every one of them <b>blue</b>. That means young and heavy. The rule from the earlier lesson, 'A star's colour is its temperature', applies exactly.</p><p>Open clusters do not last. As they travel round the galaxy the gravity of other stars pulls at them, and <b>within a few hundred million years they scatter</b>. Our own Sun was born among siblings too, but those siblings are long since spread across the galaxy and nobody knows where they are.</p>",
+   "sky": {
+    "fov": 4
+   },
+   "select": "M 45",
+   "quiz": {
+    "q": "Why do the stars of the Seven Sisters appear gathered together in the sky?",
+    "opts": [
+     "Because stars at different distances happen to line up in the same direction",
+     "Because they were born together from the same cloud of gas and really are close together",
+     "Because a heavy star at the centre is pulling the rest towards it",
+     "Because it is the direction of the galactic centre, where stars are plentiful"
+    ],
+    "right": 1,
+    "explain": "An open cluster is a group of stars born at the same time from one cloud, so they really are close together and move the same way together. A pattern that merely happens to line up is called an asterism, and the Big Dipper is one of those. What holds a cluster together is not one particular heavy star but the gravity of the whole group, and even that is weak enough that it scatters in the end."
+   }
+  },
+  {
+   "title": "The blue haze — a dust cloud they are passing through",
+   "sky": {
+    "fov": 3
+   },
+   "select": "M 45",
+   "text": "<p>Let us lay the photograph over it. A <b>blue haze</b> curls around the stars.</p><p>It is not what remains of the cloud the cluster was born from. It is <b>a cloud of dust the cluster happens to be passing through</b> on its way round the galaxy, reflecting the starlight. Unlike the Orion Nebula, which shines of itself, this is a <b>reflection nebula</b>. It looks blue for the same reason the sky does: dust scatters blue light more readily.</p><p>You will not see this haze with the naked eye, nor through a small telescope. It only just emerges once a camera has gathered light for a long time. It is <b>a prime example of the difference between what you see outdoors and what you see in a photograph</b>.</p>",
+   "show": {
+    "dss": true
+   }
+  },
+  {
+   "title": "Aldebaran, which is not part of the cluster",
+   "sky": {
+    "fov": 25
+   },
+   "select": "Aldebaran",
+   "text": "<p>The field is widened and we come down to the red star <b>Aldebaran</b> below. Around it is a V-shaped group, the <b>Hyades cluster</b>. At about <b>153 light years</b> it is the nearest open cluster to the Earth, and at 600 million years old it is far older than the Seven Sisters.</p><p>But <b>Aldebaran is not a member of that cluster.</b> It stands at <b>65 light years</b>, less than half the cluster's distance. It is simply a nearer star that our eyes see laid over it. A useful reminder that looking close together in the sky does not make things close together.</p>",
+   "quiz": {
+    "q": "What is the relation between the red star Aldebaran and the Hyades cluster?",
+    "opts": [
+     "It is the brightest star of the cluster",
+     "It is the star at the centre of the cluster",
+     "It lies far in front of the cluster and merely appears laid over it",
+     "It is a star that was flung out of the cluster"
+    ],
+    "right": 2,
+    "explain": "Aldebaran is 65 light years away and the Hyades 153. They lie in the same direction in the sky but more than twice as far apart in distance. The sky is not a flat surface, and two objects that look side by side are often vast distances apart."
+   },
+   "show": {
+    "dss": false
+   }
+  },
+  {
+   "title": "Go and count them",
+   "text": "<p>The Seven Sisters serve as <b>a ruler for measuring how dark the sky is</b>. Count them and you know what sort of night you have.</p><ul><li><b>4 to 5</b> — a city sky</li><li><b>6 to 7</b> — ordinary outskirts</li><li><b>9 or more</b> — a fairly dark sky. The Andromeda Galaxy is worth a try as well</li></ul><p>Things to try outdoors.</p><ul><li>It is in the evening sky <b>from October to March</b>. On an early winter evening it rides high in the south</li><li>Use <b>averted vision</b>. Looking straight at it cuts the count; glancing slightly to one side adds stars</li><li><b>Binoculars</b> turn it into something else entirely, a field strewn with blue stars. It is one of the few targets where binoculars beat a telescope</li><li>On the evening of the sixth day of a lunar month, look at <b>how far off the Moon is</b>. You will see what the old readings were made from</li></ul>",
+   "sky": {
+    "fov": 60,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "dss": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "The overlaid photograph is Digitized Sky Survey (DSS) material. The account of the Jomsaengi star-watching follows the entry in the Encyclopedia of Korean Seasonal Customs."
+}

@@ -1,0 +1,152 @@
+{
+ "id": "eclipses",
+ "title": "Eclipses de Sol y de Luna",
+ "subtitle": "Por qué no ocurren todos los meses, y cuándo es el siguiente",
+ "minutes": 13,
+ "level": "basic",
+ "track": "principle",
+ "tags": [
+  "eclipse solar",
+  "eclipse lunar",
+  "órbita lunar",
+  "planificación"
+ ],
+ "intro": "Una vez al mes la Luna se pone enfrente del Sol, y una vez al mes pasa por delante de él. Y sin embargo solo hay unos pocos eclipses al año. Vamos a averiguar por qué, sobre escenas reales de un eclipse de Sol y de uno de Luna.",
+ "steps": [
+  {
+   "title": "Una Luna roja",
+   "text": "<p>Este es un <b>eclipse total de Luna</b> de <b>la tarde del 3 de marzo de 2026, a las 8 y media</b>, una escena que de verdad se vio desde Corea.</p><p>La Luna está de un <b>rojo oscuro</b> por completo, porque se ha metido justo en medio de la sombra de la Tierra. Es lo que se suele llamar una <b>luna de sangre</b>.</p><p>Aquí hay algo que no cuadra. Si se ha metido del todo en la sombra debería estar <b>completamente a oscuras</b>, así que ¿por qué se ve roja?</p>",
+   "sky": {
+    "date": "2026-03-03T20:34:00+09:00",
+    "fov": 3,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": false,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "select": "NAME Moon"
+  },
+  {
+   "title": "Todos los atardeceres de la Tierra proyectados sobre la Luna",
+   "text": "<p>La Tierra tiene <b>atmósfera</b>. Parte de la luz del Sol que pasa por detrás de la Tierra roza esa atmósfera y <b>se dobla hacia dentro</b>, hasta la sombra.</p><p>Al recorrer el camino largo a través del aire, esa luz pierde el azul. Exactamente la misma razón por la que un atardecer es rojo. Así que a la Luna dentro de la sombra le llega <b>solo luz roja</b>.</p><p>Si estuvieras en la Luna en ese momento verías el borde del disco negro de la Tierra brillando como <b>un anillo rojo</b>. Equivale a ver <b>todos los amaneceres y atardeceres de la Tierra a la vez, en una sola línea</b>.</p><p>En un año con mucha ceniza volcánica en el aire, la Luna eclipsada sale casi negra; en un año limpio se vuelve de un color cobre brillante. <b>El color de la Luna informa del estado de la atmósfera terrestre.</b></p>",
+   "sky": {
+    "fov": 5
+   }
+  },
+  {
+   "title": "Míralo salir de la sombra",
+   "text": "<p>El tiempo corre a <b>5 minutos por segundo</b>. La Luna está saliendo de la sombra de la Tierra.</p><p>Se aclara desde el borde hacia dentro y aparece el límite de la sombra. ¿Ves que ese límite dibuja <b>un arco redondeado</b>?</p><p>Este arco es una de las <b>pruebas más antiguas</b> que reunió la humanidad. En el siglo IV a. C. Aristóteles concluyó que <b>la Tierra es una esfera</b> a partir del hecho de que el borde de la sombra es siempre curvo, ocurra el eclipse de Luna en la dirección que ocurra. Una esfera es la única forma que proyecta una sombra redonda desde cualquier ángulo.</p><p>La sombra es enorme. A la distancia de la Luna, la sombra de la Tierra mide <b>2.6 veces el diámetro de la Luna</b>. Por eso la Luna tarda horas en cruzarla.</p>",
+   "sky": {
+    "date": "2026-03-03T20:50:00+09:00",
+    "fov": 8,
+    "timeSpeed": 300
+   },
+   "select": "NAME Moon"
+  },
+  {
+   "title": "Un eclipse de Sol es la disposición contraria",
+   "text": "<p>Si un eclipse de Luna solo ocurre en <b>luna llena</b>, uno de Sol solo ocurre en <b>luna nueva</b>. La Luna se mete entre el Sol y la Tierra y tapa el Sol.</p><p>Un eclipse de Sol, eso sí, solo se ve en una franja muy estrecha. El punto que la umbra de la Luna dibuja sobre la superficie de la Tierra mide solo <b>de 100 a 250 km</b> de ancho, y ese punto corre sobre la Tierra a miles de km por hora.</p><p>Por eso hay que mover el lugar de observación. Esto es el <b>2 de agosto de 2027</b>, cerca de Cádiz, en el sur de España. La hora de la pantalla es plena fase parcial.</p><p>¿Ves el mordisco redondo en el lado derecho del Sol? Ese disco negro es <b>la Luna</b>.</p>",
+   "sky": {
+    "date": "2027-08-02T17:20:00+09:00",
+    "lat": 36.5,
+    "lng": -6.3,
+    "elev": 0,
+    "fov": 1.5,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": false,
+    "landscape": false
+   },
+   "select": "NAME Sun"
+  },
+  {
+   "title": "Y entonces la pantalla se queda negra",
+   "text": "<p><b>25 minutos después</b>, la totalidad. Y la pantalla se ha quedado <b>completamente negra</b>.</p><p>La Luna ha tapado el Sol por entero, y <b>esta vista no puede dibujar lo que viene después.</b> En el cielo real la <b>corona</b> se estaría desplegando desde el sitio del Sol como unas alas de color perla, el horizonte se teñiría de colores de atardecer en todas direcciones, y aparecerían estrellas brillantes y planetas a plena luz del día. La temperatura cae en picado y los pájaros salen volando a dormir.</p><p>Se dice que para ese único momento no valen ni un planetario ni una fotografía. Por eso quien ha visto un eclipse total de Sol se pasa el resto de su vida persiguiéndolos.</p><p>Puede que esta pantalla negra sea la imagen más honesta de toda la lección. <b>Hasta aquí llega lo que una pantalla puede hacer.</b></p><p>Y añadiendo algo más: la coincidencia es posible porque el Sol tiene un diámetro <b>400 veces</b> mayor que el de la Luna y da la casualidad de que está <b>400 veces</b> más lejos. Así que el tamaño que ambos muestran en el cielo es casi el mismo, unos 0.5 grados cada uno. Durante un eclipse total de 1868 se encontró en el espectro solar un elemento desconocido en la Tierra y se le llamó <b>helio</b>, por el Sol.</p><p>La Luna se aleja 3.8 cm al año, así que <b>dentro de unos 600 millones de años</b> se acabarán los eclipses totales de Sol. Vivimos en la época en que todavía pueden verse.</p>",
+   "sky": {
+    "date": "2027-08-02T17:45:00+09:00",
+    "fov": 1
+   }
+  },
+  {
+   "title": "Y vuelve a salir",
+   "text": "<p>La totalidad dura unos minutos como mucho. Este eclipse llega a 6 minutos y 23 segundos, de los más largos del siglo.</p><p>44 minutos después, el Sol empieza a asomar de nuevo por el otro lado. ¿Ves por dónde ha viajado la Luna? El mordisco de salida está en <b>el lado contrario</b> al de entrada.</p><p>Esta fase parcial se ve en una región amplia, mucho más allá de la franja de totalidad. La franja de totalidad mide solo de 100 a 250 km de ancho, mientras que el eclipse parcial se ve a miles de km. Por eso <b>los eclipses parciales de Sol son corrientes y los totales son preciosos.</b></p>",
+   "sky": {
+    "date": "2027-08-02T18:29:00+09:00",
+    "fov": 1.5
+   },
+   "select": "NAME Sun",
+   "quiz": {
+    "q": "¿Por qué puede la Luna tapar el Sol con tanta exactitud en un eclipse total?",
+    "opts": [
+     "Porque la Luna y el Sol tienen tamaños reales parecidos",
+     "Porque el diámetro de la Luna es 400 veces menor que el del Sol y su distancia también es 400 veces menor",
+     "Porque cualquier cosa más cercana a la Tierra que el Sol lo tapa por completo",
+     "Porque la atmósfera terrestre refracta la luz del Sol"
+    ],
+    "right": 1,
+    "explain": "En tamaño real el Sol es abrumadoramente mayor, pero la razón entre las distancias es casi exactamente la razón entre los tamaños, así que los dos salen a unos 0.5 grados cada uno en el cielo. Es una casualidad. Tampoco basta con estar más cerca: cuando la Luna está en el extremo lejano de su órbita no llega a cubrir el disco entero y queda un anillo en el borde, un eclipse anular."
+   }
+  },
+  {
+   "title": "Entonces, ¿por qué no todos los meses?",
+   "text": "<p>La Luna es nueva una vez al mes y llena una vez al mes. Debería haber por tanto dos eclipses cada mes, y sin embargo en la práctica solo hay <b>cuatro o cinco al año</b>.</p><p>La respuesta es <b>la inclinación</b>. La órbita de la Luna está inclinada <b>5.1 grados</b> respecto al plano en que la Tierra gira alrededor del Sol, la eclíptica.</p><p>Cinco grados es el ancho de diez lunas llenas puestas en fila en el cielo. Así que en la mayoría de las lunas nuevas la Luna pasa <b>por encima o por debajo</b> del Sol. En luna llena pasa por encima o por debajo de la sombra de la Tierra igual.</p><p>La línea donde se cruzan los dos planos inclinados se llama <b>los nodos</b>. Solo cuando una luna nueva o llena cae <b>cerca de un nodo</b> se produce un eclipse. Un tramo así llega dos veces al año y dura un mes largo; se le llama <b>temporada de eclipses</b>.</p><p>Esta disposición se repite casi exacta cada <b>18 años, 11 días y 8 horas</b>. Es el <b>ciclo de Saros</b>. Los babilonios dedujeron la repetición solo a partir de registros y la usaron para predecir eclipses.</p>",
+   "sky": {
+    "home": true,
+    "fov": 60,
+    "timeSpeed": 0
+   },
+   "show": {
+    "ecliptic": true,
+    "landscape": true
+   },
+   "clearSelection": true,
+   "quiz": {
+    "q": "¿Por qué no hay eclipses de Sol y de Luna todos los meses?",
+    "opts": [
+     "Porque la órbita de la Luna está inclinada unos 5 grados respecto a la eclíptica, así que suele pasar por encima o por debajo",
+     "Porque el periodo orbital de la Luna no es constante",
+     "Porque la sombra de la Tierra es más pequeña que la Luna",
+     "Porque suele haber nubes"
+    ],
+    "right": 0,
+    "explain": "Con los dos planos inclinados, la mayoría de las lunas nuevas y llenas pasan de largo sin rozar el Sol ni la sombra de la Tierra. Solo cuando una luna nueva o llena cae cerca de un nodo, donde se cruzan los planos, se produce un eclipse. El periodo orbital de la Luna es constante, y a la distancia de la Luna la sombra de la Tierra mide 2.6 veces su diámetro, así que es mucho mayor, no menor."
+   }
+  },
+  {
+   "title": "Cuando fallar el cielo te costaba la cabeza",
+   "text": "<p>Los eclipses fueron durante mucho tiempo <b>un mal presagio</b>. Y a la vez eran algo que <b>podía predecirse</b>. Junta esas dos cosas y sale política.</p><p>El <b>Samguk Sagi</b> conserva unos 60 registros de eclipses de Sol de Goguryeo, Baekje y Silla. La legitimidad de una dinastía dependía de leer bien el cielo, así que los registros eran meticulosos.</p><p>En la Corea de Joseon, cuando se pronosticaba un eclipse de Sol el rey se vestía de luto sencillo y celebraba el <b>gusikrye</b> (救蝕禮), el rito de rescatar al Sol. Fallar la hora no era por tanto cosa menor. Se conserva una historia del reinado del rey Sejong sobre un funcionario castigado cuando un pronóstico de eclipse salió mal. A partir de entonces, en lugar de tomar el calendario chino tal cual, Joseon construyó <b>un calendario propio ajustado a la latitud de Hanyang</b>, el Chiljeongsan. Acertar el cielo era asunto de Estado.</p>",
+   "sky": {
+    "fov": 80
+   }
+  },
+  {
+   "title": "Las próximas oportunidades, y la regla que hay que cumplir",
+   "text": "<p><b>Esto es lo que puedes cazar a continuación.</b> Y si vives en España, el del <b>2 de agosto de 2027</b> —el mismo que has visto en esta lección— cruza el sur de la península: lo tienes a la vuelta de la esquina.</p><ul><li><b>La madrugada del 1 de enero de 2029</b> — eclipse total de Luna. Desde Corea la Luna roja dura <b>de la 1:20 a las 2:30 de la madrugada</b>, y durante todo ese rato la Luna está alta, a una altura de <b>más de 60 grados</b>. Las condiciones son excelentes</li><li><b>La mañana del 2 de septiembre de 2035</b> — <b>un eclipse total de Sol que cruza la península de Corea</b>. La zona de Pionyang entra en la franja de totalidad, y desde Seúl se cubre la mayor parte del Sol. La ocasión de ver un eclipse total de Sol desde la península llega <b>una vez cada varias décadas</b>, así que es un día que no conviene perderse</li></ul><p><b>Hay una regla de seguridad que tienes que cumplir.</b></p><ul><li><b>No mires nunca al Sol a simple vista.</b> Eso vale también durante un eclipse parcial. Unos segundos dañan la retina, y la retina no tiene células de dolor, así que ni siquiera notarás el momento en que ocurre</li><li>Gafas de sol, película fotográfica, cristal ahumado, un reflejo en el agua: <b>ninguno sirve</b>. Usa <b>gafas de eclipse</b> homologadas o un filtro solar con norma</li><li>No mires nunca al Sol con un telescopio o unos prismáticos sin <b>un filtro específico por delante</b>. Ciega en una fracción de segundo</li><li>El método seguro y sencillo es la <b>proyección estenopeica</b>. Haz un agujero en una hoja de papel y proyecta su sombra en el suelo: aparecerá la forma del Sol. La luz que se cuela entre las hojas de los árboles convirtiéndose toda en medias lunas funciona igual</li></ul><p><b>Un eclipse de Luna puedes mirarlo a simple vista todo el rato que quieras, sin ningún equipo.</b> La luz de la Luna no hace daño, y con prismáticos el rojo se ve incluso más intenso.</p>",
+   "sky": {
+    "fov": 70,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "ecliptic": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "Las fechas y horas de los eclipses, y las alturas en cada emplazamiento, son todas cálculo del motor en pantalla. Eclipse total de Luna 2026-03-03; eclipse total de Sol 2027-08-02 (Cádiz, España, 08:45 UT); eclipse total de Luna 2029-01-01; eclipse total de Sol sobre la península de Corea 2035-09-02."
+}

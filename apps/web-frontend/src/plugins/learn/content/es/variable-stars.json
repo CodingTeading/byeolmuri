@@ -1,0 +1,144 @@
+{
+ "id": "variable-stars",
+ "title": "Estrellas que cambian de brillo",
+ "subtitle": "Cómo medir el brillo a ojo, y por qué los aficionados siguen siendo útiles",
+ "minutes": 10,
+ "level": "basic",
+ "track": "measure",
+ "tags": [
+  "estrella variable",
+  "Algol",
+  "binaria eclipsante",
+  "registro de observación"
+ ],
+ "intro": "Hay estrellas que cambian de brillo. Una de ellas cambia lo bastante como para comprobarlo a simple vista desde el centro de una ciudad. Esta lección trata de algo que la pantalla no puede enseñarte. Lo que enseña en su lugar es cómo medirlo tú mismo esta noche.",
+ "steps": [
+  {
+   "title": "La estrella del demonio",
+   "text": "<p>Son <b>las 9 de la noche de mediados de noviembre</b>, alto por el noreste, en Perseo. Está seleccionada la estrella del medio.</p><p>Es <b>Algol</b>. El nombre viene del árabe <b>Ra's al-Ghul</b>, «<b>la cabeza del ghul</b>», siendo el ghul un monstruo que se alimenta de cadáveres. En el mito griego esta misma estrella pertenece a <b>la cabeza de Medusa</b> que Perseo lleva en la mano.</p><p>Dos culturas distintas miraron esta única estrella y las dos echaron mano de <b>la cabeza de un monstruo</b>. Es raro achacarlo a la casualidad.</p><p>La magnitud de la ventana de información está fija en <b>2.1</b>. <b>Esta vista no calcula los cambios de brillo de las estrellas.</b> Pero la Algol real del cielo se apaga de forma llamativa <b>una vez cada tres días</b>.</p>",
+   "sky": {
+    "date": "2026-11-15T21:00:00+09:00",
+    "az": 63,
+    "alt": 53,
+    "fov": 60,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationLabels": true,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "select": "Algol"
+  },
+  {
+   "title": "¿Qué está tapando la estrella?",
+   "text": "<p>En 1782 <b>John Goodricke</b>, con dieciocho años, mirando esta estrella noche tras noche, encontró la regla: el brillo se repetía exactamente <b>cada 2.87 días</b>.</p><p>Y ofreció una explicación notable: que <b>un cuerpo oscuro pasaba por delante de la estrella a intervalos regulares</b>. Lo dijo de una estrella que en cualquier telescopio se veía como un solo punto. Cien años después la observación espectroscópica lo confirmó.</p><p>Algol son <b>dos estrellas</b>. Una brillante y azul y otra tenue e hinchada se orbitan mutuamente, y el plano de la órbita cae casi a lo largo de nuestra línea de visión, así que <b>cada vez que la tenue pasa por delante de la brillante</b> la luz queda bloqueada. A esto se le llama <b>binaria eclipsante</b>.</p><ul><li>Normalmente <b>magnitud 2.1</b> — una estrella brillante para cualquier criterio</li><li>Mientras está tapada, <b>magnitud 3.4</b> — una diferencia de 1.3 magnitudes, más de <b>3 veces</b> más tenue</li><li>Apagarse y recuperarse lleva <b>unas 10 horas</b>, con el tramo más tenue durando algo más de dos horas</li></ul><p>Un factor de 3 es una diferencia <b>que el ojo distingue con seguridad</b>. Sin escalas ni equipo.</p>",
+   "sky": {
+    "fov": 45
+   },
+   "quiz": {
+    "q": "¿Por qué se apaga Algol cada 2.87 días?",
+    "opts": [
+     "Porque la estrella se hincha y se encoge por turnos",
+     "Porque una estrella compañera pasa por delante y bloquea la luz",
+     "Porque unas manchas de la superficie de la estrella dan la vuelta",
+     "Porque cambia el estado de la atmósfera terrestre"
+    ],
+    "right": 1,
+    "explain": "Algol es una binaria eclipsante de dos estrellas que se orbitan, y el plano de la órbita cae casi a lo largo de nuestra línea de visión, así que la luz queda bloqueada cada vez que la compañera tenue pasa por delante de la brillante. Hay estrellas cuyo brillo varía por hincharse y encogerse, las variables pulsantes, pero esas son de otra clase, como las cefeidas o Mira. El estado de la atmósfera afecta al cielo entero y no puede apagar una estrella concreta a intervalos regulares."
+   }
+  },
+  {
+   "title": "Cómo medir el brillo a ojo",
+   "text": "<p>Hay una forma de medir el brillo sin equipo: el <b>método de las estrellas de comparación</b>, formulado por <b>Argelander</b> en el siglo XIX.</p><p>El principio es sencillo. <b>En lugar de medir el brillo como valor absoluto, juzgas dónde cae entre estrellas cuyo brillo ya conoces.</b></p><p>Algol tiene dos buenas estrellas de comparación al lado. Las dos están marcadas en pantalla.</p><ul><li><b>Mirfak</b> (Alfa Persei) — <b>magnitud 1.8</b>. Siempre más brillante que Algol</li><li><b>Delta Persei</b> — <b>magnitud 3.0</b>. Algol es más brillante que esta normalmente y más tenue mientras está tapada</li></ul><p>Así que el juicio queda así.</p><ul><li>Algol <b>claramente más brillante</b> que Delta → estado normal</li><li>Algol <b>igual o más tenue</b> que Delta → la están tapando ahora mismo</li></ul><p>Con esa única comparación te has convertido en <b>observador fotométrico</b>. Confirmar una diferencia de brillo de tres veces requiere un ojo y dos estrellas con las que comparar.</p>",
+   "sky": {
+    "fov": 50
+   },
+   "clearSelection": true,
+   "highlight": [
+    {
+     "target": "Algol",
+     "radius": 1.5
+    },
+    {
+     "target": "Mirfak",
+     "radius": 1.5
+    },
+    {
+     "target": "* del Per",
+     "radius": 1.5
+    }
+   ]
+  },
+  {
+   "title": "También hay más de una clase de variable",
+   "text": "<p>Algunas estrellas se apagan porque algo las <b>tapa</b>, como Algol, y otras se vuelven <b>de verdad</b> más brillantes y más tenues por sí mismas.</p><ul><li><b>Binarias eclipsantes</b> — Algol. Dos estrellas que se esconden mutuamente. Las estrellas en sí no cambian</li><li><b>Variables pulsantes</b> — la estrella <b>se hincha y se encoge</b>. Las cefeidas (de días a decenas de días) y las de tipo Mira (cientos de días) están aquí</li><li><b>Variables eruptivas</b> — una explosión en la superficie o en el núcleo. Las novas y las <b>supernovas</b> están aquí. Muchas son sucesos únicos que no se repiten</li></ul><p><b>Mira</b>, en la Ballena, toma su nombre de la palabra que significa «<b>la maravillosa</b>». A lo largo de un periodo de 332 días recorre <b>de la magnitud 2 a la 10</b>. En su máximo es una estrella conspicua, y <b>unos meses después ha desaparecido de la vista.</b> No cuesta imaginar la conmoción que fue eso en una época que creía que los cielos no cambiaban nunca.</p><p>En la lección de «La nebulosa de Orión» salió la estrella huésped de 1054. Ese es el extremo de la clase eruptiva, una supernova. Las <b>estrellas huésped</b> que quedaron en los registros de Asia Oriental eran casi todas novas o supernovas.</p>",
+   "sky": {
+    "fov": 70
+   }
+  },
+  {
+   "title": "Un cambio de brillo construyó la regla del universo",
+   "text": "<p>Una clase de estrella variable cambió la astronomía entera: la <b>cefeida</b>.</p><p>En 1908 <b>Henrietta Leavitt</b>, repasando miles de cefeidas en las Nubes de Magallanes, encontró la regla: <b>cuanto más largo es el periodo en que varía el brillo, más brillante es la estrella en realidad</b>.</p><p>Por qué eso importa es lo siguiente. Significa que <b>puedes saber el brillo real midiendo solo el periodo</b>. Conoce el brillo real, mide lo brillante que parece, y sale <b>la distancia</b>.</p><p>Este es el segundo peldaño de la escalera de «¿Cómo se mide la distancia a una estrella?». Y es la herramienta que usó Hubble en «La galaxia de Andrómeda» cuando cambió el tamaño del universo.</p><p><b>Todo lo que hace falta para medir un periodo es anotar el brillo a lo largo de varias noches.</b> Eso es lo que hizo Leavitt, y el método no ha cambiado desde entonces.</p>",
+   "sky": {
+    "fov": 60
+   },
+   "quiz": {
+    "q": "¿Por qué son tan importantes las cefeidas en astronomía?",
+    "opts": [
+     "Porque son las estrellas más brillantes",
+     "Porque el periodo de variación da el brillo real, que da la distancia",
+     "Porque son las estrellas más corrientes",
+     "Porque fabrican elementos al estallar"
+    ],
+    "right": 1,
+    "explain": "Hay una relación fija entre el periodo y el brillo real, así que medir el periodo te dice lo brillante que es la estrella de verdad. Contrastar el brillo real con el aparente da la distancia, lo que la convierte en una regla que llega mucho más allá de donde alcanza el paralaje. Con esta regla se demostró que Andrómeda está fuera de nuestra galaxia."
+   }
+  },
+  {
+   "title": "Un campo donde los aficionados siguen contando",
+   "text": "<p>Observar estrellas variables es uno de los pocos campos en que <b>los aficionados siguen aportando de verdad</b>.</p><p>Hay una razón. Hay <b>decenas de miles</b> de estrellas variables, y el tiempo en telescopios profesionales es caro. No puedes tener un telescopio grande atado años mirando una sola estrella. Los aficionados, en cambio, son <b>muchos</b>, y al estar repartidos por toda la Tierra <b>le ganan al tiempo atmosférico y a los husos horarios</b>.</p><p>La <b>Asociación Americana de Observadores de Estrellas Variables (AAVSO)</b> guarda <b>decenas de millones</b> de observaciones reunidas a lo largo de más de cien años, y la mayoría las enviaron aficionados. Suelen ser también aficionados quienes se dan cuenta primero cuando estalla una nova.</p><p>Lo que hace falta es un ojo y constancia. <b>Mirar la misma estrella de la misma manera a lo largo de varias noches</b> es todo.</p>",
+   "sky": {
+    "fov": 60
+   }
+  },
+  {
+   "title": "Mide Algol esta noche",
+   "text": "<p>La parte práctica de esta lección está fuera.</p><ul><li><b>Encuentra Perseo.</b> Sigue hacia el este desde la W de Casiopea y sube alto en las tardes de otoño e invierno</li><li><b>Compara Algol con Delta Persei.</b> Algol claramente más brillante significa estado normal; igual o más tenue significa que la están tapando</li><li>Mira a la misma hora <b>cada tres días</b>. Antes o después te encontrarás una Algol apagada. El mínimo llega cada 2.87 días, pero cae de noche aproximadamente una de cada tres veces</li><li>Dos mínimos de los que partir: hacia las <b>12:00 UTC del 8 de diciembre de 2026</b> y hacia las <b>10:30 UTC del 31 de diciembre</b>. Avanza o retrocede 2.87 días desde cualquiera de los dos para dar con los que caigan en tu propia noche. Tarda cinco horas en apagarse y cinco en recuperarse, un cambio lo bastante lento como para que <b>una hora o dos de desfase</b> sigan sirviendo</li><li>La hora del mínimo varía además alrededor de una hora entre pronósticos, por culpa de una tercera estrella ligada a Algol. Consultar <b>la predicción más reciente del mínimo</b> antes de salir te ahorra un viaje en balde</li><li>Deja constancia. Fecha, hora y tu juicio (normal / intermedio / apagada) basta. <b>Esto son datos de observación.</b></li></ul><p>Con ver una Algol apagada con tus propios ojos una sola vez, sabrás en el cuerpo que el cielo nocturno no es una imagen fija.</p>",
+   "sky": {
+    "az": 63,
+    "alt": 53,
+    "fov": 70,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "constellationLines": true
+   },
+   "clearSelection": true,
+   "highlight": [
+    {
+     "target": "Algol",
+     "radius": 2
+    },
+    {
+     "target": "* del Per",
+     "radius": 2
+    }
+   ]
+  }
+ ],
+ "credits": "Las horas de mínimo de Algol son aproximaciones calculadas a partir de los elementos del GCVS. El motor no calcula los cambios de brillo estelar, así que los cambios de esta lección solo pueden comprobarse en el cielo real."
+}

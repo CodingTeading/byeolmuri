@@ -1,0 +1,146 @@
+{
+ "id": "star-distance",
+ "title": "¿Cómo se mide la distancia a una estrella?",
+ "subtitle": "Lo que nadie pudo medir durante dos mil años",
+ "minutes": 11,
+ "level": "deep",
+ "track": "measure",
+ "tags": [
+  "distancia",
+  "paralaje",
+  "años luz",
+  "pársec"
+ ],
+ "intro": "A una estrella no puedes ponerle una regla ni puedes ir hasta ella. Y sin embargo la ventana de información de la pantalla lleva una cifra en años luz. Vamos a averiguar de dónde sale esa cifra, y por qué a la humanidad le costó dos mil años llegar a ella.",
+ "steps": [
+  {
+   "title": "Qué es un año luz",
+   "text": "<p>Está seleccionada <b>Sirio</b>, la estrella más brillante del cielo de invierno. La distancia marca <b>8.6 años luz</b>.</p><p><b>Un año luz</b> es la distancia que recorre la luz en un año. La luz da siete vueltas y media a la Tierra por segundo. Corriendo a esa velocidad durante un año salen unos <b>9.5 billones de km</b>.</p><p>Compararlo con cosas más cercanas te da la medida.</p><ul><li>La Luna — <b>1.3 segundos</b></li><li>El Sol — <b>8 minutos y 19 segundos</b></li><li>Neptuno — <b>4 horas</b></li><li>La estrella más cercana — <b>4.2 años</b></li><li>Sirio — <b>8.6 años</b></li></ul><p>En cuanto sales del Sistema Solar la unidad cambia por completo. Del Sol a Neptuno hay 4 horas, y a la estrella siguiente 4 años. <b>Así de vacío está el espacio entre estrellas.</b></p>",
+   "sky": {
+    "date": "2027-01-20T21:00:00+09:00",
+    "az": 145,
+    "alt": 32,
+    "fov": 60,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "select": "Sirius"
+  },
+  {
+   "title": "Las estrellas más cercanas",
+   "text": "<p>Ordenadas de más cerca a más lejos del Sol, la lista queda así.</p><ul><li><b>4.2 años luz</b> Próxima Centauri — la compañera tenue del sistema de Alfa Centauri</li><li><b>4.4 años luz</b> Rigil Kentaurus (Alfa Centauri) — no se ve por encima de los 30 grados de latitud</li><li><b>6.0 años luz</b> la estrella de Barnard — a magnitud 9.5 no se ve a simple vista</li><li><b>7.9 años luz</b> Wolf 359, <b>8.3 años luz</b> Lalande 21185 — las dos enanas rojas</li><li><b>8.6 años luz</b> <b>Sirio</b> — de las estrellas más cercanas que alcanza la vista</li><li><b>8.7 años luz</b> Luyten 726-8, <b>9.7 años luz</b> Ross 154, <b>10.3 años luz</b> Ross 248 — todas tenues otra vez</li><li><b>10.5 años luz</b> Épsilon Eridani — magnitud 3.7, una rareza en esta lista por verse a simple vista</li><li><b>10.7 años luz</b> Lacaille 9352, <b>11.0 años luz</b> Ross 128</li><li><b>11.4 años luz</b> <b>61 Cygni</b> — volverá a salir más adelante</li><li><b>11.5 años luz</b> <b>Proción</b></li></ul><p>De la lista salta algo raro. <b>La mayoría de las estrellas más cercanas no se ven a simple vista.</b> El tipo de estrella más corriente del universo es la <b>enana roja</b>, pequeña y tenue. Las estrellas que vemos en el cielo nocturno son casi todas gigantes lejanos.</p><p>Lo de «Qué significa el brillo», que el brillo aparente no es el brillo real, vuelve a salir aquí.</p>",
+   "sky": {
+    "fov": 70
+   },
+   "highlight": [
+    "Sirius",
+    "Procyon"
+   ]
+  },
+  {
+   "title": "El paralaje — un experimento con el pulgar",
+   "text": "<p>Medir una distancia funciona exactamente igual que topografiar. <b>Miras desde dos sitios y mides la diferencia de ángulo.</b></p><p>Puedes probarlo ahora mismo. Estira el brazo con el pulgar levantado y <b>cierra un ojo y luego el otro</b>. El pulgar <b>salta</b> a izquierda y derecha contra el fondo. Dobla el brazo para acercar el pulgar y salta más.</p><p>Ese ángulo de salto es el <b>paralaje</b>. Conoce la distancia entre tus ojos, mide el ángulo, y sale la distancia hasta tu pulgar.</p><p>Para usarlo con estrellas, los dos ojos tienen que estar mucho más separados. Por eso usamos <b>la órbita de la Tierra</b>. Espera seis meses y estarás mirando la misma estrella desde <b>300 millones de km</b> de distancia. Es la regla más larga que puede tener un ser humano.</p>",
+   "sky": {
+    "fov": 50
+   }
+  },
+  {
+   "title": "Y sin embargo no se mueve nada",
+   "text": "<p>Vamos a probarlo. Sirio está muy ampliada. Ahora moveremos <b>la fecha seis meses adelante</b>. La Tierra se va al extremo opuesto de su órbita.</p><p>Pasa al paso siguiente y mira cuánto se mueve la estrella.</p><p>Te lo digo de antemano: <b>no pasa absolutamente nada.</b> Ese es el corazón de esta historia.</p><p>Este fue el argumento más fuerte contra una Tierra en movimiento en la Grecia antigua. Si la Tierra se moviera de verdad, las posiciones de las estrellas tendrían que cambiar con la estación, y por mucha precisión con que midieran <b>no se movían ni un pelo</b>. Así que Aristóteles concluyó que la Tierra no se mueve.</p><p>En realidad no era que la Tierra no se moviera, sino que <b>las estrellas estaban más lejos de lo que nadie había imaginado</b>.</p>",
+   "sky": {
+    "fov": 20
+   },
+   "select": "Sirius"
+  },
+  {
+   "title": "Lo pequeño que es un segundo de arco",
+   "text": "<p>La fecha se ha movido <b>seis meses</b>. La Tierra ha cruzado 300 millones de km. Y la estrella de la pantalla no se ha movido ni un pelo.</p><p>Medio año después, ver la misma estrella en el mismo sitio deja el reloj en <b>pleno día</b>. La hora a la que sale una estrella se adelanta 4 minutos al día, así que medio año la desfasa doce horas. Por eso están apagados la atmósfera y el paisaje. Lo que hay ahora en la pantalla es <b>un cielo diurno con solo las estrellas dentro</b>.</p><p>Sí se movió, de hecho. El paralaje de Sirio es de <b>0.38 segundos de arco</b>.</p><p>Un segundo de arco es <b>la 3600 parte</b> de un grado. Eso cuesta de sentir, así que digámoslo de otra manera.</p><ul><li><b>1 segundo de arco</b> = el ángulo que forma <b>una moneda de 2 cm</b> a <b>4 km</b> de distancia</li><li>El paralaje de 0.38 segundos de arco de Sirio = <b>la misma moneda a 10 km</b></li><li>Ni siquiera el paralaje de la estrella más cercana pasa de <b>0.77 segundos de arco</b></li></ul><p>El ojo a simple vista resuelve <b>60 segundos de arco</b> como mucho. Incluso la mejor vista es <b>más de 100 veces</b> demasiado tosca. Y por bueno que sea un telescopio, el aire en movimiento emborrona todo lo que baje del segundo de arco.</p><p>Por eso costó dos mil años. No por falta de teoría, sino porque <b>nadie podía medir con esa precisión</b>.</p>",
+   "sky": {
+    "date": "2027-07-21T09:00:00+09:00",
+    "fov": 20
+   },
+   "quiz": {
+    "q": "¿Cuál fue una de las razones por las que no se aceptó la Tierra en movimiento en la Grecia antigua?",
+    "opts": [
+     "Porque nadie oía girar la Tierra",
+     "Porque no se observaba ningún paralaje de las estrellas",
+     "Porque no se podían explicar las fases de la Luna",
+     "Porque no se podía explicar la retrogradación de los planetas"
+    ],
+    "right": 1,
+    "explain": "Si la Tierra girase alrededor del Sol, la dirección de una estrella tendría que desplazarse un poco con la estación, y las observaciones de la época no captaban nada en absoluto. Las estrellas estaban tanto más lejos de lo que se suponía que el paralaje ni siquiera llegaba a un segundo de arco. La retrogradación la explicaba de hecho mejor una Tierra en movimiento, y de las fases de la Luna podía dar cuenta cualquiera de los dos sistemas."
+   },
+   "show": {
+    "atmosphere": false,
+    "landscape": false
+   }
+  },
+  {
+   "title": "1838, por fin",
+   "text": "<p>La vista se ha movido al cielo de otoño y hay una estrella seleccionada: <b>61 Cygni</b>, una estrella de magnitud 5 en el Cisne, sin ni siquiera nombre propio. Apenas se ve a simple vista y en realidad son <b>dos estrellas</b> orbitándose una junto a otra.</p><p>Pero tenía algo especial. <b>Se movía por el cielo a una velocidad llamativa.</b> Piazzi lo notó en 1792 y la llamó <b>«la estrella voladora»</b>.</p><p>Moverse deprisa puede significar <b>estar cerca</b>. Así que <b>Bessel</b> eligió esta estrella como objetivo. Desde 1837 pasó más de un año midiendo con obstinación los ángulos entre ella y las estrellas de fondo.</p><p>En 1838 captó un bamboleo de <b>0.31 segundos de arco</b>. Fue el momento en que la humanidad midió por primera vez la distancia a una estrella. La respuesta fue <b>unos 10.4 años luz</b> (el valor de hoy es 11.4).</p><p>Casi al mismo tiempo Henderson midió Alfa Centauri y Struve midió Vega. Un muro que llevaba dos mil años en pie cayó <b>en tres sitios en cosa de un año o dos</b>. Los telescopios y el arte de medir ángulos habían cruzado por fin el umbral.</p>",
+   "sky": {
+    "date": "2026-10-15T22:00:00+09:00",
+    "fov": 15
+   },
+   "select": "HIP 104214"
+  },
+  {
+   "title": "El pársec — una unidad hecha de paralaje",
+   "text": "<p>Los astrónomos usan el <b>pársec</b> más que el año luz, porque sale directamente del paralaje.</p><p><b>La distancia a la que el paralaje es de 1 segundo de arco = 1 pársec = 3.26 años luz.</b> El nombre mismo es «<b>par</b>alaje» más «<b>sec</b>undo de arco».</p><p>El método de medir se convirtió en la unidad. Mide un paralaje, dale la vuelta al valor y tienes la distancia en pársecs. Un paralaje de 0.1 segundos de arco son 10 pársecs; de 0.01, 100 pársecs.</p><p>En «Qué significa el brillo» la magnitud absoluta se definía a una distancia de <b>32.6 años luz</b>. Eso son exactamente <b>10 pársecs</b>. La cifra que parecía tan arbitraria tenía su razón.</p><p>Hoy el telescopio espacial <b>Gaia</b> mide paralajes de hasta <b>0.00002 segundos de arco</b>, más o menos como distinguir una moneda apoyada en la Luna desde aquí. Nos ha dado las distancias de <b>2000 millones de estrellas</b>, y la mayoría de las cifras de la ventana de información de la pantalla vienen de ahí.</p>",
+   "sky": {
+    "fov": 30
+   }
+  },
+  {
+   "title": "Donde el paralaje no llega",
+   "text": "<p>El paralaje también tiene su límite. Cuanto más lejos, más pequeño el ángulo, hasta que deja de poder medirse. Ni siquiera Gaia se maneja bien con el otro lado de la galaxia, y otras galaxias quedan descartadas.</p><p>Por eso se construye una <b>escalera</b>, cada peldaño calibrado contra el de abajo.</p><ul><li><b>Paralaje</b> — estrellas cercanas. Hasta aquí es medición directa</li><li><b>Cefeidas</b> — el periodo en que varía el brillo da el brillo real. Contrástalo con lo brillante que parece y sale la distancia. Este peldaño llega hasta Andrómeda</li><li><b>Supernovas de tipo Ia</b> — su brillo al estallar es casi constante. Sirven para miles de millones de años luz</li><li><b>Corrimiento al rojo</b> — usa la expansión del universo. Sirve para lo más lejano de todo</li></ul><p>En la lección de «La galaxia de Andrómeda», Hubble usó cefeidas para medir una distancia y cambió el tamaño del universo. Ese es el segundo peldaño de la escalera. <b>Y ese peldaño se apoya en el primero, el paralaje.</b> Si el paralaje no se hubiera medido nunca, todo lo demás serían reglas sin marcas.</p><p>La distancia es la magnitud más incómoda de la astronomía. El brillo, el tamaño y la edad necesitan todos la distancia antes de poder calcularse, y la distancia es lo más difícil de medir de todo.</p>",
+   "sky": {
+    "fov": 40
+   },
+   "clearSelection": true,
+   "quiz": {
+    "q": "¿Cuál es la definición de un pársec?",
+    "opts": [
+     "La distancia que recorre la luz en un año",
+     "La distancia a la que el paralaje se ve como 1 segundo de arco",
+     "Cien veces la distancia de la Tierra al Sol",
+     "La distancia a la estrella más cercana"
+    ],
+    "right": 1,
+    "explain": "Pársec es un nombre hecho de paralaje y segundo de arco, y es la distancia a la que el paralaje anual es de 1 segundo de arco, unos 3.26 años luz. La distancia que recorre la luz en un año es el año luz, y la distancia Tierra-Sol tiene su propia unidad, la unidad astronómica (UA). La estrella más cercana está a 4.2 años luz, unos 1.3 pársecs."
+   }
+  },
+  {
+   "title": "Lo que ves esta noche es el pasado",
+   "text": "<p>Saber una distancia significa también saber <b>cuándo salió esa luz</b>.</p><ul><li>Elige cualquier estrella y púlsala. Mira la <b>distancia</b> en la ventana de información y <b>réstala del año actual</b>: ese es el año en que salió la luz</li><li>Si miras <b>Vega</b> estás viendo luz de hace 25 años. <b>Deneb</b> son <b>1400 años</b>, luz que salió cuando en la península ibérica reinaban los visigodos</li><li>La <b>galaxia de Andrómeda</b> son 2.5 millones de años, luz de una época en que no había humanos modernos en la Tierra</li><li>Un solo barrido del cielo es <b>ver varias épocas distintas a la vez</b>. En el cielo nocturno no existe el momento «ahora»</li></ul><p>La mayoría de las estrellas visibles a simple vista están dentro de <b>unos cientos a unos miles de años luz</b>. Buena parte de la luz estelar que miras esta noche salió hace siglos, por los tiempos del Siglo de Oro.</p><p>Ahora te toca comprobarlo fuera. Elige la estrella más brillante que veas esta noche y calcula <b>cuándo salió su luz</b>. Si sabes el nombre puedes buscar la distancia; si no lo sabes, adivinar <b>entre unas décadas y unos siglos atrás</b> suele acertar. La luz que llega a tu ojo no es esa estrella tal como es ahora sino <b>esa estrella tal como era entonces</b>.</p>",
+   "sky": {
+    "date": "2027-01-20T21:00:00+09:00",
+    "az": 145,
+    "alt": 35,
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "Las distancias y los paralajes siguen las medidas de Hiparcos y Gaia. Las distancias que aparecen en la información del objeto en pantalla vienen de la misma familia de datos."
+}

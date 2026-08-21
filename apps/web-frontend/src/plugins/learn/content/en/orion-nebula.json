@@ -1,0 +1,159 @@
+{
+ "id": "orion-nebula",
+ "title": "The Orion Nebula — where stars are born",
+ "subtitle": "The finest target in the winter sky, and a picture of our own home town",
+ "minutes": 10,
+ "level": "intro",
+ "track": "target",
+ "tags": [
+  "winter",
+  "nebula",
+  "Orion",
+  "star formation"
+ ],
+ "months": [
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "intro": "Three stars in a row come up in the south on a winter evening. The faint thing hanging below them is the Orion Nebula. Our own Sun was born somewhere like this 4.6 billion years ago.",
+ "steps": [
+  {
+   "title": "Three stars in a row",
+   "text": "<p>It is <b>9 pm in late January</b>, looking south. Right in the middle are <b>three stars of nearly equal brightness set in a slanting row</b>. An arrangement this regular is uncommon in the night sky, so once you have seen it you know it at once.</p><p>This is the belt of <b>Orion</b>. In the West it is the hunter's belt; in Korea it was commonly called <b>Samhyeongje-byeol</b>, the three brothers.</p><p>In the East Asian 28 mansions this region is <b>Samsu</b> (參宿). Worth noting: <b>Samtaeseong</b> (三台) was originally the name of a different set of stars over towards Ursa Major, though these days it is more often used for these three.</p>",
+   "sky": {
+    "date": "2027-01-20T21:00:00+09:00",
+    "az": 155,
+    "alt": 47,
+    "fov": 70,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": true,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "connect": [
+    "* zet Ori",
+    "* eps Ori",
+    "* del Ori"
+   ]
+  },
+  {
+   "title": "The hunter's body",
+   "text": "<p>The constellation art is on. The three stars serve as the waist, with two shoulders above and two legs below.</p><ul><li>Upper-left shoulder — <b>Betelgeuse</b>, the red star</li><li>Lower-right foot — <b>Rigel</b>, the blue star</li><li>Upper-right shoulder — <b>Bellatrix</b></li><li>Lower-left knee — <b>Saiph</b></li></ul><p>Four stars make a rectangle with three more set at a slant inside it. No other constellation has this many bright stars gathered in one place. It is why the winter sky is so grand.</p><p>And can you see <b>something hanging down</b> below the belt? It is the <b>sword</b> at the hunter's waist. Today's destination is there.</p>",
+   "sky": {
+    "fov": 55
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationArt": true,
+    "constellationLabels": true,
+    "onlyPointedConstellation": true
+   },
+   "select": "CON western Ori"
+  },
+  {
+   "title": "The faint thing on the sword",
+   "text": "<p>The sword is zoomed right in. The middle of it is not <b>sharp like a star but spread out</b>.</p><p>Even with the naked eye you can tell it is unlike the other stars. It feels out of focus. That is because it is not a star but <b>a cloud of gas</b>.</p><p>This is the <b>Great Orion Nebula</b>, catalogue number <b>M 42</b>. It is the brightest of all the nebulae, and one of the very few you can recognise as a nebula with the naked eye.</p>",
+   "sky": {
+    "fov": 8
+   },
+   "show": {
+    "constellationArt": false,
+    "constellationLines": false,
+    "constellationLabels": false,
+    "onlyPointedConstellation": false
+   },
+   "select": "M 42"
+  },
+  {
+   "title": "What it really looks like",
+   "text": "<p>A photograph of the sky is laid over it, and an enormous cloud of gas emerges, like a bird with its wings spread.</p><p>It measures about <b>24 light years</b> across and lies <b>about 1,350 light years</b> away. The area it takes up in the sky is larger than the full Moon.</p><p>The strikingly bright part at the centre is the <b>Trapezium</b>. Four young, hot, newly born stars sit there in a trapezoid, and the ultraviolet light they pour out excites the gas around them and sets the whole nebula glowing. The nebula does not shine of itself; it is <b>a lamp switched on by the stars inside it</b>.</p>",
+   "sky": {
+    "fov": 3
+   },
+   "show": {
+    "dss": true
+   }
+  },
+  {
+   "title": "Stars are being born there now",
+   "text": "<p>This is <b>a nursery of stars</b>. Inside the nebula gas and dust gather under their own weight, the core heats up, and when fusion begins a star switches on.</p><p><b>Over 3,000 young stars</b> have been identified inside the Orion Nebula so far. They are around a million years old. Set against a Sun of 4.6 billion years, they are newborns.</p><p>The Hubble Space Telescope has photographed a number of <b>protoplanetary discs</b> in here: flat discs of dust wrapped around newly born stars, which is to say <b>planets under construction</b>.</p><p><b>4.6 billion years ago our own Solar System sat in a place like this.</b> What you are looking at is a photograph of our own infancy.</p>",
+   "sky": {
+    "fov": 2
+   },
+   "quiz": {
+    "q": "Why does the Orion Nebula glow?",
+    "opts": [
+     "Because the gas is hot and burning of its own accord",
+     "Because ultraviolet light from the young hot stars inside it excites the gas",
+     "Because it reflects the light of stars behind it",
+     "Because light is scattered in the Earth's atmosphere"
+    ],
+    "right": 1,
+    "explain": "The gas of the nebula is itself very thin and cold. The strong ultraviolet light from the Trapezium stars inside excites the hydrogen atoms, and those atoms then give out light of their own. Some nebulae do shine only by reflection — the blue haze around the Seven Sisters is one — but the Orion Nebula makes its own light."
+   }
+  },
+  {
+   "title": "Not one nebula but a piece of a vast cloud",
+   "text": "<p>The field is widened to take in the whole of Orion along with the photograph. M 42 is not the only nebula here.</p><p>The whole of Orion is draped in an enormous cloud of gas called the <b>Orion Molecular Cloud Complex</b>, hundreds of light years across. M 42 is no more than <b>a hole in that cloud opening towards us</b>, a window through which the starlight inside leaks out.</p><p>Below the star at the left-hand end of the belt lies the <b>Horsehead Nebula</b>, where black dust in front of a bright background takes the shape of a horse's head in profile. It is famous in photographs but extremely hard to see by eye.</p>",
+   "sky": {
+    "fov": 20
+   },
+   "clearSelection": true,
+   "show": {
+    "dss": true
+   }
+  },
+  {
+   "title": "A whole stellar life in one view",
+   "text": "<p>The photograph is off and we look at the whole of Orion again. <b>This one constellation holds the entire life of a star.</b></p><ul><li><b>M 42</b> — stars being born right now</li><li><b>Rigel and the three stars of the belt</b> — young, heavy, blue stars. They live only tens of millions of years</li><li><b>Betelgeuse</b> — a red supergiant swollen with age. One day it ends as a supernova</li></ul><p>When Betelgeuse goes it will shine <b>as brightly as a full Moon</b> for several weeks and be visible even by day. 'One day' could mean tomorrow, or 100,000 years from now.</p><p>When the supernova that made the Crab Nebula went off in 1054, Song China and Japan recorded it as a <b>guest star</b> visible in daylight. When the next one comes, we shall be the ones writing the record.</p>",
+   "sky": {
+    "fov": 60
+   },
+   "quiz": {
+    "q": "Which of these best explains why the winter sky holds so many bright stars?",
+    "opts": [
+     "Because the air is clearer in winter",
+     "Because the Earth is closer to the Sun",
+     "Because that direction holds a star-forming region where young heavy stars are gathered",
+     "Because the nights are longer in winter"
+    ],
+    "right": 2,
+    "explain": "The direction we look on a winter evening takes in regions such as the Orion Molecular Cloud, where a great many stars have been born recently. Young heavy stars are very bright, so that part of the sky is spectacular. Clear air and long nights help the observing, but they cannot change which constellations are up. The difference in the distance to the Sun has no effect on brightness."
+   },
+   "show": {
+    "dss": false
+   }
+  },
+  {
+   "title": "Take binoculars out with you",
+   "text": "<p>The Orion Nebula is the best possible <b>first nebula for a beginner</b>.</p><ul><li>It is in the evening sky <b>from November to March</b>. At 9 pm in January or February it stands right in the middle of the south</li><li>Find the three stars in a row first, then look at the line hanging <b>below</b> them. The middle of it is the one that looks smudged</li><li><b>It shows even from a city.</b> Unlike the Andromeda Galaxy its light is packed into a small space, so it beats most streetlights</li><li><b>Binoculars</b> show it plainly as a nebula, and a small telescope splits the four stars of the Trapezium</li><li>It is not red the way the photographs are. The eye cannot register colour in faint light, so it comes out <b>grey-green</b>. Do not be disappointed. That is what the universe actually looks like to a human eye</li></ul>",
+   "sky": {
+    "fov": 80,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "dss": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "The overlaid photograph is Digitized Sky Survey (DSS) material. The record of the 1054 supernova follows the guest-star entries in the East Asian histories."
+}

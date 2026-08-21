@@ -1,0 +1,143 @@
+{
+ "id": "star-colors",
+ "title": "A star's colour is its temperature",
+ "subtitle": "The red ones are the coldest",
+ "minutes": 9,
+ "level": "basic",
+ "track": "measure",
+ "tags": [
+  "colour",
+  "temperature",
+  "spectral type",
+  "Albireo"
+ ],
+ "intro": "Stars all look white until you look properly, and then their colours differ. That colour is not a matter of taste, it is a thermometer. Know the colour of a star and you can name its surface temperature.",
+ "steps": [
+  {
+   "title": "Two colours inside one constellation",
+   "text": "<p>This is Orion, <b>in the south on a winter evening</b>. Above and below the three stars set out at a slant there is a bright star on either side.</p><p><b>Betelgeuse</b> at the upper-left shoulder and <b>Rigel</b> at the lower-right foot are both marked. Look closely at the screen. Betelgeuse is <b>orange</b>, Rigel is <b>blue</b>.</p><p>They sit in the same constellation, so they lie in much the same direction and at no great difference in distance. Yet their colours are this far apart. Why?</p>",
+   "sky": {
+    "date": "2027-01-20T21:00:00+09:00",
+    "az": 152,
+    "alt": 48,
+    "fov": 60,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true
+   },
+   "highlight": [
+    "Betelgeuse",
+    "Rigel"
+   ]
+  },
+  {
+   "title": "Betelgeuse — a red star at 3,500 degrees",
+   "text": "<p>Betelgeuse is selected. Look at the <b>spectral type</b> in the object information. It begins with <b>M</b>. That is the coolest group, with a surface temperature of around <b>3,500 degrees</b>.</p><p>The name comes from the Arabic for 'the armpit of the giant'. Its brightness varies, so in some years it outshines Rigel and in others it does not. In late 2019 it dimmed noticeably and there was a flurry of talk about an imminent supernova; it turned out that dust the star had thrown off was in the way.</p><p>Its diameter is <b>several hundred times</b> that of the Sun. Put it where the Sun is and it would swallow the orbit of Mars.</p>",
+   "sky": {
+    "fov": 30
+   },
+   "select": "Betelgeuse"
+  },
+  {
+   "title": "Rigel — a blue star at 12,000 degrees",
+   "text": "<p>Now Rigel. Its spectral type begins with <b>B</b> and its surface temperature is over <b>12,000 degrees</b>. More than three times hotter than Betelgeuse.</p><p>The rule is simple. <b>Hot is blue, cold is red.</b></p><p>Put iron in a fire and it glows red at first, then yellow as it heats further, then a dazzling white. Stars behave the same way. The hotter the body, the more of its light comes out at short wavelengths, towards the blue.</p><p>We feel red as hot and blue as cold, but with stars it is <b>exactly the other way round</b>.</p>",
+   "sky": {
+    "fov": 30
+   },
+   "select": "Rigel",
+   "quiz": {
+    "q": "Which of these stars has the hottest surface?",
+    "opts": [
+     "Red Betelgeuse",
+     "Yellow Sun",
+     "White Vega",
+     "Blue Rigel"
+    ],
+    "right": 3,
+    "explain": "Colour follows temperature exactly. Red (3,500 degrees) → orange → yellow (the Sun, 5,800) → white (Vega, 9,600) → blue (Rigel, over 12,000). A red star seeming hot is a trick of our senses; it is in fact the coolest of them."
+   }
+  },
+  {
+   "title": "OBAFGKM — the temperature classes",
+   "text": "<p>Line the stars up hottest first and you get seven classes: <b>O B A F G K M</b>. The first letter of the spectral type in the information panel is one of these.</p><ul><li><b>O</b> over 30,000 degrees, blue — very rare</li><li><b>B</b> 10,000 to 30,000, blue-white — Rigel, Deneb</li><li><b>A</b> 7,500 to 10,000, white — Vega, Sirius</li><li><b>F</b> 6,000 to 7,500, yellowish white — Procyon</li><li><b>G</b> 5,200 to 6,000, yellow — <b>the Sun</b>, Capella</li><li><b>K</b> 3,700 to 5,200, orange — Arcturus, Aldebaran</li><li><b>M</b> under 3,700, red — Betelgeuse, Antares</li></ul><p>The order looks strange because the letters were first handed out A, B, C by a different criterion, and when the classes were rearranged by temperature later, only the names stayed as they were.</p><p>Worth noting: the Sun is <b>a white star</b>. It looks yellow because the air scatters the blue out of its light. The same reason the sky is blue.</p>",
+   "sky": {
+    "az": 130,
+    "alt": 55,
+    "fov": 110
+   },
+   "clearSelection": true,
+   "highlight": [
+    "Sirius",
+    "Aldebaran",
+    "Capella",
+    "Procyon"
+   ]
+  },
+  {
+   "title": "Albireo — two colours set side by side",
+   "text": "<p>Across to the summer sky, and <b>Albireo</b> at the beak of the swan. To the naked eye it is one star, but zoomed right in it has split into <b>two</b>. The pair stand <b>35 arcseconds</b> apart, one fiftieth of the full Moon's diameter.</p><p>One is <b>gold</b> (type K, 4,400 degrees), the other <b>blue</b> (type B, 13,000 degrees). Set together like this the difference in colour goes straight in. Amateur astronomers regularly name it the most beautiful double star there is.</p><p>Whether the two really orbit one another or merely happen to line up is still not settled. If they are a pair, one circuit takes something like 100,000 years.</p><p>A small telescope splits it easily. It is one of the most popular targets at a summer star party.</p>",
+   "sky": {
+    "date": "2026-08-15T21:00:00+09:00",
+    "fov": 0.08
+   },
+   "select": "* bet01 Cyg"
+  },
+  {
+   "title": "Blue stars die young",
+   "text": "<p>Colour does not only give you the temperature. It gives you <b>the life of the star</b> as well.</p><p>Blue stars are heavy. Heavy stars burn their fuel furiously and get through it in <b>a few million to a few tens of millions of years</b>, ending as supernovae. In human terms, a brilliant life and an early end.</p><p>Small red stars, the red dwarfs, are sparing with their fuel and live for <b>hundreds of billions of years</b>. The universe is 13.8 billion years old, so not one red dwarf anywhere has yet reached the end of its life.</p><p>That said, <b>not everything red is small</b>. Stars such as Betelgeuse and Antares are red because they have <b>swollen with age</b>: the surface spread out and cooled. The same red can mean a small star newly born or a giant close to death. What separates them is brightness.</p>",
+   "sky": {
+    "fov": 40
+   },
+   "clearSelection": true
+  },
+  {
+   "title": "Antares, the rival of Mars",
+   "text": "<p>The red star low in the southern sky in summer is <b>Antares</b>, the heart of Scorpius.</p><p>The name is Greek for <b>'the rival of Ares', which is to say of Mars</b>. It is red, and close enough to Mars in brightness that when Mars passed nearby people could not tell which of the two was the planet.</p><p>East Asia saw the same star as red as well. It is the central star of <b>Simsu</b>, one of the 28 mansions, and was called <b>Daehwa</b> (大火), 'the great fire'. Where it stood in the evening sky was used to judge the farming season.</p><p>Two cultures that had never met looked at the same star and <b>both reached for fire and for redness</b>. Colour travels across cultures.</p>",
+   "sky": {
+    "date": "2026-08-15T21:00:00+09:00",
+    "az": 200,
+    "alt": 25,
+    "fov": 45
+   },
+   "select": "Antares",
+   "quiz": {
+    "q": "Which statement about stars that look red is correct?",
+    "opts": [
+     "They are all giant stars swollen with age",
+     "They are all small stars newly born",
+     "They share a cool surface, but their sizes can be wildly different",
+     "Red stars do not really exist; they only look red because of the atmosphere"
+    ],
+    "right": 2,
+    "explain": "Colour tells you the surface temperature and nothing more. So every red star has a cool surface, but among them are red giants swollen with age and small faint red dwarfs alike. Telling the two apart takes brightness and distance together. There is a separate effect of the air that reddens stars near the horizon, but Betelgeuse is red even overhead."
+   }
+  },
+  {
+   "title": "You can check the colours with your own eyes",
+   "text": "<p>The colours of stars are not something that only comes out in photographs; <b>you can see them with the naked eye</b>. It takes a little knack, though.</p><ul><li>In <b>winter</b>, look back and forth between <b>Betelgeuse and Rigel</b> in Orion. Comparing them side by side brings the difference out far better</li><li>In <b>summer</b>, <b>Antares</b> in Scorpius burns red while <b>Vega</b> overhead shines white</li><li>In <b>spring</b>, <b>Arcturus</b> in Boötes is orange. It is the brightest star in the spring sky, so it is easy to find</li><li>Look for colour when the star is <b>high up</b>. Near the horizon the air turns every star red, the same reason the Sun reddens as it sets</li><li><b>Binoculars</b> deepen the colour considerably. Throwing the focus slightly off spreads the colour out and makes it plainer still</li></ul>",
+   "sky": {
+    "fov": 80,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "The spectral types and surface temperatures follow the usual ranges of the Harvard spectral classification."
+}

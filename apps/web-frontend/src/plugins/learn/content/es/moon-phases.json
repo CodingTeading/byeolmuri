@@ -1,0 +1,160 @@
+{
+ "id": "moon-phases",
+ "title": "¿Por qué cambia de forma la Luna?",
+ "subtitle": "Las fases y la hora a la que sale resultan ser la misma historia",
+ "minutes": 10,
+ "level": "intro",
+ "track": "principle",
+ "tags": [
+  "Luna",
+  "fases",
+  "calendario lunar",
+  "28 mansiones"
+ ],
+ "intro": "La Luna cambia de forma cada día y también cambia la hora a la que sale. Parecen dos cosas separadas, pero son una sola. Vamos a mover la fecha de unos días en unos días y seguir a la Luna.",
+ "steps": [
+  {
+   "title": "Miremos de cerca una media luna",
+   "text": "<p>La Luna está muy ampliada. Es el <b>cuarto creciente</b>. En el hemisferio norte se ilumina la mitad derecha, como aquí; en el hemisferio sur se invierte y se ilumina la izquierda.</p><p>La información del objeto da un valor de <b>fase</b>. Es el porcentaje de la cara iluminada que puedes ver. 0% es la luna nueva, cuando no se ve nada; 100% es la llena; y ahora mismo estará cerca del 50%.</p><p>Sigue la línea que separa el lado iluminado del oscuro. Sobre esa línea el Sol está <b>saliendo o poniéndose</b> en este mismo momento. La Luna también tiene mañanas y tardes.</p>",
+   "sky": {
+    "date": "2026-09-18T20:00:00+09:00",
+    "fov": 3,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": false,
+    "landscape": false,
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true
+   },
+   "select": "NAME Moon"
+  },
+  {
+   "title": "Cuatro días más adelante — la luna creciente",
+   "text": "<p>Solo ha cambiado la fecha, <b>cuatro días más adelante</b>. Es una <b>luna creciente</b> fina.</p><p>En pantalla el lado oscuro es negro puro. <b>Hay una cosa que esta vista no puede dibujar.</b></p><p>Mira una luna creciente de verdad desde fuera y el lado oscuro <b>brilla débilmente</b> con un gris ceniza. Se llama <b>luz cenicienta</b>. Es luz del Sol rebotada en la Tierra que ilumina muy tenuemente la cara nocturna de la Luna. Visto desde la Luna en ese momento, la Tierra estaría ahí casi «llena» y luminosa.</p><p>Se ve a simple vista una tarde de luna creciente, y con prismáticos seguro. Esto es <b>algo que hay que comprobar fuera</b>, no en la pantalla.</p>",
+   "sky": {
+    "date": "2026-09-14T19:30:00+09:00"
+   },
+   "select": "NAME Moon"
+  },
+  {
+   "title": "La luna llena",
+   "text": "<p>Desde donde empezamos (18 de septiembre) la fecha ha avanzado <b>ocho días</b>. El disco entero está iluminado: es <b>luna llena</b>.</p><p>Se ven bien las manchas oscuras de la superficie. Se llaman <b>mares</b>, aunque no tienen agua: son llanuras de lava que fluyó y se solidificó hace miles de millones de años. En Asia Oriental vieron en estas manchas <b>una liebre majando bajo un árbol de canela</b>, en India también una liebre, y de ahí que llamaran a la Luna «la que lleva la liebre», y en Europa un rostro humano.</p><p>Lo llamativo es que estas marcas <b>no cambian nunca</b>. La Luna tarda en girar sobre su eje exactamente lo mismo que en dar la vuelta a la Tierra, así que siempre nos muestra la misma cara. Nadie vio la cara oculta hasta que una sonda la rodeó y la fotografió en 1959.</p>",
+   "sky": {
+    "date": "2026-09-26T20:00:00+09:00"
+   },
+   "select": "NAME Moon"
+  },
+  {
+   "title": "La mitad iluminada es siempre la mitad",
+   "text": "<p>Parece que la Luna cambia de forma, pero <b>la mitad iluminada por el Sol es siempre exactamente la mitad</b>. Lo que cambia es <b>el ángulo desde el que miramos esa mitad</b>.</p><ul><li>Luna en <b>la misma dirección</b> que el Sol → la cara iluminada apunta al otro lado, así que es <b>nueva</b> y no se ve</li><li>A <b>90 grados</b> → ves la mitad. <b>Cuarto creciente y cuarto menguante</b></li><li><b>Justo enfrente</b> → miras de frente la cara iluminada. <b>Llena</b></li></ul><p>Así que la forma de la Luna es una escala de <b>cuánto se separan el Sol y la Luna en el cielo</b>. Y cuánto se separan aparece como <b>a qué hora sale</b>. Los dos pasos siguientes lo enseñan en marcha.</p>",
+   "sky": {
+    "fov": 8
+   }
+  },
+  {
+   "title": "La creciente dura poco por el oeste al anochecer",
+   "text": "<p>La atmósfera está de vuelta y el campo, más amplio. Son <b>las 7 y media de la tarde de un día con luna creciente</b>, mirando al oeste.</p><p>La creciente cuelga sobre el resplandor del oeste, donde el Sol acaba de ponerse. Está a solo 40 grados del Sol, así que <b>lo sigue y se pone en un par de horas</b>. Por eso nunca ves una luna creciente entrada la noche.</p><p>Fíjate también en cómo se inclina. El lado brillante mira <b>hacia donde se ha puesto el Sol</b>. El lado brillante de la Luna siempre apunta al Sol.</p>",
+   "sky": {
+    "date": "2026-09-14T19:30:00+09:00",
+    "az": 260,
+    "alt": 15,
+    "fov": 60
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true
+   },
+   "highlight": [
+    "NAME Moon"
+   ]
+  },
+  {
+   "title": "La luna llena sale justo cuando se pone el Sol",
+   "text": "<p>Una hora parecida de la tarde, pero esta vez el <b>este</b> en la noche de <b>luna llena</b>.</p><p>En el mismo momento en que el Sol se pone por el oeste, la luna llena <b>sale por el este</b>. Está justo enfrente del Sol, así que no podía ser de otro modo. Por eso solo la luna llena está arriba <b>toda la noche</b>.</p><p>Llegados aquí, la regla se resume en una sola.</p><ul><li><b>Luna creciente</b> — un rato por el oeste al ponerse el Sol, y enseguida se va</li><li><b>Cuarto creciente</b> — alto al sur al ponerse el Sol, se pone a medianoche</li><li><b>Luna llena</b> — sale por el este cuando se pone el Sol, arriba toda la noche</li><li><b>Cuarto menguante</b> — sale a medianoche, en el cielo del sur <b>de madrugada</b></li><li><b>Luna menguante fina</b> — un rato por el este justo antes de amanecer</li></ul>",
+   "sky": {
+    "date": "2026-09-26T19:10:00+09:00",
+    "az": 95,
+    "alt": 15
+   },
+   "highlight": [
+    "NAME Moon"
+   ],
+   "quiz": {
+    "q": "Sales a las 5 de la madrugada y hay una luna finísima baja por el este. ¿Cuál es?",
+    "opts": [
+     "Una luna creciente",
+     "Una luna menguante",
+     "Un cuarto creciente",
+     "Una luna llena"
+    ],
+    "right": 1,
+    "explain": "Fina significa que está cerca del Sol, y baja por el este justo antes de amanecer significa que ha salido un poco antes que él: es una luna menguante. La creciente también es fina, pero se pone después del Sol y por eso aparece por el oeste al atardecer. El cuarto creciente es media luna, una forma distinta, y una luna llena a esa hora ya se estaría poniendo por el oeste."
+   }
+  },
+  {
+   "title": "La Luna avanza un puño y medio al día entre las estrellas",
+   "text": "<p>Esta vez la vista queda <b>anclada a la Luna</b> y el tiempo corre muy deprisa. La Luna se queda quieta y <b>las constelaciones parecen deslizarse por detrás</b>. La forma va llenándose al mismo tiempo.</p><p>La Luna avanza hacia el este entre las estrellas <b>unos 13 grados al día</b>, más o menos un puño y medio con el brazo estirado. Una vuelta completa le lleva <b>27.3 días</b>.</p><p>Una vuelta completa de las <b>fases</b>, en cambio, lleva <b>29.5 días</b>. Mientras la Luna da su vuelta, la Tierra también avanza en su órbita, así que la Luna necesita un par de días más para volver a «la misma dirección que el Sol». Por eso un mes del calendario lunar va alternando entre 29 y 30 días.</p><p>En Asia Oriental este camino que recorre la Luna se dividió en veintiocho: las <b>28 mansiones</b>, con la idea de que la Luna se aloja cada noche en una de ellas.</p>",
+   "sky": {
+    "date": "2026-09-14T20:00:00+09:00",
+    "fov": 45,
+    "timeSpeed": 20000
+   },
+   "show": {
+    "atmosphere": false,
+    "landscape": false,
+    "constellationLines": true,
+    "constellationLabels": true,
+    "ecliptic": true
+   },
+   "lookAt": "NAME Moon"
+  },
+  {
+   "title": "Por eso la Luna y las estrellas se llevan mal",
+   "text": "<p>La luna llena está arriba toda la noche y es muy brillante. Esa luz vela el cielo entero y <b>borra lo que es tenue</b>. Por eso hay que elegir <b>una noche sin Luna</b> para la Vía Láctea, las nebulosas y las galaxias.</p><p>Si lo que quieres es mirar la Luna misma, en cambio, <b>el cuarto creciente o el menguante</b> ganan a la llena. A lo largo de la línea entre luz y sombra los cráteres proyectan sombras largas y el relieve resalta. La luna llena recibe la luz de frente y resulta plana en comparación.</p>",
+   "sky": {
+    "date": "2026-09-18T20:00:00+09:00",
+    "fov": 3,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "ecliptic": false
+   },
+   "select": "NAME Moon",
+   "quiz": {
+    "q": "¿Cuándo se observan con más nitidez los cráteres de la Luna?",
+    "opts": [
+     "En luna llena",
+     "En media luna, cerca de la línea entre lo claro y lo oscuro",
+     "En luna nueva",
+     "Cuando la Luna está en su punto más alto"
+    ],
+    "right": 1,
+    "explain": "Cerca de esa línea la luz del Sol entra de lado, así que las sombras de los cráteres se alargan y el terreno resalta. La luna llena recibe la luz de frente, casi no deja sombra y se ve plana. En luna nueva estás mirando la cara nocturna de la Luna, así que no hay nada que ver. Que esté alta sí ayuda, porque miras a través de menos aire, pero sin sombras ninguna altura hará resaltar el relieve."
+   }
+  },
+  {
+   "title": "Comprueba la Luna de hoy",
+   "text": "<p>La Luna es el único objetivo que puedes observar desde el centro de una ciudad, e incluso de día.</p><ul><li>Consulta la fase de esta noche y las horas de salida y puesta en la pestaña «<b>Esta noche</b>»</li><li>Mira la forma e intenta averiguar <b>por qué día del mes lunar vas</b>. Media luna significa día 7 u 8, o 22 o 23; luna llena, alrededor del día 15</li><li>Mira en la misma dirección a la misma hora <b>con una semana de diferencia</b>. Verás que la forma y la posición se han movido juntas</li><li>Una tarde con luna creciente, busca la <b>luz cenicienta</b> en el lado oscuro. Con prismáticos es mucho más fácil</li></ul>",
+   "sky": {
+    "fov": 60,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "Las fechas en pantalla son una lunación de septiembre de 2026 tomada como ejemplo. Las fases y las horas de salida y puesta son todas resultado del cálculo de la pantalla."
+}

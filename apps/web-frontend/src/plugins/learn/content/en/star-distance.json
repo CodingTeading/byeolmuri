@@ -1,0 +1,146 @@
+{
+ "id": "star-distance",
+ "title": "How do we measure the distance to a star?",
+ "subtitle": "The thing nobody could measure for two thousand years",
+ "minutes": 11,
+ "level": "deep",
+ "track": "measure",
+ "tags": [
+  "distance",
+  "parallax",
+  "light years",
+  "parsec"
+ ],
+ "intro": "You cannot lay a ruler against a star and you cannot go there. And yet the information panel on screen carries a figure in light years. We will find out where that figure comes from, and why it took humanity two thousand years to arrive at it.",
+ "steps": [
+  {
+   "title": "What a light year is",
+   "text": "<p><b>Sirius</b>, the brightest star in the winter sky, is selected. The distance reads <b>8.6 light years</b>.</p><p><b>One light year</b> is the distance light travels in a year. Light goes round the Earth seven and a half times a second. Running at that speed for a year comes to about <b>9.5 trillion km</b>.</p><p>Setting it against nearer things gives you the feel of it.</p><ul><li>The Moon — <b>1.3 seconds</b></li><li>The Sun — <b>8 minutes 19 seconds</b></li><li>Neptune — <b>4 hours</b></li><li>The nearest star — <b>4.2 years</b></li><li>Sirius — <b>8.6 years</b></li></ul><p>The moment you leave the Solar System the unit changes completely. It is 4 hours from the Sun out to Neptune, and 4 years to the next star. <b>That is how empty the space between stars is.</b></p>",
+   "sky": {
+    "date": "2027-01-20T21:00:00+09:00",
+    "az": 145,
+    "alt": 32,
+    "fov": 60,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "select": "Sirius"
+  },
+  {
+   "title": "The nearest stars",
+   "text": "<p>Set out in order of distance from the Sun, the list runs like this.</p><ul><li><b>4.2 light years</b> Proxima Centauri — the faint companion of the Alpha Centauri system</li><li><b>4.4 light years</b> Rigil Kentaurus (Alpha Centauri) — not visible above 30 degrees of latitude</li><li><b>6.0 light years</b> Barnard's Star — at magnitude 9.5 it cannot be seen with the naked eye</li><li><b>7.9 light years</b> Wolf 359, <b>8.3 light years</b> Lalande 21185 — both red dwarfs</li><li><b>8.6 light years</b> <b>Sirius</b> — among the nearest stars the naked eye can reach</li><li><b>8.7 light years</b> Luyten 726-8, <b>9.7 light years</b> Ross 154, <b>10.3 light years</b> Ross 248 — all faint again</li><li><b>10.5 light years</b> Epsilon Eridani — magnitude 3.7, a rarity on this list in being visible to the naked eye</li><li><b>10.7 light years</b> Lacaille 9352, <b>11.0 light years</b> Ross 128</li><li><b>11.4 light years</b> <b>61 Cygni</b> — it comes back later</li><li><b>11.5 light years</b> <b>Procyon</b></li></ul><p>Something odd stands out from the list. <b>Most of the nearest stars cannot be seen with the naked eye.</b> The commonest kind of star in the universe is the small, faint <b>red dwarf</b>. The stars we see in the night sky are mostly distant giants.</p><p>The point from 'What brightness means', that apparent brightness is not real brightness, comes back here.</p>",
+   "sky": {
+    "fov": 70
+   },
+   "highlight": [
+    "Sirius",
+    "Procyon"
+   ]
+  },
+  {
+   "title": "Parallax — an experiment with your thumb",
+   "text": "<p>Measuring a distance works exactly as surveying does. <b>You look from two places and measure the difference in angle.</b></p><p>You can try it right now. Hold your arm out with your thumb up and <b>close one eye and then the other</b>. Your thumb <b>jumps</b> left and right against the background. Bend your arm to bring the thumb closer and it jumps further.</p><p>That angle of jump is <b>parallax</b>. Know the distance between your eyes, measure the angle, and out comes the distance to your thumb.</p><p>To use it on stars the two eyes have to be far further apart, so we use <b>the orbit of the Earth</b>. Wait six months and we are looking at the same star from <b>300 million km</b> away. It is the longest ruler a human being can have.</p>",
+   "sky": {
+    "fov": 50
+   }
+  },
+  {
+   "title": "And yet nothing moves",
+   "text": "<p>Let us try it. Sirius has been zoomed right in. Now we move <b>the date six months on</b>. The Earth goes to the far side of its orbit.</p><p>Go on to the next step, and watch how far the star moves.</p><p>To say it in advance: <b>nothing at all happens.</b> That is the heart of this story.</p><p>This was the single strongest argument against a moving Earth in ancient Greece. If the Earth really moved, the positions of the stars would have to change with the season, and however precisely they measured there was <b>not the slightest stir</b>. So Aristotle concluded that the Earth does not move.</p><p>In fact it was not that the Earth does not move, but that <b>the stars were further off than anyone had imagined</b>.</p>",
+   "sky": {
+    "fov": 20
+   },
+   "select": "Sirius"
+  },
+  {
+   "title": "How small one arcsecond is",
+   "text": "<p>The date has moved <b>six months</b>. The Earth has crossed 300 million km. And the star on screen has not shifted a hair.</p><p>Half a year on, seeing the same star in the same place puts the clock at <b>midday</b>. The time a star rises comes forward by 4 minutes a day, so half a year puts it twelve hours out. That is why the atmosphere and the landscape are switched off. What is on screen now is <b>a daytime sky with only the stars left in it</b>.</p><p>It did move, in fact. The parallax of Sirius is <b>0.38 arcseconds</b>.</p><p>One arcsecond is <b>one 3600th</b> of a degree. That is hard to feel, so let us put it another way.</p><ul><li><b>1 arcsecond</b> = the angle made by <b>a 2 cm coin</b> at a distance of <b>4 km</b></li><li>The 0.38-arcsecond parallax of Sirius = <b>the same coin at 10 km</b></li><li>Even the nearest star's parallax does not exceed <b>0.77 arcseconds</b></li></ul><p>The naked eye resolves <b>60 arcseconds</b> at best. Even the finest eyesight is <b>more than 100 times</b> too blunt. And however good a telescope may be, moving air smears out anything below an arcsecond.</p><p>This is why it took two thousand years. Not for want of a theory, but because <b>nobody could measure to that precision</b>.</p>",
+   "sky": {
+    "date": "2027-07-21T09:00:00+09:00",
+    "fov": 20
+   },
+   "quiz": {
+    "q": "Which of these was one reason the moving Earth was not accepted in ancient Greece?",
+    "opts": [
+     "Because nobody could hear the Earth turning",
+     "Because no parallax of the stars could be observed",
+     "Because the phases of the Moon could not be explained",
+     "Because the retrograde motion of the planets could not be explained"
+    ],
+    "right": 1,
+    "explain": "If the Earth went round the Sun, the direction of a star would have to shift a little with the season, and the observations of the day caught nothing at all. The stars lay so much further off than supposed that the parallax did not even reach one arcsecond. Retrograde motion was in fact better explained by a moving Earth, and the phases of the Moon could be accounted for by either system."
+   },
+   "show": {
+    "atmosphere": false,
+    "landscape": false
+   }
+  },
+  {
+   "title": "1838, at last",
+   "text": "<p>The view has moved to the autumn sky and one star is selected: <b>61 Cygni</b>, a magnitude 5 star in Cygnus without so much as a name. It is barely visible to the naked eye, and it is in fact <b>two stars</b> orbiting side by side.</p><p>But there was something special about it. <b>It moved unusually fast across the sky.</b> Piazzi noticed this in 1792 and called it <b>'the flying star'</b>.</p><p>Moving fast can mean <b>being close</b>. So <b>Bessel</b> chose this star as his target. From 1837 he spent over a year doggedly measuring the angles between it and the background stars.</p><p>In 1838 he caught a wobble of <b>0.31 arcseconds</b>. It was the moment humanity first measured the distance to a star. The answer was <b>about 10.4 light years</b> (today's value is 11.4).</p><p>At almost the same time Henderson measured Alpha Centauri and Struve measured Vega. A wall that had stood for two thousand years fell <b>in three places within a year or two</b>. Telescopes and the art of measuring angles had finally crossed the threshold.</p>",
+   "sky": {
+    "date": "2026-10-15T22:00:00+09:00",
+    "fov": 15
+   },
+   "select": "HIP 104214"
+  },
+  {
+   "title": "The parsec — a unit made out of parallax",
+   "text": "<p>Astronomers use the <b>parsec</b> more often than the light year, because it falls straight out of parallax.</p><p><b>The distance at which the parallax is 1 arcsecond = 1 parsec = 3.26 light years.</b> The name itself is '<b>par</b>allax' plus 'arc<b>sec</b>ond'.</p><p>The method of measuring became the unit. Measure a parallax, turn the value upside down, and you have the distance in parsecs. A parallax of 0.1 arcseconds is 10 parsecs, 0.01 arcseconds is 100 parsecs.</p><p>In 'What brightness means', absolute magnitude was defined at a distance of <b>32.6 light years</b>. That is precisely <b>10 parsecs</b>. The number that looked so arbitrary had a reason behind it.</p><p>Today the <b>Gaia</b> space telescope measures parallax down to <b>0.00002 arcseconds</b>, about like picking out a coin lying on the Moon from here. It has given us the distances of <b>2 billion stars</b>, and most of the figures in the information panel on screen come from there.</p>",
+   "sky": {
+    "fov": 30
+   }
+  },
+  {
+   "title": "Where parallax cannot reach",
+   "text": "<p>Parallax has its limits too. The further away, the smaller the angle, until it can no longer be measured at all. Even Gaia struggles with the far side of the galaxy, and other galaxies are out of the question.</p><p>So a <b>ladder</b> is built instead, each rung calibrated against the one below.</p><ul><li><b>Parallax</b> — nearby stars. This far is direct measurement</li><li><b>Cepheid variables</b> — the period over which the brightness varies gives the real brightness. Set that against how bright it looks and out comes the distance. This rung reaches Andromeda</li><li><b>Type Ia supernovae</b> — their brightness when they go off is nearly constant. Good for billions of light years</li><li><b>Redshift</b> — it uses the expansion of the universe. Good for the furthest reaches of all</li></ul><p>In the 'Andromeda Galaxy' lesson, Hubble used Cepheids to measure a distance and changed the size of the universe. That is the second rung of the ladder. <b>And that rung stands on the first one, parallax.</b> Had parallax never been measured, all the rest would be rulers with no markings on them.</p><p>Distance is the most awkward quantity in astronomy. Brightness, size and age all need the distance before they can be worked out, and the distance is the hardest thing of all to measure.</p>",
+   "sky": {
+    "fov": 40
+   },
+   "clearSelection": true,
+   "quiz": {
+    "q": "What is the definition of a parsec?",
+    "opts": [
+     "The distance light travels in a year",
+     "The distance at which the parallax appears as 1 arcsecond",
+     "One hundred times the distance from the Earth to the Sun",
+     "The distance to the nearest star"
+    ],
+    "right": 1,
+    "explain": "Parsec is a name made of parallax and arcsecond, and it is the distance at which the annual parallax is 1 arcsecond, about 3.26 light years. The distance light travels in a year is a light year, and the Earth-Sun distance has a unit of its own, the astronomical unit (AU). The nearest star is 4.2 light years, about 1.3 parsecs."
+   }
+  },
+  {
+   "title": "What you see tonight is the past",
+   "text": "<p>Knowing a distance also means knowing <b>when that light set out</b>.</p><ul><li>Pick any star and tap it. Look at the <b>distance</b> in the information panel and <b>subtract it from this year</b>: that is the year the light left</li><li>Look at <b>Vega</b> and you are seeing light 25 years old. <b>Deneb</b> is <b>1,400 years</b>, light that set out in the Three Kingdoms period of Korea</li><li>The <b>Andromeda Galaxy</b> is 2.5 million years, light from a time when there were no modern humans on Earth</li><li>One sweep across the sky is <b>seeing several different ages at once</b>. There is no such moment as 'now' in the night sky</li></ul><p>Most of the stars visible to the naked eye lie within <b>a few hundred to a few thousand light years</b>. A good deal of the starlight you look up at tonight set out centuries ago, which in Korean terms means during the Joseon era.</p><p>Now it is your turn to check it outdoors. Pick the brightest star you can see tonight and work out <b>when its light set out</b>. If you know the name you can look the distance up; if you do not, guessing <b>somewhere between a few decades and a few centuries ago</b> will usually be right. The light reaching your eye is not that star as it is now but <b>that star as it was then</b>.</p>",
+   "sky": {
+    "date": "2027-01-20T21:00:00+09:00",
+    "az": 145,
+    "alt": 35,
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "The distances and parallaxes follow the Hipparcos and Gaia measurements. The distances shown in the object information on screen come from the same family of data."
+}

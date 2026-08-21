@@ -1,0 +1,148 @@
+{
+ "id": "seasons",
+ "title": "¿Por qué cambian las constelaciones con la estación?",
+ "subtitle": "El mismo cielo del sur a la misma hora, puesto uno junto a otro cada tres meses",
+ "minutes": 9,
+ "level": "intro",
+ "track": "principle",
+ "tags": [
+  "estaciones",
+  "órbita de la Tierra",
+  "zodíaco"
+ ],
+ "intro": "Donde en invierno mirabas Orión, en verano encuentras Escorpio. No es que las estrellas se hayan movido: es la Tierra en la que viajamos. Vamos a adelantar la fecha de tres en tres meses y mirar el mismo cielo cuatro veces.",
+ "steps": [
+  {
+   "title": "Las 9 de la noche en enero, el cielo del sur",
+   "text": "<p>La hora está puesta a las <b>9 de la noche del 15 de enero</b> y estás mirando al <b>sur</b>, un poco al este del sur exacto. La ubicación es donde estás ahora mismo.</p><p>Lo que destaca en el centro es <b>Orión</b>. Las tres estrellas en fila son la señal. Abajo a la izquierda está <b>Sirio</b>, la estrella más brillante de todas, y encima <b>Tauro</b>.</p><p>Quédate con este cielo. A partir de aquí <b>la hora se queda fija en las 9 y solo se mueve la fecha</b>.</p>",
+   "sky": {
+    "date": "2027-01-15T21:00:00+09:00",
+    "az": 155,
+    "alt": 45,
+    "fov": 105,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationLabels": true,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true
+   }
+  },
+  {
+   "title": "Tres meses después, las 9 de la noche en abril",
+   "text": "<p>Solo ha cambiado la fecha, al <b>15 de abril</b>. La hora y la dirección son las mismas: las 9 de la noche, mirando al sur.</p><p>Orión ha desaparecido. En su lugar ha entrado <b>Leo</b>. ¿Ves las patas delanteras en forma de signo de interrogación al revés, y la estrella brillante <b>Régulo</b>? Por el este asoma Arturo, en el Boyero. Es el cielo de primavera.</p>",
+   "sky": {
+    "date": "2027-04-15T21:00:00+09:00"
+   },
+   "select": "* alf Leo"
+  },
+  {
+   "title": "Tres meses más, las 9 de la noche en julio",
+   "text": "<p><b>15 de julio</b>, las 9 de la noche. Bajo, al sur, se tumba <b>Escorpio</b> con la estrella roja <b>Antares</b> en el corazón, y alto por el este ha subido el Triángulo de Verano.</p><p>Leo ya ha pasado al oeste. Cada tres meses cambia entero el reparto del cielo del sur.</p>",
+   "sky": {
+    "date": "2027-07-15T21:00:00+09:00"
+   },
+   "select": "* alf Sco"
+  },
+  {
+   "title": "Las 9 de la noche en octubre, y vuelta a empezar",
+   "text": "<p><b>15 de octubre</b>, las 9 de la noche. Al sur está el gran cuadrado de <b>Pegaso</b>, una zona del cielo con pocas estrellas brillantes. Es el cielo de otoño.</p><p>Tres meses más desde aquí y vuelves a enero, al Orión del principio. Eso es <b>exactamente una vuelta al año</b>. El número mismo da la respuesta.</p>",
+   "sky": {
+    "date": "2027-10-15T21:00:00+09:00"
+   },
+   "clearSelection": true
+  },
+  {
+   "title": "La noche es el lado contrario al Sol",
+   "text": "<p>La Tierra da una vuelta al Sol en un año. <b>La noche</b> es el rato que pasas mirando <b>al lado contrario al Sol</b>.</p><p>Así que cuando la Tierra llega al otro extremo de su órbita, la dirección que miras de noche también se invierte. Por eso el cielo nocturno de dentro de seis meses es otro cielo distinto. Las estrellas no se han movido; <b>te has cambiado de asiento</b>.</p><p>La línea roja es <b>la eclíptica</b>. Es el camino que recorre el Sol entre las constelaciones a lo largo del año, y ni la Luna ni los planetas se alejan mucho de él.</p>",
+   "sky": {
+    "fov": 120
+   },
+   "show": {
+    "ecliptic": true
+   }
+  },
+  {
+   "title": "Veamos en qué constelación está el Sol de día",
+   "text": "<p>Esta vez son <b>las 12 del mediodía del 15 de enero</b>. La atmósfera está apagada, así que se ven las estrellas en pleno día. Es una escena que jamás verías en el cielo real.</p><p>El Sol está justo donde <b>Sagitario da paso a Capricornio</b>. Eso significa que estas constelaciones están ahora <b>en la misma dirección que el Sol</b> y no pueden verse en el cielo nocturno de esta estación.</p><p>Cuando llegue el verano, el Sol habrá recorrido la eclíptica hasta el otro extremo, y entonces Sagitario estará en el cielo del sur a medianoche.</p>",
+   "sky": {
+    "date": "2027-01-15T12:00:00+09:00",
+    "fov": 70
+   },
+   "show": {
+    "landscape": false
+   },
+   "select": "NAME Sun"
+  },
+  {
+   "title": "No puedes ver tu signo el día de tu cumpleaños",
+   "text": "<p>De aquí sale algo curioso. Tu llamado <b>signo del zodíaco</b> es <b>la constelación en la que estaba el Sol</b> el día que naciste. Eso quiere decir que está en la misma dirección que el Sol, así que <b>no puedes ver tu propio signo por tu cumpleaños.</b> Para verlo tienes que salir en la estación que queda a medio año de distancia.</p><p>En Asia Oriental el camino que recorre la Luna se dividió en veintiocho tramos llamados <b>28 mansiones</b>, con la idea de que la Luna se aloja cada noche en uno de ellos. El <b>Cheonsang Yeolcha Bunyajido</b> de la Corea de Joseon, un mapa del cielo entero grabado en piedra, está construido sobre esas mismas 28 mansiones.</p>",
+   "sky": {
+    "fov": 100
+   },
+   "quiz": {
+    "q": "A quien nace entre finales de julio y mediados de agosto se le llama «Leo». ¿En qué estación se ve mejor Leo?",
+    "opts": [
+     "En pleno verano, por su cumpleaños",
+     "En primavera, a medio año de distancia",
+     "En cualquier época del año, da igual la estación",
+     "De madrugada en otoño"
+    ],
+    "right": 1,
+    "explain": "Por el cumpleaños el Sol está delante de esa constelación, así que ambos están en el cielo diurno a la vez. Para verla de noche hay que llegar al lado contrario del Sol, y eso la sitúa medio año después, en el cielo de las tardes de primavera. «En cualquier época» solo vale para constelaciones cercanas al polo, como Casiopea. Conviene añadir que las fechas de los horóscopos se fijaron hace dos mil años y hoy van un signo desfasadas respecto a donde está el Sol de verdad. Leo sí sale de madrugada en otoño, pero eso no es lo mismo que tenerlo bien colocado a primera hora de la noche."
+   }
+  },
+  {
+   "title": "Cuatro minutos antes cada día",
+   "text": "<p>¿Y por qué tiene que cambiar con la estación? Las estrellas salen <b>unos 4 minutos antes cada día</b>. Mientras la Tierra da una vuelta sobre su eje también avanza un poco en su órbita, así que devolver la misma estrella al mismo sitio lleva algo menos de 24 horas.</p><p>4 minutos suman <b>2 horas</b> en un mes y <b>6 horas</b> en tres. La pantalla está ahora en <b>las 7 de la tarde del 15 de febrero</b>. ¿Ves que Orión, que estaba ahí a las 9 de la noche un mes antes, ha vuelto exactamente al mismo sitio?</p>",
+   "sky": {
+    "date": "2027-02-15T19:00:00+09:00",
+    "az": 155,
+    "alt": 45,
+    "fov": 105
+   },
+   "show": {
+    "ecliptic": false,
+    "landscape": true
+   },
+   "quiz": {
+    "q": "Una constelación está al sur a las 9 de esta noche. Para encontrarla en el mismo sitio dentro de un mes, ¿a qué hora tienes que salir?",
+    "opts": [
+     "A las 11 de la noche",
+     "A las 7 de la tarde",
+     "A la misma hora, las 9",
+     "A la 1 de la madrugada"
+    ],
+    "right": 1,
+    "explain": "Cuatro minutos al día suman unas dos horas en un mes, así que son las 7 de la tarde. Salir a las 11 es moverse en sentido contrario, y para entonces la constelación ya se ha inclinado hacia el oeste. Si en cambio dejas la hora fija, cada mes ves un cielo distinto, y eso es justamente lo que son las constelaciones de cada estación."
+   }
+  },
+  {
+   "title": "¿Qué hay al sur esta tarde?",
+   "text": "<p>Estos son los protagonistas del cielo del sur en cada estación.</p><ul><li><b>Primavera</b> — Leo y Arturo, en el Boyero</li><li><b>Verano</b> — Escorpio, el Triángulo de Verano, la Vía Láctea</li><li><b>Otoño</b> — el cuadrado de Pegaso, Andrómeda</li><li><b>Invierno</b> — Orión, Sirio, las Cabrillas</li></ul><p>Ahora toca comprobarlo fuera.</p><ul><li>Mira al <b>sur</b> esta tarde y averigua cuál de la lista está ahí</li><li>Vuelve a mirar al mismo sitio <b>a la misma hora un mes después</b>. La constelación se habrá corrido hacia el oeste <b>tres puños</b> con el brazo estirado, unos 30 grados</li><li>El norte funciona distinto. Casiopea no se pone nunca, y hasta el Carro solo moja en el horizonte la punta del mango, así que está arriba casi todo el año. Por qué es así viene en «La latitud cambia el cielo»</li></ul>",
+   "sky": {
+    "fov": 100,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "constellationLines": false,
+    "constellationLabels": false,
+    "ecliptic": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "Los nombres de las constelaciones y las fechas que dividen el zodíaco siguen los límites actuales de las constelaciones de la Unión Astronómica Internacional (UAI)."
+}

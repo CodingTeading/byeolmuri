@@ -1,0 +1,137 @@
+{
+ "id": "twilight",
+ "title": "¿Cuándo salen las estrellas después de la puesta de Sol?",
+ "subtitle": "Cruzando a ojo las tres etapas del crepúsculo",
+ "minutes": 9,
+ "level": "intro",
+ "track": "principle",
+ "tags": [
+  "crepúsculo",
+  "planificación",
+  "puesta de sol",
+  "adaptación a la oscuridad"
+ ],
+ "intro": "Que el Sol se ponga no saca las estrellas de golpe. El cielo tarda otra hora y media en oscurecerse del todo, y ese tramo se divide en tres etapas. Saberlas antes de salir te ahorra un viaje en balde.",
+ "steps": [
+  {
+   "title": "Justo antes de la puesta de Sol",
+   "text": "<p>El cielo del oeste. El Sol cuelga <b>3 grados</b> sobre el horizonte y se pondrá enseguida.</p><p>Para poder explicarlo, esta lección ha fijado el lugar de observación en una tarde de otoño a <b>37.5°N</b>, de modo que el recorrido entero del crepúsculo pueda verse de principio a fin. En el último paso vuelve a donde estás.</p><p>Todavía no hay ni una sola estrella en el cielo. Para ser exactos, <b>las estrellas también están ahí arriba de día</b>, pero el cielo está demasiado brillante y quedan enterradas. El aire dispersa la luz del Sol en todas direcciones.</p><p>Las estrellas empiezan a verse porque el cielo se oscurece, no porque salgan las estrellas.</p>",
+   "sky": {
+    "date": "2026-09-15T18:20:00+09:00",
+    "lat": 37.5,
+    "lng": 127,
+    "elev": 0,
+    "az": 272,
+    "alt": 12,
+    "fov": 80,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": true,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   }
+  },
+  {
+   "title": "Puesta de Sol — aquí empieza el crepúsculo civil",
+   "text": "<p><b>18:40</b>. El Sol se ha metido por debajo del horizonte. Desde este momento empieza el <b>crepúsculo</b>.</p><p>El Sol se ha ido y el cielo sigue brillante. Desde debajo del horizonte está iluminando la atmósfera alta, y esa luz se dispersa hacia nosotros.</p><p>A esta primera etapa se le llama <b>crepúsculo civil</b>, y va de una altura solar de <b>0 grados a -6 grados</b>. Sus señas son claras.</p><ul><li>Hay luz de sobra para <b>leer un libro</b> al aire libre</li><li>Empiezan a encenderse las farolas</li><li>En el cielo solo se ven <b>una o dos de las cosas más brillantes</b>: un planeta como Venus, o una estrella de la clase de Sirio</li></ul><p>Lo que se llama «el lucero de la tarde» aparece en este tramo. Se ven no porque esté oscuro sino porque son <b>excepcionalmente brillantes</b>.</p>",
+   "sky": {
+    "date": "2026-09-15T18:40:00+09:00"
+   }
+  },
+  {
+   "title": "Fin del crepúsculo civil — salen las de primera magnitud",
+   "text": "<p><b>19:07</b>. La altura solar es de <b>-6 grados</b>. Acaba el crepúsculo civil y empieza el <b>crepúsculo náutico</b>.</p><p>El horizonte del oeste sigue brillante, pero por encima de tu cabeza se ha oscurecido bastante. <b>Van apareciendo las estrellas de primera magnitud.</b></p><p>El orden en que aparecen las estrellas es <b>el orden de su brillo</b>. Según se oscurece el cielo, las más brillantes le ganan al fondo primero y las demás van detrás. Las magnitudes de «Qué significa el brillo» se despliegan por orden delante de ti.</p><p>La astronomía de Asia Oriental llamaba <b>hon</b> (昏) al rato posterior a la puesta y <b>sin</b> (晨) al anterior a la salida del Sol. Y la estrella que quedaba en medio del cielo del sur en el hon, el <b>honjungseong</b>, servía para fijar los términos solares. En una época sin relojes, el crepúsculo era a la vez <b>la escala del día</b> y <b>la escala del año</b>.</p>",
+   "sky": {
+    "date": "2026-09-15T19:07:00+09:00",
+    "az": 250,
+    "alt": 30,
+    "fov": 100
+   }
+  },
+  {
+   "title": "Fin del crepúsculo náutico — desaparece el horizonte del mar",
+   "text": "<p><b>19:37</b>. La altura solar es de <b>-12 grados</b>. Acaba el crepúsculo náutico y empieza el <b>crepúsculo astronómico</b>.</p><p>El origen del nombre merece conocerse. Hasta el final de esta etapa <b>el horizonte del mar todavía se ve</b>. Ese tramo, con las estrellas y el horizonte marino a la vista a la vez, era para un marinero <b>la única ocasión de fijar la posición con un sextante</b>, porque medir la altura de una estrella necesita un horizonte visible desde el que medirla.</p><p>Pasada esta etapa el horizonte se hunde en la oscuridad y ya no se distingue. De ahí el crepúsculo <b>náutico</b>.</p><p>Ahora hay estrellas hasta magnitud 2 o 3 y ya se distinguen las formas de las constelaciones. Aunque por el oeste queda todavía algo de claridad.</p>",
+   "sky": {
+    "date": "2026-09-15T19:37:00+09:00",
+    "az": 180,
+    "alt": 45,
+    "fov": 110
+   }
+  },
+  {
+   "title": "Fin del crepúsculo astronómico — la noche de verdad",
+   "text": "<p><b>20:10</b>. La altura solar es de <b>-18 grados</b>. El crepúsculo ha terminado. De aquí en adelante es lo que los astrónomos llaman <b>noche</b>.</p><p>No queda ni rastro de la luz del Sol y el cielo ya no se oscurecerá más. Solo ahora se vuelve posible lo siguiente.</p><ul><li>Aparece la <b>Vía Láctea</b></li><li>Se pueden ver <b>nebulosas y galaxias</b> tenues</li><li>Puedes contar hasta magnitud 6</li></ul><p>Llegar hasta aquí desde la puesta de Sol ha llevado <b>una hora y media</b>. Si has salido a ver la galaxia de Andrómeda, aquí es donde empieza. Vale la pena llegar antes, para ganar tiempo <b>a que tus ojos se acostumbren a la oscuridad</b>.</p>",
+   "sky": {
+    "date": "2026-09-15T20:10:00+09:00",
+    "fov": 120
+   },
+   "show": {
+    "dso": true
+   },
+   "quiz": {
+    "q": "¿Qué solo se vuelve posible una vez que ha terminado el crepúsculo astronómico?",
+    "opts": [
+     "Observar estrellas de primera magnitud",
+     "Distinguir las formas de las constelaciones",
+     "Observar la Vía Láctea y nebulosas tenues",
+     "Observar la Luna"
+    ],
+    "right": 2,
+    "explain": "Las estrellas de primera magnitud salen hacia el final del crepúsculo civil, y las formas de las constelaciones se distinguen durante el náutico. La luz tenue repartida por una zona amplia, como la Vía Láctea, solo se separa del fondo cuando el cielo mismo está completamente oscuro. La Luna es lo bastante brillante como para verse a plena luz del día."
+   }
+  },
+  {
+   "title": "El crepúsculo depende de la estación y de la latitud",
+   "text": "<p>El crepúsculo no dura siempre lo mismo. Depende de <b>lo inclinado que el Sol cruce el horizonte</b>.</p><ul><li><b>El ecuador</b> — el Sol baja casi en vertical. El crepúsculo es corto, <b>poco más de una hora</b>, y la oscuridad llega enseguida tras la puesta</li><li><b>Latitudes medias</b> — alrededor de <b>una hora y media</b>, como acabamos de ver. Más largo en verano</li><li><b>Latitudes altas</b> — el Sol baja con muy poca inclinación y el crepúsculo dura horas. En verano no llega a los -18 grados y <b>la noche no llega nunca</b>. Es el sol de medianoche</li></ul><p>Al norte de los 48.5°N el crepúsculo astronómico no termina en pleno verano. París y Vancouver andan por esa línea, y Londres y Berlín no tienen noche de verdad durante todo el mes de junio. <b>Quienes observan allí descansan en verano y trabajan en invierno.</b></p><p>Entre los 33 y los 38°N, que cubre Corea y el sur de Japón, sí llega la noche incluso en pleno verano. Aunque a finales de junio el final del crepúsculo astronómico se retrasa hasta <b>cerca de las 10 de la noche</b>.</p>",
+   "sky": {
+    "fov": 100
+   }
+  },
+  {
+   "title": "Lo que tarda el ojo en adaptarse",
+   "text": "<p>Que el cielo se oscurezca y que <b>tus ojos se acostumbren a la oscuridad</b> son dos historias distintas.</p><ul><li>La pupila se abre en <b>unos segundos</b></li><li>La química fotosensible de la retina se recupera a lo largo de <b>20 a 30 minutos</b></li><li>La adaptación completa puede llevar hasta <b>45 minutos</b></li></ul><p>Una vez adaptado, la sensibilidad del ojo sube <b>más de 10000 veces</b>. El número de estrellas visibles en el mismo cielo se dobla o se triplica.</p><p>Lo malo es que <b>una sola luz brillante te devuelve al principio</b>. Un vistazo a la pantalla del móvil te deja donde estabas hace unos minutos.</p><p>Por eso quienes observan usan <b>luz roja</b>. Los bastones de una retina adaptada a la oscuridad son los menos sensibles al rojo, así que puedes leer un mapa y conservar la adaptación. Byeolmuri tiene además un <b>modo nocturno</b>: cubre la pantalla entera de rojo para proteger tus ojos cuando la sacas contigo.</p>",
+   "sky": {
+    "fov": 90
+   },
+   "quiz": {
+    "q": "¿Por qué usan luz roja quienes observan en el campo?",
+    "opts": [
+     "Porque la luz roja llega más lejos",
+     "Porque el ojo adaptado a la oscuridad es el menos sensible al rojo y pierde menos adaptación",
+     "Porque la luz roja no se mezcla con la luz de las estrellas",
+     "Porque a los insectos no les gusta la luz roja"
+    ],
+    "right": 1,
+    "explain": "Los bastones, que son los que trabajan en la oscuridad, tienen poca sensibilidad en el extremo rojo del espectro. Así que bajo una luz roja puedes leer un mapa sin perder mucha adaptación a la oscuridad. Es la manera de no tirar por la borda, con un fogonazo de luz blanca, la adaptación que costó de 20 a 30 minutos construir."
+   }
+  },
+  {
+   "title": "Haz un plan para esta noche",
+   "text": "<p>El lugar de observación vuelve a <b>donde estás</b>. Ahora toca planear la noche.</p><ul><li>Abre la pestaña «<b>Esta noche</b>» y te da las horas de hoy para <b>la puesta de Sol, el final del crepúsculo, el comienzo del crepúsculo y la salida del Sol</b>, junto con cuántas horas de oscuridad hay</li><li>Si vas a por lo tenue —la Vía Láctea, nebulosas, galaxias— sal para llegar <b>después de que acabe el crepúsculo astronómico</b></li><li>Si solo vas a por la Luna, los planetas y estrellas brillantes, <b>el crepúsculo civil</b> basta. De hecho una luna creciente y Venus son más bonitas con el cielo todavía azul</li><li>Cuando llegues, <b>espera 20 minutos.</b> No mirar el móvil en ese rato decide cómo va la noche</li><li>Mientras corre el crepúsculo, <b>cuenta el orden en que aparecen las estrellas</b>. Recuerda cuál sale primero y podrás adivinar su magnitud</li></ul>",
+   "sky": {
+    "home": true,
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "dso": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "Los límites de altura solar de las etapas del crepúsculo (-6, -12 y -18 grados) siguen la norma internacional, y las horas de la pantalla se leyeron directamente del motor para 37.5°N el 15 de septiembre de 2026."
+}

@@ -1,0 +1,151 @@
+{
+ "id": "retrograde",
+ "title": "¿Por qué los planetas van hacia atrás?",
+ "subtitle": "Adelantamos el tiempo unos meses para ver a Marte dibujar un lazo en el cielo",
+ "minutes": 11,
+ "level": "deep",
+ "track": "principle",
+ "tags": [
+  "planeta",
+  "retrogradación",
+  "oposición",
+  "geocentrismo"
+ ],
+ "intro": "Los planetas avanzan sin pausa en un solo sentido entre las constelaciones. Y entonces, cada pocos meses, uno da media vuelta de golpe, desanda camino y después sigue como si nada. Ese único movimiento raro tuvo a la humanidad dando tumbos dos mil años y acabó llevando a la conclusión de que es la Tierra la que se mueve.",
+ "steps": [
+  {
+   "title": "Dos objetos que no titilan",
+   "text": "<p>Son <b>las 9 de la noche del 20 de febrero de 2027</b>, mirando al este. Cerca de Leo hay <b>dos</b> objetos llamativamente brillantes. El de arriba, más brillante y blanco, es <b>Júpiter</b>, y el rojo de debajo es <b>Marte</b>. El objeto grande que hay en medio es la Luna.</p><p>En el cielo real, la forma más fácil de distinguir un planeta de una estrella es <b>el titileo</b>. Por grande que sea una estrella, está tan lejos que se ve como <b>un punto</b>, y ese único punto lo agita entero el aire en movimiento, así que parpadea. Un planeta está lo bastante cerca como para verse como <b>un disco diminuto</b>, y las agitaciones de distintas partes del disco se cancelan entre sí, así que luce <b>fijo</b>.</p><p>La línea roja es la <b>eclíptica</b>. Los planetas solo se encuentran cerca de esta línea, porque todos los del Sistema Solar orbitan casi en el mismo plano. La Luna también sigue este camino.</p>",
+   "sky": {
+    "date": "2027-02-20T21:00:00+09:00",
+    "az": 100,
+    "alt": 40,
+    "fov": 80,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationLabels": true,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": true,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "highlight": [
+    {
+     "target": "NAME Mars",
+     "radius": 4
+    },
+    {
+     "target": "NAME Jupiter",
+     "radius": 4
+    }
+   ]
+  },
+  {
+   "title": "Los errantes",
+   "text": "<p>Está seleccionado Marte. Mira la magnitud en la información del objeto: <b>-1.2</b>, a la altura de Sirio. Júpiter, a su lado, está en <b>-2.4</b>, tres veces más brillante todavía.</p><p>«Planeta» es griego y significa <b>errante</b>. Mientras todas las demás estrellas giraban juntas manteniendo intactas las distancias entre ellas, solo estos cinco —Mercurio, Venus, Marte, Júpiter y Saturno— <b>vagaban</b> entre las constelaciones.</p><p>Para la gente del mundo antiguo esto importaba muchísimo. Si los cielos eran un lugar perfecto e inmutable, ¿qué eran estas estrellas que iban a donde les daba la gana?</p><p>Incluso eso era llevadero. El verdadero problema era que los errantes <b>a veces iban hacia atrás</b>.</p>",
+   "sky": {
+    "fov": 50
+   },
+   "select": "NAME Mars"
+  },
+  {
+   "title": "Míralo tú mismo — el lazo que dibuja Marte",
+   "text": "<p>Ahora el tiempo corre deprisa, <b>un día por segundo</b>. Marte tarda unos quince días en dar la vuelta, así que con un poco de paciencia basta. La vista está anclada a <b>Régulo</b>, en Leo, así que las constelaciones se quedan quietas y <b>solo se mueven los planetas</b>.</p><p>Míralo un momento. Marte avanza sin pausa hacia la izquierda (el este) entre las estrellas y, en un momento dado, <b>se detiene y da media vuelta</b>. Va hacia atrás un buen rato, se para otra vez y arranca en el sentido que llevaba. Júpiter hace lo mismo.</p><p>En la pantalla no queda rastro, así que únelo con la vista. Unido, dibuja un <b>lazo</b> o un <b>zigzag</b> en el cielo. Esto es la <b>retrogradación</b>.</p><p>En 2027 <b>Marte retrograda del 12 de enero al 4 de abril</b> y <b>Júpiter del 15 de diciembre de 2026 al 14 de abril de 2027</b>. Es un año poco común, con los dos andando hacia atrás a la vez en el mismo cielo.</p>",
+   "sky": {
+    "date": "2026-12-25T23:00:00+09:00",
+    "fov": 35,
+    "timeSpeed": 86400
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationLabels": true,
+    "atmosphere": false,
+    "landscape": false
+   },
+   "lookAt": "* alf Leo"
+  },
+  {
+   "title": "El problema que costó dos mil años",
+   "text": "<p>Si la Tierra está quieta en el centro del universo y todo gira a su alrededor, un planeta solo debería ir en un sentido. En la práctica desandan camino.</p><p><b>Ptolomeo</b>, en el siglo II, lo resolvió así. Un planeta recorre un círculo grande centrado en la Tierra y, al mismo tiempo, recorre <b>un círculo pequeño montado sobre ese grande</b>. Al círculo pequeño se le llama <b>epiciclo</b>. Al pasar por la parte interior del círculo pequeño, decía la explicación, el planeta parece ir hacia atrás.</p><p>El modelo <b>funcionaba bien.</b> Cuando no cuadraba con la observación, bastaba con añadir otro círculo. Fue el estándar de la astronomía durante 1400 años. Eso sí, el número de círculos no paraba de crecer.</p><p>En 1543 <b>Copérnico</b>, en vez de añadir otro círculo, <b>cambió el centro.</b> Pon el Sol en medio y la retrogradación se explica sola, sin ningún epiciclo.</p>",
+   "sky": {
+    "timeSpeed": 0
+   }
+  },
+  {
+   "title": "Lo que pasa cuando adelantas",
+   "text": "<p>La respuesta es sencilla. <b>La Tierra está adelantando a Marte.</b></p><p>La Tierra va por la órbita interior, más cerca del Sol. Interior significa más rápido: la Tierra da una vuelta en un año mientras Marte tarda 1.9 años. Así que cada 2 años y 2 meses la Tierra alcanza a Marte por dentro y lo pasa.</p><p>Piensa en adelantar a un coche más lento por el carril de al lado en la autopista. Mientras vas a su altura, ese coche parece avanzar, pero en el momento en que lo pasas parece <b>deslizarse hacia atrás</b>. Con montañas al fondo el efecto se nota todavía más.</p><p>En el cielo, <b>las constelaciones lejanas son esas montañas</b>. Marte no ha ido nunca hacia atrás de verdad. <b>Somos nosotros los que hemos pasado de largo.</b></p><p>Mercurio y Venus, en las órbitas interiores, también retrogradan. En su caso son <b>ellos los que nos adelantan a nosotros</b>.</p>",
+   "quiz": {
+    "q": "¿Qué está pasando en realidad mientras Marte retrograda?",
+    "opts": [
+     "Marte da media vuelta un rato en su órbita",
+     "Marte se sale de su órbita y viene hacia la Tierra",
+     "La Tierra adelanta a Marte desde la órbita interior",
+     "Se invierte el sentido de rotación de la Tierra"
+    ],
+    "right": 2,
+    "explain": "Los planetas giran siempre alrededor del Sol en el mismo sentido. La retrogradación es una ilusión de la línea de visión que se produce cuando la Tierra, rápida y por dentro, pasa al Marte más lento que va por fuera. Nada se sale de su órbita y ninguna rotación se invierte. Para dar cuenta de esta ilusión, la astronomía antigua tuvo que montar la maquinaria complicada de los epiciclos."
+   }
+  },
+  {
+   "title": "Por eso la retrogradación es el punto álgido de la observación",
+   "text": "<p>Adelantar significa que los dos planetas <b>se cruzan a la distancia mínima</b>. Y en ese momento, visto desde la Tierra, ese planeta queda <b>justo enfrente</b> del Sol. A eso se le llama <b>oposición</b>.</p><p>En la oposición pasan tres cosas a la vez.</p><ul><li><b>Está lo más cerca</b> → se ve lo más grande y brillante</li><li><b>Está enfrente del Sol</b> → sale cuando se pone el Sol y está arriba <b>toda la noche</b></li><li>Alcanza <b>su mayor altura a medianoche</b> → el aire estorba lo mínimo</li></ul><p>En 2027 Marte llega a la oposición el <b>20 de febrero</b> y Júpiter nueve días antes, el <b>11 de febrero</b>. Con los dos planetas llegando a la oposición <b>con diez días de diferencia</b>, el cielo nocturno de febrero de 2027 es durante un tiempo un espectáculo poco común.</p><p>Por entonces Marte está en <b>magnitud -1.2</b>, más de tres veces más brillante que el <b>+0.2</b> de dos meses antes.</p><p>Si quieres ver manchas superficiales o un casquete polar en Marte con un telescopio, <b>esta es la única ventana que hay</b>. La siguiente oposición de Marte es en 2029. A diferencia de las estrellas, los planetas te hacen <b>esperar dos años si pierdes el momento</b>.</p>",
+   "sky": {
+    "date": "2027-02-20T22:00:00+09:00",
+    "az": 130,
+    "alt": 45,
+    "fov": 60,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": false,
+    "landscape": true
+   },
+   "select": "NAME Mars",
+   "quiz": {
+    "q": "¿Cuál es el mejor momento para observar un planeta exterior?",
+    "opts": [
+     "Cuando queda bajo por el oeste a primera hora de la noche",
+     "Hacia la oposición, cuando queda enfrente del Sol",
+     "Cuando está en la misma dirección que el Sol",
+     "Justo después de que acabe la retrogradación"
+    ],
+    "right": 1,
+    "explain": "En la oposición el planeta está lo más cerca posible de la Tierra, así que se ve grande y brillante, y además sale al ponerse el Sol y pasa alto toda la noche. Cuando está en la misma dirección que el Sol queda arriba de día y no puede verse. Bajo por el oeste a primera hora lo deja cerca del horizonte, donde el aire lo emborrona. La retrogradación ocurre a un lado y a otro de la oposición, así que «está retrogradando» es en sí una señal de que este es el momento de observar."
+   }
+  },
+  {
+   "title": "Cuando Hyeonghok se demora en Simsu",
+   "text": "<p>En Asia Oriental este movimiento se tomó también muy en serio. A Marte se le llamaba <b>Hyeonghok</b> (熒惑), «el que engaña con destellos». Rojo e impredecible en su movimiento, se había ganado el nombre.</p><p>Que Marte retrogradara cerca de la estrella roja <b>Antares</b>, en Escorpio —Simsu, una de las 28 mansiones— y se demorara allí se llamaba <b>hyeonghok-susim</b> y se leía como el más funesto de los presagios. Dos objetos rojos uno junto a otro no era algo que a nadie se le pasara por alto.</p><p>Los <b>Anales de la Dinastía Joseon</b> y la <b>Historia de Goryeo</b> anotan estos movimientos planetarios con todo detalle. Se llevaban para adivinar, pero lo que ha quedado de ellos son siglos de <b>datos de observación</b> que la investigación astronómica sigue usando hoy.</p><p>Leer el cielo con precisión afectaba directamente a la legitimidad de la dinastía, así que el observatorio real vigilaba el cielo cada noche.</p>",
+   "sky": {
+    "fov": 70
+   }
+  },
+  {
+   "title": "Busca un planeta esta noche",
+   "text": "<p>Los planetas son <b>los objetivos más fáciles de todos desde una ciudad</b>. Son brillantes, y la luz de la Luna no los borra.</p><ul><li>Consulta en la pestaña «<b>Esta noche</b>» qué planetas hay arriba ahora y a qué hora salen y se ponen</li><li>Busca algo muy brillante que <b>no titile</b>. Nueve de cada diez veces es un planeta. Si es Venus, brilla más que ninguna otra cosa, así que no hay confusión posible</li><li><b>Cada pocas semanas</b>, dibuja la posición del mismo planeta junto con las estrellas cercanas. Un mes basta para ver que se ha desplazado entre ellas. Esta es la observación que la humanidad mantuvo durante dos mil años</li><li>Con suerte puedes pillar incluso el momento del giro. <b>Saturno retrograda desde finales de julio hasta mediados de diciembre de 2026</b>, y <b>Júpiter del 15 de diciembre de 2026 al 14 de abril de 2027</b></li><li>Hasta unos prismáticos muestran <b>las cuatro lunas de Júpiter</b>. Son las que vio Galileo en 1610. Míralas unos días y las lunas cambian de sitio</li></ul>",
+   "sky": {
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "ecliptic": false,
+    "constellationLines": false,
+    "constellationLabels": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "Los periodos de retrogradación y las fechas de oposición de los planetas salen de los cálculos orbitales del motor en pantalla. Lo relativo a hyeonghok-susim sigue la lectura habitual de los registros astronómicos de Asia Oriental."
+}

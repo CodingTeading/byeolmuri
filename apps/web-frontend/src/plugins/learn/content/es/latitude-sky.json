@@ -1,0 +1,200 @@
+{
+ "id": "latitude-sky",
+ "title": "La latitud cambia el cielo",
+ "subtitle": "Movemos el lugar de observación al ecuador, al Polo y al hemisferio sur para comparar",
+ "minutes": 11,
+ "level": "deep",
+ "track": "principle",
+ "tags": [
+  "latitud",
+  "Polaris",
+  "movimiento diurno",
+  "hemisferio sur"
+ ],
+ "intro": "La altura de Polaris es la latitud del sitio donde estás. De esa sola frase sale casi toda la mecánica del cielo nocturno. Solo en esta lección el lugar de observación se mueve para poder comparar. Al salir de la lección, el cielo vuelve a donde estás.",
+ "steps": [
+  {
+   "title": "Primero, desde donde estás",
+   "text": "<p>Estás mirando al <b>norte</b> desde donde estás. La <b>rejilla azimutal</b> está encendida para que puedas leer la altura y el acimut.</p><p>Está seleccionada <b>Polaris</b>. Mira <b>Az/Alt</b> en la información del objeto. El acimut es 0 grados, es decir, el norte exacto. Y ahora fíjate en la cifra de la altura.</p><p>Esa cifra es <b>la latitud del sitio donde estás</b>. En Seúl son unos 37.5 grados, en Busan unos 35, en Tokio unos 35.7, en Madrid unos 40.4. No es casualidad: la geometría obliga a ello.</p><p>El punto donde el eje de rotación de la Tierra, prolongado hasta el cielo, iría a caer es el <b>polo norte celeste</b>, y Polaris está justo al lado. Cuanto más al norte vas sobre la Tierra, más se inclina el eje hacia lo alto de tu cielo, y Polaris sube exactamente lo mismo.</p>",
+   "sky": {
+    "date": "2026-11-15T21:00:00+09:00",
+    "az": 0,
+    "alt": 40,
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationLabels": true,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": true,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "select": "Polaris"
+  },
+  {
+   "title": "Estrellas que giran toda la noche y no se ponen",
+   "text": "<p>El tiempo corre deprisa. Todas las estrellas dibujan un círculo alrededor de Polaris.</p><p>De aquí sale una regla. Las estrellas cercanas a Polaris dibujan círculos pequeños y por eso <b>nunca bajan del horizonte</b>. A esas estrellas se les llama <b>circumpolares</b>. A una latitud de unos 37 grados (Seúl, Tokio, Atenas) <b>Casiopea</b> cumple la condición y no se pone nunca. El Carro se queda a un pelo: el cuenco no se pone, pero <b>Alkaid</b>, en la punta del mango, se hunde un rato bajo el horizonte. La regla del párrafo siguiente te deja comprobarlo tú mismo.</p><p>El límite es sencillo. Todo lo que quede dentro de un círculo alrededor del polo celeste <b>tan ancho como tu propia latitud</b> es circumpolar. A 37 grados, las estrellas que estén a menos de 37 grados del polo no se ponen nunca.</p><p>Así que <b>cuanto más alta es tu latitud más estrellas no se ponen</b>, y a cambio más estrellas del cielo del sur no podrás ver jamás. La latitud decide cuánto cielo es tuyo.</p>",
+   "sky": {
+    "fov": 120,
+    "timeSpeed": 500
+   },
+   "clearSelection": true
+  },
+  {
+   "title": "Si bajas al ecuador",
+   "text": "<p>El lugar de observación se ha movido al <b>ecuador</b>, latitud 0. El paisaje está apagado para que veas por debajo del horizonte, y la rejilla azimutal encendida para que puedas leer alturas.</p><p>Mira Polaris. <b>Está justo sobre la línea de 0 grados de la rejilla, es decir, sobre el horizonte.</b> Altura 0, latitud 0. La regla se cumple al pie de la letra.</p><p>La forma en que giran las estrellas también ha cambiado por completo. Aquí salen <b>en vertical</b> desde el horizonte y se ponen en vertical. No giran en diagonal: suben y bajan.</p><p>Y en el ecuador <b>no hay ninguna estrella circumpolar.</b> Todas salen y se ponen. A cambio, esta es la única latitud desde la que, con un año por delante, puedes ver <b>el cielo entero</b>. La Cruz del Sur y el Carro por igual.</p><p>Fíjate en que el nombre del lugar de abajo a la izquierda de la pantalla sigue siendo tu sitio de observación guardado. La lección ha movido <b>solo el cielo</b>. Al salir de la lección, el cielo vuelve a donde estás.</p>",
+   "sky": {
+    "lat": 0,
+    "lng": 127,
+    "elev": 0,
+    "az": 0,
+    "alt": 30,
+    "fov": 110,
+    "timeSpeed": 500
+   },
+   "highlight": [
+    "Polaris"
+   ],
+   "show": {
+    "landscape": false,
+    "azimuthalGrid": true
+   }
+  },
+  {
+   "title": "Si te plantas en el Polo",
+   "text": "<p>Ahora, cerca del <b>Polo Norte</b>, a latitud 89 grados.</p><p>Polaris está <b>casi en lo más alto del cielo</b>. Altura 89, el anillo más interior de la rejilla.</p><p>Mira cómo giran las estrellas. Van <b>paralelas al horizonte</b>. Nada sale y nada se pone: sencillamente dan vueltas a la misma altura.</p><p>Así que en el Polo ves <b>solo la mitad del cielo</b>, y esa mitad es <b>la misma todo el año</b>. Orión roza el horizonte y solo enseña la mitad de sí mismo para siempre, y las estrellas del cielo del sur no se ven jamás.</p><p>Dicho al revés, el cielo del Polo <b>no tiene estaciones</b>. Las constelaciones no cambian. Lo que tiene, en cambio, es medio año de día y medio año de noche.</p>",
+   "sky": {
+    "lat": 89,
+    "alt": 60,
+    "fov": 120
+   },
+   "highlight": [
+    "Polaris"
+   ],
+   "quiz": {
+    "q": "Mides Polaris y la encuentras a unos 35 grados sobre el horizonte. ¿Dónde estás, más o menos?",
+    "opts": [
+     "Cerca del ecuador",
+     "Cerca de los 35°N",
+     "Cerca de los 55°N",
+     "En el hemisferio sur"
+    ],
+    "right": 1,
+    "explain": "La altura de Polaris es la latitud norte del sitio, sin más. En el ecuador sería 0; a 55°N se vería a 55. En el hemisferio sur Polaris está bajo el horizonte y no se ve en absoluto. Así es como los antiguos navegantes sacaban su latitud a partir de la altura de una sola estrella."
+   }
+  },
+  {
+   "title": "En el hemisferio sur el cielo se da la vuelta",
+   "text": "<p>Ahora el <b>hemisferio sur</b>. Nos hemos movido a 34 grados sur, cerca de Sídney, y miramos al <b>norte</b>. La fecha es enero.</p><p>Orión está alto, pero <b>del revés</b>. El cazador está haciendo el pino. Está invertido respecto a como se ve desde el hemisferio norte. No es que el cielo se haya dado la vuelta: <b>estamos al otro lado de la Tierra</b>.</p><p>Enero en el hemisferio sur es <b>pleno verano</b>. Así que en el hemisferio sur Orión es una <b>constelación de verano</b>. La misma constelación se llama de invierno en el norte y de verano en el sur.</p><p>El sentido de giro de las estrellas también se invierte. En el hemisferio norte es antihorario; en el hemisferio sur giran <b>en sentido horario</b>.</p>",
+   "sky": {
+    "date": "2027-01-20T21:00:00+09:00",
+    "lat": -33.9,
+    "lng": 151.2,
+    "az": 0,
+    "alt": 55,
+    "fov": 100,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationArt": true,
+    "onlyPointedConstellation": true,
+    "azimuthalGrid": false
+   },
+   "select": "CON western Ori"
+  },
+  {
+   "title": "El cielo del sur no tiene estrella polar",
+   "text": "<p>Nos damos la vuelta hacia el sur. Aquí está el <b>polo sur celeste</b>, y las estrellas giran en torno a este punto.</p><p>Pero <b>en ese sitio no hay ninguna estrella brillante.</b> El hemisferio norte tuvo la suerte de que Polaris cayera justo ahí. Los navegantes del sur usan en su lugar la <b>Cruz del Sur</b>: prolonga el eje largo de la cruz 4.5 veces y llegas al polo sur celeste. Exactamente la misma maña que encontrar Polaris desde el Carro.</p><p>Junto a la Cruz del Sur hay dos estrellas brillantes. Una de ellas, <b>Rigil Kentaurus</b> (Alfa Centauri), es <b>el sistema estelar más cercano al Sol</b>, a 4.4 años luz. Si algún día los humanos viajamos a una estrella, será la primera parada.</p><p>Estas estrellas <b>no se ven jamás</b> al norte de unos 30°N. A eso nos referimos cuando decimos que la latitud fija la lista de lo que puedes ver.</p>",
+   "sky": {
+    "az": 180,
+    "alt": 40,
+    "fov": 90
+   },
+   "show": {
+    "constellationArt": false,
+    "constellationLines": true,
+    "constellationLabels": true,
+    "onlyPointedConstellation": false
+   },
+   "connect": [
+    "* gam Cru",
+    "* alf01 Cru"
+   ],
+   "highlight": [
+    {
+     "target": "Rigel Kentaurus",
+     "radius": 2
+    },
+    {
+     "target": "* bet Cen",
+     "radius": 2
+    }
+   ]
+  },
+  {
+   "title": "La estrella que deciden cuatro grados de latitud",
+   "text": "<p>Volvemos a las latitudes medias del hemisferio norte: <b>la isla de Jeju</b>, en Corea, a 33.4°N. Miramos el horizonte sur en una tarde de febrero.</p><p>Justo encima del horizonte, a una altura de unos <b>4 grados</b>, cuelga una estrella brillante. Es <b>Canopus</b>, el astro del anciano. Es la segunda estrella más brillante del cielo nocturno y, aun así, un poco más de latitud la vuelve así de difícil de ver.</p><p>Seúl está 4 grados más al norte, y desde allí esta estrella <b>no consigue subir por encima del horizonte</b>. Esos 4 grados son toda la diferencia entre una estrella que puedes ver y una que no.</p><p>En la Corea de Joseon avistar Canopus se consideraba un buen augurio para el país y se anotaba en los registros, y se creía que verla daba larga vida. Una estrella que solo asomaba desde Jeju y la costa sur, y aun allí apenas un rato sobre el horizonte, tenía que ser apreciada.</p>",
+   "sky": {
+    "date": "2027-02-10T21:30:00+09:00",
+    "lat": 33.4,
+    "lng": 126.5,
+    "az": 180,
+    "alt": 10,
+    "fov": 35
+   },
+   "show": {
+    "azimuthalGrid": true,
+    "landscape": false,
+    "constellationLines": false,
+    "constellationLabels": false
+   },
+   "highlight": [
+    {
+     "target": "* alf Car",
+     "radius": 1.5
+    }
+   ],
+   "quiz": {
+    "q": "¿Cómo cambia el cielo nocturno según subes a latitudes más altas?",
+    "opts": [
+     "Sube el número total de estrellas que puedes ver",
+     "Más estrellas dejan de ponerse, pero más estrellas del sur se vuelven invisibles para siempre",
+     "Las estrellas giran más deprisa",
+     "No cambia nada"
+    ],
+    "right": 1,
+    "explain": "Al subir la latitud, el polo celeste se eleva y más estrellas de su entorno se vuelven circumpolares. A cambio, otro tanto del cielo del sur se hunde bajo el horizonte. La superficie de cielo disponible a lo largo de un año es máxima en el ecuador y se encoge hacia los polos. La velocidad a la que giran las estrellas la fija la rotación de la Tierra y es la misma en todas partes."
+   }
+  },
+  {
+   "title": "Mide tu latitud con el puño",
+   "text": "<p>El lugar de observación vuelve a <b>donde estás</b>, y el cielo de la pantalla es de nuevo el que verás fuera esta noche. Ahora te toca comprobarlo.</p><ul><li>En una noche despejada mira al <b>norte</b> y encuentra Polaris. Prolonga cinco veces las dos estrellas del extremo del cuenco del Carro</li><li>Estira el brazo y <b>cierra el puño: mide unos 10 grados</b> de ancho. Cuenta cuántos puños puedes apilar desde el horizonte hasta Polaris</li><li>En Seúl salen <b>tres o cuatro puños</b>, que es la latitud de 37 grados. Has medido tu posición sobre la Tierra sin ningún instrumento</li><li>Vuelve a medirlo cuando viajes. <b>Cuanto más al sur vas, más baja queda Polaris.</b> Desde Jeju queda medio puño más abajo que desde Seúl</li><li>Cruza el ecuador en avión y Polaris se hunde bajo el horizonte mientras sube la Cruz del Sur</li></ul><p>Un dedo mide alrededor de 1 grado de ancho, un puño unos 10 grados, y un palmo del pulgar al meñique unos 20 grados. Con esa regla puedes medir ángulos en cualquier parte del cielo.</p>",
+   "sky": {
+    "az": 0,
+    "alt": 45,
+    "fov": 90,
+    "timeSpeed": 0,
+    "home": true
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "constellationLines": true
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "El registro sobre Canopus sigue las observaciones del astro del anciano anotadas en los Anales de la Dinastía Joseon. Esta lección mueve el lugar de observación para explicar, y al salir se restaura la posición original."
+}

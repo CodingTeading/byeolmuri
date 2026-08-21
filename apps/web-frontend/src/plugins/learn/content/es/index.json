@@ -1,0 +1,352 @@
+{
+ "version": 2,
+ "lessons": [
+  {
+   "id": "big-dipper",
+   "title": "¿Dónde está el Carro?",
+   "subtitle": "Las siete estrellas más fáciles de encontrar del cielo nocturno, y lo que te cuentan",
+   "minutes": 8,
+   "level": "intro",
+   "track": "target",
+   "tags": [
+    "constelación",
+    "cielo norte",
+    "Polaris"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21",
+   "months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "seasons",
+   "title": "¿Por qué cambian las constelaciones con la estación?",
+   "subtitle": "El mismo cielo del sur a la misma hora, puesto uno junto a otro cada tres meses",
+   "minutes": 9,
+   "level": "intro",
+   "track": "principle",
+   "tags": [
+    "estaciones",
+    "órbita de la Tierra",
+    "zodíaco"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "moon-phases",
+   "title": "¿Por qué cambia de forma la Luna?",
+   "subtitle": "Las fases y la hora a la que sale resultan ser la misma historia",
+   "minutes": 10,
+   "level": "intro",
+   "track": "principle",
+   "tags": [
+    "Luna",
+    "fases",
+    "calendario lunar",
+    "28 mansiones"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "summer-triangle",
+   "title": "El Triángulo de Verano y la Vía Láctea",
+   "subtitle": "Comprobamos si de verdad corre un río entre la Tejedora y el Vaquero",
+   "minutes": 10,
+   "level": "intro",
+   "track": "target",
+   "tags": [
+    "verano",
+    "Triángulo de Verano",
+    "Vía Láctea",
+    "la Tejedora y el Vaquero"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21",
+   "months": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "star-brightness",
+   "title": "Qué significa el brillo",
+   "subtitle": "El ranking de las estrellas más brillantes, y lo que ese ranking esconde",
+   "minutes": 11,
+   "level": "basic",
+   "track": "measure",
+   "tags": [
+    "magnitud",
+    "brillo",
+    "Canopus",
+    "condiciones de observación"
+   ],
+   "steps": 8,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "star-colors",
+   "title": "El color de una estrella es su temperatura",
+   "subtitle": "Las rojas son las más frías",
+   "minutes": 9,
+   "level": "basic",
+   "track": "measure",
+   "tags": [
+    "color",
+    "temperatura",
+    "tipo espectral",
+    "Albireo"
+   ],
+   "steps": 8,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "andromeda",
+   "title": "La galaxia de Andrómeda — lo más lejano que alcanza la vista",
+   "subtitle": "Saltando de una estrella brillante a otra hasta encontrar algo a 2.5 millones de años luz",
+   "minutes": 11,
+   "level": "basic",
+   "track": "target",
+   "tags": [
+    "otoño",
+    "galaxia",
+    "Andrómeda",
+    "salto de estrellas"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21",
+   "months": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    1
+   ]
+  },
+  {
+   "id": "orion-nebula",
+   "title": "La nebulosa de Orión — donde nacen las estrellas",
+   "subtitle": "El mejor objetivo del cielo de invierno, y un retrato del pueblo natal de nuestro Sol",
+   "minutes": 10,
+   "level": "intro",
+   "track": "target",
+   "tags": [
+    "invierno",
+    "nebulosa",
+    "Orión",
+    "formación estelar"
+   ],
+   "steps": 8,
+   "updated": "2026-08-21",
+   "months": [
+    11,
+    12,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "pleiades",
+   "title": "Las Cabrillas — ¿seis estrellas o siete?",
+   "subtitle": "Cuántas puedas contar mide lo oscuro que está tu cielo esta noche",
+   "minutes": 10,
+   "level": "intro",
+   "track": "target",
+   "tags": [
+    "invierno",
+    "cúmulo abierto",
+    "las Cabrillas",
+    "costumbres populares"
+   ],
+   "steps": 8,
+   "updated": "2026-08-21",
+   "months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "latitude-sky",
+   "title": "La latitud cambia el cielo",
+   "subtitle": "Movemos el lugar de observación al ecuador, al Polo y al hemisferio sur para comparar",
+   "minutes": 11,
+   "level": "deep",
+   "track": "principle",
+   "tags": [
+    "latitud",
+    "Polaris",
+    "movimiento diurno",
+    "hemisferio sur"
+   ],
+   "steps": 8,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "retrograde",
+   "title": "¿Por qué los planetas van hacia atrás?",
+   "subtitle": "Adelantamos el tiempo unos meses para ver a Marte dibujar un lazo en el cielo",
+   "minutes": 11,
+   "level": "deep",
+   "track": "principle",
+   "tags": [
+    "planeta",
+    "retrogradación",
+    "oposición",
+    "geocentrismo"
+   ],
+   "steps": 8,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "eclipses",
+   "title": "Eclipses de Sol y de Luna",
+   "subtitle": "Por qué no ocurren todos los meses, y cuándo es el siguiente",
+   "minutes": 13,
+   "level": "basic",
+   "track": "principle",
+   "tags": [
+    "eclipse solar",
+    "eclipse lunar",
+    "órbita lunar",
+    "planificación"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "polaris-changes",
+   "title": "La estrella polar cambia",
+   "subtitle": "Quienes levantaron las pirámides tenían otra estrella en el polo",
+   "minutes": 11,
+   "level": "deep",
+   "track": "principle",
+   "tags": [
+    "precesión",
+    "Polaris",
+    "polo norte celeste",
+    "viaje en el tiempo"
+   ],
+   "steps": 10,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "spring-arc",
+   "title": "El Arco de Primavera — sigue el mango del cazo",
+   "subtitle": "Una sola línea que empieza en el Carro y cruza el cielo de primavera",
+   "minutes": 10,
+   "level": "intro",
+   "track": "target",
+   "tags": [
+    "primavera",
+    "Arturo",
+    "Spica",
+    "salto de estrellas"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21",
+   "months": [
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "star-distance",
+   "title": "¿Cómo se mide la distancia a una estrella?",
+   "subtitle": "Lo que nadie pudo medir durante dos mil años",
+   "minutes": 11,
+   "level": "deep",
+   "track": "measure",
+   "tags": [
+    "distancia",
+    "paralaje",
+    "años luz",
+    "pársec"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "twilight",
+   "title": "¿Cuándo salen las estrellas después de la puesta de Sol?",
+   "subtitle": "Cruzando a ojo las tres etapas del crepúsculo",
+   "minutes": 9,
+   "level": "intro",
+   "track": "principle",
+   "tags": [
+    "crepúsculo",
+    "planificación",
+    "puesta de sol",
+    "adaptación a la oscuridad"
+   ],
+   "steps": 8,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "meteor-showers",
+   "title": "¿Por qué una lluvia de meteoros cae desde un solo punto?",
+   "subtitle": "Marcamos el radiante y decidimos dónde mirar esta noche",
+   "minutes": 10,
+   "level": "intro",
+   "track": "principle",
+   "tags": [
+    "lluvia de meteoros",
+    "radiante",
+    "cometa",
+    "planificación"
+   ],
+   "steps": 9,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "proper-motion",
+   "title": "Las constelaciones no son para siempre",
+   "subtitle": "Miramos el Carro dentro de 100000 años",
+   "minutes": 10,
+   "level": "deep",
+   "track": "measure",
+   "tags": [
+    "movimiento propio",
+    "el Carro",
+    "viaje en el tiempo",
+    "Halley"
+   ],
+   "steps": 8,
+   "updated": "2026-08-21"
+  },
+  {
+   "id": "variable-stars",
+   "title": "Estrellas que cambian de brillo",
+   "subtitle": "Cómo medir el brillo a ojo, y por qué los aficionados siguen siendo útiles",
+   "minutes": 10,
+   "level": "basic",
+   "track": "measure",
+   "tags": [
+    "estrella variable",
+    "Algol",
+    "binaria eclipsante",
+    "registro de observación"
+   ],
+   "steps": 7,
+   "updated": "2026-08-21"
+  }
+ ]
+}

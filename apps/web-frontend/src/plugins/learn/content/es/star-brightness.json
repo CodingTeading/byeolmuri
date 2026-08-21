@@ -1,0 +1,174 @@
+{
+ "id": "star-brightness",
+ "title": "Qué significa el brillo",
+ "subtitle": "El ranking de las estrellas más brillantes, y lo que ese ranking esconde",
+ "minutes": 11,
+ "level": "basic",
+ "track": "measure",
+ "tags": [
+  "magnitud",
+  "brillo",
+  "Canopus",
+  "condiciones de observación"
+ ],
+ "intro": "La forma de anotar el brillo de una estrella tiene algo raro. Cuanto menor es el número más brillante es la estrella, y algunos números son negativos. Es lo que queda de un ranking hecho a ojo hace dos mil años. Vamos a comprobar esa escala con estrellas de verdad.",
+ "steps": [
+  {
+   "title": "La estrella más brillante del cielo nocturno",
+   "text": "<p>Son <b>las 9 de la noche de finales de enero</b>, mirando al sur. El invierno es la estación con más estrellas brillantes juntas.</p><p>Está seleccionada la estrella llamativamente brillante que queda baja por el sureste. Es <b>Sirio</b>, llamada <b>Cheonrangseong</b> (天狼星), «el lobo celeste», en las culturas que escriben con caracteres chinos. Dejando aparte el Sol, es la estrella más brillante de todo el cielo nocturno.</p><p>Mira la magnitud en la información del objeto: <b>-1.4</b>. Hay un signo menos delante del número. Vamos a averiguar por qué la escala es tan rara.</p>",
+   "sky": {
+    "date": "2027-01-20T21:00:00+09:00",
+    "az": 145,
+    "alt": 32,
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true
+   },
+   "select": "Sirius"
+  },
+  {
+   "title": "Una escala que dejó un ojo de hace dos mil años",
+   "text": "<p>En el siglo II a. C. el astrónomo griego <b>Hiparco</b> ordenó las estrellas por brillo. Al grupo más brillante lo llamó <b>magnitud 1</b> y a las que apenas se veían, <b>magnitud 6</b>. Era un ranking, así que <b>cuanto menor es el número, más brillante es la estrella.</b></p><p>En 1856 Pogson redefinió ese ranking como una escala que se pudiera medir. La diferencia de brillo entre la magnitud 1 y la 6 resultaba ser de <b>unas 100 veces</b>, así que la fijó: <b>una diferencia de 5 magnitudes es exactamente 100 veces</b>.</p><p>Eso hace que una magnitud sea la raíz quinta de 100, es decir <b>unas 2.5 veces</b>.</p><p>Al encajar ahí las estrellas reales aparecieron estrellas más brillantes que la magnitud 1, entre ellas Sirio. Así surgió una magnitud 0 y después los números negativos. La escala no vino primero para medir las estrellas con ella: <b>primero se ordenaron las estrellas y después se les ajustó la regla</b>.</p>",
+   "sky": {
+    "fov": 80
+   }
+  },
+  {
+   "title": "¿Cuánto se nota una diferencia de 3.4 magnitudes?",
+   "text": "<p>Está seleccionada <b>Polaris</b>. Es de <b>magnitud 2.0</b>.</p><p>Sirio era -1.4, así que la diferencia es de <b>3.4 magnitudes</b>, que en brillo sale <b>unas 23 veces</b>. Y sin embargo, al mirar de una a otra, no da la sensación de 23 veces. Como mucho unas pocas veces.</p><p>Es porque el ojo humano percibe el brillo <b>en multiplicación</b>. Algo tiene que hacerse 100 veces más brillante para que lo notemos cinco escalones más brillante. Por eso el ranking que Hiparco hizo a ojo acabó siendo una escala logarítmica.</p><p>Como referencia, <b>la luna llena es -12.7 y el Sol es -26.7</b>. Entre el Sol y la luna llena hay 14 magnitudes, 400000 veces.</p>",
+   "sky": {
+    "az": 0,
+    "alt": 38,
+    "fov": 70
+   },
+   "select": "Polaris"
+  },
+  {
+   "title": "El ranking de las estrellas brillantes",
+   "text": "<p>De vuelta al cielo de invierno. Ordenado por brillo, el cielo nocturno entero queda así. <b>Lo marcado en pantalla es lo que está arriba ahora mismo de esta lista</b>.</p><ul><li><b>-1.4</b> Sirio (el lobo celeste) — Can Mayor</li><li><b>-0.6</b> Canopus (el astro del anciano) — Carina; a 37°N no llega a salir por encima del horizonte</li><li><b>-0.3</b> Rigil Kentaurus (Alfa Centauri) — Centauro; no se ve al norte de unos 30°N</li><li><b>-0.1</b> Arturo (el gran cuerno) — el Boyero, primavera</li><li><b>0.0</b> Vega — Lira, verano</li><li><b>0.1</b> Capella — Auriga, invierno</li><li><b>0.2</b> Rigel — Orión</li><li><b>0.4</b> Proción — Can Menor</li><li><b>0.5</b> Achernar — Erídano; esta también queda tan al sur que no se ve al norte de unos 33°N</li><li><b>0.5</b> Betelgeuse — Orión (es variable, así que el valor sube y baja)</li></ul><p>El cielo de invierno tiene una cantidad notable. No es casualidad. La dirección que miramos en invierno abarca la región de formación estelar del <b>Brazo de Orión</b>, donde se agrupan estrellas jóvenes y masivas.</p>",
+   "sky": {
+    "az": 130,
+    "alt": 50,
+    "fov": 120
+   },
+   "clearSelection": true,
+   "highlight": [
+    "Sirius",
+    "Rigel",
+    "Betelgeuse",
+    "Procyon",
+    "Capella"
+   ]
+  },
+  {
+   "title": "Canopus — la latitud reescribe el ranking",
+   "text": "<p>La número 2 de la lista, <b>Canopus</b>, es muy difícil de ver desde las latitudes medias del hemisferio norte. Está muy al sur del cielo, así que desde una latitud alta no consigue subir por encima del horizonte.</p><p>Por eso el lugar de observación se ha movido un momento a <b>la isla de Jeju</b>. ¿La ves colgando <b>a unos 4 grados</b> sobre el horizonte sur? La rejilla está encendida: lee su altura en la escala. Desde Seúl esta estrella se queda por debajo del horizonte y no sale nunca.</p><p>En Asia Oriental a esta estrella se la llamó <b>el Anciano del Polo Sur</b> (南極老人星), y verla se tenía por señal de larga vida, así que se apreciaba mucho. En la Corea de Joseon avistarla se consideraba un buen augurio para el país y se anotaba en los registros. Solo podía cazarse desde Jeju y la costa sur, y aun allí apenas un rato en las tardes entre el invierno y el comienzo de la primavera, desde un sitio con el horizonte sur despejado. No podía ser de otro modo.</p><p>Al salir de la lección, el lugar de observación vuelve a donde estás.</p>",
+   "sky": {
+    "date": "2027-02-10T21:30:00+09:00",
+    "lat": 33.4,
+    "lng": 126.5,
+    "elev": 0,
+    "az": 180,
+    "alt": 10,
+    "fov": 35
+   },
+   "show": {
+    "azimuthalGrid": true,
+    "landscape": false
+   },
+   "highlight": [
+    {
+     "target": "* alf Car",
+     "radius": 1.5
+    }
+   ],
+   "quiz": {
+    "q": "Canopus es de magnitud -0.6. ¿Por qué no se ve desde Seúl?",
+    "opts": [
+     "Porque es demasiado tenue",
+     "Porque la latitud del lugar es tan alta que nunca sube por encima del horizonte",
+     "Por las luces de la ciudad",
+     "Porque es una estrella que solo sale en verano"
+    ],
+    "right": 1,
+    "explain": "Lo alto que llega a subir una estrella lo fijan su declinación y la latitud del lugar. Canopus está tan al sur que desde Seúl, a 37°N, no llega a asomar por encima del horizonte. No es cuestión de que sea tenue, ya que es la segunda más brillante, y las luces de la ciudad no pueden hacer aparecer una estrella que está bajo el horizonte. Tampoco es cuestión de estación: sencillamente no sale."
+   }
+  },
+  {
+   "title": "El brillo que ves y el brillo que hay",
+   "text": "<p>El lugar de observación vuelve a <b>donde estás</b>. Este ranking tiene una trampa: <b>lo que está cerca parece brillante</b>.</p><p>Buena parte de que Sirio sea la primera es que es una vecina, a solo <b>8.6 años luz</b>. Deneb, en el Triángulo de Verano, está en cambio a más de 1400 años luz y aun así se ve de magnitud 1.3. La luz que emite Deneb de verdad es miles de veces mayor que la de Sirio.</p><p>Por eso la astronomía separa dos cifras.</p><ul><li><b>Magnitud aparente</b> — el brillo visto desde la Tierra. Todos los números de hasta ahora son este</li><li><b>Magnitud absoluta</b> — el brillo medido poniendo todas las estrellas a <b>32.6 años luz</b>. Una escala hecha para comparar brillos reales</li></ul><p>En esa escala el Sol es de <b>magnitud 4.8</b>. Visto desde 32.6 años luz, nuestro Sol sería una estrella corriente que <b>ni siquiera se vería desde una ciudad</b>.</p>",
+   "sky": {
+    "date": "2027-01-20T21:00:00+09:00",
+    "az": 145,
+    "alt": 32,
+    "fov": 90,
+    "home": true
+   },
+   "show": {
+    "azimuthalGrid": false,
+    "landscape": true
+   },
+   "select": "Sirius"
+  },
+  {
+   "title": "¿Hasta qué magnitud llega tu cielo esta noche?",
+   "text": "<p>La vista se ha movido a <b>una tarde de primavera</b>, cuando el Carro va alto. La magnitud es una propiedad de la estrella, pero también <b>una regla para medir el cielo del sitio donde estás</b>.</p><ul><li><b>Centro de una ciudad</b> — magnitud 3 más o menos. Se ven unas decenas de estrellas</li><li><b>Afueras</b> — magnitud 4 o 5</li><li><b>Campo, sin Luna</b> — magnitud 6. Se ven más de 2000 estrellas y aparece la Vía Láctea</li><li><b>Alta montaña o desierto</b> — hasta magnitud 7</li></ul><p>El límite a simple vista se pone en <b>magnitud 6</b> porque esa era la última clase de Hiparco. El cielo nocturno del Mediterráneo de hace dos mil años es, en la práctica, la referencia de la escala que seguimos usando.</p><p>La forma más sencilla de medir tu propio cielo es <b>Alcor, en el Carro</b>. Es la estrella de <b>magnitud 4.0</b> metida junto a Mizar, la del medio del mango. Si la ves, esa noche llega a magnitud 4.</p>",
+   "sky": {
+    "az": 40,
+    "alt": 55,
+    "fov": 45,
+    "date": "2027-04-15T21:00:00+09:00"
+   },
+   "clearSelection": true,
+   "highlight": [
+    {
+     "target": "* zet UMa",
+     "radius": 0.07
+    },
+    {
+     "target": "* 80 UMa",
+     "radius": 0.07
+    }
+   ],
+   "quiz": {
+    "q": "¿Cuánto más brillante es una estrella de magnitud 1 que una de magnitud 6?",
+    "opts": [
+     "6 veces",
+     "5 veces",
+     "100 veces",
+     "1000 veces"
+    ],
+    "right": 2,
+    "explain": "La escala se fijó de modo que una diferencia de 5 magnitudes sean exactamente 100 veces. Seis veces o cinco veces sale de restar o dividir los propios números de magnitud, pero la magnitud es una escala de multiplicar, no de sumar. Una magnitud son unas 2.5 veces, y cinco de esas apiladas son 2.5 elevado a la quinta, es decir 100."
+   }
+  },
+  {
+   "title": "Cuéntalas tú mismo",
+   "text": "<p>Esto es lo que puedes hacer fuera esta noche.</p><ul><li><b>La prueba de Alcor</b> — mira la estrella del medio del mango del Carro. Si aparece una segunda estrella pequeña justo al lado, tu cielo llega a magnitud 4</li><li><b>Busca lo más brillante</b> — busca el objeto más brillante del cielo esta tarde. Si luce fijo en lugar de titilar, lo más probable es que no sea una estrella sino un <b>planeta</b>. La pestaña «Esta noche» te lo dirá</li><li><b>Las mismas estrellas desde otro sitio</b> — cuenta las que ves desde la ciudad y luego desde un sitio sin luces. El mismo cielo, y más de diez veces de diferencia</li><li>Los ojos tardan <b>20 minutos</b> en acostumbrarse a la oscuridad. Si en ese rato miras la pantalla del móvil, empiezas de cero</li></ul>",
+   "sky": {
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "Los valores de magnitud son los mismos que usa la información del objeto en pantalla. El registro sobre Canopus sigue las observaciones del astro del anciano anotadas en los Anales de la Dinastía Joseon."
+}

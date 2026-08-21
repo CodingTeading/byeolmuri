@@ -1,0 +1,148 @@
+{
+ "id": "seasons",
+ "title": "Why do the constellations change with the season?",
+ "subtitle": "The same southern sky at the same hour, set side by side three months apart",
+ "minutes": 9,
+ "level": "intro",
+ "track": "principle",
+ "tags": [
+  "seasons",
+  "Earth's orbit",
+  "zodiac"
+ ],
+ "intro": "Where you watched Orion in winter, you find Scorpius in summer. The stars have not moved across; the Earth you are riding on has. We will push the date on three months at a time and look at the same sky four times over.",
+ "steps": [
+  {
+   "title": "9 pm in January, the southern sky",
+   "text": "<p>The time is set to <b>9 pm on 15 January</b> and you are looking <b>south</b>, a little east of due south. The location is wherever you are right now.</p><p>The one that stands out in the middle is <b>Orion</b>. The three stars in a row are the giveaway. Down to the left is <b>Sirius</b>, the brightest star of all, and above it is <b>Taurus</b>.</p><p>Keep this sky in mind. From here on <b>the hour stays fixed at 9 pm and only the date</b> will move.</p>",
+   "sky": {
+    "date": "2027-01-15T21:00:00+09:00",
+    "az": 155,
+    "alt": 45,
+    "fov": 105,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationLabels": true,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true
+   }
+  },
+  {
+   "title": "Three months on, 9 pm in April",
+   "text": "<p>Only the date has moved, to <b>15 April</b>. The hour and the direction are the same as before: 9 pm, looking south.</p><p>Orion has gone. <b>Leo</b> has come into its place. Can you see the forepaws shaped like a backwards question mark, and the bright star <b>Regulus</b>? Away to the east, Arcturus in Boötes is coming up. This is the spring sky.</p>",
+   "sky": {
+    "date": "2027-04-15T21:00:00+09:00"
+   },
+   "select": "* alf Leo"
+  },
+  {
+   "title": "Three months more, 9 pm in July",
+   "text": "<p><b>15 July</b>, 9 pm. Low in the south lies <b>Scorpius</b> with the red star <b>Antares</b> at its heart, and high in the east the Summer Triangle has risen.</p><p>Leo has already crossed over to the west. Every three months the whole cast of the southern sky changes over.</p>",
+   "sky": {
+    "date": "2027-07-15T21:00:00+09:00"
+   },
+   "select": "* alf Sco"
+  },
+  {
+   "title": "9 pm in October, and round again",
+   "text": "<p><b>15 October</b>, 9 pm. In the south stands the great square of <b>Pegasus</b>, a stretch of sky with few bright stars. This is the autumn sky.</p><p>Three months on from here brings you back to January and the Orion you started with. That is <b>exactly one turn a year</b>. The number itself gives the answer away.</p>",
+   "sky": {
+    "date": "2027-10-15T21:00:00+09:00"
+   },
+   "clearSelection": true
+  },
+  {
+   "title": "Night is the side away from the Sun",
+   "text": "<p>The Earth goes once round the Sun in a year. <b>Night</b> is the time you spend looking at <b>the side away from the Sun</b>.</p><p>So when the Earth comes round to the far side of its orbit, the direction you face at night is reversed as well. That is why the night sky six months from now is a different sky altogether. The stars have not moved; <b>you have changed seats</b>.</p><p>The red line is the <b>ecliptic</b>. It is the path the Sun takes among the constellations over a year, and the Moon and the planets never stray far from it either.</p>",
+   "sky": {
+    "fov": 120
+   },
+   "show": {
+    "ecliptic": true
+   }
+  },
+  {
+   "title": "Let us see which constellation the Sun stands in by day",
+   "text": "<p>This time it is <b>12 noon on 15 January</b>. The atmosphere is switched off, so the stars show even in broad daylight. You could never see this in the real sky.</p><p>The Sun sits right where <b>Sagittarius gives way to Capricornus</b>. That means these constellations lie <b>in the same direction as the Sun</b> at present, and so cannot be seen in this season of the night.</p><p>Come summer, the Sun will have travelled along the ecliptic to the far side, and Sagittarius will then stand in the southern sky at midnight.</p>",
+   "sky": {
+    "date": "2027-01-15T12:00:00+09:00",
+    "fov": 70
+   },
+   "show": {
+    "landscape": false
+   },
+   "select": "NAME Sun"
+  },
+  {
+   "title": "You cannot see your birth sign on your birthday",
+   "text": "<p>An interesting thing falls out of this. Your so-called <b>birth sign</b> is <b>the constellation the Sun was standing in</b> on the day you were born. That means it lies in the same direction as the Sun, so <b>you cannot see your own sign anywhere near your birthday.</b> To see it you have to go out in the season half a year away.</p><p>In East Asia the path the Moon travels was divided into twenty-eight sections called the <b>28 mansions</b>, the idea being that the Moon lodges in one of them each night. Joseon Korea's <b>Cheonsang Yeolcha Bunyajido</b>, a chart of the whole sky carved into stone, is built on these same 28 mansions.</p>",
+   "sky": {
+    "fov": 100
+   },
+   "quiz": {
+    "q": "Someone born between late July and mid-August is called a 'Leo'. In which season is Leo best seen?",
+    "opts": [
+     "Midsummer, around the birthday itself",
+     "Spring, half a year away",
+     "Any time of year, the season makes no difference",
+     "Before dawn in autumn"
+    ],
+    "right": 1,
+    "explain": "Around the birthday the Sun stands in front of that constellation, so the two are up in the daytime sky together. To see it at night you have to come round to the far side of the Sun, which puts it half a year later, in the spring evening sky. 'Any time of year' holds only for constellations near the pole, such as Cassiopeia. It is worth adding that the dates used by horoscopes were fixed two thousand years ago and are now a whole sign away from where the Sun really is. Leo does rise before dawn in autumn, but that is not the same as having it comfortably placed in the early evening."
+   }
+  },
+  {
+   "title": "Four minutes earlier every day",
+   "text": "<p>Why should it be the season that changes things? Stars rise <b>about 4 minutes earlier each day</b>. While the Earth makes one turn on its axis it also moves a little way along its orbit, so bringing the same star back to the same place takes a shade less than 24 hours.</p><p>4 minutes comes to <b>2 hours</b> over a month and <b>6 hours</b> over three. The screen is now at <b>7 pm on 15 February</b>. Can you see that Orion, which stood there at 9 pm a month earlier, has come round to exactly the same place?</p>",
+   "sky": {
+    "date": "2027-02-15T19:00:00+09:00",
+    "az": 155,
+    "alt": 45,
+    "fov": 105
+   },
+   "show": {
+    "ecliptic": false,
+    "landscape": true
+   },
+   "quiz": {
+    "q": "A constellation is due south at 9 pm tonight. To find it in the same place a month from now, what time should you go out?",
+    "opts": [
+     "11 pm",
+     "7 pm",
+     "The same, 9 pm",
+     "1 am"
+    ],
+    "right": 1,
+    "explain": "Four minutes a day comes to about two hours in a month, which makes it 7 pm. Going out at 11 pm moves you the other way, and by then the constellation has already leaned over towards the west. Keep the hour fixed instead and you get a different sky every month, and that is exactly what seasonal constellations are."
+   }
+  },
+  {
+   "title": "What is in the south this evening?",
+   "text": "<p>Here is who holds the southern sky in each season.</p><ul><li><b>Spring</b> — Leo, and Arcturus in Boötes</li><li><b>Summer</b> — Scorpius, the Summer Triangle, the Milky Way</li><li><b>Autumn</b> — the square of Pegasus, Andromeda</li><li><b>Winter</b> — Orion, Sirius, the Seven Sisters</li></ul><p>Now it is time to check it outdoors.</p><ul><li>Look <b>south</b> this evening and work out which of these is up there</li><li>Look at the same place at the <b>same hour a month later</b>. The constellation will have shifted west by <b>three fists</b> held at arm's length, about 30 degrees</li><li>The north behaves differently. Cassiopeia never sets at all, and even the Big Dipper only dips the tip of its handle to the horizon, so it is up almost the whole year. Why that is comes in 'Latitude changes the sky'</li></ul>",
+   "sky": {
+    "fov": 100,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "constellationLines": false,
+    "constellationLabels": false,
+    "ecliptic": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "Constellation names and the dates dividing the zodiac follow the current constellation boundaries of the International Astronomical Union (IAU)."
+}

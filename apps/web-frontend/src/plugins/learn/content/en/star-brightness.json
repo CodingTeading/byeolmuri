@@ -1,0 +1,174 @@
+{
+ "id": "star-brightness",
+ "title": "What brightness means",
+ "subtitle": "The ranking of the brightest stars, and what that ranking hides",
+ "minutes": 11,
+ "level": "basic",
+ "track": "measure",
+ "tags": [
+  "magnitude",
+  "brightness",
+  "Canopus",
+  "observing conditions"
+ ],
+ "intro": "There is something odd about the way star brightness is written down. The smaller the number the brighter the star, and some numbers are negative. It is what is left of a ranking made by eye two thousand years ago. Let us check that scale against real stars.",
+ "steps": [
+  {
+   "title": "The brightest star in the night sky",
+   "text": "<p>It is <b>9 pm in late January</b>, looking south. Winter is the season with the greatest crowd of bright stars in it.</p><p>The strikingly bright star low in the south-east is selected. This is <b>Sirius</b>, called <b>Cheonrangseong</b> (天狼星), 'the celestial wolf', across the cultures that write with Chinese characters. Setting the Sun aside, it is the brightest star in the whole night sky.</p><p>Look at the magnitude in the object information: <b>-1.4</b>. There is a minus sign in front of the number. Let us find out why the scale is such an odd one.</p>",
+   "sky": {
+    "date": "2027-01-20T21:00:00+09:00",
+    "az": 145,
+    "alt": 32,
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true
+   },
+   "select": "Sirius"
+  },
+  {
+   "title": "A scale left behind by a two-thousand-year-old eye",
+   "text": "<p>In the 2nd century BC the Greek astronomer <b>Hipparchus</b> sorted the stars by brightness. He called the brightest group <b>magnitude 1</b> and the ones barely visible <b>magnitude 6</b>. It was a ranking, so <b>the smaller the number the brighter the star.</b></p><p>In 1856 Pogson redefined that ranking as a scale you could measure. The difference in brightness between magnitude 1 and magnitude 6 happened to come to <b>about 100 times</b>, so he pinned it down: <b>a difference of 5 magnitudes is exactly 100 times</b>.</p><p>That makes one magnitude the fifth root of 100, or <b>about 2.5 times</b>.</p><p>Fitting the real stars into this turned up stars brighter than magnitude 1, Sirius among them. So a magnitude 0 appeared, and then minus numbers. The scale did not come first with the stars measured against it: <b>the stars were sorted first and the ruler fitted to them afterwards</b>.</p>",
+   "sky": {
+    "fov": 80
+   }
+  },
+  {
+   "title": "How different does 3.4 magnitudes look?",
+   "text": "<p><b>Polaris</b> is selected. It is <b>magnitude 2.0</b>.</p><p>Sirius was -1.4, so the difference is <b>3.4 magnitudes</b>, which works out at <b>about 23 times</b> in brightness. Yet looking from one to the other, it does not feel like 23 times. A few times over at most.</p><p>That is because the human eye feels brightness <b>as multiplication</b>. Something has to grow 100 times brighter to feel five steps brighter. It is why the ranking Hipparchus made by eye turned out to be a logarithmic scale.</p><p>For reference, <b>the full Moon is -12.7 and the Sun is -26.7</b>. Between the Sun and the full Moon lie 14 magnitudes, or 400,000 times.</p>",
+   "sky": {
+    "az": 0,
+    "alt": 38,
+    "fov": 70
+   },
+   "select": "Polaris"
+  },
+  {
+   "title": "The ranking of the bright stars",
+   "text": "<p>Back to the winter sky. Set out in order of brightness, the whole night sky runs like this. <b>The ones marked on screen are those from the list that are up just now</b>.</p><ul><li><b>-1.4</b> Sirius (the celestial wolf) — Canis Major</li><li><b>-0.6</b> Canopus (the old man star) — Carina; at 37°N it never rises above the horizon</li><li><b>-0.3</b> Rigil Kentaurus (Alpha Centauri) — Centaurus; not visible north of about 30°N</li><li><b>-0.1</b> Arcturus (the great horn) — Boötes, spring</li><li><b>0.0</b> Vega — Lyra, summer</li><li><b>0.1</b> Capella — Auriga, winter</li><li><b>0.2</b> Rigel — Orion</li><li><b>0.4</b> Procyon — Canis Minor</li><li><b>0.5</b> Achernar — Eridanus; this one also lies far enough south that it cannot be seen north of about 33°N</li><li><b>0.5</b> Betelgeuse — Orion (a variable star, so the figure drifts up and down)</li></ul><p>The winter sky holds a remarkable number of them. That is no accident. The direction we look in winter takes in the star-forming region of the <b>Orion Arm</b>, where young heavy stars are gathered.</p>",
+   "sky": {
+    "az": 130,
+    "alt": 50,
+    "fov": 120
+   },
+   "clearSelection": true,
+   "highlight": [
+    "Sirius",
+    "Rigel",
+    "Betelgeuse",
+    "Procyon",
+    "Capella"
+   ]
+  },
+  {
+   "title": "Canopus — latitude rewrites the ranking",
+   "text": "<p>Second on the list is <b>Canopus</b>, and it is very hard to see from the middle latitudes of the northern hemisphere. It lies deep in the southern sky, so from a high latitude it cannot climb above the horizon at all.</p><p>So the observing site has moved for a moment to <b>Jeju Island</b>. Can you see it hanging <b>just about 4 degrees above</b> the southern horizon? The grid is switched on, so read its height off the scale. From Seoul this star stays below the horizon and never rises.</p><p>In East Asia this star was called <b>the Old Man of the South Pole</b> (南極老人星), and seeing it was held to bring long life, so it was greatly prized. In Joseon Korea a sighting was treated as an auspicious sign for the country and entered in the records. It could be caught only from Jeju and the southern coast, and even there only for a moment on evenings between winter and early spring, from a spot with a clear southern horizon. It could hardly have been otherwise.</p><p>Leaving the lesson puts the observing site back where you are.</p>",
+   "sky": {
+    "date": "2027-02-10T21:30:00+09:00",
+    "lat": 33.4,
+    "lng": 126.5,
+    "elev": 0,
+    "az": 180,
+    "alt": 10,
+    "fov": 35
+   },
+   "show": {
+    "azimuthalGrid": true,
+    "landscape": false
+   },
+   "highlight": [
+    {
+     "target": "* alf Car",
+     "radius": 1.5
+    }
+   ],
+   "quiz": {
+    "q": "Canopus is magnitude -0.6. Why can it not be seen from Seoul?",
+    "opts": [
+     "Because it is too faint",
+     "Because the latitude of the site is high enough that it never climbs above the horizon",
+     "Because of the lights of the city",
+     "Because it is a star that only rises in summer"
+    ],
+    "right": 1,
+    "explain": "How high a star climbs is set by the declination of the star and the latitude of the site. Canopus lies so far south that from Seoul, at 37°N, it never gets above the horizon. It is not faintness, since it ranks second in brightness, and city lights cannot make a star below the horizon appear. Nor is it a matter of season. It simply does not rise."
+   }
+  },
+  {
+   "title": "The brightness you see and the brightness there is",
+   "text": "<p>The observing site is back to <b>where you are</b>. There is a trap in this ranking: <b>anything close looks bright</b>.</p><p>A large part of why Sirius comes first is that it is a neighbour, only <b>8.6 light years</b> away. Deneb in the Summer Triangle, by contrast, is over 1,400 light years off and still shows at magnitude 1.3. The light Deneb actually gives out is thousands of times greater than that of Sirius.</p><p>So astronomy keeps two figures apart.</p><ul><li><b>Apparent magnitude</b> — the brightness as seen from the Earth. Every number so far has been this one</li><li><b>Absolute magnitude</b> — the brightness measured with every star moved to a distance of <b>32.6 light years</b>. A scale made for comparing real brightness</li></ul><p>On that scale the Sun is <b>magnitude 4.8</b>. Seen from 32.6 light years away, our Sun would be an ordinary star that <b>would not even show from a city</b>.</p>",
+   "sky": {
+    "date": "2027-01-20T21:00:00+09:00",
+    "az": 145,
+    "alt": 32,
+    "fov": 90,
+    "home": true
+   },
+   "show": {
+    "azimuthalGrid": false,
+    "landscape": true
+   },
+   "select": "Sirius"
+  },
+  {
+   "title": "How faint does your sky go tonight?",
+   "text": "<p>The view has moved to a <b>spring evening</b>, when the Big Dipper rides high. Magnitude is a property of a star, but it is also <b>a ruler for measuring the sky where you happen to be</b>.</p><ul><li><b>City centre</b> — about magnitude 3. A few dozen stars show</li><li><b>Outskirts</b> — magnitude 4 to 5</li><li><b>Countryside, no Moon</b> — magnitude 6. Over 2,000 stars show and the Milky Way comes out</li><li><b>High mountains or desert</b> — as far as magnitude 7</li></ul><p>The naked-eye limit is put at <b>magnitude 6</b> because that was the last of Hipparchus's classes. The Mediterranean night sky of two thousand years ago is, in effect, the reference for the scale we still use.</p><p>The simplest way to measure your own sky is <b>Alcor in the Big Dipper</b>. It is the <b>magnitude 4.0</b> star tucked beside Mizar, the middle star of the handle. If you can see it, that night reaches magnitude 4.</p>",
+   "sky": {
+    "az": 40,
+    "alt": 55,
+    "fov": 45,
+    "date": "2027-04-15T21:00:00+09:00"
+   },
+   "clearSelection": true,
+   "highlight": [
+    {
+     "target": "* zet UMa",
+     "radius": 0.07
+    },
+    {
+     "target": "* 80 UMa",
+     "radius": 0.07
+    }
+   ],
+   "quiz": {
+    "q": "How much brighter is a magnitude 1 star than a magnitude 6 star?",
+    "opts": [
+     "6 times",
+     "5 times",
+     "100 times",
+     "1000 times"
+    ],
+    "right": 2,
+    "explain": "The scale was fixed so that a difference of 5 magnitudes is exactly 100 times. Six times or five times comes of subtracting or dividing the magnitude numbers themselves, but magnitude is a multiplying scale, not an adding one. One magnitude is about 2.5 times, and five of those stacked together is 2.5 to the fifth power, which is 100."
+   }
+  },
+  {
+   "title": "Go and count them yourself",
+   "text": "<p>Here is what you can do outdoors tonight.</p><ul><li><b>The Alcor test</b> — look at the middle star of the Big Dipper's handle. If a second small star shows right beside it, your sky reaches magnitude 4</li><li><b>Find the brightest thing</b> — look for the brightest object in the sky this evening. If it shines steadily rather than twinkling, the odds are it is not a star but a <b>planet</b>. The 'Tonight' tab will tell you</li><li><b>The same stars from somewhere else</b> — count what you can see from the city, then from somewhere with no lights. The same sky, and more than ten times the difference</li><li>Eyes take <b>20 minutes</b> to settle into the dark. Look at a phone screen in that time and you begin again from scratch</li></ul>",
+   "sky": {
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "The magnitude figures are the same ones used in the object information on screen. The record of Canopus follows the sightings of it entered in the Annals of the Joseon Dynasty."
+}

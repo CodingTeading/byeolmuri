@@ -1,0 +1,152 @@
+{
+ "id": "eclipses",
+ "title": "Eclipses of the Sun and the Moon",
+ "subtitle": "Why they do not happen every month, and when the next one is",
+ "minutes": 13,
+ "level": "basic",
+ "track": "principle",
+ "tags": [
+  "solar eclipse",
+  "lunar eclipse",
+  "lunar orbit",
+  "planning"
+ ],
+ "intro": "Once a month the Moon stands opposite the Sun, and once a month it passes in front of it. Yet there are only a few eclipses in a year. We will find out why, standing on real scenes of an eclipse of the Sun and of the Moon.",
+ "steps": [
+  {
+   "title": "A red Moon",
+   "text": "<p>This is a <b>total lunar eclipse</b> on <b>the evening of 3 March 2026, at half past 8</b>, a scene that really was visible from Korea.</p><p>The Moon is a <b>deep red</b> all over, because it has gone right into the middle of the Earth's shadow. It is commonly called a <b>blood moon</b>.</p><p>Something here does not add up. If it has gone fully into the shadow it ought to be <b>pitch dark</b>, so why does it show red?</p>",
+   "sky": {
+    "date": "2026-03-03T20:34:00+09:00",
+    "fov": 3,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": false,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "select": "NAME Moon"
+  },
+  {
+   "title": "Every sunset on Earth, cast onto the Moon",
+   "text": "<p>The Earth has <b>an atmosphere</b>. Some of the sunlight passing behind the Earth grazes that atmosphere and is <b>bent inwards</b>, into the shadow.</p><p>Travelling the long way through the air, that light loses its blue. Exactly the same reason a sunset is red. So <b>only red light</b> reaches the Moon inside the shadow.</p><p>Standing on the Moon at that moment, you would see the rim of the black disc of the Earth glowing as <b>a ring of red</b>. It amounts to seeing <b>every sunrise and sunset on Earth at once, in a single line</b>.</p><p>In a year with a great deal of volcanic ash in the air the eclipsed Moon comes out almost black; in a clear year it turns a bright coppery colour. <b>The colour of the Moon reports on the state of the Earth's atmosphere.</b></p>",
+   "sky": {
+    "fov": 5
+   }
+  },
+  {
+   "title": "Watch it come out of the shadow",
+   "text": "<p>Time runs at <b>5 minutes per second</b>. The Moon is coming out of the Earth's shadow.</p><p>It brightens from the edge inwards and the boundary of the shadow shows itself. Can you see that the boundary draws <b>a rounded arc</b>?</p><p>This arc is one of the <b>oldest pieces of evidence</b> humanity ever gathered. In the 4th century BC Aristotle concluded that <b>the Earth is a sphere</b> from the fact that the edge of the shadow is always curved, whichever direction a lunar eclipse happens in. A sphere is the only shape that casts a round shadow from every angle.</p><p>The shadow is very large. At the distance of the Moon the Earth's shadow is <b>2.6 times the diameter of the Moon</b>. That is why the Moon takes hours to cross it.</p>",
+   "sky": {
+    "date": "2026-03-03T20:50:00+09:00",
+    "fov": 8,
+    "timeSpeed": 300
+   },
+   "select": "NAME Moon"
+  },
+  {
+   "title": "A solar eclipse is the opposite arrangement",
+   "text": "<p>Where a lunar eclipse happens only at <b>full Moon</b>, a solar eclipse happens only at <b>new Moon</b>. The Moon comes between the Sun and the Earth and hides the Sun.</p><p>A solar eclipse, though, is visible only over a very narrow strip. The spot the Moon's umbra makes on the surface of the Earth is only <b>100 to 250 km</b> across, and that spot races over the Earth at thousands of km an hour.</p><p>So the observing site has to move. This is <b>2 August 2027</b>, near Cádiz in southern Spain. The time on screen is the middle of the partial phase.</p><p>Can you see the round bite taken out of the right-hand side of the Sun? That black disc is <b>the Moon</b>.</p>",
+   "sky": {
+    "date": "2027-08-02T17:20:00+09:00",
+    "lat": 36.5,
+    "lng": -6.3,
+    "elev": 0,
+    "fov": 1.5,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": false,
+    "landscape": false
+   },
+   "select": "NAME Sun"
+  },
+  {
+   "title": "And then the screen goes black",
+   "text": "<p><b>25 minutes later</b>, totality. And the screen has gone <b>completely black</b>.</p><p>The Moon has covered the Sun entirely, and <b>this view cannot draw what comes next.</b> In the real sky the <b>corona</b> would now be spreading from the place of the Sun like pearl-coloured wings, the horizon would flush with sunset colours all the way round, and bright stars and planets would appear in broad daylight. The temperature drops sharply and birds fly off to roost.</p><p>People say that for that one moment neither a planetarium nor a photograph will do. It is why anyone who has seen one total solar eclipse spends the rest of their life chasing them.</p><p>This black screen may be the most honest picture in the whole lesson. <b>This is as far as a screen can take you.</b></p><p>To add to it, the coincidence is possible because the Sun is <b>400 times</b> larger than the Moon across and happens to lie <b>400 times</b> further away. So the size the two show in the sky is nearly the same, about 0.5 degrees each. During a total eclipse in 1868 an element unknown on Earth was found in the solar spectrum and named <b>helium</b> after the Sun.</p><p>The Moon is drawing away at 3.8 cm a year, so <b>in about 600 million years</b> total solar eclipses will come to an end. We live in the age when they can still be seen.</p>",
+   "sky": {
+    "date": "2027-08-02T17:45:00+09:00",
+    "fov": 1
+   }
+  },
+  {
+   "title": "And it comes back out",
+   "text": "<p>Totality lasts a few minutes at most. This eclipse runs to 6 minutes 23 seconds, among the longest of the century.</p><p>44 minutes on, the Sun begins to show again from the other side. Can you see which way the Moon has travelled? The bite going out is on <b>the opposite side</b> from where it was coming in.</p><p>This partial phase is visible over a wide region well outside the belt of totality. The belt of totality is only 100 to 250 km wide, while the partial eclipse can be seen thousands of km away. That is why <b>partial solar eclipses are common and total ones are precious.</b></p>",
+   "sky": {
+    "date": "2027-08-02T18:29:00+09:00",
+    "fov": 1.5
+   },
+   "select": "NAME Sun",
+   "quiz": {
+    "q": "Why can the Moon cover the Sun so exactly at a total solar eclipse?",
+    "opts": [
+     "Because the Moon and the Sun are close to the same real size",
+     "Because the Moon's diameter is one 400th of the Sun's and its distance is one 400th as well",
+     "Because anything closer to the Earth than the Sun always covers it completely",
+     "Because the Earth's atmosphere refracts the sunlight"
+    ],
+    "right": 1,
+    "explain": "In real size the Sun is overwhelmingly the larger, but the ratio of the distances is almost exactly the ratio of the sizes, so the two come out at about 0.5 degrees each in the sky. It is a coincidence. Nor does being closer guarantee full cover: when the Moon is at the far end of its orbit it fails to cover the whole disc and a ring is left round the edge, an annular eclipse."
+   }
+  },
+  {
+   "title": "So why not every month?",
+   "text": "<p>The Moon is new once a month and full once a month. There ought therefore to be two eclipses every month, and yet in practice there are only <b>four or five a year</b>.</p><p>The answer is <b>tilt</b>. The Moon's orbit is tilted <b>5.1 degrees</b> to the plane in which the Earth goes round the Sun, the ecliptic.</p><p>Five degrees is the width of ten full Moons laid in a row across the sky. So at most new Moons the Moon passes <b>above or below</b> the Sun. At full Moon it passes above or below the Earth's shadow in the same way.</p><p>The line where the two tilted planes meet is called the <b>nodes</b>. Only when a new or full Moon falls <b>near a node</b> does an eclipse happen. Such a stretch comes twice a year and lasts a month or so; it is called an <b>eclipse season</b>.</p><p>This arrangement repeats almost exactly every <b>18 years, 11 days and 8 hours</b>. That is the <b>Saros cycle</b>. The Babylonians worked the repetition out from records alone and used it to forecast eclipses.</p>",
+   "sky": {
+    "home": true,
+    "fov": 60,
+    "timeSpeed": 0
+   },
+   "show": {
+    "ecliptic": true,
+    "landscape": true
+   },
+   "clearSelection": true,
+   "quiz": {
+    "q": "Why do solar and lunar eclipses not happen every month?",
+    "opts": [
+     "Because the Moon's orbit is tilted about 5 degrees to the ecliptic, so it usually passes above or below",
+     "Because the Moon's orbital period is not constant",
+     "Because the Earth's shadow is smaller than the Moon",
+     "Because it is often cloudy"
+    ],
+    "right": 0,
+    "explain": "With the two planes tilted, most new and full Moons slip past without grazing the Sun or the Earth's shadow. Only when a new or full Moon falls near a node, where the planes meet, does an eclipse follow. The Moon's orbital period is steady, and at the Moon's distance the Earth's shadow is 2.6 times the Moon's diameter, so far larger rather than smaller."
+   }
+  },
+  {
+   "title": "When getting the sky wrong cost you your head",
+   "text": "<p>Eclipses were long held to be <b>an ill omen</b>. They were also, at the same time, something that <b>could be predicted</b>. Put those two together and you get politics.</p><p>The <b>Samguk Sagi</b> preserves some 60 records of solar eclipses from Goguryeo, Baekje and Silla. The legitimacy of a dynasty rested on reading the sky properly, so the records were meticulous.</p><p>In Joseon Korea, when a solar eclipse was forecast the king put on plain mourning dress and performed the <b>gusikrye</b> (救蝕禮), the rite of rescuing the Sun. Getting the timing wrong was therefore no small matter. A story survives from the reign of King Sejong of an official punished when an eclipse forecast came out wrong. After that, rather than taking the Chinese calendar as it stood, Joseon built <b>a calendar of its own fitted to the latitude of Hanyang</b>, the Chiljeongsan. Getting the sky right was the business of the state.</p>",
+   "sky": {
+    "fov": 80
+   }
+  },
+  {
+   "title": "The next chances, and the one rule to keep",
+   "text": "<p><b>Here is what you can catch next.</b></p><ul><li><b>Before dawn on 1 January 2029</b> — a total lunar eclipse. From Korea the red Moon lasts <b>from 1:20 to 2:30 in the morning</b>, and throughout it the Moon stands high, at an altitude of <b>over 60 degrees</b>. The conditions are very good</li><li><b>The morning of 2 September 2035</b> — <b>a total solar eclipse crossing the Korean peninsula</b>. The area around Pyongyang falls inside the belt of totality, and from Seoul most of the Sun is covered. A chance to see a total solar eclipse from the peninsula comes <b>once in several decades</b>, so it is a day worth not missing</li></ul><p><b>There is one safety rule you must keep.</b></p><ul><li><b>Never look at the Sun with the naked eye.</b> That holds during a partial eclipse too. A few seconds damages the retina, and the retina has no pain cells, so you will not even feel the moment it happens</li><li>Sunglasses, film, smoked glass, a reflection in water — <b>none of them will do</b>. Use proper <b>eclipse glasses</b> or a solar filter made to standard</li><li>Never look at the Sun through a telescope or binoculars without <b>a dedicated filter at the front</b>. It blinds in a fraction of a second</li><li>The safe and easy method is <b>pinhole projection</b>. Make a hole in a sheet of paper and cast its shadow on the ground, and the shape of the Sun appears in it. Sunlight leaking between leaves turning entirely into crescents works the same way</li></ul><p><b>A lunar eclipse you may watch with the naked eye as long as you like, with no equipment at all.</b> Moonlight does no harm, and binoculars in fact deepen the red.</p>",
+   "sky": {
+    "fov": 70,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "ecliptic": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "The dates and times of the eclipses, and the altitudes at each site, are all calculated by the engine on screen. Total lunar eclipse 2026-03-03; total solar eclipse 2027-08-02 (Cádiz, Spain, 08:45 UT); total lunar eclipse 2029-01-01; total solar eclipse over the Korean peninsula 2035-09-02."
+}

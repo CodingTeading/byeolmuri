@@ -1,0 +1,216 @@
+{
+ "id": "big-dipper",
+ "title": "Where is the Big Dipper?",
+ "subtitle": "The seven stars that are easiest to find in the night sky, and what they can tell you",
+ "minutes": 8,
+ "level": "intro",
+ "tags": [
+  "constellation",
+  "northern sky",
+  "Polaris"
+ ],
+ "intro": "Look up at the northern sky on a clear night and you will see seven stars laid out in the shape of a dipper. They have shown people who lost their way which direction to go for as long as anyone can remember, and they are still the first thing most people learn to find in the night sky.",
+ "steps": [
+  {
+   "title": "Look to the northern sky",
+   "text": "<p>The sky is set to <b>9 pm in April</b>. The location is <b>wherever you are right now</b>, so this is the sky you will really see on a spring night. You are looking <b>a little east of north</b>, with your head tilted well up.</p><p>Can you see seven stars laid out in the shape of a dipper, near the middle of the view? That is the <b>Big Dipper</b>. Four stars make the bowl and three make the handle.</p><p>The atmosphere is switched off, so the stars show far better than they would from a city. In reality these are seven bright stars, so you can pick them out under most city skies.</p>",
+   "sky": {
+    "date": "2027-04-01T21:00:00+09:00",
+    "az": 30,
+    "alt": 60,
+    "fov": 80,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationArt": false,
+    "constellationLabels": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "dso": false,
+    "milkyway": true
+   },
+   "connect": [
+    "Alkaid",
+    "* zet UMa",
+    "* eps UMa",
+    "* del UMa",
+    "* gam UMa",
+    "* bet UMa",
+    "* alf UMa"
+   ]
+  },
+  {
+   "title": "Dubhe, where the bowl begins",
+   "text": "<p>The outermost star at the end of the bowl is selected. Its name is <b>Dubhe</b>, from the Arabic for 'bear'.</p><p>The object information gives a magnitude of <b>1.8</b> and a distance of <b>about 123 light years</b>. The light reaching your eye right now left that star 123 years ago.</p><p>Why a bear, of all things? The next step has the answer.</p>",
+   "sky": {
+    "fov": 45
+   },
+   "select": "* alf UMa"
+  },
+  {
+   "title": "Each of the seven has a name",
+   "text": "<p>Let us name them along the dipper, from the bowl to the tip of the handle.</p><ul><li><b>Dubhe</b> — the bear</li><li><b>Merak</b> — the loins of the bear</li><li><b>Phecda</b> — the thigh</li><li><b>Megrez</b> — the root of the tail</li><li><b>Alioth</b> — the tail</li><li><b>Mizar</b> — the waistband</li><li><b>Alkaid</b> — the leader of the mourners</li></ul><p>Most of these names are Arabic. Astronomers in the medieval Arab world named the stars, and those names went on to become the ones the whole world uses.</p>",
+   "sky": {
+    "fov": 55
+   },
+   "select": "* eps UMa",
+   "highlight": [
+    {
+     "target": "* alf UMa",
+     "radius": 1.8
+    },
+    {
+     "target": "* bet UMa",
+     "radius": 1.8
+    },
+    {
+     "target": "* gam UMa",
+     "radius": 1.8
+    },
+    {
+     "target": "* del UMa",
+     "radius": 1.8
+    },
+    {
+     "target": "* eps UMa",
+     "radius": 1.8
+    },
+    {
+     "target": "* zet UMa",
+     "radius": 1.8
+    },
+    {
+     "target": "Alkaid",
+     "radius": 1.8
+    }
+   ]
+  },
+  {
+   "title": "The star hidden beside Mizar",
+   "text": "<p>The middle star of the handle, <b>Mizar</b>, is zoomed right in. Can you see a small star clinging to its side? That is <b>Alcor</b>.</p><p>In the old Arab world, telling the two apart was used as <b>a test of eyesight</b>. The name Alcor comes from Arabic as well.</p><p>Try it with the naked eye. Even from a city you can see it when the air is clear.</p>",
+   "sky": {
+    "fov": 6
+   },
+   "select": "* zet UMa",
+   "highlight": [
+    {
+     "target": "* zet UMa",
+     "radius": 0.07
+    },
+    {
+     "target": "* 80 UMa",
+     "radius": 0.07
+    }
+   ]
+  },
+  {
+   "title": "The Big Dipper is not a constellation",
+   "text": "<p>Surprisingly, <b>the Big Dipper is not a constellation.</b> Let us switch the constellation art on.</p><p>The seven stars are part of a much larger constellation, <b>the Great Bear (Ursa Major)</b>. The dipper makes up the bear's <b>hindquarters and tail</b>. That is why Dubhe meant 'bear'.</p><p>A named pattern that is only part of a constellation like this is called an <b>asterism</b>. There are exactly 88 constellations, but asterisms are whatever people call them.</p>",
+   "sky": {
+    "fov": 90
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationArt": true,
+    "constellationLabels": true,
+    "onlyPointedConstellation": true
+   },
+   "quiz": {
+    "q": "Which of these is true of the Big Dipper and Ursa Major?",
+    "opts": [
+     "The Big Dipper is one of the 88 constellations",
+     "The Big Dipper is part of Ursa Major",
+     "Ursa Major is part of the Big Dipper",
+     "They are stars in quite different parts of the sky"
+    ],
+    "right": 1,
+    "explain": "The Big Dipper is an asterism making up part of the constellation Ursa Major. Constellations are the 88 regions that divide the whole sky between them without a gap, and an asterism is a name people gave separately to a striking pattern of stars inside them."
+   },
+   "select": "CON western UMa"
+  },
+  {
+   "title": "Different places call it different things",
+   "text": "<p>You have been looking at the same seven stars that every culture named for itself.</p><ul><li><b>Korea and China</b> — Bukdu-chilseong / Beidou (北斗七星), 'the seven stars of the northern dipper'. In East Asia what the dipper held was taken to be the span of a person's life</li><li><b>United States</b> — the Big Dipper, a large ladle</li><li><b>Britain</b> — the Plough</li><li><b>Ancient Egypt</b> — the foreleg of the bull</li><li><b>Northern Europe</b> — the Great Wagon</li></ul><p>Places that ploughed saw a plough, and places that drove wagons saw a wagon. <b>The sky was the same; the lives of the people looking up at it were not.</b></p>",
+   "sky": {
+    "fov": 70
+   },
+   "show": {
+    "constellationArt": false,
+    "constellationLines": true
+   }
+  },
+  {
+   "title": "How to find Polaris",
+   "text": "<p>The real reason the Big Dipper is famous is that <b>it finds Polaris for you</b>.</p><p>Draw a line through the two outer stars of the bowl, <b>from Merak to Dubhe</b>, and carry it on for <b>five times</b> that gap. There you will come to a bright star, and that is <b>Polaris</b>. It is selected for you now.</p><p>Polaris sits <b>due north</b>. Find that one star and you know which way you are facing, without a compass.</p>",
+   "sky": {
+    "fov": 85,
+    "az": 15,
+    "alt": 50
+   },
+   "select": "* alf UMi",
+   "connect": [
+    "* bet UMa",
+    "* alf UMa",
+    "* alf UMi"
+   ],
+   "highlight": [
+    "* alf UMi"
+   ]
+  },
+  {
+   "title": "Watch it through the night",
+   "text": "<p>Let us run time forward quickly. The sky begins to turn.</p><p>Every star circles <b>around Polaris</b>. The Big Dipper goes round with them, tipping the bowl over and upright again as it does.</p><p>It is not the sky that turns but <b>the Earth we are riding on</b>. The Earth's axis of rotation points towards Polaris, so that one star alone looks as though it stays put.</p><p>Measure the <b>altitude</b> of Polaris and that is <b>the latitude of the place you are in</b>. In Korea it stands 33 to 38 degrees up, in Tokyo 36, in Madrid 40. The azimuthal grid is switched on, so read off the scale and see how high Polaris sits.</p>",
+   "sky": {
+    "fov": 110,
+    "az": 0,
+    "alt": 45,
+    "timeSpeed": 400
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationLabels": false,
+    "azimuthalGrid": true
+   },
+   "quiz": {
+    "q": "Why does Polaris barely move all night?",
+    "opts": [
+     "Because it is much further away than other stars",
+     "Because the axis the Earth turns on points towards it",
+     "Because Polaris turns along with the Earth",
+     "Because Polaris is much brighter than other stars"
+    ],
+    "right": 1,
+    "explain": "The Earth turns once a day about its axis. Polaris lies right beside the point where that axis, carried out into the sky, would land, so while the other stars wheel around it Polaris alone appears to stay where it is. It is not because Polaris is especially bright or especially close."
+   }
+  },
+  {
+   "title": "Go out and find it",
+   "text": "<p>Now it is your turn to find it in the real night sky.</p><ul><li>On a clear night, look <b>north</b>. Somewhere without buildings in the way is best</li><li>The dipper lies at a different angle with the season: high up and tipped over in spring, low down in autumn</li><li>Once you have it, run the Merak-to-Dubhe line out five times over and follow it to Polaris</li><li>See whether you can pick out Alcor beside Mizar</li></ul><p>The 'Tonight' tab will tell you what the observing conditions are right now.</p>",
+   "sky": {
+    "fov": 100,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "atmosphere": true,
+    "azimuthalGrid": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "Star name origins follow the International Astronomical Union (IAU) list of star names.",
+ "months": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "track": "target"
+}

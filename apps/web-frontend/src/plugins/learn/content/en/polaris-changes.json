@@ -1,0 +1,202 @@
+{
+ "id": "polaris-changes",
+ "title": "The pole star changes",
+ "subtitle": "The people who built the pyramids had a different star at the pole",
+ "minutes": 11,
+ "level": "deep",
+ "track": "principle",
+ "tags": [
+  "precession",
+  "Polaris",
+  "north celestial pole",
+  "time travel"
+ ],
+ "intro": "That Polaris points north is a coincidence, and a short-lived one at that. The axis of the Earth wobbles like a spinning top, so every few thousand years a different star inherits the pole. We will wind time far forwards and backwards and watch the handover.",
+ "steps": [
+  {
+   "title": "The present pole star",
+   "text": "<p>The northern sky. The blue grid is the <b>equatorial coordinate</b> grid, and the point where its lines converge is the <b>north celestial pole</b>. It is the axis the sky turns on.</p><p>Let time run. Every star circles that point. And right beside it sits <b>Polaris</b>. Polaris currently stands <b>0.6 degrees</b> from the north celestial pole, a little more than the width of the full Moon.</p><p>That close, it is effectively a star nailed in place. Which is why it served as the compass of sailors and travellers for thousands of years.</p><p>But this is only <b>the story of our own age</b>.</p>",
+   "sky": {
+    "date": "2027-11-15T21:00:00+09:00",
+    "az": 0,
+    "alt": 45,
+    "fov": 100,
+    "timeSpeed": 400
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationLabels": true,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": true,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "highlight": [
+    "Polaris"
+   ]
+  },
+  {
+   "title": "When the pyramids were built — Thuban",
+   "text": "<p>Time has been wound back to <b>2700 BC</b>, around when the Great Pyramid was being built in Egypt.</p><p>Look at the point where the grid lines converge. <b>Polaris is not there.</b> The star we call Polaris stands a full <b>26 degrees</b> from the pole, wheeling round a large circle all night.</p><p>What is fixed at the pole instead is <b>Thuban</b> in Draco, <b>0.5 degrees</b> off, closer even than Polaris is today.</p><p>The Great Pyramid at Giza has a narrow shaft running north, and one reading has its direction pointing at the celestial pole of the time. For those people the nail in the sky was Thuban.</p>",
+   "sky": {
+    "date": "-002700-06-15T21:00:00+09:00",
+    "timeSpeed": 0
+   },
+   "highlight": [
+    {
+     "target": "* alf Dra",
+     "radius": 4
+    },
+    {
+     "target": "Polaris",
+     "radius": 4
+    }
+   ],
+   "show": {
+    "landscape": false
+   }
+  },
+  {
+   "title": "1000 BC — an age with no star at the pole",
+   "text": "<p>Now <b>1000 BC</b>. Thuban has already drawn <b>10 degrees</b> away from the pole, and Polaris is still <b>17 degrees</b> outside it.</p><p>It was an age with no suitable bright star near the pole. The nearest bright one was <b>Kochab</b> in Ursa Minor, <b>6.5 degrees</b> off. Later sailors paired Kochab with Pherkad beside it, called them <b>the Guardians of the Pole</b> and steered by them.</p><p>Having a bright star sit at the pole is not the usual state of affairs. <b>We happen to be lucky.</b></p>",
+   "sky": {
+    "date": "-001000-06-15T21:00:00+09:00"
+   },
+   "highlight": [
+    {
+     "target": "* bet UMi",
+     "radius": 4
+    },
+    {
+     "target": "Polaris",
+     "radius": 4
+    }
+   ]
+  },
+  {
+   "title": "AD 1000, and the present",
+   "text": "<p>Now <b>AD 1000</b>. Polaris has closed to <b>6 degrees</b> from the pole. It still draws a noticeable circle over the course of a night.</p><p>This was the sky the people of Goryeo and Song China looked at. Six degrees from the pole means going round all night on a ring <b>12 degrees</b> across. To them Polaris was not 'the star that does not move' but <b>'the star that moves least'</b>.</p><p>Polaris will go on closing on the pole for <b>another 100 years or so</b>, and after that it only draws away. We live in the age when Polaris is at its most pole-star-like.</p>",
+   "sky": {
+    "date": "+001000-06-15T21:00:00+09:00"
+   },
+   "highlight": [
+    {
+     "target": "Polaris",
+     "radius": 4
+    }
+   ]
+  },
+  {
+   "title": "AD 4000 — Errai",
+   "text": "<p>This time forward. <b>AD 4000</b>.</p><p>Polaris has been pushed more than <b>10 degrees</b> from the pole. It can hardly be called a star that points north any more.</p><p>In its place, <b>Errai</b> in Cepheus has come inside <b>2 degrees</b> of the pole. The name is unfamiliar today, but to the people of that time this star is 'the pole star'.</p>",
+   "sky": {
+    "date": "+004000-06-15T21:00:00+09:00"
+   },
+   "highlight": [
+    {
+     "target": "* gam Cep",
+     "radius": 4
+    },
+    {
+     "target": "Polaris",
+     "radius": 4
+    }
+   ]
+  },
+  {
+   "title": "AD 10000 — Deneb",
+   "text": "<p><b>AD 10000</b>. The pole has moved across towards the Milky Way.</p><p>What lies near the pole now is <b>Deneb</b>, the star from the Summer Triangle. At around <b>8 degrees</b> off it is not perfect, but this is an age in which a very bright star circles near the centre of the northern sky.</p><p>To the people of that time Cygnus is not a seasonal constellation but <b>a constellation that never sets</b>.</p>",
+   "sky": {
+    "date": "+010000-06-15T21:00:00+09:00"
+   },
+   "highlight": [
+    {
+     "target": "Deneb",
+     "radius": 5
+    }
+   ]
+  },
+  {
+   "title": "AD 14000 — Vega becomes the pole star",
+   "text": "<p><b>AD 14000</b>. <b>Vega</b> has arrived <b>6.3 degrees</b> from the pole.</p><p>This is an age in which one of the five brightest stars in the night sky serves as the centre of the northern sky. Far brighter than today's Polaris, which is magnitude 2.</p><p>When Vega was introduced in the 'Summer Triangle' lesson, the remark that <b>in about 12,000 years it will take over as the pole star</b> was pointing at this scene. What becomes of the tale of the Cowherd and the Weaver then? The Weaver is nailed to the top of the sky and does not move, and the Milky Way becomes a river turning around her.</p>",
+   "sky": {
+    "date": "+014000-06-15T21:00:00+09:00"
+   },
+   "highlight": [
+    {
+     "target": "Vega",
+     "radius": 5
+    }
+   ],
+   "quiz": {
+    "q": "Why does the pole star change from age to age?",
+    "opts": [
+     "Because the stars shift their places in the sky",
+     "Because the Earth's axis of rotation slowly wobbles, tracing a cone",
+     "Because the Earth goes round the Sun",
+     "Because Polaris is gradually growing fainter"
+    ],
+    "right": 1,
+    "explain": "The Earth's axis traces a cone once in about 26,000 years. The point in the sky the axis points at, the north celestial pole, travels round that circle, so the star that happens to sit there changes. The stars do move in reality as well, but that effect takes hundreds of thousands of years to become noticeable. The Earth's orbit produces the seasons and has no bearing on the direction of the axis, and none of this has anything to do with a star's brightness."
+   }
+  },
+  {
+   "title": "Why the top wobbles",
+   "text": "<p>Push a spinning top from the side and it does not fall over: its axis goes round <b>tracing a cone</b>. The Earth does the same.</p><p>The Earth is not a perfect sphere. Its spin makes <b>the equator bulge</b>. The Sun and the Moon pull at that bulging band, and because the Earth is turning fast it does not topple; its axis slowly traces a circle instead.</p><p>One turn takes <b>about 26,000 years</b>. This is called <b>precession</b>.</p><p>Around 130 BC <b>Hipparchus</b> discovered it. Comparing the star positions he had measured against records from 150 years earlier, he found them all slightly out. He realised that it was not one star but <b>the whole sky</b> that had shifted. With nothing but his eyes and old records, he caught the wobble of the axis of the Earth.</p>",
+   "sky": {
+    "date": "2027-11-15T21:00:00+09:00",
+    "fov": 110
+   },
+   "show": {
+    "equatorialGrid": true,
+    "ecliptic": true
+   }
+  },
+  {
+   "title": "Why the horoscope dates are out",
+   "text": "<p>Precession does not only change the pole star. <b>The vernal equinox</b> shifts along with it. That is the reference point in the sky the Sun passes through in spring.</p><p>The dates of the twelve zodiac signs were fixed against the position of the Sun <b>two thousand years ago</b>. Precession has since pushed the vernal equinox on by <b>about 30 degrees</b>, the width of one constellation.</p><p>So today <b>the dates of the horoscopes and the real position of the Sun are a whole sign apart.</b> Someone born on 25 March is listed as an 'Aries', but on that day the Sun is actually in Pisces.</p><p>To add to it, the number of constellations the Sun really passes through is not 12 but <b>13</b>. It goes through Ophiuchus, which was left out when the twelve signs were made by dividing the circle into equal parts of 30 degrees.</p><p>In the lesson 'Why do the constellations change with the season?' you looked directly at the constellation the Sun was standing in. Go back to that screen and match the date against the constellation, and the discrepancy is there to see.</p>",
+   "sky": {
+    "fov": 100
+   },
+   "quiz": {
+    "q": "Which of these is not a consequence of precession?",
+    "opts": [
+     "The pole star changes from age to age",
+     "The vernal equinox shifts among the constellations",
+     "The horoscope dates and the real position of the Sun drift apart",
+     "The seasons run spring, summer, autumn, winter"
+    ],
+    "right": 3,
+    "explain": "The seasons exist because the axis of rotation is tilted 23.4 degrees to the plane of the orbit. Precession changes which way that tilted axis points and nothing else: not the tilt itself, and not the existence of seasons. The other three all follow from the north celestial pole and the vernal equinox moving."
+   }
+  },
+  {
+   "title": "What you can see if you go out now",
+   "text": "<p>26,000 years is not a length of time a person can wait out. There are still things to check tonight, though.</p><ul><li><b>Find Polaris.</b> Extend the two end stars of the Big Dipper's bowl five times over. That there is a bright star in that spot at all is the luck of the age</li><li>Put a camera on a tripod and <b>expose the northern sky for 30 minutes or more</b>. At the centre of the concentric arcs the stars draw, one point is left almost still. That is the north celestial pole</li><li>Polaris is not perfect either. At 0.6 degrees off it draws <b>a small circle</b>. In a long exposure you can see that Polaris too has traced a short arc</li><li><b>If you ever go to the southern hemisphere</b>, look at the southern sky. The south celestial pole has no bright star, so you have to find your direction from the Southern Cross. It shows you how lucky we are</li></ul>",
+   "sky": {
+    "az": 0,
+    "alt": 45,
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "constellationLines": true,
+    "constellationLabels": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "The distances from the north celestial pole in each era are the results of the engine's precession calculation (for latitude 37.5 degrees). Thuban 0.5 degrees in 2700 BC, Kochab 6.5 degrees in 1000 BC, Errai 2.1 degrees in AD 4000, Vega 6.3 degrees in AD 14000. The values for the remote eras come of stretching the IAU 2006 precession model used by the engine thousands of years beyond its range, and may differ by about a degree from other long-term precession models."
+}

@@ -1,0 +1,180 @@
+{
+ "id": "andromeda",
+ "title": "La galaxia de Andrómeda — lo más lejano que alcanza la vista",
+ "subtitle": "Saltando de una estrella brillante a otra hasta encontrar algo a 2.5 millones de años luz",
+ "minutes": 11,
+ "level": "basic",
+ "track": "target",
+ "tags": [
+  "otoño",
+  "galaxia",
+  "Andrómeda",
+  "salto de estrellas"
+ ],
+ "months": [
+  8,
+  9,
+  10,
+  11,
+  12,
+  1
+ ],
+ "intro": "Lo más lejano que puedes ver a simple vista no es una estrella sino una galaxia. La luz de la galaxia de Andrómeda salió hace 2.5 millones de años. Pero el cielo de otoño anda escaso de estrellas brillantes, así que hace falta maña: ir saltando de una estrella guía a la siguiente.",
+ "steps": [
+  {
+   "title": "Una tarde de otoño, empezando por un gran cuadrado",
+   "text": "<p>Son <b>las 9 de la noche de mediados de octubre</b>, mirando del este hacia el sureste. El otoño puede parecer una estación vacía, con pocas estrellas brillantes.</p><p>Lo que sí tiene es una señal enorme y evidente: el <b>Cuadrado de Pegaso</b>, formado por cuatro estrellas. Está unido con líneas. Cada lado mide como un puño y medio con el brazo estirado, así que una vez que reconoces la figura ya no la pierdes.</p><p>En Asia Oriental estas cuatro estrellas se leyeron como <b>Silsu</b>, la casa, y <b>Byeoksu</b>, el muro, dos de las 28 mansiones. Una casa levantada en el cielo, en efecto.</p>",
+   "sky": {
+    "date": "2026-10-15T21:00:00+09:00",
+    "az": 120,
+    "alt": 64,
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": true,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "connect": [
+    "* alf And",
+    "* gam Peg",
+    "* alf Peg",
+    "* bet Peg",
+    "* alf And"
+   ]
+  },
+  {
+   "title": "Y una W",
+   "text": "<p>La vista ha girado al <b>noreste</b> desde el cuadrado. Cinco estrellas dibujan una <b>W</b>, o una <b>M</b>. Es <b>Casiopea</b>.</p><p>Es una de las pocas constelaciones que <b>no se ponen nunca</b> hacia los 35°N. El Carro casi lo consigue también, pero la punta del mango se hunde un rato bajo el horizonte. Casiopea está al otro lado de Polaris respecto al Carro, así que en una estación como el otoño, cuando el Carro queda bajo, Casiopea se convierte en la guía para encontrar Polaris.</p><p>La galaxia que buscamos está <b>entre esta W y el Cuadrado de Pegaso</b>. Si reconoces las dos señales, ya llevas medio camino.</p>",
+   "sky": {
+    "az": 37,
+    "alt": 54,
+    "fov": 70
+   },
+   "connect": [
+    "* bet Cas",
+    "* alf Cas",
+    "* gam Cas",
+    "* del Cas",
+    "* eps Cas"
+   ]
+  },
+  {
+   "title": "Saltando de estrella en estrella",
+   "text": "<p>Volvemos hacia el cuadrado. Para encontrar algo tenue solo hay una manera: <b>salir de una estrella brillante e ir avanzando paso a paso</b>. Esto se llama <b>salto de estrellas</b>.</p><p>Sigue la línea.</p><ol><li>Empieza en <b>Alferatz</b>, el vértice de arriba a la izquierda del cuadrado</li><li>Muévete en diagonal hacia arriba y a la izquierda, <b>dos pasos</b>, y llegas a <b>Mirach</b>. Tres estrellas en fila hacen difícil perderse</li><li>Desde Mirach <b>gira en ángulo recto</b> hacia Casiopea y avanza dos estrellas más</li><li>Al final de eso hay una mancha neblinosa</li></ol><p>Siguiendo este orden puedes encontrarla a simple vista. Desde una ciudad no, eso sí: tiene que ser un sitio sin luces.</p>",
+   "sky": {
+    "az": 84,
+    "alt": 58,
+    "fov": 45
+   },
+   "connect": [
+    [
+     "* alf And",
+     "* del And",
+     "* bet And"
+    ],
+    [
+     "* bet And",
+     "* mu. And",
+     "* nu. And",
+     "M 31"
+    ]
+   ],
+   "highlight": [
+    "M 31"
+   ]
+  },
+  {
+   "title": "Qué resulta ser la mancha",
+   "text": "<p>Hemos llegado. Es la <b>galaxia de Andrómeda</b>, número de catálogo <b>M 31</b>.</p><p>A simple vista es una mancha neblinosa del tamaño de una uña. En lugar de concentrarse en un punto como una estrella, <b>se difumina</b>, y eso es lo que distingue a este tipo de objeto. El astrónomo persa al-Sufi la anotó como «una nubecilla» en el siglo X, así que la gente lleva mirándola más de mil años.</p><p>Mira la distancia en la información del objeto: <b>2.5 millones de años luz</b>. La luz que acaba de llegar a tu ojo salió cuando todavía no había humanos modernos en la Tierra.</p>",
+   "sky": {
+    "fov": 12
+   },
+   "select": "M 31"
+  },
+  {
+   "title": "Cómo es en realidad",
+   "text": "<p>Vamos a superponer una fotografía real del cielo. La mancha neblinosa resulta ser <b>un disco espiral</b>.</p><p>Su extensión completa en la foto es de algo más de <b>3 grados</b>, <b>el ancho de seis lunas llenas en fila</b>. Que algo tan grande siga pareciendo del tamaño de una uña a simple vista se debe a que los brazos exteriores son demasiado tenues y solo <b>la parte más brillante del centro</b> llega a tu ojo.</p><p>Conviene saber de antemano que la foto y el ojo enseñan cosas distintas. Sal fuera y no habrá brazos espirales como en la imagen. Una mancha neblinosa y alargada, y nada más. Aun así, ninguna foto puede sustituir el hecho de que <b>una luz que lleva 2.5 millones de años volando aterriza directamente en tu ojo</b>.</p>",
+   "sky": {
+    "fov": 6
+   },
+   "show": {
+    "dss": true
+   }
+  },
+  {
+   "title": "El día en que el universo creció de golpe",
+   "text": "<p>Hace cien años nadie sabía qué era esto. Un bando sostenía que era una nube de gas dentro de nuestra propia galaxia, y el otro que era un «universo isla» aparte, fuera de ella. Ese fue el <b>Gran Debate</b> de 1920.</p><p>Se zanjó en 1923. <b>Hubble</b> encontró una <b>cefeida</b> dentro de la mancha. Mide el periodo en que una estrella así cambia de brillo y sabrás su brillo real; contrástalo con lo brillante que parece y sale la distancia. La respuesta quedaba muy por encima del tamaño de nuestra galaxia.</p><p>Ese día el universo creció de la noche a la mañana más allá de toda cuenta. Nuestra galaxia parecía ser el todo, y resultó ser una entre cientos de miles de millones.</p>",
+   "sky": {
+    "fov": 8
+   },
+   "quiz": {
+    "q": "¿Cómo se confirmó que la galaxia de Andrómeda está fuera de la nuestra?",
+    "opts": [
+     "Ampliándola con un telescopio y contando sus estrellas una a una",
+     "Midiendo la distancia con una cefeida que hay dentro",
+     "Porque su color difiere del de las estrellas de nuestra galaxia",
+     "Yendo hasta allí con un telescopio espacial"
+    ],
+    "right": 1,
+    "explain": "Una cefeida tiene una relación fija entre el periodo en que cambia su brillo y su brillo real, lo que la convierte en una regla para medir distancias. Ampliar no te dice nada de la distancia, y el color no tiene nada que ver. Ninguna sonda podría cruzar 2.5 millones de años luz."
+   },
+   "show": {
+    "dss": false
+   }
+  },
+  {
+   "title": "Y se está acercando",
+   "text": "<p>Como el universo se expande, la mayoría de las galaxias lejanas <b>se alejan</b> de nosotros. La galaxia de Andrómeda es una de las raras que <b>se acerca</b>, a 110 km por segundo. Es una vecina ligada a nosotros por la gravedad, y ahí la atracción gana a la expansión.</p><p>Dentro de unos <b>4000 millones de años</b> las dos galaxias chocarán y se fundirán en una. Aunque un choque de galaxias no es de estrellas contra estrellas. El espacio entre estrellas está tan vacío que las dos se atravesarán <b>sin que choque ni una sola estrella</b>. Lo que sí choca son las nubes de gas, y nacen estrellas nuevas de golpe.</p><p>El cielo nocturno de la Tierra será entonces un espectáculo de dos galaxias enredadas. Para entonces, claro, el Sol estará mucho más caliente que ahora y no quedarán océanos en la Tierra. Que el Sol se hinche y se trague la Tierra viene mucho después todavía, dentro de <b>unos 7000 millones de años</b>.</p>",
+   "sky": {
+    "fov": 15
+   }
+  },
+  {
+   "title": "Un reto más difícil — M 33",
+   "text": "<p>Una vez encontrada la galaxia de Andrómeda hay un paso siguiente. Recorre desde Mirach una distancia parecida en la otra dirección y llegas a la <b>galaxia del Triángulo (M 33)</b>.</p><p>Con <b>magnitud 5.7</b> no anda lejos de la galaxia de Andrómeda. Y sin embargo es mucho más difícil de encontrar, porque su luz está <b>repartida por una zona amplia</b> y el brillo por unidad de cielo es bajo.</p><p>De aquí sale una lección importante. <b>Las nebulosas y las galaxias nunca deben juzgarse solo por la magnitud.</b> A igualdad de magnitud, lo que está apretado en poco espacio se ve bien y lo que está repartido no. Esto se llama <b>brillo superficial</b>.</p><p>Si M 33 se ve a simple vista, ese cielo es de verdad oscuro. Entre aficionados sirve de papel de examen para saber qué tal es un cielo.</p>",
+   "sky": {
+    "fov": 25
+   },
+   "select": "M 33",
+   "quiz": {
+    "q": "M 33 tiene una magnitud parecida a la de M 31. ¿Por qué es mucho más difícil de encontrar?",
+    "opts": [
+     "Porque está más lejos",
+     "Porque su luz está repartida por una zona amplia y su brillo superficial es bajo",
+     "Porque tira a roja y el ojo la capta peor",
+     "Porque está más baja en el cielo"
+    ],
+    "right": 1,
+    "explain": "La magnitud es el total de la luz que emite un objeto. Reparte esa misma luz por una zona más ancha y ninguna parte queda lo bastante brillante como para destacar sobre el fondo del cielo. M 33 está algo más lejos, pero eso solo no explica la diferencia, y las dos quedan cerca en el cielo, así que alcanzan alturas parecidas."
+   }
+  },
+  {
+   "title": "Búscala tú mismo",
+   "text": "<p>La galaxia de Andrómeda es <b>el objeto más lejano que puedes ver a simple vista</b>. Merece el intento.</p><ul><li><b>Desde las tardes de otoño hasta las primeras horas de las noches de invierno</b> es el momento. A finales de agosto está alta hacia medianoche; en octubre, alta a primera hora de la noche</li><li>Vete a <b>un sitio sin luces</b>. Desde una ciudad cuesta incluso con prismáticos</li><li>Dale a tus ojos <b>20 minutos</b> para acostumbrarse a la oscuridad</li><li>Usa la <b>visión desviada</b>. Si la miras de frente desaparece; si desvías un poco la mirada, aparece. El centro del ojo está lleno de células para el color, mientras que el borde es la parte sensible a la luz débil</li><li>Los <b>prismáticos</b> lo hacen mucho más fácil. Algo como unos 7 por 50 sobra</li></ul><p>Cuando la encuentres, quédate mirándola un momento. Esa luz voló 2.5 millones de años y acaba de llegar.</p>",
+   "sky": {
+    "fov": 80,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "dss": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "La fotografía superpuesta es material del Digitized Sky Survey (DSS). La correspondencia con las 28 mansiones sigue material del Instituto Coreano de Astronomía y Ciencias del Espacio."
+}

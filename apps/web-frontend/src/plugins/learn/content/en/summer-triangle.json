@@ -1,0 +1,190 @@
+{
+ "id": "summer-triangle",
+ "title": "The Summer Triangle and the Milky Way",
+ "subtitle": "Checking whether a river really does run between the Cowherd and the Weaver",
+ "minutes": 10,
+ "level": "intro",
+ "track": "target",
+ "tags": [
+  "summer",
+  "Summer Triangle",
+  "Milky Way",
+  "the Weaver and the Cowherd"
+ ],
+ "months": [
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "intro": "On a summer evening three very bright stars make a large triangle overhead. You can see it from the middle of a city. Two of the three are the Cowherd and the Weaver, and the hazy band passing between them is the Milky Way.",
+ "steps": [
+  {
+   "title": "A summer evening, look overhead",
+   "text": "<p>It is <b>9 pm in mid-August</b> and you are looking up from the east towards the top of the sky. The location is wherever you are right now.</p><p>Can you see three very bright stars making a large triangle? They have been joined with lines. This is the <b>Summer Triangle</b>.</p><p>Each of the three is the leading star of a different constellation. <b>Vega</b> is in Lyra, <b>Altair</b> in Aquila and <b>Deneb</b> in Cygnus.</p>",
+   "sky": {
+    "date": "2026-08-15T21:00:00+09:00",
+    "az": 95,
+    "alt": 68,
+    "fov": 100,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true
+   },
+   "connect": [
+    "Vega",
+    "Deneb",
+    "Altair",
+    "Vega"
+   ]
+  },
+  {
+   "title": "Vega — the brightest of the triangle",
+   "text": "<p>The brightest of the three is selected. This is <b>Vega</b>, known across East Asia as <b>the Weaver Girl</b>.</p><p>The object information gives a magnitude of about <b>0.0</b> and a distance of <b>about 25 light years</b>. That puts it among the top five for brightness in the whole night sky.</p><p>It is the leading star of Lyra, and a small parallelogram of four stars hangs just below it. That is the lyre.</p><p>Worth knowing: <b>in about 12,000 years Vega will take over as the pole star</b>. The axis of the Earth wobbles like a spinning top and comes round once every 26,000 years.</p>",
+   "sky": {
+    "fov": 45
+   },
+   "select": "Vega"
+  },
+  {
+   "title": "Altair — across the Milky Way",
+   "text": "<p>The southern corner of the triangle is <b>Altair</b>, the Cowherd. At <b>magnitude 0.8</b> and <b>about 17 light years</b> away, it is close enough to Vega to count as a neighbour.</p><p>Can you see a slightly fainter star set close on either side of it? They have been read as the oxen the cowherd drives, and as the two wings of the eagle.</p><p>These are the two stars that meet on the bridge of magpies at the Qixi festival. On the evening of the 7th day of the 7th lunar month the pair rise side by side to the highest point overhead, with the Milky Way between them. The story was built to fit that season.</p><p>The two stars in fact stand <b>about 15 light years</b> apart. Even at the speed of light the crossing takes 15 years.</p>",
+   "sky": {
+    "fov": 35
+   },
+   "select": "Altair"
+  },
+  {
+   "title": "Deneb — the faintest to look at, the brightest in fact",
+   "text": "<p>The remaining corner is <b>Deneb</b> in Cygnus. It looks the faintest of the three. At <b>magnitude 1.3</b> it is about three times fainter than Vega.</p><p>But look at the distances. Vega is 25 light years off and Altair 17, while Deneb is <b>over 1,400 light years</b>. It is so far away that the measurement swings about a good deal every time it is taken.</p><p>To look much the same while being more than 50 times further off means it must be <b>enormously bright</b> in reality. Drag Deneb in to where Vega sits and it would shine <b>as brightly as a half Moon</b> and wipe out the night.</p><p>The brightness you see is not the brightness a star has. That story carries on in 'What brightness means'.</p>",
+   "sky": {
+    "fov": 40
+   },
+   "select": "Deneb",
+   "quiz": {
+    "q": "Of the three stars of the Summer Triangle, which really gives out the most light?",
+    "opts": [
+     "Vega, the one that looks brightest",
+     "Deneb, the one that looks faintest",
+     "Altair, the middle one",
+     "All three are much the same"
+    ],
+    "right": 1,
+    "explain": "Deneb is more than 50 times further away than the other two and still looks about as bright, which means it really is that much brighter. Vega looks bright because it is close, 25 light years, and Altair is closer still. The brightness you see is what comes of 'real brightness divided by distance squared'. Twice as far away means four times fainter."
+   }
+  },
+  {
+   "title": "The swan flies along the Milky Way",
+   "text": "<p>The constellation art is on. Deneb turns out to be <b>the tail of the swan</b>. The name itself is Arabic for 'tail'.</p><p>The swan flies south-west with its neck stretched right out. The cross shape is so clear that it also goes by <b>the Northern Cross</b>, a name paired with the Southern Cross of the southern hemisphere.</p><p>Take note of the direction it flies in. It is flying <b>along the Milky Way</b>.</p>",
+   "sky": {
+    "fov": 70
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationArt": true,
+    "constellationLabels": true,
+    "onlyPointedConstellation": true
+   },
+   "select": "CON western Cyg"
+  },
+  {
+   "title": "And a river runs between them",
+   "text": "<p>The constellation art is off and the field widened. A pale band runs right across the triangle. This is the <b>Milky Way</b>. The Cowherd and the Weaver really do face one another across it.</p><p>The Milky Way is not cloud, it is <b>stars</b>. They are so far off and so tightly packed that you cannot pull them apart one by one, and they blur together into a haze. Galileo confirmed it with a telescope in 1610 and told the world.</p><p>Our galaxy is a flat disc and we sit <b>inside</b> it. Looking along the plane of the disc piles star behind star, and that is what makes the band.</p><p>Near Cygnus, does the Milky Way look split down its length? It is not that the stars are missing there: a <b>cloud of dust</b> is blocking the starlight behind it. This is called the <b>Great Rift</b>.</p>",
+   "sky": {
+    "fov": 120
+   },
+   "show": {
+    "constellationArt": false,
+    "constellationLines": false,
+    "constellationLabels": false,
+    "onlyPointedConstellation": false,
+    "dso": true
+   },
+   "clearSelection": true,
+   "quiz": {
+    "q": "Why does the Milky Way look like a pale band?",
+    "opts": [
+     "Because it is a cloud of gas and dust",
+     "Because stars too far off to be told apart are piled one behind another",
+     "Because moonlight is scattered through the air",
+     "Because water vapour in the atmosphere is glowing"
+    ],
+    "right": 1,
+    "explain": "The Milky Way is hundreds of billions of stars seen piled together. There are clouds of interstellar dust in it as well, but rather than giving out light they hide what lies behind them and make the dark parts, such as the Great Rift. If moonlight or the air were the cause it would show whatever the season and whichever way you looked, whereas the Milky Way always sits in the same place among the same stars."
+   }
+  },
+  {
+   "title": "The centre of the galaxy lies low in the south",
+   "text": "<p>The view has come down to the south, to where the Milky Way is thickest and brightest, towards <b>Sagittarius</b> and <b>Scorpius</b>.</p><p>This way lies <b>the centre of our galaxy</b>. It is about 26,000 light years off, and at the very middle sits a black hole of some 4 million solar masses. You cannot see it, of course. Thick dust stands in the way, and the centre cannot be reached in visible light at all.</p><p>What this direction offers instead is a crowd of things worth a pair of binoculars. Clusters and nebulae such as the <b>Lagoon Nebula (M 8)</b> and <b>M 22</b> are packed towards the galactic centre.</p>",
+   "sky": {
+    "az": 190,
+    "alt": 25,
+    "fov": 70
+   },
+   "highlight": [
+    {
+     "target": "M 8",
+     "radius": 2.5
+    },
+    {
+     "target": "M 22",
+     "radius": 2.5
+    }
+   ]
+  },
+  {
+   "title": "If you have binoculars",
+   "text": "<p>There is plenty inside the triangle as well.</p><ul><li><b>Albireo</b> — the star at the swan's beak. A small telescope splits it into a gold star and a blue one side by side. The lesson 'A star's colour is its temperature' looks at it closely</li><li><b>the Ring Nebula (M 57)</b> — inside Lyra. A ring of gas coughed out by a dying star. A small telescope shows the doughnut</li><li><b>M 27</b> — the Dumbbell Nebula in Vulpecula. Even binoculars pick it up faintly</li></ul><p>All of them lie inside this triangle or right beside it. It is why the summer sky is the season for amateur observing.</p>",
+   "sky": {
+    "az": 110,
+    "alt": 70,
+    "fov": 90
+   },
+   "highlight": [
+    {
+     "target": "* bet01 Cyg",
+     "radius": 3
+    },
+    {
+     "target": "M 57",
+     "radius": 3
+    },
+    {
+     "target": "M 27",
+     "radius": 3
+    }
+   ]
+  },
+  {
+   "title": "Look overhead tonight",
+   "text": "<p>The Summer Triangle <b>shows even from a city</b>. All three stars are bright enough to survive most streetlights.</p><ul><li>It is in the early evening sky from <b>June to October</b>. In the middle of a summer night it is nearly at the top of the sky</li><li>Find the brightest star first. That is Vega. Run south from there to Altair and east to Deneb, and the triangle closes</li><li><b>The Milky Way will not show from a city.</b> Get away from the streetlights and give your eyes about 20 minutes to settle into the dark. It has to be a night with no Moon</li><li>Once you have the Milky Way, look for the <b>Great Rift</b> as well. It is the stretch around Cygnus where the band appears to fork in two</li></ul>",
+   "sky": {
+    "fov": 100,
+    "timeSpeed": 0,
+    "az": 95,
+    "alt": 65
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "dso": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "Star name origins follow the International Astronomical Union (IAU) list of star names, and the distances follow Hipparcos and Gaia parallax measurements."
+}

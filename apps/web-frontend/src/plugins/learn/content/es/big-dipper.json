@@ -1,0 +1,216 @@
+{
+ "id": "big-dipper",
+ "title": "¿Dónde está el Carro?",
+ "subtitle": "Las siete estrellas más fáciles de encontrar del cielo nocturno, y lo que te cuentan",
+ "minutes": 8,
+ "level": "intro",
+ "tags": [
+  "constelación",
+  "cielo norte",
+  "Polaris"
+ ],
+ "intro": "Si miras al cielo del norte en una noche despejada, verás siete estrellas alineadas en forma de cazo. Desde antiguo han indicado el camino a quien lo había perdido, y siguen siendo lo primero que busca casi todo el que empieza a aprender el cielo nocturno.",
+ "steps": [
+  {
+   "title": "Mira al cielo del norte",
+   "text": "<p>El cielo está puesto a las <b>9 de la noche de abril</b>. La ubicación es <b>donde estás ahora mismo</b>, así que este es el cielo que verás de verdad en una noche de primavera. Estás mirando <b>un poco al este del norte</b>, con la cabeza bien levantada.</p><p>¿Ves siete estrellas alineadas en forma de cazo, cerca del centro de la vista? Ese es <b>el Carro</b>. Cuatro estrellas forman el cuenco y tres el mango.</p><p>La atmósfera está apagada, así que las estrellas se ven mucho mejor que desde una ciudad. En realidad son siete estrellas brillantes, de modo que las distingues bajo casi cualquier cielo urbano.</p>",
+   "sky": {
+    "date": "2027-04-01T21:00:00+09:00",
+    "az": 30,
+    "alt": 60,
+    "fov": 80,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationArt": false,
+    "constellationLabels": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "dso": false,
+    "milkyway": true
+   },
+   "connect": [
+    "Alkaid",
+    "* zet UMa",
+    "* eps UMa",
+    "* del UMa",
+    "* gam UMa",
+    "* bet UMa",
+    "* alf UMa"
+   ]
+  },
+  {
+   "title": "Dubhe, donde empieza el cuenco",
+   "text": "<p>Está seleccionada la estrella más exterior, en el extremo del cuenco. Se llama <b>Dubhe</b>, del árabe «oso».</p><p>La información del objeto da una magnitud de <b>1.8</b> y una distancia de <b>unos 123 años luz</b>. La luz que te llega ahora mismo salió de esa estrella hace 123 años.</p><p>¿Y por qué un oso? El siguiente paso tiene la respuesta.</p>",
+   "sky": {
+    "fov": 45
+   },
+   "select": "* alf UMa"
+  },
+  {
+   "title": "Cada una de las siete tiene nombre",
+   "text": "<p>Vamos a nombrarlas siguiendo el cazo, del cuenco a la punta del mango.</p><ul><li><b>Dubhe</b> — el oso</li><li><b>Merak</b> — el lomo del oso</li><li><b>Phecda</b> — el muslo</li><li><b>Megrez</b> — el arranque de la cola</li><li><b>Alioth</b> — la cola</li><li><b>Mizar</b> — el cinturón</li><li><b>Alkaid</b> — el jefe de las plañideras</li></ul><p>Casi todos los nombres son árabes. Los astrónomos del mundo árabe medieval bautizaron las estrellas, y esos nombres acabaron siendo los que usa el mundo entero.</p>",
+   "sky": {
+    "fov": 55
+   },
+   "select": "* eps UMa",
+   "highlight": [
+    {
+     "target": "* alf UMa",
+     "radius": 1.8
+    },
+    {
+     "target": "* bet UMa",
+     "radius": 1.8
+    },
+    {
+     "target": "* gam UMa",
+     "radius": 1.8
+    },
+    {
+     "target": "* del UMa",
+     "radius": 1.8
+    },
+    {
+     "target": "* eps UMa",
+     "radius": 1.8
+    },
+    {
+     "target": "* zet UMa",
+     "radius": 1.8
+    },
+    {
+     "target": "Alkaid",
+     "radius": 1.8
+    }
+   ]
+  },
+  {
+   "title": "La estrella escondida junto a Mizar",
+   "text": "<p>Está muy ampliada <b>Mizar</b>, la estrella central del mango. ¿Ves una estrella pequeña pegada justo a su lado? Es <b>Alcor</b>.</p><p>En el mundo árabe antiguo, distinguir las dos servía de <b>prueba de vista</b>. El nombre Alcor también viene del árabe.</p><p>Inténtalo a simple vista. Incluso desde una ciudad se ve si el aire está limpio.</p>",
+   "sky": {
+    "fov": 6
+   },
+   "select": "* zet UMa",
+   "highlight": [
+    {
+     "target": "* zet UMa",
+     "radius": 0.07
+    },
+    {
+     "target": "* 80 UMa",
+     "radius": 0.07
+    }
+   ]
+  },
+  {
+   "title": "El Carro no es una constelación",
+   "text": "<p>Por sorprendente que parezca, <b>el Carro no es una constelación.</b> Vamos a encender las figuras de las constelaciones.</p><p>Las siete estrellas son parte de una constelación mucho mayor, <b>la Osa Mayor (Ursa Major)</b>. El cazo corresponde a <b>los cuartos traseros y la cola</b> del oso. Por eso Dubhe significaba «oso».</p><p>A un dibujo con nombre propio que es solo parte de una constelación se le llama <b>asterismo</b>. Las constelaciones son exactamente 88, pero los asterismos son como la gente los llame.</p>",
+   "sky": {
+    "fov": 90
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationArt": true,
+    "constellationLabels": true,
+    "onlyPointedConstellation": true
+   },
+   "quiz": {
+    "q": "¿Cuál de estas afirmaciones sobre el Carro y la Osa Mayor es correcta?",
+    "opts": [
+     "El Carro es una de las 88 constelaciones",
+     "El Carro es parte de la Osa Mayor",
+     "La Osa Mayor es parte del Carro",
+     "Son estrellas que están en direcciones distintas del cielo"
+    ],
+    "right": 1,
+    "explain": "El Carro es un asterismo que forma parte de la constelación de la Osa Mayor. Las constelaciones son las 88 regiones que se reparten el cielo entero sin dejar hueco, y un asterismo es el nombre que la gente dio por su cuenta a un dibujo llamativo de estrellas dentro de ellas."
+   },
+   "select": "CON western UMa"
+  },
+  {
+   "title": "Cada sitio lo llama de otra manera",
+   "text": "<p>Has visto que las mismas siete estrellas reciben nombres distintos según la cultura.</p><ul><li><b>Corea y China</b> — Bukdu-chilseong / Beidou (北斗七星), «las siete estrellas del cazo del norte». En Asia Oriental se creía que lo que el cazo contenía era la duración de la vida de una persona</li><li><b>Estados Unidos</b> — Big Dipper, el gran cucharón</li><li><b>Reino Unido</b> — the Plough, el arado</li><li><b>Antiguo Egipto</b> — la pata delantera del toro</li><li><b>Europa del norte</b> — el gran carro</li></ul><p>Los sitios que araban vieron un arado y los que usaban carros vieron un carro. En español se quedó el carro: <b>el Carro</b>, o el Carro Mayor. <b>El cielo era el mismo; las vidas de quienes lo miraban, no.</b></p>",
+   "sky": {
+    "fov": 70
+   },
+   "show": {
+    "constellationArt": false,
+    "constellationLines": true
+   }
+  },
+  {
+   "title": "Cómo encontrar Polaris",
+   "text": "<p>La verdadera razón de la fama del Carro es que <b>te encuentra Polaris</b>.</p><p>Traza una línea por las dos estrellas exteriores del cuenco, <b>de Merak a Dubhe</b>, y prolóngala <b>cinco veces</b> esa separación. Allí hay una estrella brillante: es <b>Polaris</b>. La tienes seleccionada ahora.</p><p>Polaris está <b>exactamente al norte</b>. Así que basta con encontrar esa estrella para saber hacia dónde miras, sin brújula.</p>",
+   "sky": {
+    "fov": 85,
+    "az": 15,
+    "alt": 50
+   },
+   "select": "* alf UMi",
+   "connect": [
+    "* bet UMa",
+    "* alf UMa",
+    "* alf UMi"
+   ],
+   "highlight": [
+    "* alf UMi"
+   ]
+  },
+  {
+   "title": "Si lo miras toda la noche",
+   "text": "<p>Vamos a correr el tiempo deprisa. El cielo empieza a girar.</p><p>Todas las estrellas giran en círculo <b>alrededor de Polaris</b>. El Carro también da vueltas, volcando y enderezando el cuenco mientras rodea a Polaris.</p><p>No es el cielo el que gira, sino <b>la Tierra en la que viajamos</b>. El eje de rotación de la Tierra apunta hacia Polaris, y por eso solo esa estrella parece quedarse quieta.</p><p>Mide la <b>altura</b> de Polaris y tendrás <b>la latitud del lugar donde estás</b>. En Corea son de 33 a 38 grados, en Tokio 36, en Madrid 40. La rejilla azimutal está encendida: comprueba en la escala a qué altura está Polaris.</p>",
+   "sky": {
+    "fov": 110,
+    "az": 0,
+    "alt": 45,
+    "timeSpeed": 400
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationLabels": false,
+    "azimuthalGrid": true
+   },
+   "quiz": {
+    "q": "¿Por qué Polaris apenas se mueve en toda la noche?",
+    "opts": [
+     "Porque está mucho más lejos que las demás estrellas",
+     "Porque el eje de rotación de la Tierra apunta hacia ella",
+     "Porque Polaris gira acompañando a la Tierra",
+     "Porque Polaris es mucho más brillante que las demás"
+    ],
+    "right": 1,
+    "explain": "La Tierra da una vuelta al día alrededor de su eje. Justo al lado del punto donde ese eje se prolonga hasta el cielo está Polaris, así que mientras las demás estrellas giran a su alrededor, solo Polaris parece quedarse en su sitio. No es porque sea especialmente brillante ni especialmente cercana."
+   }
+  },
+  {
+   "title": "Búscalo tú mismo",
+   "text": "<p>Ahora te toca encontrarlo en el cielo de verdad.</p><ul><li>En una noche despejada, mira al <b>norte</b>. Mejor un sitio donde no lo tapen los edificios</li><li>La orientación del cazo cambia con la estación: en primavera está alto y volcado, en otoño queda bajo</li><li>Si lo encuentras, prolonga cinco veces la línea Merak-Dubhe y sigue hasta Polaris</li><li>Comprueba también si ves Alcor junto a Mizar</li></ul><p>En la pestaña «Esta noche» puedes ver cómo están ahora mismo las condiciones de observación.</p>",
+   "sky": {
+    "fov": 100,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "atmosphere": true,
+    "azimuthalGrid": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "El origen de los nombres de las estrellas sigue la lista de nombres estelares de la Unión Astronómica Internacional (UAI).",
+ "months": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "track": "target"
+}

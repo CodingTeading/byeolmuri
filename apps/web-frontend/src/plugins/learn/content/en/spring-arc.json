@@ -1,0 +1,192 @@
+{
+ "id": "spring-arc",
+ "title": "The Spring Arc — follow the handle of the dipper",
+ "subtitle": "One line that starts at the Big Dipper and crosses the whole spring sky",
+ "minutes": 10,
+ "level": "intro",
+ "track": "target",
+ "tags": [
+  "spring",
+  "Arcturus",
+  "Spica",
+  "star hopping"
+ ],
+ "months": [
+  3,
+  4,
+  5,
+  6
+ ],
+ "intro": "The spring sky has no constellation as grand as winter has. What it does have is one extremely handy guide. Carry the curve of the Big Dipper handle on across the sky and the bright stars of spring hang on it one after another.",
+ "steps": [
+  {
+   "title": "Start at the handle of the dipper",
+   "text": "<p>It is <b>9 pm in mid-May</b>, high in the north-east. The Big Dipper hangs almost overhead.</p><p>The three stars of the handle have been joined with a line: <b>Alioth, Mizar, Alkaid</b> in that order. Can you see that the handle is not straight but <b>curves outwards</b>?</p><p>That curve is the guide for today. We are going to carry it on across the sky.</p>",
+   "sky": {
+    "date": "2027-05-15T21:00:00+09:00",
+    "az": 40,
+    "alt": 65,
+    "fov": 70,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "connect": [
+    "* eps UMa",
+    "* zet UMa",
+    "Alkaid"
+   ]
+  },
+  {
+   "title": "Carry the curve on — Arcturus",
+   "text": "<p>The curve of the handle has been carried on for <b>about three</b> more handle-lengths. At the end of it hangs a very bright <b>orange star</b>.</p><p>This is <b>Arcturus</b>. It is the brightest star of the spring sky, and fourth brightest in the whole night sky.</p><p>English-speakers remember the trick as <b>Arc to Arcturus</b>. Draw this one line and you can find it without knowing a single constellation.</p>",
+   "sky": {
+    "az": 80,
+    "alt": 62,
+    "fov": 95
+   },
+   "connect": [
+    "* eps UMa",
+    "* zet UMa",
+    "Alkaid",
+    "Arcturus"
+   ],
+   "highlight": [
+    "Arcturus"
+   ]
+  },
+  {
+   "title": "Daegakseong — a stranger crossing the galaxy",
+   "text": "<p>Arcturus is selected. <b>Magnitude -0.05</b>, distance <b>about 37 light years</b>.</p><p>In East Asia it was called <b>Daegakseong</b> (大角星), 'the great horn'. This part of the sky was seen as a <b>blue dragon</b>, and <b>Gaksu</b> (角宿), where Spica lies, is its horn; Arcturus was read as a larger horn set above it.</p><p>Can you see the orange in it? Spectral type <b>K</b>, an old star with a surface temperature of around 4,300 degrees. It is no heavier than the Sun, but it has nearly used up its life and has <b>swollen to 25 times</b> its former size. Our own Sun will look like this in 5 billion years.</p><p>There is one more unusual thing about this star. Where the other stars all turn together along the disc of the galaxy, Arcturus moves <b>across the disc</b>. It is thought to belong to a group of stars that came from a small galaxy our own swallowed long ago. <b>Not a neighbour but a passing visitor.</b></p><p>Which is why the speed at which it moves across the sky is noticeably fast. In about 800 years it will have shifted from where it stands now by the width of the full Moon.</p>",
+   "sky": {
+    "fov": 45
+   },
+   "select": "Arcturus"
+  },
+  {
+   "title": "Carry it further — Spica",
+   "text": "<p>The same curve has been carried on <b>once more</b>. This time it catches a <b>blue star, close to white</b>.</p><p>This is <b>Spica</b>. The name is Latin for '<b>ear of wheat</b>', and it is the leading star of Virgo. It comes from the picture of the maiden holding an ear of wheat in her hand.</p><p>The English mnemonic carries on from here: <b>Arc to Arcturus, then Speed on to Spica.</b></p><p>In East Asia this star is <b>Gaksu</b> (角宿), the first of the 28 mansions. When the sky was divided into twenty-eight, the counting began here. Its rising in the evening sky in spring was the signal to begin the farming year.</p>",
+   "sky": {
+    "az": 105,
+    "alt": 55,
+    "fov": 110
+   },
+   "connect": [
+    "Alkaid",
+    "Arcturus",
+    "Spica"
+   ],
+   "highlight": [
+    "Spica"
+   ]
+  },
+  {
+   "title": "Compare the colours of the two",
+   "text": "<p>Spica is selected. <b>Magnitude 1.0</b>, distance <b>250 light years</b>.</p><p>Its spectral type is <b>B</b>. A surface temperature of over <b>20,000 degrees</b>: a very hot, very young star.</p><p>Arcturus, which we were looking at a moment ago, was orange at 4,300 degrees. Look from one to the other. <b>Orange against blue-white</b>, and the difference in colour is unmistakable. They stand only 30 degrees apart in the sky, so there is no better pair for the comparison.</p><p>Spica is in fact <b>two stars</b>, a binary so close together that they go round each other in four days. No telescope splits them; only the spectrum of the light gives it away. Each pulled by the other's gravity, the two orbit <b>squashed into egg shapes</b>.</p>",
+   "sky": {
+    "fov": 40
+   },
+   "select": "Spica",
+   "quiz": {
+    "q": "Carrying the curve of the Big Dipper's handle onwards, which stars do you meet, in order?",
+    "opts": [
+     "Sirius, then Procyon",
+     "Arcturus, then Spica",
+     "Vega, then Altair",
+     "Polaris, then Capella"
+    ],
+    "right": 1,
+    "explain": "Carry the curve of the handle on the way it bends and you reach orange Arcturus first; carry it further and you come to blue-white Spica. Sirius and Procyon are stars of the winter sky, and Vega and Altair belong to summer. Polaris is not found from the handle at all: you extend the two outer stars of the bowl instead."
+   }
+  },
+  {
+   "title": "The Spring Triangle",
+   "text": "<p>Add one more star to Arcturus and Spica and you have a triangle. It is <b>Denebola</b>, in the tail of Leo.</p><p>These three make the <b>Spring Triangle</b>. It is not as plain as the Summer Triangle, but in a spring sky short of bright stars the three of them serve as reference points.</p><p>The name Denebola is Arabic for '<b>the lion's tail</b>'. It shares a root with Deneb in Cygnus, another case of a name given by the astronomers of the old Arab world becoming the one the whole world uses.</p>",
+   "sky": {
+    "az": 150,
+    "alt": 55,
+    "fov": 95
+   },
+   "clearSelection": true,
+   "connect": [
+    "Arcturus",
+    "Spica",
+    "* bet Leo",
+    "Arcturus"
+   ]
+  },
+  {
+   "title": "A small sail below Spica — Corvus",
+   "text": "<p>Look at the place a little down and to the <b>right (west)</b> of Spica. Four stars make a small <b>trapezium</b>. This is <b>Corvus</b>, the crow.</p><p>It is not bright, but the shape is distinct enough that once you have picked it out you will find it again. It looks like a small sail up in the southern sky.</p><p>Join the upper two stars of the trapezium and carry the line to the left and you arrive at Spica. It is another route to Spica, coming at it from the opposite side to the Spring Arc.</p><p>In Western myth the crow was fixed in the sky for telling a lie while running an errand for Apollo. Crater and Hydra lie right alongside, and the three of them make one story.</p>",
+   "sky": {
+    "az": 168,
+    "alt": 40,
+    "fov": 60
+   },
+   "connect": [
+    [
+     "* gam Crv",
+     "* del Crv"
+    ]
+   ],
+   "highlight": [
+    "Spica"
+   ]
+  },
+  {
+   "title": "The spring sky has no Milky Way",
+   "text": "<p>The field is widened to take in the whole spring sky. One thing sets it sharply apart from summer and winter: <b>there is no Milky Way.</b></p><p>The direction we look on a spring evening does not run along the disc of our galaxy but <b>out of the disc, above the galaxy</b>. So there are few stars and the sky looks bare.</p><p>In exchange, nothing stands in the way and <b>the outside of the galaxy</b> is in clear view. Towards Virgo and Coma Berenices lies the Virgo Cluster, a gathering of <b>over 1,500 galaxies</b>, 60 million light years away.</p><p>These galaxies cannot be seen with the naked eye, though. Spring being called 'the galaxy hunting season' is a matter for people with telescopes. For a naked-eye observer, spring is a season where <b>the Arc alone is enough</b>.</p>",
+   "sky": {
+    "az": 120,
+    "alt": 55,
+    "fov": 120
+   },
+   "show": {
+    "dso": true
+   },
+   "clearSelection": true,
+   "quiz": {
+    "q": "Why is there no Milky Way in the spring evening sky?",
+    "opts": [
+     "Because there is more water vapour in the air in spring",
+     "Because that direction looks out of the disc of our galaxy rather than along it",
+     "Because in spring the Milky Way is up during the day",
+     "Because the moonlight is bright"
+    ],
+    "right": 1,
+    "explain": "The Milky Way is the band you get when the disc of our galaxy is seen edge on and stars pile up one behind another. On a spring evening you are looking almost at right angles to the disc, out above the galaxy, so there are no stars to pile up. Humidity and moonlight are conditions of a particular night, not something that repeats reliably with the season."
+   }
+  },
+  {
+   "title": "Draw the curve tonight",
+   "text": "<p>The Spring Arc is an observation that <b>needs no equipment</b>. It uses only bright stars, so it works from a city.</p><ul><li>It is in the evening sky <b>from March to June</b>. At 9 pm in May the Big Dipper is almost overhead</li><li>Find the Big Dipper first, then follow <b>the way the handle bends</b> with your eye. Meet a bright orange star at about three handle-lengths and that is Arcturus</li><li><b>The same distance again</b> from there brings you to Spica, low in the south</li><li><b>Compare the colours</b> of the two. Arcturus is orange, Spica a blue with white in it</li><li>Find the little trapezium of Corvus below Spica and your map of the spring sky is complete</li></ul><p>Learn this one curve and you will never be lost in the spring sky.</p>",
+   "sky": {
+    "az": 100,
+    "alt": 55,
+    "fov": 100,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "dso": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "Star name origins follow the International Astronomical Union (IAU) list of star names, and the correspondence with the 28 mansions follows material from the Korea Astronomy and Space Science Institute."
+}

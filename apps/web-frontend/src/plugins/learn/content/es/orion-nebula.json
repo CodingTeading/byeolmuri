@@ -1,0 +1,159 @@
+{
+ "id": "orion-nebula",
+ "title": "La nebulosa de Orión — donde nacen las estrellas",
+ "subtitle": "El mejor objetivo del cielo de invierno, y un retrato del pueblo natal de nuestro Sol",
+ "minutes": 10,
+ "level": "intro",
+ "track": "target",
+ "tags": [
+  "invierno",
+  "nebulosa",
+  "Orión",
+  "formación estelar"
+ ],
+ "months": [
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "intro": "Una tarde de invierno salen por el sur tres estrellas en fila. Lo tenue que cuelga por debajo es la nebulosa de Orión. Nuestro propio Sol nació en un sitio así hace 4600 millones de años.",
+ "steps": [
+  {
+   "title": "Tres estrellas en fila",
+   "text": "<p>Son <b>las 9 de la noche de finales de enero</b>, mirando al sur. Justo en el medio hay <b>tres estrellas de brillo casi igual puestas en fila diagonal</b>. Una disposición tan regular es poco común en el cielo nocturno, así que en cuanto la ves ya la reconoces siempre.</p><p>Es el cinturón de <b>Orión</b>. En Occidente, el cinturón del cazador; en español se les llama también <b>las Tres Marías</b>, y en Corea Samhyeongje-byeol, «los tres hermanos».</p><p>En las 28 mansiones de Asia Oriental esta zona es <b>Samsu</b> (參宿). Conviene saberlo: <b>Samtaeseong</b> (三台) era originalmente el nombre de otro grupo de estrellas, hacia la Osa Mayor, aunque hoy se usa más para estas tres.</p>",
+   "sky": {
+    "date": "2027-01-20T21:00:00+09:00",
+    "az": 155,
+    "alt": 47,
+    "fov": 70,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": true,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "connect": [
+    "* zet Ori",
+    "* eps Ori",
+    "* del Ori"
+   ]
+  },
+  {
+   "title": "El cuerpo del cazador",
+   "text": "<p>Están encendidas las figuras. Las tres estrellas hacen de cintura, con dos hombros arriba y dos piernas abajo.</p><ul><li>Hombro de arriba a la izquierda — <b>Betelgeuse</b>, la estrella roja</li><li>Pie de abajo a la derecha — <b>Rigel</b>, la estrella azul</li><li>Hombro de arriba a la derecha — <b>Bellatrix</b></li><li>Rodilla de abajo a la izquierda — <b>Saiph</b></li></ul><p>Cuatro estrellas forman un rectángulo con otras tres puestas en diagonal dentro. Ninguna otra constelación reúne tantas estrellas brillantes. Por eso el cielo de invierno es tan espectacular.</p><p>Y ¿ves <b>algo colgando</b> por debajo del cinturón? Es la <b>espada</b> que el cazador lleva a la cintura. El destino de hoy está ahí.</p>",
+   "sky": {
+    "fov": 55
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationArt": true,
+    "constellationLabels": true,
+    "onlyPointedConstellation": true
+   },
+   "select": "CON western Ori"
+  },
+  {
+   "title": "Lo tenue de la espada",
+   "text": "<p>La espada está muy ampliada. El medio no está <b>nítido como una estrella, sino difuminado</b>.</p><p>Incluso a simple vista notas que no es como las demás estrellas. Da la sensación de estar desenfocada. Es porque no es una estrella sino <b>una nube de gas</b>.</p><p>Es la <b>Gran Nebulosa de Orión</b>, número de catálogo <b>M 42</b>. Es la más brillante de todas las nebulosas y una de las poquísimas que puedes reconocer como nebulosa a simple vista.</p>",
+   "sky": {
+    "fov": 8
+   },
+   "show": {
+    "constellationArt": false,
+    "constellationLines": false,
+    "constellationLabels": false,
+    "onlyPointedConstellation": false
+   },
+   "select": "M 42"
+  },
+  {
+   "title": "Cómo es en realidad",
+   "text": "<p>Se ha superpuesto una fotografía del cielo y aparece una enorme nube de gas, como un ave con las alas abiertas.</p><p>Mide unos <b>24 años luz</b> de lado a lado y está a <b>unos 1350 años luz</b>. La superficie que ocupa en el cielo es mayor que la de la luna llena.</p><p>La parte llamativamente brillante del centro es el <b>Trapecio</b>. Ahí hay cuatro estrellas jóvenes, calientes y recién nacidas dispuestas en trapecio, y la luz ultravioleta que derraman excita el gas de alrededor y hace brillar la nebulosa entera. La nebulosa no brilla por sí sola: es <b>una lámpara encendida por las estrellas de dentro</b>.</p>",
+   "sky": {
+    "fov": 3
+   },
+   "show": {
+    "dss": true
+   }
+  },
+  {
+   "title": "Ahora mismo están naciendo estrellas",
+   "text": "<p>Esto es <b>un criadero de estrellas</b>. Dentro de la nebulosa el gas y el polvo se juntan por su propio peso, el núcleo se calienta y, cuando arranca la fusión, se enciende una estrella.</p><p>Dentro de la nebulosa de Orión se han identificado hasta ahora <b>más de 3000 estrellas jóvenes</b>. Tienen alrededor de un millón de años. Frente a un Sol de 4600 millones, son recién nacidas.</p><p>El telescopio espacial Hubble ha fotografiado aquí varios <b>discos protoplanetarios</b>: discos planos de polvo envolviendo estrellas recién nacidas, es decir, <b>planetas en construcción</b>.</p><p><b>Hace 4600 millones de años nuestro propio Sistema Solar estaba en un sitio así.</b> Lo que estás mirando es una foto de nuestra propia infancia.</p>",
+   "sky": {
+    "fov": 2
+   },
+   "quiz": {
+    "q": "¿Por qué brilla la nebulosa de Orión?",
+    "opts": [
+     "Porque el gas está caliente y arde por sí mismo",
+     "Porque la luz ultravioleta de las estrellas jóvenes y calientes de dentro excita el gas",
+     "Porque refleja la luz de estrellas que están detrás",
+     "Porque la luz se dispersa en la atmósfera terrestre"
+    ],
+    "right": 1,
+    "explain": "El gas de la nebulosa es en sí muy tenue y frío. La fuerte luz ultravioleta de las estrellas del Trapecio excita los átomos de hidrógeno, y esos átomos emiten luz propia. Hay nebulosas que brillan solo por reflexión, y la neblina azul en torno a las Cabrillas es una, pero la nebulosa de Orión fabrica su propia luz."
+   }
+  },
+  {
+   "title": "No una nebulosa sino un trozo de una nube enorme",
+   "text": "<p>El campo se amplía para abarcar Orión entero junto con la fotografía. M 42 no es la única nebulosa de aquí.</p><p>Orión entero está envuelto en una nube de gas enorme llamada <b>Complejo de Nubes Moleculares de Orión</b>, de cientos de años luz de ancho. M 42 no es más que <b>un agujero de esa nube abierto hacia nosotros</b>: una ventana por la que se escapa la luz de las estrellas de dentro.</p><p>Debajo de la estrella del extremo izquierdo del cinturón está la <b>nebulosa Cabeza de Caballo</b>, donde un polvo negro delante de un fondo brillante toma la forma de una cabeza de caballo de perfil. Es famosa en fotografía pero extremadamente difícil de ver a ojo.</p>",
+   "sky": {
+    "fov": 20
+   },
+   "clearSelection": true,
+   "show": {
+    "dss": true
+   }
+  },
+  {
+   "title": "Una vida estelar entera en una sola vista",
+   "text": "<p>La fotografía está apagada y volvemos a mirar Orión entero. <b>Esta única constelación contiene la vida entera de una estrella.</b></p><ul><li><b>M 42</b> — estrellas que están naciendo ahora mismo</li><li><b>Rigel y las tres estrellas del cinturón</b> — estrellas jóvenes, masivas y azules. Solo viven decenas de millones de años</li><li><b>Betelgeuse</b> — una supergigante roja hinchada por la edad. Algún día acabará como supernova</li></ul><p>Cuando Betelgeuse estalle brillará <b>tanto como la luna llena</b> durante varias semanas y se verá incluso de día. Aunque «algún día» puede ser mañana o dentro de 100000 años.</p><p>Cuando estalló la supernova que formó la nebulosa del Cangrejo en 1054, la China de los Song y Japón la anotaron como una <b>estrella huésped</b> visible a plena luz del día. Cuando llegue la siguiente, seremos nosotros quienes escribamos el registro.</p>",
+   "sky": {
+    "fov": 60
+   },
+   "quiz": {
+    "q": "¿Cuál de estas explica mejor por qué el cielo de invierno tiene tantas estrellas brillantes?",
+    "opts": [
+     "Porque el aire es más limpio en invierno",
+     "Porque la Tierra está más cerca del Sol",
+     "Porque en esa dirección hay una región de formación estelar con estrellas jóvenes y masivas",
+     "Porque las noches son más largas en invierno"
+    ],
+    "right": 2,
+    "explain": "La dirección que miramos una tarde de invierno abarca regiones como la nube molecular de Orión, donde han nacido muchísimas estrellas hace poco. Las estrellas jóvenes y masivas son muy brillantes, así que esa parte del cielo resulta espectacular. El aire limpio y las noches largas ayudan a observar, pero no pueden cambiar qué constelaciones están arriba. La diferencia de distancia al Sol no afecta al brillo."
+   },
+   "show": {
+    "dss": false
+   }
+  },
+  {
+   "title": "Sal con unos prismáticos",
+   "text": "<p>La nebulosa de Orión es la mejor <b>primera nebulosa para quien empieza</b>.</p><ul><li>Está en el cielo de la tarde <b>de noviembre a marzo</b>. A las 9 de la noche en enero o febrero queda justo en el medio del sur</li><li>Busca primero las tres estrellas en fila y después mira la línea que cuelga <b>por debajo</b>. La del medio es la que se ve difuminada</li><li><b>Se ve incluso desde una ciudad.</b> A diferencia de la galaxia de Andrómeda, su luz está apretada en poco espacio, así que le gana a casi cualquier farola</li><li>Con <b>prismáticos</b> se ve claramente como nebulosa, y un telescopio pequeño separa las cuatro estrellas del Trapecio</li><li>No es roja como en las fotos. El ojo no registra color con luz débil, así que sale <b>gris verdosa</b>. No te desanimes: así es como se ve de verdad el universo para un ojo humano</li></ul>",
+   "sky": {
+    "fov": 80,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "dss": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "La fotografía superpuesta es material del Digitized Sky Survey (DSS). El registro de la supernova de 1054 sigue las entradas sobre estrellas huésped de las historias de Asia Oriental."
+}

@@ -1,0 +1,160 @@
+{
+ "id": "moon-phases",
+ "title": "Why does the Moon change shape?",
+ "subtitle": "The phase and the time it rises turn out to be the same story",
+ "minutes": 10,
+ "level": "intro",
+ "track": "principle",
+ "tags": [
+  "Moon",
+  "phases",
+  "lunar calendar",
+  "28 mansions"
+ ],
+ "intro": "The Moon takes a different shape every day, and it rises at a different hour every day. The two look like separate things, but they are one. We will move the date on a few days at a time and follow the Moon through.",
+ "steps": [
+  {
+   "title": "Let us look closely at a half Moon",
+   "text": "<p>The Moon is zoomed right in. This is the <b>first quarter</b>. In the northern hemisphere the right-hand half is the lit one, as here; in the southern hemisphere it is flipped over and the left half is lit.</p><p>The object information gives a <b>phase</b> value. It is the percentage of the lit face you can see, written out as a number. 0% is the new Moon, when nothing shows; 100% is full; and right now it will be somewhere near 50%.</p><p>Follow the line dividing the lit side from the dark side. Along that line the Sun is <b>rising or setting at this very moment</b>. The Moon has mornings and evenings too.</p>",
+   "sky": {
+    "date": "2026-09-18T20:00:00+09:00",
+    "fov": 3,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": false,
+    "landscape": false,
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true
+   },
+   "select": "NAME Moon"
+  },
+  {
+   "title": "Four days on — a crescent",
+   "text": "<p>Only the date has moved, <b>four days on</b>. This is a slender <b>crescent</b>.</p><p>On screen the dark side is pure black. <b>There is one thing this view cannot draw.</b></p><p>Look at a real crescent outdoors and the dark side <b>glows faintly</b> in ash grey. It is called <b>earthshine</b>. Sunlight bounced off the Earth is very dimly lighting the night side of the Moon. Seen from the Moon at that moment, the Earth hangs there almost as a 'full Earth', bright and wide.</p><p>You can catch it with the naked eye on an evening with a crescent, and certainly with binoculars. This is <b>a sight to check outdoors</b> rather than on screen.</p>",
+   "sky": {
+    "date": "2026-09-14T19:30:00+09:00"
+   },
+   "select": "NAME Moon"
+  },
+  {
+   "title": "The full Moon",
+   "text": "<p>From where we began (18 September) the date has moved on <b>eight days</b>. The whole disc is lit: a <b>full Moon</b>.</p><p>The dark patches on the surface show up well. They are called <b>seas</b>, though there is no water in them; they are plains where lava flowed and set billions of years ago. In East Asia people saw <b>a rabbit pounding at a mortar beneath a cassia tree</b> in these markings, in India a hare as well, which is why the Moon was called 'the one that holds the hare', and in Europe a human face.</p><p>The striking thing is that these markings <b>never change</b>. The Moon turns on its axis in exactly the time it takes to go round the Earth, so the same face is always towards us. Nobody saw the far side until a probe went round and photographed it in 1959.</p>",
+   "sky": {
+    "date": "2026-09-26T20:00:00+09:00"
+   },
+   "select": "NAME Moon"
+  },
+  {
+   "title": "The lit half is always half",
+   "text": "<p>The Moon looks as though it changes shape, but <b>the half of it lit by the Sun is always exactly half</b>. What changes is <b>the angle you look at that half from</b>.</p><ul><li>Moon in the <b>same direction</b> as the Sun → the lit face points away, so it is <b>new</b> and cannot be seen</li><li><b>90 degrees</b> away → you see half of it. <b>First and last quarter</b></li><li><b>Directly opposite</b> → you look straight at the lit face. <b>Full</b></li></ul><p>So the shape of the Moon is a gauge of <b>how far apart the Sun and the Moon stand in the sky</b>. And how far apart they stand shows up as <b>what time it rises</b>. The next two steps show it happening.</p>",
+   "sky": {
+    "fov": 8
+   }
+  },
+  {
+   "title": "A crescent sits briefly in the west after sunset",
+   "text": "<p>The atmosphere is back on and the field of view widened. This is <b>half past 7 in the evening on a day with a crescent</b>, looking west.</p><p>The crescent hangs above the afterglow in the west, where the Sun has just gone down. It stands only 40 degrees from the Sun, so <b>it follows the Sun down within a couple of hours</b>. That is why you never see a crescent late at night.</p><p>Look at the way it tilts as well. The bright side faces <b>the way the Sun went down</b>. The bright side of the Moon always points at the Sun.</p>",
+   "sky": {
+    "date": "2026-09-14T19:30:00+09:00",
+    "az": 260,
+    "alt": 15,
+    "fov": 60
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true
+   },
+   "highlight": [
+    "NAME Moon"
+   ]
+  },
+  {
+   "title": "The full Moon rises as the Sun sets",
+   "text": "<p>A similar hour of the evening, but this time the <b>east</b> on the night of a <b>full Moon</b>.</p><p>At the very moment the Sun goes down in the west, the full Moon <b>comes up in the east</b>. It stands directly opposite the Sun, so nothing else could happen. That is why the full Moon alone is up <b>all night long</b>.</p><p>Get this far and the whole rule falls into one piece.</p><ul><li><b>New crescent</b> — briefly in the west around sunset, then down</li><li><b>First quarter</b> — high in the south at sunset, sets at midnight</li><li><b>Full Moon</b> — rises in the east as the Sun sets, up all night</li><li><b>Last quarter</b> — rises at midnight, in the southern sky <b>before dawn</b></li><li><b>Old crescent</b> — briefly in the east just before sunrise</li></ul>",
+   "sky": {
+    "date": "2026-09-26T19:10:00+09:00",
+    "az": 95,
+    "alt": 15
+   },
+   "highlight": [
+    "NAME Moon"
+   ],
+   "quiz": {
+    "q": "You go out at 5 in the morning and there is a very slender Moon low in the east. What is it?",
+    "opts": [
+     "A new crescent",
+     "An old crescent",
+     "A first quarter",
+     "A full Moon"
+    ],
+    "right": 1,
+    "explain": "Slender means it is close to the Sun, and low in the east just before sunrise means it rose a little ahead of the Sun, which makes it an old crescent. A new crescent is slender too, but it sets after the Sun and so shows in the west in the evening. A first quarter is a half Moon, a quite different shape, and a full Moon would already be setting in the west by this hour."
+   }
+  },
+  {
+   "title": "The Moon travels a fist and a half a day among the stars",
+   "text": "<p>This time the view is <b>locked onto the Moon</b> and time runs very fast. The Moon stays where it is and <b>the constellations appear to stream past behind it</b>. The shape fills out as it goes.</p><p>The Moon moves east among the stars by <b>about 13 degrees a day</b>, roughly a fist and a half held at arm's length. One circuit takes <b>27.3 days</b>.</p><p>A full round of the <b>phases</b>, though, takes <b>29.5 days</b>. While the Moon goes round, the Earth moves along its own orbit too, so the Moon needs about two days more to come back to the same direction as the Sun. That is why a month in the lunar calendar runs to 29 days and then 30.</p><p>In East Asia this path the Moon travels was divided into twenty-eight, the <b>28 mansions</b>, the idea being that the Moon lodges in one of them each night.</p>",
+   "sky": {
+    "date": "2026-09-14T20:00:00+09:00",
+    "fov": 45,
+    "timeSpeed": 20000
+   },
+   "show": {
+    "atmosphere": false,
+    "landscape": false,
+    "constellationLines": true,
+    "constellationLabels": true,
+    "ecliptic": true
+   },
+   "lookAt": "NAME Moon"
+  },
+  {
+   "title": "Which is why the Moon and the stars do not get on",
+   "text": "<p>A full Moon is up all night and it is very bright. That light hazes the whole sky and <b>wipes out anything faint</b>. It is why you have to pick <b>a night with no Moon</b> for the Milky Way, for nebulae and for galaxies.</p><p>If the Moon itself is what you have come for, though, <b>first or last quarter</b> beats full. Along the line between light and shadow the craters throw long shadows and the ground comes out in relief. A full Moon takes the light head on and looks flat by comparison.</p>",
+   "sky": {
+    "date": "2026-09-18T20:00:00+09:00",
+    "fov": 3,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "ecliptic": false
+   },
+   "select": "NAME Moon",
+   "quiz": {
+    "q": "When can you see the craters on the Moon most sharply?",
+    "opts": [
+     "At full Moon",
+     "At half Moon, near the line between light and dark",
+     "At new Moon",
+     "When the Moon is at its highest"
+    ],
+    "right": 1,
+    "explain": "Near that line the sunlight comes in at a slant, so the crater shadows stretch out and the ground stands proud. A full Moon is lit head on, leaves almost no shadow and looks flat. At new Moon you are facing the night side of the Moon, so there is nothing to see at all. Height does help, because you are looking through less air, but with no shadows no amount of height will bring the ground out."
+   }
+  },
+  {
+   "title": "Go and check tonight's Moon",
+   "text": "<p>The Moon is the one target you can observe from the middle of a city, and even by day.</p><ul><li>Check tonight's phase and the times it rises and sets on the '<b>Tonight</b>' tab</li><li>Look at the shape and try to work out <b>roughly which day of the lunar month it is</b>. A half Moon means day 7 or 8, or day 22 or 23; a full Moon means somewhere around day 15</li><li>Look in the same direction at the same hour <b>a week apart</b>. You will see the shape and the position have moved together</li><li>On an evening with a crescent, look for <b>earthshine</b> on the dark side. Binoculars make it far easier</li></ul>",
+   "sky": {
+    "fov": 60,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "The dates on screen are one lunation of September 2026 taken as an example. The phases and the rising and setting times are all worked out by the engine."
+}

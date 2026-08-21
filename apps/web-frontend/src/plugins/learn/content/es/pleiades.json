@@ -1,0 +1,150 @@
+{
+ "id": "pleiades",
+ "title": "Las Cabrillas — ¿seis estrellas o siete?",
+ "subtitle": "Cuántas puedas contar mide lo oscuro que está tu cielo esta noche",
+ "minutes": 10,
+ "level": "intro",
+ "track": "target",
+ "tags": [
+  "invierno",
+  "cúmulo abierto",
+  "las Cabrillas",
+  "costumbres populares"
+ ],
+ "months": [
+  10,
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "intro": "Hay un sitio del cielo de las tardes de invierno donde se apretujan estrellas pequeñas. En español se las llama las Cabrillas, y en Corea se usaba lo lejos que quedaban de la Luna para pronosticar la cosecha del año. Cuenta cuántas alcanzas a distinguir y sabrás además lo oscuro que está tu cielo esta noche.",
+ "steps": [
+  {
+   "title": "Arriba y a la derecha de las tres estrellas de Orión",
+   "text": "<p>Son <b>las 9 de la noche de finales de enero</b>, mirando al sur. Se ha trazado una línea desde las tres estrellas en fila de Orión, <b>hacia arriba y a la derecha</b>.</p><p>Síguela y pasas primero por la estrella roja <b>Aldebarán</b>; un poco más allá llegas a <b>un pequeño apretujón de estrellas</b>.</p><p>Esas son <b>las Cabrillas</b>, llamadas Jomsaengi-byeol en Corea. Su nombre formal es <b>las Pléyades</b> y el número de catálogo es <b>M 45</b>.</p>",
+   "sky": {
+    "date": "2027-01-20T21:00:00+09:00",
+    "az": 185,
+    "alt": 65,
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": true,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "connect": [
+    "* zet Ori",
+    "* alf Tau",
+    "M 45"
+   ],
+   "highlight": [
+    "M 45"
+   ]
+  },
+  {
+   "title": "¿Cuántas ves?",
+   "text": "<p>Ampliadas. Un puñado de estrellas juntas en forma de cazo pequeño. Parece una miniatura del Carro, y no poca gente lo confunde con él.</p><p>Cuéntalas. La mayoría ve <b>seis</b>. Con buena vista y cielo oscuro puedes llegar a <b>siete, nueve, incluso once</b>.</p><p>Y sin embargo el nombre son <b>siete</b> en todas partes. En Grecia eran las siete hermanas; los textos coreanos antiguos escriben Myoseong (昴星), y quien las cuenta en voz alta suele decir siete. Varias culturas tienen su propio relato aparte de una «hermana perdida» para explicar que solo se vean seis donde el nombre dice siete.</p><p>Ponles unos prismáticos y de pronto son <b>decenas</b>. En realidad es un grupo de <b>más de 1000</b> estrellas.</p>",
+   "sky": {
+    "fov": 6
+   },
+   "select": "M 45"
+  },
+  {
+   "title": "Cada cultura tiene su nombre para ellas",
+   "text": "<p>Este cúmulo tiene nombre en todas partes del mundo, y en español son las Cabrillas. Es pequeño y compacto, así que llama la atención.</p><ul><li><b>Corea</b> — <b>Jomsaengi-byeol</b>, «un montoncito de cosas menudas». En los textos, Myoseong (昴星)</li><li><b>Japón</b> — <b>Subaru</b>, una palabra antigua que significa «juntar en uno». Las seis estrellas del logo de la marca de coches son estas</li><li><b>Grecia</b> — las Pléyades, las siete hijas de Atlas</li><li><b>Maorí</b> — Matariki. El día que este cúmulo reaparece antes del amanecer es el año nuevo</li></ul><p>Tienen algo en común. En muchas culturas este cúmulo fue <b>el reloj de las estaciones y de las labores del campo</b>. El día en que asomaba por primera vez justo antes del amanecer, y el día en que se ponía al atardecer, eran las señales para sembrar y para cosechar.</p>",
+   "sky": {
+    "fov": 10
+   }
+  },
+  {
+   "title": "La observación de las Jomsaengi — leer la distancia a la Luna",
+   "text": "<p>Corea tiene una costumbre estacional ligada a este cúmulo: <b>la observación de las Jomsaengi</b>.</p><p>La tarde del <b>6.º día del 2.º mes lunar</b>, se juzgaba la cosecha del año por lo lejos que quedaba el cúmulo de la Luna.</p><ul><li>La Luna <b>por delante</b> y el cúmulo rezagado muy atrás → año de escasez</li><li>La Luna caminando <b>al lado</b> de ellas → buen año</li></ul><p>Se leía como la Luna adelantándose a unos niños que llevan sus cuencos de arroz: si se alejaba de ellos, el año iba a ser de hambre.</p><p>Leída en clave astronómica, la costumbre se apoya en que <b>la Luna pasa cerca de este cúmulo todos los meses</b>. Las Cabrillas quedan cerca de la eclíptica, así que la Luna las roza una vez al mes, y lo lejos que estén ese día depende de por dónde vaya la Luna en su órbita ese mes. Lo que vimos en la lección anterior, que <b>la Luna se desplaza 13 grados al día</b>, es exactamente lo que está actuando.</p><p>Con suerte puedes pillar también a la Luna <b>tapando</b> el cúmulo, una ocultación. Con prismáticos, una estrella desaparece detrás de la Luna en un instante.</p>",
+   "sky": {
+    "fov": 15
+   },
+   "clearSelection": true
+  },
+  {
+   "title": "Hermanas nacidas juntas",
+   "text": "<p>Las estrellas de las Cabrillas no están simplemente alineadas por casualidad: son <b>de verdad un solo grupo</b>.</p><p>Son <b>hermanas nacidas a la vez</b> de la misma nube de gas, y todavía hoy viajan juntas en la misma dirección. A un grupo así se le llama <b>cúmulo abierto</b>.</p><ul><li>Distancia — unos <b>440 años luz</b></li><li>Edad — unos <b>100 millones de años</b>, o sea <b>una cuarentaiseisava parte</b> del Sol, que tiene 4600 millones</li><li>Número de estrellas — más de <b>1000</b></li></ul><p>Fíjate en que las estrellas que se ven brillantes son, todas ellas, <b>azules</b>. Eso significa jóvenes y masivas. La regla de la lección anterior, «El color de una estrella es su temperatura», se aplica al pie de la letra.</p><p>Los cúmulos abiertos no duran. Mientras giran alrededor de la galaxia la gravedad de otras estrellas tira de ellos, y <b>en unos cientos de millones de años se dispersan</b>. Nuestro propio Sol también nació entre hermanas, pero esas hermanas hace mucho que se repartieron por la galaxia y nadie sabe dónde están.</p>",
+   "sky": {
+    "fov": 4
+   },
+   "select": "M 45",
+   "quiz": {
+    "q": "¿Por qué las estrellas de las Cabrillas aparecen agrupadas en el cielo?",
+    "opts": [
+     "Porque estrellas a distintas distancias coinciden en la misma dirección",
+     "Porque nacieron juntas de la misma nube de gas y de verdad están cerca unas de otras",
+     "Porque una estrella masiva del centro atrae a las demás",
+     "Porque es la dirección del centro galáctico, donde abundan las estrellas"
+    ],
+    "right": 1,
+    "explain": "Un cúmulo abierto es un grupo de estrellas nacidas a la vez de una misma nube, así que de verdad están cerca unas de otras y se mueven juntas en la misma dirección. A un dibujo que solo coincide en la línea de visión se le llama asterismo, y el Carro es uno de ellos. Lo que mantiene unido a un cúmulo no es una estrella masiva concreta sino la gravedad del grupo entero, y ni siquiera esa basta: al final se dispersa."
+   }
+  },
+  {
+   "title": "La neblina azul — una nube de polvo por la que van pasando",
+   "sky": {
+    "fov": 3
+   },
+   "select": "M 45",
+   "text": "<p>Vamos a superponer la fotografía. Una <b>neblina azul</b> se enrosca alrededor de las estrellas.</p><p>No es lo que queda de la nube en que nació el cúmulo. Es <b>una nube de polvo por la que el cúmulo está pasando por casualidad</b> en su vuelta a la galaxia, reflejando la luz de las estrellas. A diferencia de la nebulosa de Orión, que brilla por sí sola, esta es una <b>nebulosa de reflexión</b>. Se ve azul por la misma razón que el cielo: el polvo dispersa mejor la luz azul.</p><p>Esta neblina no la verás a simple vista ni con un telescopio pequeño. Solo asoma cuando una cámara ha estado recogiendo luz mucho rato. Es <b>un ejemplo perfecto de la diferencia entre lo que ves fuera y lo que ves en una fotografía</b>.</p>",
+   "show": {
+    "dss": true
+   }
+  },
+  {
+   "title": "Aldebarán, que no es del cúmulo",
+   "sky": {
+    "fov": 25
+   },
+   "select": "Aldebaran",
+   "text": "<p>El campo se amplía y bajamos a la estrella roja <b>Aldebarán</b>. A su alrededor hay un grupo en forma de V: el <b>cúmulo de las Híades</b>. A unos <b>153 años luz</b> es el cúmulo abierto más cercano a la Tierra, y con 600 millones de años es mucho más viejo que las Cabrillas.</p><p>Pero <b>Aldebarán no es miembro de ese cúmulo.</b> Está a <b>65 años luz</b>, menos de la mitad de la distancia del cúmulo. Es sencillamente una estrella más cercana que nuestros ojos ven superpuesta. Un buen recordatorio de que verse juntos en el cielo no hace que dos objetos estén juntos.</p>",
+   "quiz": {
+    "q": "¿Qué relación hay entre la estrella roja Aldebarán y el cúmulo de las Híades?",
+    "opts": [
+     "Es la estrella más brillante del cúmulo",
+     "Es la estrella del centro del cúmulo",
+     "Está mucho más adelante que el cúmulo y solo parece superpuesta",
+     "Es una estrella que salió despedida del cúmulo"
+    ],
+    "right": 2,
+    "explain": "Aldebarán está a 65 años luz y las Híades a 153. Quedan en la misma dirección del cielo pero a más del doble de distancia. El cielo no es una superficie plana, y es frecuente que dos objetos que parecen estar uno junto a otro estén separados por distancias enormes."
+   },
+   "show": {
+    "dss": false
+   }
+  },
+  {
+   "title": "Cuenta cuántas ves",
+   "text": "<p>Las Cabrillas sirven de <b>regla para medir lo oscuro que está el cielo</b>. Cuéntalas y sabrás qué clase de noche tienes.</p><ul><li><b>4 o 5</b> — cielo de ciudad</li><li><b>6 o 7</b> — afueras normales</li><li><b>9 o más</b> — un cielo bastante oscuro. También merece la pena intentar la galaxia de Andrómeda</li></ul><p>Cosas que probar fuera.</p><ul><li>Está en el cielo de la tarde <b>de octubre a marzo</b>. En una tarde de principios de invierno va alto por el sur</li><li>Usa la <b>visión desviada</b>. Mirarlas de frente baja la cuenta; desviar un poco la mirada suma estrellas</li><li>Los <b>prismáticos</b> las convierten en otra cosa completamente distinta, un campo sembrado de estrellas azules. Es uno de los pocos objetivos donde los prismáticos ganan al telescopio</li><li>La tarde del sexto día de un mes lunar, mira <b>a qué distancia queda la Luna</b>. Verás de qué se sacaban las viejas lecturas</li></ul>",
+   "sky": {
+    "fov": 60,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "dss": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "La fotografía superpuesta es material del Digitized Sky Survey (DSS). El relato de la observación de las Jomsaengi sigue la entrada de la Enciclopedia de Costumbres Estacionales Coreanas."
+}

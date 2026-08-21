@@ -1,0 +1,144 @@
+{
+ "id": "variable-stars",
+ "title": "Stars that change brightness",
+ "subtitle": "How to measure brightness by eye, and why amateurs are still useful",
+ "minutes": 10,
+ "level": "basic",
+ "track": "measure",
+ "tags": [
+  "variable star",
+  "Algol",
+  "eclipsing binary",
+  "observing log"
+ ],
+ "intro": "Some stars change in brightness. One of them changes enough to be checked with the naked eye from the middle of a city. This lesson deals with something the screen cannot show you. What it teaches instead is how to measure it yourself tonight.",
+ "steps": [
+  {
+   "title": "The demon's star",
+   "text": "<p>It is <b>9 pm in mid-November</b>, high in the north-east, in Perseus. The middle star is selected.</p><p>This is <b>Algol</b>. The name comes from the Arabic <b>Ra's al-Ghul</b>, '<b>the head of the ghoul</b>', the ghoul being a monster that feeds on corpses. In Greek myth this same star belongs to <b>the head of Medusa</b> that Perseus carries in his hand.</p><p>Two different cultures looked at this one star and both reached for <b>the head of a monster</b>. It is a strange thing to put down to coincidence.</p><p>The magnitude in the information panel is fixed at <b>2.1</b>. <b>This view does not calculate changes in the brightness of stars.</b> But the real Algol in the sky dims noticeably <b>once every three days</b>.</p>",
+   "sky": {
+    "date": "2026-11-15T21:00:00+09:00",
+    "az": 63,
+    "alt": 53,
+    "fov": 60,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationLabels": true,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "select": "Algol"
+  },
+  {
+   "title": "What is covering the star?",
+   "text": "<p>In 1782 the eighteen-year-old <b>John Goodricke</b>, watching this star night after night, found the rule: the brightness repeated exactly <b>every 2.87 days</b>.</p><p>And he offered a remarkable explanation: that <b>a dark body was passing in front of the star at regular intervals</b>. He said this of a star that showed as a single point in any telescope. A hundred years later spectroscopic observation confirmed it.</p><p>Algol is <b>two stars</b>. A bright blue one and a dim swollen one orbit each other, and the plane of the orbit happens to lie almost along our line of sight, so <b>every time the dim one passes in front of the bright one</b> the light is blocked. This is called an <b>eclipsing binary</b>.</p><ul><li>Normally <b>magnitude 2.1</b> — a bright star by any standard</li><li>While covered, <b>magnitude 3.4</b> — a difference of 1.3 magnitudes, more than <b>3 times</b> fainter</li><li>Dimming and recovering takes <b>about 10 hours</b>, with the faintest stretch running a little over two hours</li></ul><p>A factor of 3 is a difference <b>the naked eye can see for certain</b>. No scale and no equipment required.</p>",
+   "sky": {
+    "fov": 45
+   },
+   "quiz": {
+    "q": "Why does Algol dim every 2.87 days?",
+    "opts": [
+     "Because the star swells and shrinks in turn",
+     "Because a companion star passes in front of it and blocks the light",
+     "Because spots on the star's surface come round",
+     "Because the state of the Earth's atmosphere changes"
+    ],
+    "right": 1,
+    "explain": "Algol is an eclipsing binary of two stars orbiting each other, and the plane of the orbit lies almost along our line of sight, so the light is blocked each time the dim companion passes in front of the bright star. There are stars whose brightness varies by swelling and shrinking, the pulsating variables, but those are a different kind, such as the Cepheids or Mira. Atmospheric conditions affect the whole sky and cannot dim one particular star at regular intervals."
+   }
+  },
+  {
+   "title": "How to measure brightness by eye",
+   "text": "<p>There is a way to measure brightness without equipment: the <b>comparison-star method</b>, set out by <b>Argelander</b> in the 19th century.</p><p>The principle is simple. <b>Rather than measuring brightness as an absolute value, you judge where it falls between stars whose brightness you already know.</b></p><p>Algol has two good comparison stars beside it. Both are marked on screen.</p><ul><li><b>Mirfak</b> (Alpha Persei) — <b>magnitude 1.8</b>. Always brighter than Algol</li><li><b>Delta Persei</b> — <b>magnitude 3.0</b>. Algol is brighter than this normally, and fainter than it while covered</li></ul><p>So the judgement runs like this.</p><ul><li>Algol <b>clearly brighter</b> than Delta → the normal state</li><li>Algol <b>equal to or fainter</b> than Delta → it is being covered right now</li></ul><p>That single comparison has made you a <b>photometric observer</b>. Confirming a threefold difference in brightness takes one eye and two stars to compare against.</p>",
+   "sky": {
+    "fov": 50
+   },
+   "clearSelection": true,
+   "highlight": [
+    {
+     "target": "Algol",
+     "radius": 1.5
+    },
+    {
+     "target": "Mirfak",
+     "radius": 1.5
+    },
+    {
+     "target": "* del Per",
+     "radius": 1.5
+    }
+   ]
+  },
+  {
+   "title": "There is more than one kind of variable",
+   "text": "<p>Some stars dim because something <b>covers</b> them, as Algol does, and some <b>genuinely</b> grow brighter and fainter in themselves.</p><ul><li><b>Eclipsing binaries</b> — Algol. Two stars hiding one another. The stars themselves do not change</li><li><b>Pulsating variables</b> — the star <b>swells and shrinks</b>. The Cepheids (days to tens of days) and the Mira type (hundreds of days) belong here</li><li><b>Eruptive variables</b> — an explosion at the surface or in the core. Novae and <b>supernovae</b> belong here. Many are one-off events that never repeat</li></ul><p><b>Mira</b> in Cetus takes its name from the word for '<b>the wonderful one</b>'. Over a period of 332 days it runs <b>from magnitude 2 to magnitude 10</b>. At its brightest it is a conspicuous star, and <b>a few months later it has vanished from naked-eye view.</b> It is not hard to imagine what a shock that was in an age that believed the heavens never changed.</p><p>In the 'Orion Nebula' lesson there was the guest star of 1054. That is the extreme of the eruptive kind, a supernova. The <b>guest stars</b> left in the East Asian records were mostly novae or supernovae.</p>",
+   "sky": {
+    "fov": 70
+   }
+  },
+  {
+   "title": "A change in brightness built the ruler of the universe",
+   "text": "<p>One kind of variable star changed the whole of astronomy: the <b>Cepheid variable</b>.</p><p>In 1908 <b>Henrietta Leavitt</b>, working through thousands of Cepheids in the Magellanic Clouds, found the rule: <b>the longer the period over which the brightness varies, the brighter the star really is</b>.</p><p>Why that matters is this. It means <b>you can know the real brightness by measuring the period alone</b>. Know the real brightness, measure how bright it looks, and out comes <b>the distance</b>.</p><p>This is the second rung of the ladder from 'How do we measure the distance to a star?'. And it is the tool Hubble used in 'The Andromeda Galaxy' when he changed the size of the universe.</p><p><b>All that measuring a period takes is recording the brightness over a number of nights.</b> That is what Leavitt did, and the method has not changed since.</p>",
+   "sky": {
+    "fov": 60
+   },
+   "quiz": {
+    "q": "Why are Cepheid variables so important in astronomy?",
+    "opts": [
+     "Because they are the brightest stars",
+     "Because the period of variation gives the real brightness, which gives the distance",
+     "Because they are the commonest stars",
+     "Because they make elements when they explode"
+    ],
+    "right": 1,
+    "explain": "There is a fixed relationship between the period and the real brightness, so measuring the period tells you how bright the star truly is. Setting the real brightness against the apparent brightness gives the distance, which makes it a ruler reaching far beyond where parallax can go. This ruler is what showed that Andromeda lies outside our galaxy."
+   }
+  },
+  {
+   "title": "A field where amateurs still count",
+   "text": "<p>Observing variable stars is one of the few fields where <b>amateurs still make a real contribution</b>.</p><p>There is a reason. There are <b>tens of thousands</b> of variable stars, and time on professional telescopes is expensive. You cannot tie up a large telescope for years watching one star. Amateurs, by contrast, are <b>many</b>, and being scattered across the Earth they <b>beat both the weather and the time zones</b>.</p><p>The <b>American Association of Variable Star Observers (AAVSO)</b> holds <b>tens of millions</b> of observations gathered over more than a hundred years, most of them sent in by amateurs. It is usually amateurs, too, who notice first when a nova goes off.</p><p>What it takes is an eye and diligence. <b>Looking at the same star the same way over a number of nights</b> is the whole of it.</p>",
+   "sky": {
+    "fov": 60
+   }
+  },
+  {
+   "title": "Measure Algol tonight",
+   "text": "<p>The practical part of this lesson is outdoors.</p><ul><li><b>Find Perseus.</b> It runs east from the W of Cassiopeia and rides high on autumn and winter evenings</li><li><b>Compare Algol against Delta Persei.</b> Algol clearly brighter means the normal state; equal or fainter means it is being covered</li><li>Look at the same hour <b>every three days</b>. Sooner or later you will meet a dimmed Algol. The minimum comes every 2.87 days, but it falls during the night about once in three</li><li>Two minima to work from: about <b>12:00 UTC on 8 December 2026</b> and about <b>10:30 UTC on 31 December</b>. Step 2.87 days forward or back from either to find the ones that fall in your own evening. It takes five hours to dim and five to recover, a change slow enough that being <b>an hour or two out</b> still catches it</li><li>The time of minimum itself varies by about an hour between forecasts, because of a third star bound to Algol. Checking <b>the latest prediction of the minimum</b> before you go out saves a wasted trip</li><li>Keep a record. Date, time and your judgement (normal / middling / dim) is enough. <b>This is observational data.</b></li></ul><p>See a dimmed Algol with your own eyes just once and you know in your bones that the night sky is not a still picture.</p>",
+   "sky": {
+    "az": 63,
+    "alt": 53,
+    "fov": 70,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "constellationLines": true
+   },
+   "clearSelection": true,
+   "highlight": [
+    {
+     "target": "Algol",
+     "radius": 2
+    },
+    {
+     "target": "* del Per",
+     "radius": 2
+    }
+   ]
+  }
+ ],
+ "credits": "The times of minimum for Algol are approximations calculated from the GCVS elements. The engine does not calculate changes in stellar brightness, so the changes in this lesson can only be checked in the real sky."
+}

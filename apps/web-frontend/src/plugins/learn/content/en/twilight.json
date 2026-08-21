@@ -1,0 +1,137 @@
+{
+ "id": "twilight",
+ "title": "When do the stars come out after sunset?",
+ "subtitle": "Crossing the three stages of twilight with your own eyes",
+ "minutes": 9,
+ "level": "intro",
+ "track": "principle",
+ "tags": [
+  "twilight",
+  "planning",
+  "sunset",
+  "dark adaptation"
+ ],
+ "intro": "The Sun going down does not bring the stars out at once. It takes another hour and a half for the sky to go fully dark, and that stretch falls into three stages. Knowing them before you go out saves you a wasted trip.",
+ "steps": [
+  {
+   "title": "Just before sunset",
+   "text": "<p>The western sky. The Sun is hanging <b>3 degrees</b> above the horizon and will be down shortly.</p><p>For the sake of the explanation this lesson has set the observing site to an autumn evening at <b>37.5°N</b>, so that the whole run of twilight can be watched from beginning to end. At the last step it returns to where you are.</p><p>There is not a single star in the sky yet. To be exact, <b>the stars are up there in the daytime too</b>, but the sky is too bright and they are buried in it. The air scatters sunlight in every direction.</p><p>Stars begin to show because the sky darkens, not because the stars come up.</p>",
+   "sky": {
+    "date": "2026-09-15T18:20:00+09:00",
+    "lat": 37.5,
+    "lng": 127,
+    "elev": 0,
+    "az": 272,
+    "alt": 12,
+    "fov": 80,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": true,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   }
+  },
+  {
+   "title": "Sunset — civil twilight begins here",
+   "text": "<p><b>18:40</b>. The Sun has gone below the horizon. From this moment <b>twilight</b> begins.</p><p>The Sun is gone and the sky is still bright. From below the horizon it is lighting the upper atmosphere, and that light scatters down to us.</p><p>This first stage is called <b>civil twilight</b>, running from a solar altitude of <b>0 degrees to -6 degrees</b>. Its marks are clear.</p><ul><li>It is bright enough to <b>read a book</b> outdoors</li><li>The street lights begin to come on</li><li>Only <b>the one or two brightest things</b> show in the sky: a planet such as Venus, or a star of the class of Sirius</li></ul><p>What get called 'evening stars' appear in this stretch. They show not because it is dark but because they are <b>exceptionally bright</b>.</p>",
+   "sky": {
+    "date": "2026-09-15T18:40:00+09:00"
+   }
+  },
+  {
+   "title": "End of civil twilight — the first-magnitude stars",
+   "text": "<p><b>19:07</b>. The solar altitude is <b>-6 degrees</b>. Civil twilight ends and <b>nautical twilight</b> begins.</p><p>The western horizon is still bright, but overhead it has darkened a good deal. <b>The first-magnitude stars appear one after another.</b></p><p>The order in which the stars appear is <b>the order of their brightness</b>. As the sky darkens the brightest beat the background first and the rest follow. The magnitudes from 'What brightness means' are laid out in front of you in order.</p><p>East Asian astronomy called the time after sunset <b>hon</b> (昏) and the time before sunrise <b>sin</b> (晨). The star standing in the middle of the southern sky at hon, the <b>honjungseong</b>, was used to fix the solar terms. In an age without clocks, twilight was both <b>the scale of the day</b> and <b>the scale of the year</b>.</p>",
+   "sky": {
+    "date": "2026-09-15T19:07:00+09:00",
+    "az": 250,
+    "alt": 30,
+    "fov": 100
+   }
+  },
+  {
+   "title": "End of nautical twilight — the sea horizon goes",
+   "text": "<p><b>19:37</b>. The solar altitude is <b>-12 degrees</b>. Nautical twilight ends and <b>astronomical twilight</b> begins.</p><p>The origin of the name is worth knowing. Up to the end of this stage <b>the horizon at sea is still visible</b>. That stretch, with stars and the sea horizon both in view, was a sailor's <b>only chance to fix a position with a sextant</b>, because measuring the altitude of a star needs a visible horizon to measure it from.</p><p>Past this stage the horizon sinks into the dark and can no longer be made out. Hence <b>nautical</b> twilight.</p><p>Stars down to magnitude 2 or 3 are out now and the shapes of the constellations can be made out. Some faint brightness still lingers in the west, though.</p>",
+   "sky": {
+    "date": "2026-09-15T19:37:00+09:00",
+    "az": 180,
+    "alt": 45,
+    "fov": 110
+   }
+  },
+  {
+   "title": "End of astronomical twilight — real night",
+   "text": "<p><b>20:10</b>. The solar altitude is <b>-18 degrees</b>. Twilight is over. From here on is what astronomers call <b>night</b>.</p><p>Every trace of the Sun's light has gone and the sky will get no darker. Only now do the following become possible.</p><ul><li>The <b>Milky Way</b> comes out</li><li>Faint <b>nebulae and galaxies</b> can be seen</li><li>You can count down to magnitude 6</li></ul><p>Getting here from sunset took <b>an hour and a half</b>. If you went out to see the Andromeda Galaxy, this is where it starts. It is worth arriving before then, to buy time for <b>your eyes to settle into the dark</b>.</p>",
+   "sky": {
+    "date": "2026-09-15T20:10:00+09:00",
+    "fov": 120
+   },
+   "show": {
+    "dso": true
+   },
+   "quiz": {
+    "q": "What only becomes possible once astronomical twilight has ended?",
+    "opts": [
+     "Observing first-magnitude stars",
+     "Making out the shapes of the constellations",
+     "Observing the Milky Way and faint nebulae",
+     "Observing the Moon"
+    ],
+    "right": 2,
+    "explain": "First-magnitude stars come out around the end of civil twilight, and the shapes of the constellations can be made out during nautical twilight. Faint light spread over a wide area, such as the Milky Way, only separates from the background once the sky itself is fully dark. The Moon is bright enough to be seen in broad daylight."
+   }
+  },
+  {
+   "title": "Twilight depends on the season and the latitude",
+   "text": "<p>Twilight is not always the same length. It depends on <b>how steeply the Sun crosses the horizon</b>.</p><ul><li><b>The equator</b> — the Sun goes down almost vertically. Twilight is short, <b>a little over an hour</b>, and darkness follows sunset quickly</li><li><b>Middle latitudes</b> — around <b>an hour and a half</b>, as we have just watched. Longer in summer</li><li><b>High latitudes</b> — the Sun goes down at a very shallow angle and twilight runs for hours. In summer it never reaches -18 degrees and <b>night never comes at all</b>. That is the midnight sun</li></ul><p>North of 48.5°N, astronomical twilight does not end at midsummer. Paris and Vancouver are around that line, and London and Berlin have no real night through the whole of June. <b>Observers there rest in summer and work in winter.</b></p><p>Between 33 and 38°N, which covers Korea and southern Japan, night does come even at midsummer. In late June, though, the end of astronomical twilight is pushed back to <b>close to 10 pm</b>.</p>",
+   "sky": {
+    "fov": 100
+   }
+  },
+  {
+   "title": "How long the eye takes to adapt",
+   "text": "<p>The sky going dark and <b>your eyes getting used to the dark</b> are two different stories.</p><ul><li>The pupil widens in <b>a few seconds</b></li><li>The light-sensitive chemistry of the retina recovers over <b>20 to 30 minutes</b></li><li>Full adaptation can take as long as <b>45 minutes</b></li></ul><p>Once adapted, the sensitivity of the eye rises <b>more than 10,000 times</b>. The number of stars visible in the same sky doubles or trebles.</p><p>The trouble is that <b>one bright light puts you back to the beginning</b>. A single look at a phone screen returns you to where you were minutes ago.</p><p>So observers use <b>red light</b>. The rods of a dark-adapted retina are least sensitive to red, so you can read a map and keep your adaptation. Byeolmuri has a <b>night mode</b> as well. It covers the whole screen in red to protect your eyes when you have it out with you.</p>",
+   "sky": {
+    "fov": 90
+   },
+   "quiz": {
+    "q": "Why do observers use red light in the field?",
+    "opts": [
+     "Because red light travels further",
+     "Because a dark-adapted eye is least sensitive to red, so less of the adaptation is lost",
+     "Because red light does not mix with starlight",
+     "Because insects dislike red light"
+    ],
+    "right": 1,
+    "explain": "The rods that do the work in the dark have low sensitivity at the red end of the spectrum. So under a red light you can read a map without losing much of your dark adaptation. It is a way of not throwing away, with one flash of white light, the adaptation that took 20 to 30 minutes to build."
+   }
+  },
+  {
+   "title": "Make a plan for tonight",
+   "text": "<p>The observing site is back to <b>where you are</b>. Now it is time to plan tonight.</p><ul><li>Open the '<b>Tonight</b>' tab and it gives you today's times for <b>sunset, the end of twilight, the start of twilight and sunrise</b>, along with how many hours of darkness there are</li><li>If you are after the faint things — the Milky Way, nebulae, galaxies — go out so as to arrive <b>after astronomical twilight ends</b></li><li>If it is only the Moon, the planets and bright stars, <b>civil twilight</b> will do. A crescent Moon and Venus are in fact more beautiful while the sky is still blue</li><li>Once you arrive, <b>wait 20 minutes.</b> Not looking at your phone in that time decides how the night goes</li><li>While twilight runs, <b>count the order in which the stars appear</b>. Remember which one comes out first and you can guess its magnitude</li></ul>",
+   "sky": {
+    "home": true,
+    "fov": 90,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "dso": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "The solar-altitude limits of the twilight stages (-6, -12 and -18 degrees) follow the international standard, and the times on screen were read directly from the engine for 37.5°N on 15 September 2026."
+}

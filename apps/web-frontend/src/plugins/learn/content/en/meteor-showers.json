@@ -1,0 +1,153 @@
+{
+ "id": "meteor-showers",
+ "title": "Why does a meteor shower pour out of one point?",
+ "subtitle": "Marking the radiant, and deciding where to look tonight",
+ "minutes": 10,
+ "level": "intro",
+ "track": "principle",
+ "tags": [
+  "meteor shower",
+  "radiant",
+  "comet",
+  "planning"
+ ],
+ "intro": "On the night of a meteor shower people usually ask which way they should look. The answer is a little strange. The meteors do spread out from one point, but staring straight at that point works against you. Let us find out why.",
+ "steps": [
+  {
+   "title": "August, before dawn, the north-eastern sky",
+   "text": "<p>It is <b>3 in the morning on 13 August</b>, looking north-east. This is the night the <b>Perseid meteor shower</b> reaches its peak.</p><p>The circled spot is the <b>radiant</b>, between Perseus and Cassiopeia. <b>Carry the trail of any meteor that falls tonight backwards</b> and every one of them comes out of this point.</p><p>One thing to say up front. <b>This view cannot draw meteors.</b> Stars and planets it calculates and puts in place, but where and when a meteor will fall cannot be calculated at all. So this lesson helps only as far as deciding <b>where to look and when</b>. The rest you have to do outdoors.</p>",
+   "sky": {
+    "date": "2026-08-13T03:00:00+09:00",
+    "az": 40,
+    "alt": 50,
+    "fov": 85,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": true,
+    "constellationLabels": true,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true,
+    "dss": false
+   },
+   "highlight": [
+    {
+     "ra": 48.2,
+     "de": 58.1,
+     "radius": 6
+    }
+   ]
+  },
+  {
+   "title": "The radiant is an illusion",
+   "text": "<p>The meteors are not really spraying out of a single point. It is <b>an illusion of perspective</b>.</p><p>The fragments come in <b>parallel to one another</b>, all travelling the same way, and strike the Earth's atmosphere. Parallel lines seen head on appear to gather to a point.</p><ul><li>Straight <b>railway tracks</b> appearing to meet at a point in the distance</li><li><b>Tunnel lights</b> converging to a point ahead of you</li><li><b>Snowflakes</b> streaming out of one spot on the windscreen as you drive</li></ul><p>The last comparison is the most accurate. The Earth is <b>driving into</b> a band of debris, and we are watching it from inside the windscreen.</p><p>Which is why a meteor shower is named after <b>the constellation the radiant lies in</b>. The Perseids do not come from Perseus; the radiant merely appears laid over that direction. The fragments themselves are burning up <b>100 km</b> above the Earth.</p>",
+   "sky": {
+    "fov": 100
+   }
+  },
+  {
+   "title": "Why it falls on the same date each year",
+   "text": "<p>Meteor showers repeat on <b>very nearly the same dates</b>. The Perseids fall around 12 August, the Geminids around 14 December.</p><p>The reason is simple. <b>A band of debris left behind by a comet</b> lies across the orbit of the Earth, and the Earth passes through that place once a year. A fixed date means <b>a fixed position along the orbit</b>.</p><p>The parent bodies are all known.</p><ul><li><b>The Perseids</b> — Comet Swift-Tuttle (period 133 years)</li><li><b>The Leonids</b> — Comet Tempel-Tuttle (period 33 years)</li><li><b>The Lyrids</b> — Comet Thatcher (period 415 years)</li><li><b>The Geminids</b> — <b>the asteroid</b> Phaethon. An unusual case</li></ul><p>Every time a comet comes close to the Sun its ice melts and it sheds dust. That dust spreads out along the orbit and becomes a band. <b>A meteor shower is the footprint a comet left where it passed.</b></p><p>So in a year when the Earth crosses a dense part of the debris the meteors pour down, and in a year when it crosses a thin part they are sparse. Records survive of the Leonids in 1833 and in 1966 dropping <b>tens of thousands an hour</b>, and of people thinking the sky was falling in.</p>",
+   "sky": {
+    "fov": 90
+   },
+   "quiz": {
+    "q": "Why do the meteors of a shower appear to spray out from a single point?",
+    "opts": [
+     "Because the constellation in that direction is throwing out the debris",
+     "It is an illusion of perspective, from seeing parallel debris head on",
+     "Because the Earth's magnetic field gathers the debris to a point",
+     "Because the comet is genuinely sitting at the radiant"
+    ],
+    "right": 1,
+    "explain": "The fragments come in parallel to one another, all travelling the same way. Parallel lines seen head on converge to a single vanishing point, just as railway tracks appear to meet in the distance. The constellation lies tens to hundreds of light years off while the debris burns up 100 km overhead, so the two have nothing to do with each other."
+   }
+  },
+  {
+   "title": "In December, from the opposite side of the sky",
+   "text": "<p>It is <b>10 pm on 14 December</b>. This time the radiant of the <b>Geminid meteor shower</b> is marked, right beside <b>Castor</b> in Gemini.</p><p>It is the most dependable shower of the year. Over 100 an hour, and unlike other showers the radiant is up <b>from early in the evening</b>.</p><p>There is a price. The middle of December means <b>it is cold.</b> And watching a meteor shower is a matter of lying still and looking at the sky for two or three hours. Dressing for the cold is half of this shower.</p><p>The speeds differ as well. Geminids come in at 35 km per second, which is slow, so they run <b>long and leisurely</b>; Perseids come in at 59 km per second and pass <b>short and sharp</b>. The bright ones sometimes leave a trail for a few seconds.</p>",
+   "sky": {
+    "date": "2026-12-14T22:00:00+09:00",
+    "az": 78,
+    "alt": 38,
+    "fov": 70
+   },
+   "highlight": [
+    {
+     "ra": 112.3,
+     "de": 32.5,
+     "radius": 5
+    }
+   ]
+  },
+  {
+   "title": "Do not look at the radiant",
+   "text": "<p>Now back to the odd answer from the beginning. <b>Looking straight at the radiant works against you.</b></p><p>A meteor coming from the direction of the radiant is flying <b>straight at us</b>, so the trail it leaves in the sky looks like <b>a short dot</b>. Look instead at a part of the sky <b>30 to 60 degrees away</b> from the radiant and the meteors run long across your view. They catch the eye and they are easier to count.</p><p>So the knack is this.</p><ul><li><b>Know where the radiant is</b>, but keep your gaze a little <b>above it or to one side</b></li><li>Best of all is <b>the darkest part of the sky</b>, usually near the zenith</li><li><b>Use the naked eye.</b> Telescopes and binoculars have too narrow a field and only get in the way. A meteor shower is one of the few observations that needs no equipment</li></ul>",
+   "sky": {
+    "az": 90,
+    "alt": 60,
+    "fov": 110
+   }
+  },
+  {
+   "title": "The small hours beat the evening",
+   "text": "<p>The hour matters too. As a rule, <b>after midnight, and the closer to dawn the better</b>, more meteors fall.</p><p>The Earth turns on its axis and travels along its orbit at the same time. <b>After midnight the surface of the Earth faces the way the Earth is going</b>; the evening side faces backwards.</p><p>The car again. Snowflakes pour onto the windscreen while only the odd one that catches up reaches the rear window. <b>The dawn sky is the windscreen.</b></p><p>So the standard window for watching a meteor shower is <b>from 2 in the morning until first light</b>. Even for a shower like the Geminids, whose radiant rises early, the small hours are better.</p><p>And above all there is <b>the Moon</b>. On a night with a full Moon the finest shower in the world loses all its faint meteors and you will see only a handful. Check the phase of the Moon on the 'Tonight' tab first. It works exactly as 'Why does the Moon change shape?' set out.</p>",
+   "sky": {
+    "date": "2026-08-13T03:00:00+09:00",
+    "az": 60,
+    "alt": 60,
+    "fov": 110
+   },
+   "quiz": {
+    "q": "Why are the small hours the better time to watch a meteor shower?",
+    "opts": [
+     "Because the air is clearer before dawn",
+     "Because after midnight the surface of the Earth faces the way the Earth is going",
+     "Because the radiant is always highest before dawn",
+     "Because the debris is denser before dawn"
+    ],
+    "right": 1,
+    "explain": "The side facing the way the Earth is going meets the debris head on, so it is struck more often and at higher speed. It is like snow pouring onto the windscreen as you drive. The altitude of the radiant differs from shower to shower, and the density of the debris band has nothing to do with the hour."
+   }
+  },
+  {
+   "title": "The trap in the number called ZHR",
+   "text": "<p>Any description of a meteor shower carries a number called <b>ZHR</b>: 100 for the Perseids, 150 for the Geminids, and so on.</p><p>It is easy to read as 'meteors per hour', but strictly it is the <b>zenithal hourly rate</b>, the figure you would get if all of the following held.</p><ul><li>The radiant is at the <b>zenith</b></li><li>The sky is perfectly dark, down to <b>magnitude 6.5</b></li><li>Nothing at all blocks your view</li></ul><p>None of that holds in practice. A low radiant cuts it by half or more, and a city sky cuts it to a fraction again. <b>Watch a shower of ZHR 100 from the outskirts and 20 to 30 an hour counts as a good night.</b></p><p>Knowing that number before you go out saves you from disappointment. Twenty an hour is <b>one every 3 minutes</b>. Waiting is most of the observing.</p>",
+   "sky": {
+    "fov": 100
+   }
+  },
+  {
+   "title": "A calendar of the year",
+   "text": "<p>These are the ones worth seeing. The dates shift by a day or two from year to year.</p><ul><li><b>3 January</b> — the Quadrantids. Counted at ZHR 110, but the peak lasts only <b>a few hours</b>, so catching the timing is hard</li><li><b>22 April</b> — the Lyrids. Few in number, but they throw up <b>bright meteors</b></li><li><b>6 May</b> — the Eta Aquariids. Debris from Halley's Comet</li><li><b>12 August</b> — <b>the Perseids</b>. A summer night makes the watching comfortable and the numbers are good. The best of all for a beginner</li><li><b>21 October</b> — the Orionids. Debris from Halley's Comet as well</li><li><b>17 November</b> — the Leonids. Quiet in most years, but <b>every 33 years</b> they pour down in a storm</li><li><b>14 December</b> — <b>the Geminids</b>. The most numerous and the most certain of the year</li></ul><p>The name tells you which constellation the radiant lies in. Put that constellation into the search box and look at where it sits beforehand, and you can work out which part of the sky will be behind you on the night.</p><p>East Asia treated meteors as <b>seongbyeon</b> (星變), portents among the stars, and recorded them carefully. The <b>Annals of the Joseon Dynasty</b> and the <b>Diaries of the Royal Secretariat</b> set down the time and direction a meteor appeared, its size and colour, even the length of its trail. They were kept for divination, and they have become <b>centuries of meteor shower observations</b>.</p>",
+   "sky": {
+    "fov": 110
+   }
+  },
+  {
+   "title": "Tonight, starting with lying down",
+   "text": "<p>Watching a meteor shower takes the least equipment and the simplest knack of anything.</p><ul><li><b>Get the date right.</b> A day or two either side of the peak is fine</li><li><b>Check the Moon.</b> Look at the phase on the 'Tonight' tab, and if it is near full, either wait for next year or aim for after the Moon has set</li><li>Go <b>somewhere without lights</b>. Most of the meteors in a shower are faint, so how dark the sky is decides how many you see</li><li><b>Lie down.</b> A mat or a folding chair helps. Nobody can hold their head up for two hours</li><li><b>Wait 20 minutes.</b> Your eyes have to settle into the dark. Do not look at your phone in that time</li><li>Keep your gaze on <b>a dark patch of sky a little away from the radiant</b> and take it in wide</li><li>It is cold before dawn even in summer. Bring <b>a coat and a warm drink</b></li></ul><p>With luck, one bright thing crosses the sky and leaves a trail hanging for a few seconds. The waiting for that one is the whole of watching a meteor shower.</p>",
+   "sky": {
+    "fov": 100,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true,
+    "constellationLines": false,
+    "constellationLabels": false
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "The list of showers and the radiant coordinates follow Byeolmuri's meteor shower data, which is based on the IAU meteor shower list. The view does not draw meteors. Pointing out where the radiant lies is as far as this view can go."
+}

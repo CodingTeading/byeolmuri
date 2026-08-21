@@ -1,0 +1,143 @@
+{
+ "id": "star-colors",
+ "title": "El color de una estrella es su temperatura",
+ "subtitle": "Las rojas son las más frías",
+ "minutes": 9,
+ "level": "basic",
+ "track": "measure",
+ "tags": [
+  "color",
+  "temperatura",
+  "tipo espectral",
+  "Albireo"
+ ],
+ "intro": "Las estrellas parecen todas blancas hasta que las miras bien, y entonces sus colores difieren. Ese color no es cuestión de gusto, es un termómetro. Si sabes el color de una estrella puedes decir la temperatura de su superficie.",
+ "steps": [
+  {
+   "title": "Dos colores dentro de una misma constelación",
+   "text": "<p>Esto es Orión, <b>al sur en una tarde de invierno</b>. Por encima y por debajo de las tres estrellas puestas en diagonal hay una estrella brillante a cada lado.</p><p>Están marcadas <b>Betelgeuse</b>, en el hombro de arriba a la izquierda, y <b>Rigel</b>, en el pie de abajo a la derecha. Mira bien la pantalla. Betelgeuse es <b>naranja</b>, Rigel es <b>azul</b>.</p><p>Están en la misma constelación, así que quedan más o menos en la misma dirección y a distancias no muy distintas. Y aun así sus colores difieren tanto. ¿Por qué?</p>",
+   "sky": {
+    "date": "2027-01-20T21:00:00+09:00",
+    "az": 152,
+    "alt": 48,
+    "fov": 60,
+    "timeSpeed": 0
+   },
+   "show": {
+    "constellationLines": false,
+    "constellationLabels": false,
+    "constellationArt": false,
+    "constellationBounds": false,
+    "onlyPointedConstellation": false,
+    "atmosphere": false,
+    "landscape": true,
+    "azimuthalGrid": false,
+    "equatorialGrid": false,
+    "ecliptic": false,
+    "dso": false,
+    "milkyway": true,
+    "stars": true
+   },
+   "highlight": [
+    "Betelgeuse",
+    "Rigel"
+   ]
+  },
+  {
+   "title": "Betelgeuse — una estrella roja a 3500 grados",
+   "text": "<p>Está seleccionada Betelgeuse. Mira el <b>tipo espectral</b> en la información del objeto. Empieza por <b>M</b>. Es el grupo más frío, con una temperatura superficial de unos <b>3500 grados</b>.</p><p>El nombre viene del árabe, «la axila del gigante». Es una estrella de brillo variable, así que unos años supera a Rigel y otros no. A finales de 2019 se apagó de forma llamativa y hubo un revuelo sobre una supernova inminente; resultó que el polvo que la propia estrella había expulsado se había puesto por delante.</p><p>Su diámetro es <b>varios cientos de veces</b> el del Sol. Ponla donde está el Sol y se tragaría la órbita de Marte.</p>",
+   "sky": {
+    "fov": 30
+   },
+   "select": "Betelgeuse"
+  },
+  {
+   "title": "Rigel — una estrella azul a 12000 grados",
+   "text": "<p>Ahora Rigel. Su tipo espectral empieza por <b>B</b> y su temperatura superficial pasa de <b>12000 grados</b>. Más de tres veces más caliente que Betelgeuse.</p><p>La regla es sencilla. <b>Caliente es azul, frío es rojo.</b></p><p>Mete hierro en el fuego y primero se pone al rojo, luego amarillo según se calienta más, y después de un blanco deslumbrante. Con las estrellas pasa igual. Cuanto más caliente es un cuerpo, más luz emite en longitudes de onda cortas, hacia el azul.</p><p>Nosotros sentimos el rojo como caliente y el azul como frío, pero con las estrellas es <b>exactamente al revés</b>.</p>",
+   "sky": {
+    "fov": 30
+   },
+   "select": "Rigel",
+   "quiz": {
+    "q": "¿Cuál de estas estrellas tiene la superficie más caliente?",
+    "opts": [
+     "La roja Betelgeuse",
+     "El amarillo Sol",
+     "La blanca Vega",
+     "El azul Rigel"
+    ],
+    "right": 3,
+    "explain": "El color sigue exactamente el orden de temperatura. Rojo (3500 grados) → naranja → amarillo (el Sol, 5800) → blanco (Vega, 9600) → azul (Rigel, más de 12000). Que una estrella roja parezca caliente es un engaño de nuestros sentidos: en realidad es la más fría de todas."
+   }
+  },
+  {
+   "title": "OBAFGKM — las clases de temperatura",
+   "text": "<p>Ordena las estrellas empezando por la más caliente y salen siete clases: <b>O B A F G K M</b>. La primera letra del tipo espectral que aparece en la ventana de información es una de estas.</p><ul><li><b>O</b> más de 30000 grados, azul — muy raras</li><li><b>B</b> de 10000 a 30000, blanco azulado — Rigel, Deneb</li><li><b>A</b> de 7500 a 10000, blanco — Vega, Sirio</li><li><b>F</b> de 6000 a 7500, blanco amarillento — Proción</li><li><b>G</b> de 5200 a 6000, amarillo — <b>el Sol</b>, Capella</li><li><b>K</b> de 3700 a 5200, naranja — Arturo, Aldebarán</li><li><b>M</b> menos de 3700, rojo — Betelgeuse, Antares</li></ul><p>El orden parece extraño porque las letras se repartieron primero como A, B, C con otro criterio, y cuando después se reordenaron las clases por temperatura solo quedaron los nombres.</p><p>Conviene saberlo: el Sol es <b>una estrella blanca</b>. Parece amarillo porque el aire dispersa el azul de su luz. La misma razón por la que el cielo es azul.</p>",
+   "sky": {
+    "az": 130,
+    "alt": 55,
+    "fov": 110
+   },
+   "clearSelection": true,
+   "highlight": [
+    "Sirius",
+    "Aldebaran",
+    "Capella",
+    "Procyon"
+   ]
+  },
+  {
+   "title": "Albireo — dos colores puestos uno junto a otro",
+   "text": "<p>Pasamos al cielo de verano y a <b>Albireo</b>, en el pico del cisne. A simple vista es una sola estrella, pero muy ampliada se ha separado en <b>dos</b>. La pareja está a <b>35 segundos de arco</b>, la cincuentava parte del diámetro de la luna llena.</p><p>Una es <b>dorada</b> (tipo K, 4400 grados) y la otra <b>azul</b> (tipo B, 13000 grados). Puestas así, juntas, la diferencia de color entra de golpe. Los astrónomos aficionados la nombran una y otra vez como la estrella doble más bonita que hay.</p><p>Todavía no está claro si las dos se orbitan de verdad o si simplemente coinciden en la línea de visión. Si son pareja, una vuelta les lleva unos 100000 años.</p><p>Un telescopio pequeño la separa sin problema. Es uno de los objetivos más populares de las quedadas astronómicas de verano.</p>",
+   "sky": {
+    "date": "2026-08-15T21:00:00+09:00",
+    "fov": 0.08
+   },
+   "select": "* bet01 Cyg"
+  },
+  {
+   "title": "Las estrellas azules mueren jóvenes",
+   "text": "<p>El color no solo te da la temperatura. Te da también <b>la vida de la estrella</b>.</p><p>Las estrellas azules son masivas. Las masivas queman su combustible con furia y lo agotan en <b>unos pocos millones a unas pocas decenas de millones de años</b>, y acaban como supernovas. En términos humanos, una vida brillante y un final temprano.</p><p>Las estrellas rojas pequeñas, las enanas rojas, son ahorradoras con su combustible y viven <b>cientos de miles de millones de años</b>. El universo tiene 13800 millones de años, así que ni una sola enana roja ha llegado todavía al final de su vida.</p><p>Dicho eso, <b>no todo lo rojo es pequeño</b>. Estrellas como Betelgeuse y Antares son rojas porque <b>se han hinchado con la edad</b>: la superficie se extendió y se enfrió. El mismo rojo puede ser una estrella pequeña recién nacida o un gigante a punto de morir. Lo que las separa es el brillo.</p>",
+   "sky": {
+    "fov": 40
+   },
+   "clearSelection": true
+  },
+  {
+   "title": "Antares, el rival de Marte",
+   "text": "<p>La estrella roja que queda baja en el cielo del sur en verano es <b>Antares</b>, el corazón de Escorpio.</p><p>El nombre es griego y significa <b>«el rival de Ares», es decir de Marte</b>. Es roja, y bastante parecida a Marte en brillo como para que, cuando Marte pasaba cerca, la gente no supiera cuál de los dos era el planeta.</p><p>En Asia Oriental también vieron roja esa misma estrella. Es la estrella central de <b>Simsu</b>, una de las 28 mansiones, y la llamaban <b>Daehwa</b> (大火), «el gran fuego». Por dónde quedaba en el cielo de la tarde se juzgaba la temporada agrícola.</p><p>Dos culturas que nunca se habían encontrado miraron la misma estrella y <b>las dos echaron mano del fuego y del rojo</b>. El color cruza las culturas.</p>",
+   "sky": {
+    "date": "2026-08-15T21:00:00+09:00",
+    "az": 200,
+    "alt": 25,
+    "fov": 45
+   },
+   "select": "Antares",
+   "quiz": {
+    "q": "¿Cuál de estas afirmaciones sobre las estrellas que se ven rojas es correcta?",
+    "opts": [
+     "Todas son estrellas gigantes hinchadas por la edad",
+     "Todas son estrellas pequeñas recién nacidas",
+     "Comparten una superficie fría, pero sus tamaños pueden ser muy distintos",
+     "Las estrellas rojas no existen de verdad; solo parecen rojas por la atmósfera"
+    ],
+    "right": 2,
+    "explain": "El color te da la temperatura de la superficie y nada más. Así que todas las estrellas rojas tienen la superficie fría, pero entre ellas hay tanto gigantes rojas hinchadas por la edad como enanas rojas pequeñas y tenues. Para separarlas hacen falta el brillo y la distancia a la vez. Existe además un efecto del aire que enrojece las estrellas cerca del horizonte, pero Betelgeuse es roja incluso en lo alto del cielo."
+   }
+  },
+  {
+   "title": "Los colores se pueden comprobar a simple vista",
+   "text": "<p>Los colores de las estrellas no son algo que solo salga en las fotos: <b>se ven a simple vista</b>. Aunque hace falta cierta maña.</p><ul><li>En <b>invierno</b>, mira alternando entre <b>Betelgeuse y Rigel</b>, en Orión. Compararlas una junto a otra saca la diferencia mucho mejor</li><li>En <b>verano</b>, <b>Antares</b> arde roja en Escorpio mientras <b>Vega</b> brilla blanca en lo alto</li><li>En <b>primavera</b>, <b>Arturo</b> es naranja en el Boyero. Es la estrella más brillante del cielo primaveral, así que es fácil de encontrar</li><li>Busca el color cuando la estrella esté <b>alta</b>. Cerca del horizonte el aire enrojece todas las estrellas, la misma razón por la que el Sol enrojece al ponerse</li><li>Los <b>prismáticos</b> intensifican bastante el color. Desenfocar un poco lo extiende y lo hace aún más evidente</li></ul>",
+   "sky": {
+    "fov": 80,
+    "timeSpeed": 0
+   },
+   "show": {
+    "atmosphere": true,
+    "landscape": true
+   },
+   "clearSelection": true
+  }
+ ],
+ "credits": "Los tipos espectrales y las temperaturas superficiales siguen los intervalos habituales de la clasificación espectral de Harvard."
+}
