@@ -16,6 +16,8 @@
  "Loading {0}, the online Star Map": "Cargando {0}…",
  "Could not show the Online Star Map": "No se pudo mostrar el mapa estelar",
  "It seems that your browser cannot load Web Assembly!": "Parece que tu navegador no puede cargar WebAssembly.",
+ "Byeolmuri": "Byeolmuri",
+ "Byeolmuri logo": "Logotipo de Byeolmuri",
  "Web assembly is necessary for Stellarium Web to display the star map. Please upgrade your web browser and try again!": "WebAssembly es necesario para dibujar el mapa estelar. Actualiza tu navegador e inténtalo de nuevo.",
  "desktop version": "versión de escritorio",
  "In the meantime, you can try the {0}!": "Mientras tanto, puedes probar la {0}.",
@@ -66,5 +68,11 @@
   "weather": "Previsión meteorológica",
   "weatherBody": "Servicio de previsión a corto plazo de la Administración Meteorológica de Corea (data.go.kr)",
   "close": "Cerrar"
- }
+ },
+ "light years": "años luz",
+ "Also known as": "También conocido como",
+ "more on {0}": "más en {0}",
+ "Collapse": "Contraer",
+ "Expand": "Desplegar",
+ "Equatorial J2000 Grid": "Rejilla ecuatorial J2000"
 }

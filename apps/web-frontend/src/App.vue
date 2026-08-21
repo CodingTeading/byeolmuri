@@ -266,6 +266,12 @@ export default {
             }
 
             core.dsos.addDataSource({ url: process.env.BASE_URL + 'skydata/dso' })
+            // 사진 겹치기(DSS). 이것만 우리 서버가 아니라 CDS(스트라스부르
+            // 천문자료센터)에서 받아온다. 판자 사진을 통째로 담은 서베이라
+            // 우리가 안고 있기에는 너무 크다. 학술 공공 서비스이고 추적은
+            // 하지 않는다. 감사문은 data-credits-dialog.vue 에 있다.
+            // 이것이 없으면 레슨의 show.dss 가 아무 일도 하지 않는다.
+            core.dss.addDataSource({ url: 'https://alasky.cds.unistra.fr/DSS/DSSColor' })
             core.landscapes.addDataSource({ url: process.env.BASE_URL + 'skydata/landscapes/guereins', key: 'guereins' })
             core.milkyway.addDataSource({ url: process.env.BASE_URL + 'skydata/surveys/milkyway' })
             core.minor_planets.addDataSource({ url: process.env.BASE_URL + 'skydata/mpcorb.dat', key: 'mpc_asteroids' })

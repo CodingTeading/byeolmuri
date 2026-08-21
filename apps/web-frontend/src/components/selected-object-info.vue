@@ -7,17 +7,34 @@
 // repository.
 
 <template>
-  <v-card v-if="selectedObject" transparent style="background: rgba(66, 66, 66, 0.3);">
+  <v-card v-if="selectedObject" transparent :style="cardStyle">
     <v-btn icon style="position: absolute; right: 0" v-on:click.native="unselect()"><v-icon>mdi-close</v-icon></v-btn>
-    <v-card-title primary-title>
+    <!-- 좁은 화면에서는 접어 둔다. 레슨이 단계마다 천체를 고르는데 그때마다
+         카드가 통째로 펼쳐지면 정작 봐야 할 하늘이 가려진다. 이름과 종류만
+         남기고, 필요한 사람은 눌러서 편다. -->
+    <v-btn v-if="compact" icon style="position: absolute; right: 36px"
+           v-on:click.native="expanded = !expanded"
+           :aria-label="expanded ? $t('Collapse') : $t('Expand')">
+      <v-icon>{{ expanded ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+    </v-btn>
+    <v-card-title primary-title :class="{ 'py-2': collapsed }" v-on:click="onTitleClick">
       <div style="width: 100%">
-        <img :src="icon" height="48" width="48" align="left" style="margin-top: 3px; margin-right: 10px"/>
+        <img :src="icon" :height="collapsed ? 28 : 48" :width="collapsed ? 28 : 48" align="left" style="margin-top: 3px; margin-right: 10px"/>
         <div style="overflow: hidden; text-overflow: ellipsis;">
-          <div class="text-h5">{{ title }}</div>
+          <div :class="collapsed ? 'text-subtitle-1' : 'text-h5'">{{ title }}</div>
           <div class="grey--text text-body-2">{{ type }}</div>
+          <!-- 접힌 채로도 밝기와 거리는 보여준다. 레슨이 "천체 정보를 보면
+               밝기가 1.8등급" 이라고 짚어 주는데, 이름만 남으면 그 문장이
+               휴대전화에서만 헛말이 된다. -->
+          <div v-if="collapsed && briefItems.length" class="text-caption white--text" style="margin-top: 2px">
+            <span v-for="item in briefItems" :key="item.key" style="margin-right: 10px">
+              <span class="grey--text">{{ item.key }}</span> <span v-html="item.value"></span>
+            </span>
+          </div>
         </div>
       </div>
     </v-card-title>
+    <template v-if="!collapsed">
     <v-card-text style="padding-bottom: 5px;">
       <v-row v-if="otherNames.length > 1" style="width: 100%;">
         <v-col cols="12">
@@ -42,6 +59,7 @@
         <component :is="item" :key="item"></component>
       </template>
     </v-card-actions>
+    </template>
     <v-dialog v-model="showShareLinkDialog" width="500px" absolute>
       <v-card style="height: 180px" class="secondary white--text">
         <v-card-title primary-title>
@@ -57,7 +75,7 @@
         </v-card-text>
       </v-card>
     </v-dialog>
-    <div v-if="$store.state.showSelectedInfoButtons" style="position: absolute; right: 0px; bottom: -50px;">
+    <div v-if="$store.state.showSelectedInfoButtons && !collapsed" style="position: absolute; right: 0px; bottom: -50px;">
       <v-btn v-if="!showPointToButton" fab small color="transparent" @click.native="showShareLinkDialog = !showShareLinkDialog">
         <v-icon>mdi-link</v-icon>
       </v-btn>
@@ -90,10 +108,29 @@ export default {
       shareLink: undefined,
       showShareLinkDialog: false,
       copied: false,
+      expanded: false,
       items: []
     }
   },
   computed: {
+    // 폭이 좁은 화면(휴대전화)에서만 접는다. 태블릿부터는 카드가 하늘을
+    // 가리지 않을 만큼 화면이 넓다.
+    compact: function () {
+      return this.$vuetify.breakpoint.xsOnly
+    },
+    collapsed: function () {
+      return this.compact && !this.expanded
+    },
+    // 접었을 때 한 줄로 보여줄 값. 밝기와 거리면 레슨이 짚는 것은 거의 다 된다.
+    briefItems: function () {
+      const want = [this.$t('Magnitude'), this.$t('Distance'), this.$t('Phase')]
+      return this.items.filter(i => want.indexOf(i.key) !== -1).slice(0, 2)
+    },
+    cardStyle: function () {
+      const bg = 'background: rgba(66, 66, 66, 0.3);'
+      // 펼쳐도 화면을 다 덮지는 않게 한다.
+      return this.compact ? bg + ' max-height: 62vh; overflow-y: auto;' : bg
+    },
     selectedObject: function () {
       return this.$store.state.selectedObject
     },
@@ -169,6 +206,9 @@ export default {
     selectedObject: function (s) {
       this.showMinorNames = false
       this.wikipediaData = undefined
+      // 다른 천체가 선택되면 다시 접는다. 레슨이 다음 단계로 넘어갔는데
+      // 앞 단계에서 펼쳐 둔 카드가 그대로 하늘을 덮고 있으면 안 된다.
+      this.expanded = false
       if (!s) {
         if (this.timer) clearInterval(this.timer)
         this.timer = undefined
@@ -200,6 +240,9 @@ export default {
     }
   },
   methods: {
+    onTitleClick: function () {
+      if (this.compact) this.expanded = !this.expanded
+    },
     computeItems: function () {
       const obj = this.$stel.core.selection
       if (!obj) return []
@@ -301,18 +344,21 @@ export default {
       if (!d) {
         return 'NAN'
       }
+      // 단위도 번역한다. 레슨 여러 편이 이 줄의 거리를 읽으라고 시키는데
+      // 한국어 화면에서 'light years' 가 나오면 본문과 화면이 어긋난다.
+      const unit = u => '<span class="radecUnit"> ' + this.$t(u) + '</span>'
       const ly = d * swh.astroConstants.ERFA_AULT / swh.astroConstants.ERFA_DAYSEC / swh.astroConstants.ERFA_DJY
       if (ly >= 0.1) {
-        return ly.toFixed(2) + '<span class="radecUnit"> light years</span>'
+        return ly.toFixed(2) + unit('light years')
       }
       if (d >= 0.1) {
-        return d.toFixed(2) + '<span class="radecUnit"> AU</span>'
+        return d.toFixed(2) + unit('AU')
       }
       const meter = d * swh.astroConstants.ERFA_DAU
       if (meter >= 1000) {
-        return (meter / 1000).toFixed(2) + '<span class="radecUnit"> km</span>'
+        return (meter / 1000).toFixed(2) + unit('km')
       }
-      return meter.toFixed(2) + '<span class="radecUnit"> m</span>'
+      return meter.toFixed(2) + unit('m')
     },
     formatTime: function (jdm) {
       var d = new Date()
