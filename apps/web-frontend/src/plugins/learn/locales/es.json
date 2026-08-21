@@ -13,6 +13,7 @@
   "correct": "Correcto",
   "wrong": "Piénsalo otra vez",
   "notTranslated": "Esta lección aún no está traducida, por eso se muestra en coreano.",
+  "notTranslatedTag": "en coreano",
   "allLessons": "Ver todas las lecciones",
   "offSeason": "difícil de ver ahora",
   "track": {
@@ -62,6 +63,8 @@
   "how3Body": "Cada lección acaba con algo que hacer esta noche con tus propios ojos. Una lección que acaba en la pantalla es un planetario, no observación.",
   "language": "Idioma",
   "footNonprofit": "Byeolmuri es un proyecto de código abierto sin ánimo de lucro, sin anuncios ni rastreo.",
-  "footDisclaimer": "Construido sobre Stellarium Web Engine. No está afiliado al proyecto oficial Stellarium."
+  "footDisclaimer": "Construido sobre Stellarium Web Engine. No está afiliado al proyecto oficial Stellarium.",
+  "footContact": "Uso y consultas",
+  "footCopyright": "© 2026 CODINGTEADING"
  }
 }

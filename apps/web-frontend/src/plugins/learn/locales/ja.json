@@ -13,6 +13,7 @@
   "correct": "正解です",
   "wrong": "もう一度考えてみましょう",
   "notTranslated": "このレッスンはまだ翻訳されていないため、韓国語で表示します。",
+  "notTranslatedTag": "韓国語",
   "allLessons": "レッスン一覧を見る",
   "offSeason": "今は見づらい",
   "track": {
@@ -62,6 +63,8 @@
   "how3Body": "すべてのレッスンは今夜自分の目で試すことで終わります。画面の中で終わるならプラネタリウムであって観測の学習ではありません。",
   "language": "言語",
   "footNonprofit": "ビョルムリは広告も追跡もない非営利のオープンソースプロジェクトです。",
-  "footDisclaimer": "Stellarium Web Engine をもとに作られており、Stellarium 公式プロジェクトとは無関係の別プロジェクトです。"
+  "footDisclaimer": "Stellarium Web Engine をもとに作られており、Stellarium 公式プロジェクトとは無関係の別プロジェクトです。",
+  "footContact": "ご利用・お問い合わせ",
+  "footCopyright": "© 2026 CODINGTEADING"
  }
 }

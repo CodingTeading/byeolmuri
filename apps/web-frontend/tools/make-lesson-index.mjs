@@ -12,6 +12,13 @@
 // 순서는 index.json 에 이미 있는 순서를 지키고, 새 레슨은 뒤에 붙는다.
 // 갱신일(updated)도 이미 있으면 그대로 두므로, 고친 레슨만 직접 날짜를
 // 바꾸거나 --touch <id> 로 오늘 날짜를 찍는다.
+//
+// 목록 순서는 손으로 고른 학습 순서다. 그런데 **옮긴 언어에는 지켜야 할
+// 순서가 아직 없어서** 파일 이름 순서(알파벳)나 옮긴 차례로 굳어 버린다.
+// 그러면 영어판 첫 화면이 입문 레슨이 아니라 andromeda 로 시작한다.
+// 그래서 ko 가 아닌 언어는 언제나 ko 의 순서를 물려받는다.
+//
+//   node tools/make-lesson-index.mjs --order-from en ja    ko 말고 다른 언어의 순서를 쓴다
 
 import fs from 'fs'
 import path from 'path'
@@ -22,11 +29,15 @@ const FIELDS = ['id', 'title', 'subtitle', 'minutes', 'level', 'track', 'tags']
 const TRACKS = ['principle', 'target', 'measure']
 const LEVELS = ['intro', 'basic', 'deep']
 
+const BASE_LANG = 'ko'
+
 const args = process.argv.slice(2)
 const touch = []
 const langs = []
+let orderFrom = null
 for (let i = 0; i < args.length; i++) {
   if (args[i] === '--touch') touch.push(args[++i])
+  else if (args[i] === '--order-from') orderFrom = args[++i]
   else langs.push(args[i])
 }
 const today = new Date().toISOString().slice(0, 10)
@@ -97,9 +108,25 @@ function build (lang) {
   let old = { lessons: [] }
   const indexPath = path.join(dir, 'index.json')
   if (fs.existsSync(indexPath)) old = read(indexPath)
-  const order = old.lessons.map(l => l.id)
   const prev = {}
   for (const l of old.lessons) prev[l.id] = l
+
+  // 순서는 기준 언어에서 물려받는다.
+  //
+  // 목록 순서는 레슨을 어떤 차례로 읽히고 싶은가 하는 것이지 언어의 성질이
+  // 아니다. 그래서 옮긴 언어는 언제나 기준 언어의 순서를 따른다. 그 언어에
+  // 이미 index.json 이 있어도 마찬가지다. 그러지 않으면 한 편씩 옮기는 동안
+  // **옮긴 차례대로** 목록이 쌓여, 세 번째로 옮긴 레슨이 목록 세 번째에
+  // 온다. 기준 언어에 없는 레슨만 뒤에 붙는다.
+  const ref = orderFrom || (lang === BASE_LANG ? null : BASE_LANG)
+  let order = old.lessons.map(l => l.id)
+  if (ref) {
+    const refPath = path.join(ROOT, ref, 'index.json')
+    if (!fs.existsSync(refPath)) throw new Error(`${ref}/index.json 이 없어 순서를 물려받을 수 없습니다`)
+    const refOrder = read(refPath).lessons.map(l => l.id)
+    order = refOrder.concat(order.filter(id => refOrder.indexOf(id) === -1))
+    console.log(`${lang}: 순서를 ${ref} 에서 물려받습니다`)
+  }
 
   const used = []
   const lessons = files.map(f => {

@@ -16,13 +16,44 @@ function get (lang, name) {
 }
 
 /*
- * 레슨 목록. 해당 언어에 목록이 없으면 기본 언어의 목록을 쓴다.
+ * 레슨 목록.
+ *
+ * 기본 언어의 목록이 뼈대다. 그 위에 해당 언어로 옮겨진 레슨만 덮어쓴다.
+ * 통째로 갈아끼우지 않는 이유는 **번역이 한 편씩 들어오기 때문**이다.
+ * 옮긴 것만 있는 목록을 그대로 쓰면 아직 안 옮긴 레슨이 목록에서 아예
+ * 사라진다. 한국어로 보이는 것도 아니고 없어진다. 그러면 열 편을 옮기는
+ * 동안 포털은 아홉 편이 없는 앱이 된다.
+ *
+ * 순서도 뼈대에서 온다. 기본 언어의 순서는 손으로 고른 학습 순서이고,
+ * 새 언어 폴더의 목록은 파일 이름 순서라 그것을 물려받아야 한다.
+ *
+ * 항목마다 translated 를 달아 둔다. 목록 화면이 아직 옮기지 않은 레슨을
+ * 표시할 수 있어야 한다. 조용히 기본 언어를 보여주지 않는 것이 이 층의
+ * 규칙이다.
  */
 export function loadIndex (lang) {
-  const own = get(lang, 'index')
-  if (own) return { lessons: own.lessons, translated: true }
   const base = get(DEFAULT_LANG, 'index')
-  return { lessons: base ? base.lessons : [], translated: false }
+  const spine = base ? base.lessons : []
+  const own = get(lang, 'index')
+  if (!own || lang === DEFAULT_LANG) {
+    return {
+      lessons: spine.map(l => Object.assign({}, l, { translated: lang === DEFAULT_LANG })),
+      translated: lang === DEFAULT_LANG
+    }
+  }
+
+  const mine = {}
+  for (const l of own.lessons) mine[l.id] = l
+  const lessons = spine.map(l => Object.assign({}, mine[l.id] || l, { translated: !!mine[l.id] }))
+
+  // 뼈대에 없고 그 언어에만 있는 레슨. 지금은 없지만 생기면 뒤에 붙인다.
+  const known = {}
+  for (const l of spine) known[l.id] = true
+  for (const l of own.lessons) {
+    if (!known[l.id]) lessons.push(Object.assign({}, l, { translated: true }))
+  }
+
+  return { lessons, translated: lessons.every(l => l.translated) }
 }
 
 /*

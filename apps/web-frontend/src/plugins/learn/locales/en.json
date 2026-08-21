@@ -13,6 +13,7 @@
   "correct": "Correct",
   "wrong": "Think again",
   "notTranslated": "This lesson is not translated yet, so it is shown in Korean.",
+  "notTranslatedTag": "in Korean",
   "allLessons": "See all lessons",
   "offSeason": "hard to see now",
   "track": {
@@ -62,6 +63,8 @@
   "how3Body": "Every lesson ends with something to do tonight with your own eyes. A lesson that ends on the screen is a planetarium, not observing.",
   "language": "Language",
   "footNonprofit": "Byeolmuri is a non-profit open source project with no ads and no tracking.",
-  "footDisclaimer": "Built on Stellarium Web Engine. Not affiliated with the official Stellarium project."
+  "footDisclaimer": "Built on Stellarium Web Engine. Not affiliated with the official Stellarium project.",
+  "footContact": "Use and enquiries",
+  "footCopyright": "© 2026 CODINGTEADING"
  }
 }

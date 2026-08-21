@@ -13,6 +13,7 @@
   "correct": "맞았습니다",
   "wrong": "다시 생각해 봅시다",
   "notTranslated": "이 레슨은 아직 번역되지 않아 한국어로 표시합니다.",
+  "notTranslatedTag": "한국어",
   "allLessons": "레슨 전체 보기",
   "offSeason": "지금은 보기 어려움",
   "track": {
@@ -62,6 +63,8 @@
   "how3Body": "모든 레슨은 오늘 밤 직접 해볼 것으로 끝납니다. 화면 안에서 끝나면 플라네타리움이지 관측 교육이 아닙니다.",
   "language": "언어",
   "footNonprofit": "별무리는 광고와 추적이 없는 비영리 오픈소스 프로젝트입니다.",
-  "footDisclaimer": "Stellarium Web Engine 을 기반으로 만들었으며, Stellarium 공식 프로젝트와는 무관한 별개의 프로젝트입니다."
+  "footDisclaimer": "Stellarium Web Engine 을 기반으로 만들었으며, Stellarium 공식 프로젝트와는 무관한 별개의 프로젝트입니다.",
+  "footContact": "이용 및 문의",
+  "footCopyright": "© 2026 CODINGTEADING"
  }
 }

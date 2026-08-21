@@ -70,6 +70,7 @@
               <span>{{ $t('learn.minutes', { n: l.minutes }) }}</span>
               <span>{{ $t('portal.steps', { n: l.steps }) }}</span>
               <span class="season now">{{ $t('portal.seasonNow') }}</span>
+              <span v-if="!l.translated" class="untranslated">{{ $t('learn.notTranslatedTag') }}</span>
             </span>
           </router-link>
         </li>
@@ -119,6 +120,7 @@
                 <span>{{ $t('learn.minutes', { n: l.minutes }) }}</span>
                 <span>{{ $t('portal.steps', { n: l.steps }) }}</span>
                 <span class="season" :class="{ now: inSeason(l) }">{{ seasonLabel(l) }}</span>
+                <span v-if="!l.translated" class="untranslated">{{ $t('learn.notTranslatedTag') }}</span>
               </span>
             </router-link>
           </li>
@@ -140,6 +142,7 @@
               <span>{{ $t('learn.minutes', { n: l.minutes }) }}</span>
               <span>{{ $t('portal.steps', { n: l.steps }) }}</span>
               <span class="season" :class="{ now: inSeason(l) }">{{ seasonLabel(l) }}</span>
+              <span v-if="!l.translated" class="untranslated">{{ $t('learn.notTranslatedTag') }}</span>
             </span>
           </router-link>
         </li>
@@ -175,6 +178,11 @@
         · AGPL-3.0
       </p>
       <p class="disclaimer">{{ $t('portal.footDisclaimer') }}</p>
+      <p class="foot-contact">
+        {{ $t('portal.footContact') }}
+        <a href="mailto:codingteading@gmail.com">codingteading@gmail.com</a>
+      </p>
+      <p class="foot-copy">{{ $t('portal.footCopyright') }}</p>
     </div>
   </footer>
 </div>
@@ -482,6 +490,11 @@ main { position: relative; z-index: 1; padding-bottom: 40px; }
 }
 .season { margin-left: auto; }
 .season.now { color: #5eead4; }
+/* 아직 옮기지 않아 기본 언어로 뜨는 레슨. 조용히 넘어가지 않는다. */
+.untranslated {
+  color: #90a4ae; border: 1px solid rgba(144,164,174,0.35);
+  border-radius: 3px; padding: 0 5px;
+}
 .card-hi { background: rgba(255, 255, 255, .06); }
 
 /* ---- 조작 ---- */
@@ -568,6 +581,11 @@ main { position: relative; z-index: 1; padding-bottom: 40px; }
 .foot p { margin: 0; }
 .foot a { color: #8ab4ff; }
 .disclaimer { margin-top: 10px !important; font-size: 12px; opacity: .8; }
+.foot-contact { margin-top: 16px !important; }
+.foot-copy {
+  margin-top: 6px !important;
+  font-size: 12px; letter-spacing: .04em; opacity: .7;
+}
 
 @media (max-width: 700px) {
   .hero { padding: 54px 0 40px; }
