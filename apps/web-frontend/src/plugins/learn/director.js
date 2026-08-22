@@ -8,6 +8,7 @@
 // 무엇이 바뀌는지 한눈에 안다.
 
 import Moment from 'moment'
+import skyBrightness from '@/assets/sky-brightness.js'
 
 const D2R = Math.PI / 180
 
@@ -169,6 +170,11 @@ function capture (stel) {
     for (let i = 0; i < parts.length - 1 && node; i++) node = node[parts[i]]
     if (node) shows[key] = !!node[parts[parts.length - 1]]
   }
+  // 레슨이 도는 동안에는 사용자가 고른 하늘 밝기를 잠시 밀어 둔다.
+  // 레슨 본문의 "은하수가 삼각형을 가로지릅니다" 같은 문장은 어두운
+  // 하늘을 보고 쓴 것이라, 도시 하늘 위에서는 헛말이 된다. 나갈 때
+  // reset 이 사용자 설정으로 되돌린다.
+  stel.core.bortle_index = skyBrightness.LESSON_BORTLE
   saved = {
     latitude: obs.latitude,
     longitude: obs.longitude,
@@ -198,6 +204,10 @@ function capture (stel) {
 export function reset (stel, location) {
   if (!stel) return
   clearTarget(stel)
+  // 하늘 밝기는 붙잡아 둔 값이 아니라 저장된 설정에서 되돌린다.
+  // 관측지와 같은 이유다 — 이 값의 주인은 엔진이 아니라 앱이고,
+  // 레슨을 읽는 도중에 설정을 바꿨을 수도 있다.
+  skyBrightness.applyTo(stel, skyBrightness.load())
   if (!saved) {
     stel.core.time_speed = 1
     return

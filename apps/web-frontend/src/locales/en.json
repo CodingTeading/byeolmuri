@@ -74,5 +74,22 @@
  "more on {0}": "more on {0}",
  "Collapse": "Collapse",
  "Expand": "Expand",
- "Equatorial J2000 Grid": "Equatorial J2000 Grid"
+ "Equatorial J2000 Grid": "Equatorial J2000 Grid",
+ "Close": "Close",
+ "skyBrightness": {
+  "menu": "Sky Brightness",
+  "title": "How bright is your sky?",
+  "intro": "Where you live is lit, and the faint stars go. Tell the app where you observe from and the screen will show you only as much as you would really see.",
+  "downtown": "City centre",
+  "downtownDesc": "Down to about magnitude 2. A few dozen stars, and neither the Milky Way nor the Andromeda Galaxy",
+  "city": "City edge",
+  "cityDesc": "Down to about magnitude 4. All seven stars of the Big Dipper, but no Milky Way",
+  "suburb": "Suburbs",
+  "suburbDesc": "Down to about magnitude 5. The Milky Way shows faintly overhead",
+  "country": "Countryside",
+  "countryDesc": "Down to about magnitude 6. The Milky Way is clear and the Andromeda Galaxy reaches the naked eye",
+  "dark": "Truly dark site",
+  "darkDesc": "Past magnitude 7. The Milky Way casts a shadow on the ground",
+  "lessonNote": "Lessons always run on a dark countryside sky, because that is the sky their text was written against."
+ }
 }

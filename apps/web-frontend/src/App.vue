@@ -74,6 +74,7 @@ import _ from 'lodash'
 import Gui from '@/components/gui.vue'
 import GuiLoader from '@/components/gui-loader.vue'
 import swh from '@/assets/sw_helpers.js'
+import skyBrightness from '@/assets/sky-brightness.js'
 import Moment from 'moment'
 
 export default {
@@ -82,6 +83,7 @@ export default {
       menuItems: [
         { title: this.$t('View Settings'), icon: 'mdi-settings', store_var_name: 'showViewSettingsDialog', store_show_menu_item: 'showViewSettingsMenuItem' },
         { title: this.$t('Planets Tonight'), icon: 'mdi-panorama-fisheye', store_var_name: 'showPlanetsVisibilityDialog', store_show_menu_item: 'showPlanetsVisibilityMenuItem' },
+        { title: this.$t('skyBrightness.menu'), icon: 'mdi-city-variant-outline', store_var_name: 'showSkyBrightnessDialog', store_show_menu_item: 'showSkyBrightnessMenuItem' },
         { divider: true }
       ].concat(this.getPluginsMenuItems()).concat([
         { title: this.$t('Data Credits'), footer: true, icon: 'mdi-copyright', store_var_name: 'showDataCreditsDialog' }
@@ -241,6 +243,10 @@ export default {
           that.$stel.setFont('regular', process.env.BASE_URL + 'fonts/Roboto-Regular.ttf', 1.38)
           that.$stel.setFont('bold', process.env.BASE_URL + 'fonts/Roboto-Bold.ttf', 1.38)
           that.$stel.core.constellations.show_only_pointed = false
+          // 저장해 둔 하늘 밝기를 엔진에 되돌려 준다. 엔진 기본값은
+          // 시골 하늘(3)이라, 이것을 하지 않으면 도시에 사는 사람이
+          // 매번 자기가 볼 수 없는 하늘로 앱을 열게 된다.
+          skyBrightness.applyTo(that.$stel, skyBrightness.load())
 
           that.setStateFromQueryArgs()
           that.guiComponent = 'Gui'

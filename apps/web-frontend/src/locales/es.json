@@ -74,5 +74,22 @@
  "more on {0}": "más en {0}",
  "Collapse": "Contraer",
  "Expand": "Desplegar",
- "Equatorial J2000 Grid": "Rejilla ecuatorial J2000"
+ "Equatorial J2000 Grid": "Rejilla ecuatorial J2000",
+ "Close": "Cerrar",
+ "skyBrightness": {
+  "menu": "Brillo del cielo",
+  "title": "¿Cuánto brilla tu cielo?",
+  "intro": "Donde vives hay luz, y las estrellas débiles desaparecen. Elige desde dónde observas y la pantalla te enseñará solo lo que verías de verdad.",
+  "downtown": "Centro de la ciudad",
+  "downtownDesc": "Hasta magnitud 2 más o menos. Unas pocas decenas de estrellas, y ni la Vía Láctea ni la galaxia de Andrómeda",
+  "city": "Barrio periférico",
+  "cityDesc": "Hasta magnitud 4 más o menos. Las siete estrellas del Carro se ven todas, pero la Vía Láctea no",
+  "suburb": "Afueras o pueblo",
+  "suburbDesc": "Hasta magnitud 5 más o menos. La Vía Láctea asoma débilmente en lo alto",
+  "country": "Campo",
+  "countryDesc": "Hasta magnitud 6 más o menos. La Vía Láctea se ve clara y la galaxia de Andrómeda llega a simple vista",
+  "dark": "Sitio de verdad oscuro",
+  "darkDesc": "Más allá de magnitud 7. La Vía Láctea proyecta sombra en el suelo",
+  "lessonNote": "Las lecciones se ven siempre sobre un cielo oscuro de campo, porque es el cielo con el que se escribió su texto."
+ }
 }
