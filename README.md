@@ -52,6 +52,7 @@ NODE_OPTIONS=--openssl-legacy-provider yarn dev   # http://localhost:8080
 | [docs/dev-setup.md](docs/dev-setup.md) | 개발 환경, 엔진 빌드 |
 | [docs/i18n.md](docs/i18n.md) | 다국어 3층 구조와 주소 규칙 |
 | [docs/planner.md](docs/planner.md) | 관측 플래너 계산과 기상청 연동 |
+| [docs/menu-features.md](docs/menu-features.md) | 메뉴의 세 기능 — 하늘 밝기 · 이번 달 볼거리 · 관측 기록 |
 | [apps/search-index/README.md](apps/search-index/README.md) | 정적 검색 색인 |
 | [apps/web-frontend/src/plugins/learn/README.md](apps/web-frontend/src/plugins/learn/README.md) | **레슨 쓰는 법** |
 | [docs/handoff-content.md](docs/handoff-content.md) | 레슨·포털 작업 인수인계 |
