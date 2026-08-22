@@ -10,13 +10,23 @@
 
     <!-- 새로 적기 -->
     <div class="log-form pa-3 mb-4">
-      <div class="text-subtitle-2 mb-2">{{ $t('log.newEntry') }}</div>
-      <v-text-field v-model="form.at" type="datetime-local" :label="$t('log.when')"
-                    dark dense hide-details class="mb-2"></v-text-field>
-      <v-text-field v-model="form.target" :label="$t('log.target')" :placeholder="$t('log.targetHint')"
-                    dark dense hide-details persistent-placeholder class="mb-2"></v-text-field>
-      <v-textarea v-model="form.note" :label="$t('log.note')" :placeholder="$t('log.noteHint')"
-                  dark dense hide-details persistent-placeholder rows="2" class="mb-3"></v-textarea>
+      <div class="text-subtitle-2 mb-3">{{ $t('log.newEntry') }}</div>
+
+      <div class="log-field">
+        <div class="text-caption log-lab">{{ $t('log.when') }}</div>
+        <v-text-field v-model="form.at" type="datetime-local"
+                      dark dense hide-details single-line></v-text-field>
+      </div>
+      <div class="log-field">
+        <div class="text-caption log-lab">{{ $t('log.target') }}</div>
+        <v-text-field v-model="form.target" :placeholder="$t('log.targetHint')"
+                      dark dense hide-details single-line></v-text-field>
+      </div>
+      <div class="log-field">
+        <div class="text-caption log-lab">{{ $t('log.note') }}</div>
+        <v-textarea v-model="form.note" :placeholder="$t('log.noteHint')"
+                    dark dense hide-details no-resize rows="2"></v-textarea>
+      </div>
       <div class="d-flex align-center">
         <span v-if="error" class="red--text text-caption">{{ error }}</span>
         <v-spacer></v-spacer>
@@ -150,6 +160,19 @@ export default {
 .log-form {
   background: rgba(255, 255, 255, 0.04);
   border-radius: 4px;
+}
+/* 떠오르는 라벨은 dense 필드 위에 겹쳐 앉는다. 라벨 대신 위에 한 줄로
+   적고, 입력칸은 라벨을 아예 갖지 않게 한다. */
+.log-field {
+  margin-bottom: 14px;
+}
+.log-lab {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 2px;
+}
+.log-form .v-input {
+  margin-top: 0;
+  padding-top: 0;
 }
 .log-row {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
