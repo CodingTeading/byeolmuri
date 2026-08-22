@@ -11,9 +11,33 @@ import LessonList from './lesson-list.vue'
 import LessonView from './lesson-view.vue'
 import Portal from './portal.vue'
 import { withLang, DEFAULT_LANG } from '@/i18n/langs'
+import loader from './content/loader'
+
+/*
+ * 레슨 주소의 제목과 설명.
+ *
+ * 이것이 없으면 레슨 76개(19편 × 4언어)가 전부 사이트 전체의 제목을 달게
+ * 된다. 크롤러에게는 한 페이지의 복사본으로 보이고, 카카오톡·슬랙의
+ * 미리보기에는 무엇을 공유했는지가 나오지 않는다.
+ *
+ * 정적 HTML 쪽은 tools/make-lang-html.mjs 가 굽는다. 여기는 앱 안에서
+ * 레슨 사이를 오갈 때를 맡는다. 둘이 같은 값을 내야 한다.
+ */
+function pageMeta (lang, path) {
+  const m = /\/p\/learn\/([\w-]+)$/.exec(path || '')
+  if (!m) return null
+  const res = loader.loadLesson(lang, m[1])
+  const lesson = res && res.lesson
+  if (!lesson) return null
+  return {
+    title: lesson.title,
+    description: lesson.intro || lesson.subtitle || ''
+  }
+}
 
 export default {
   name: 'learn',
+  pageMeta: pageMeta,
   // 최상위 라우트는 App 밖에서 그려진다. 즉 엔진(WASM)을 띄우지 않는다.
   // 포털이 사이트의 첫 화면(/)인 이유가 이것이다. 목록만 보러 온 사람과
   // 크롤러에게 3MB 를 내려받게 할 이유가 없다. 하늘은 /sky 에 있고,

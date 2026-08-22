@@ -130,6 +130,10 @@ let defaultObservingRoute = {
 }
 for (const i in Vue.SWPlugins) {
   const plugin = Vue.SWPlugins[i]
+  // 주소마다 다른 제목·설명을 대 주는 함수. 없으면 사이트 전체 것을 쓴다.
+  if (plugin.pageMeta) {
+    head.addPageResolver(plugin.pageMeta)
+  }
   if (plugin.routes) {
     routes = routes.concat(plugin.routes)
   }

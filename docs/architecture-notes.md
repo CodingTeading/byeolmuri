@@ -35,6 +35,7 @@ App.vue에서 **동적 import** 된다. 엔진 상태는 vuex의 `$store.stel` �
 | `vuePlugin` | 전역 Vue 컴포넌트/필터 | `main.js:128` |
 | `onAppMounted(app)` | 앱 마운트 훅 | `App.vue:217` |
 | `onEngineReady(app)` | **엔진 초기화 완료 훅** (여기서 `$stel` 사용 가능) | `App.vue:241` |
+| `pageMeta(lang, path)` | **주소별 제목·설명** (없으면 사이트 전체 것) | `main.js` → `i18n/head.js` |
 | `locales/*.json` | i18n 번역 자동 병합 | `main.js:68` |
 
 `meta.tabName` 은 `$t()` 를 거치므로 플러그인 자체 locales로 번역된다.
