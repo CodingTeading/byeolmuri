@@ -111,5 +111,52 @@
   "remove": "Borrar",
   "export": "Exportar a CSV",
   "storageNote": "El cuaderno vive solo en este navegador. No se envía nada a ningún servidor, así que nadie más puede leerlo, pero desaparece si borras los datos del navegador o abres el sitio en otro dispositivo. Exporta lo que quieras conservar."
+ },
+ "events": {
+  "menu": "Qué mirar",
+  "title": "Qué mirar en las próximas semanas",
+  "intro": "Lo que ocurre en el cielo durante los próximos dos meses, calculado para donde estás.",
+  "loading": "Calculando…",
+  "none": "No hay nada que señalar en los próximos dos meses.",
+  "openLesson": "Abrir la lección",
+  "moon": {
+   "new": "Luna nueva — una noche sin Luna",
+   "firstQuarter": "Cuarto creciente",
+   "full": "Luna llena",
+   "lastQuarter": "Cuarto menguante"
+  },
+  "showerPeak": "{0} en su máximo",
+  "zhr": "hasta {0} por hora con un cielo ideal",
+  "moonBad": "la Luna está iluminada al {0}% y borrará los meteoros débiles",
+  "moonOk": "la Luna está iluminada solo al {0}%, así que no estorbará",
+  "opposition": "{0} en oposición",
+  "oppositionWhy": "Sale cuando se pone el Sol y está arriba toda la noche, en su momento más brillante y grande del año",
+  "elongationEast": "{0} en máxima elongación — cielo de la tarde",
+  "elongationWest": "{0} en máxima elongación — cielo del amanecer",
+  "elongationWhy": "A {0} grados del Sol, lo más fácil de encontrar en todo el año",
+  "conjunction": "Se acercan {0} y {1}",
+  "conjunctionWhy": "Llegan a {0} grados. A simple vista se ven dos puntos juntos",
+  "dateNote": "Solo fechas. Las horas cambian varias horas según desde dónde observes, así que no se ponen. Para saber cuándo salir esa noche, usa la pestaña Esta noche.",
+  "body": {
+   "moon": "la Luna",
+   "mercury": "Mercurio",
+   "venus": "Venus",
+   "mars": "Marte",
+   "jupiter": "Júpiter",
+   "saturn": "Saturno"
+  },
+  "shower": {
+   "QUA": "Cuadrántidas",
+   "LYR": "Líridas",
+   "ETA": "Eta Acuáridas",
+   "SDA": "Delta Acuáridas del Sur",
+   "PER": "Perseidas",
+   "ORI": "Oriónidas",
+   "STA": "Táuridas del Sur",
+   "NTA": "Táuridas del Norte",
+   "LEO": "Leónidas",
+   "GEM": "Gemínidas",
+   "URS": "Úrsidas"
+  }
  }
 }

@@ -35,6 +35,7 @@ const createStore = () => {
       showPlanetsVisibilityDialog: false,
       showSkyBrightnessDialog: false,
       showObservationLogDialog: false,
+      showSkyEventsDialog: false,
       // 관측 기록 창을 열 때 미리 채워 둘 밑그림. 레슨 마지막 단계나
       // 하늘에서 넘겨준다. 창이 열리면서 비운다.
       logDraft: null,

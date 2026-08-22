@@ -111,5 +111,52 @@
   "remove": "Delete",
   "export": "Export as CSV",
   "storageNote": "The log lives in this browser only. Nothing is sent to a server, so nobody else can read it, but it goes if you clear your browser data or open the site on another device. Export anything you want to keep."
+ },
+ "events": {
+  "menu": "What's Up",
+  "title": "What's up in the coming weeks",
+  "intro": "Things happening in the sky over the next two months, worked out for where you are.",
+  "loading": "Working it out…",
+  "none": "Nothing worth marking in the next two months.",
+  "openLesson": "Open the lesson",
+  "moon": {
+   "new": "New moon — a night with no moon",
+   "firstQuarter": "First quarter",
+   "full": "Full moon",
+   "lastQuarter": "Last quarter"
+  },
+  "showerPeak": "{0} at their peak",
+  "zhr": "up to {0} an hour under an ideal sky",
+  "moonBad": "the Moon is {0}% lit and will wash out the faint ones",
+  "moonOk": "the Moon is only {0}% lit, so it will not get in the way",
+  "opposition": "{0} at opposition",
+  "oppositionWhy": "It rises as the Sun sets and is up all night, at its brightest and largest of the year",
+  "elongationEast": "{0} at greatest elongation — evening sky",
+  "elongationWest": "{0} at greatest elongation — morning sky",
+  "elongationWhy": "{0} degrees from the Sun, the easiest it gets to find all year",
+  "conjunction": "A close pass: {0} and {1}",
+  "conjunctionWhy": "They come within {0} degrees — two points side by side to the naked eye",
+  "dateNote": "Dates only. Times shift by hours depending on where you observe from, so they are left out. For when to go out that night, use the Tonight tab.",
+  "body": {
+   "moon": "the Moon",
+   "mercury": "Mercury",
+   "venus": "Venus",
+   "mars": "Mars",
+   "jupiter": "Jupiter",
+   "saturn": "Saturn"
+  },
+  "shower": {
+   "QUA": "Quadrantids",
+   "LYR": "Lyrids",
+   "ETA": "Eta Aquariids",
+   "SDA": "Southern Delta Aquariids",
+   "PER": "Perseids",
+   "ORI": "Orionids",
+   "STA": "Southern Taurids",
+   "NTA": "Northern Taurids",
+   "LEO": "Leonids",
+   "GEM": "Geminids",
+   "URS": "Ursids"
+  }
  }
 }
