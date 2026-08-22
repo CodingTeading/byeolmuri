@@ -84,6 +84,7 @@ export default {
         { title: this.$t('View Settings'), icon: 'mdi-settings', store_var_name: 'showViewSettingsDialog', store_show_menu_item: 'showViewSettingsMenuItem' },
         { title: this.$t('Planets Tonight'), icon: 'mdi-panorama-fisheye', store_var_name: 'showPlanetsVisibilityDialog', store_show_menu_item: 'showPlanetsVisibilityMenuItem' },
         { title: this.$t('skyBrightness.menu'), icon: 'mdi-city-variant-outline', store_var_name: 'showSkyBrightnessDialog', store_show_menu_item: 'showSkyBrightnessMenuItem' },
+        { title: this.$t('log.menu'), icon: 'mdi-notebook-outline', store_var_name: 'showObservationLogDialog', store_show_menu_item: 'showObservationLogMenuItem' },
         { divider: true }
       ].concat(this.getPluginsMenuItems()).concat([
         { title: this.$t('Data Credits'), footer: true, icon: 'mdi-copyright', store_var_name: 'showDataCreditsDialog' }

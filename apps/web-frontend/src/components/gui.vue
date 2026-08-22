@@ -35,6 +35,7 @@ import ViewSettingsDialog from '@/components/view-settings-dialog.vue'
 import PlanetsVisibility from '@/components/planets-visibility.vue'
 import LocationDialog from '@/components/location-dialog.vue'
 import SkyBrightnessDialog from '@/components/sky-brightness-dialog.vue'
+import ObservationLogDialog from '@/components/observation-log-dialog.vue'
 import ObservingPanel from '@/components/observing-panel.vue'
 
 export default {
@@ -61,7 +62,8 @@ export default {
         'view-settings-dialog',
         'planets-visibility',
         'location-dialog',
-        'sky-brightness-dialog'
+        'sky-brightness-dialog',
+        'observation-log-dialog'
       ]
       for (const i in this.$stellariumWebPlugins()) {
         const plugin = this.$stellariumWebPlugins()[i]
@@ -72,7 +74,7 @@ export default {
       return res
     }
   },
-  components: { Toolbar, BottomBar, DataCreditsDialog, ViewSettingsDialog, PlanetsVisibility, SelectedObjectInfo, LocationDialog, SkyBrightnessDialog, ProgressBars, ObservingPanel }
+  components: { Toolbar, BottomBar, DataCreditsDialog, ViewSettingsDialog, PlanetsVisibility, SelectedObjectInfo, LocationDialog, SkyBrightnessDialog, ObservationLogDialog, ProgressBars, ObservingPanel }
 }
 </script>
 

@@ -91,5 +91,25 @@
   "dark": "Truly dark site",
   "darkDesc": "Past magnitude 7. The Milky Way casts a shadow on the ground",
   "lessonNote": "Lessons always run on a dark countryside sky, because that is the sky their text was written against."
+ },
+ "log": {
+  "menu": "Observation Log",
+  "title": "Observation Log",
+  "newEntry": "New entry",
+  "when": "When",
+  "target": "What",
+  "targetHint": "Name of the star or object",
+  "note": "What you saw",
+  "noteHint": "e.g. Algol was fainter than Delta Persei",
+  "save": "Add it",
+  "saveFailed": "Could not save. Your browser storage may be full.",
+  "entries": "{0} entries",
+  "empty": "Nothing yet. Write down what you see tonight.",
+  "noTarget": "(no name)",
+  "fromLesson": "Lesson: {0}",
+  "colLesson": "Lesson",
+  "remove": "Delete",
+  "export": "Export as CSV",
+  "storageNote": "The log lives in this browser only. Nothing is sent to a server, so nobody else can read it, but it goes if you clear your browser data or open the site on another device. Export anything you want to keep."
  }
 }

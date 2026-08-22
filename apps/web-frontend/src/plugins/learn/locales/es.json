@@ -30,7 +30,9 @@
    "intro": "Inicial",
    "basic": "Básico",
    "deep": "Avanzado"
-  }
+  },
+  "logCta": "¿Ya has salido a comprobarlo? Apunta lo que viste y se convierte en datos de observación.",
+  "logOpen": "Anotar en el cuaderno"
  },
  "portal": {
   "brand": "Byeolmuri",

@@ -30,7 +30,9 @@
    "intro": "Beginner",
    "basic": "Basics",
    "deep": "In depth"
-  }
+  },
+  "logCta": "Been outside and checked? Write down what you saw, and it becomes observational data.",
+  "logOpen": "Add to the log"
  },
  "portal": {
   "brand": "Byeolmuri",

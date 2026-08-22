@@ -91,5 +91,25 @@
   "dark": "Sitio de verdad oscuro",
   "darkDesc": "Más allá de magnitud 7. La Vía Láctea proyecta sombra en el suelo",
   "lessonNote": "Las lecciones se ven siempre sobre un cielo oscuro de campo, porque es el cielo con el que se escribió su texto."
+ },
+ "log": {
+  "menu": "Cuaderno de observación",
+  "title": "Cuaderno de observación",
+  "newEntry": "Nueva anotación",
+  "when": "Cuándo",
+  "target": "Qué",
+  "targetHint": "Nombre de la estrella o del objeto",
+  "note": "Qué viste",
+  "noteHint": "p. ej. Algol estaba más tenue que Delta Persei",
+  "save": "Anotar",
+  "saveFailed": "No se ha podido guardar. Puede que el almacenamiento del navegador esté lleno.",
+  "entries": "{0} anotaciones",
+  "empty": "Todavía no hay nada. Apunta lo que veas esta noche.",
+  "noTarget": "(sin nombre)",
+  "fromLesson": "Lección: {0}",
+  "colLesson": "Lección",
+  "remove": "Borrar",
+  "export": "Exportar a CSV",
+  "storageNote": "El cuaderno vive solo en este navegador. No se envía nada a ningún servidor, así que nadie más puede leerlo, pero desaparece si borras los datos del navegador o abres el sitio en otro dispositivo. Exporta lo que quieras conservar."
  }
 }

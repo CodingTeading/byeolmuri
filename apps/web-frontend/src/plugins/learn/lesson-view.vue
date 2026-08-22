@@ -22,6 +22,15 @@
       <div class="text-h6 white--text mb-2">{{ step.title }}</div>
       <div class="prose" v-html="step.text"></div>
 
+      <!-- 마지막 단계는 밖에서 할 일로 끝난다. 돌아왔을 때 적을 곳을
+           바로 옆에 둔다. 그러지 않으면 "기록을 남기세요"가 빈말이 된다. -->
+      <div v-if="isLast" class="logcta mt-4 pa-3">
+        <div class="text-body-2 mb-2">{{ $t('learn.logCta') }}</div>
+        <v-btn small color="primary" @click="openLog">
+          <v-icon left small>mdi-notebook-outline</v-icon>{{ $t('learn.logOpen') }}
+        </v-btn>
+      </div>
+
       <!-- 퀴즈 -->
       <div v-if="step.quiz" class="quiz mt-4 pa-3">
         <div class="white--text mb-2">{{ step.quiz.q }}</div>
@@ -65,9 +74,21 @@ export default {
     progress: function () {
       if (!this.lesson) return 0
       return (this.index + 1) / this.lesson.steps.length * 100
+    },
+    isLast: function () {
+      return !!this.lesson && this.index === this.lesson.steps.length - 1
     }
   },
   methods: {
+    // 관측 기록 창을 레슨 이름을 달고 연다. 어느 레슨을 읽고 나가서
+    // 본 것인지가 나중에 자료를 볼 때 가장 아쉬운 정보다.
+    openLog: function () {
+      this.$store.commit('setValue', {
+        varName: 'logDraft',
+        newValue: { from: this.lesson ? this.lesson.title : '' }
+      })
+      this.$store.commit('setValue', { varName: 'showObservationLogDialog', newValue: true })
+    },
     optClass: function (i) {
       if (this.answered === null) return ''
       if (i === this.step.quiz.right) return 'opt-right'
@@ -162,6 +183,7 @@ export default {
 .nav { border-top: 1px solid rgba(255,255,255,0.08); }
 .quiz { background: rgba(255,255,255,0.04); border-radius: 6px; }
 .notice { background: rgba(255,193,7,0.12); color: #ffca28; border-radius: 4px; }
+.logcta { background: rgba(255,255,255,0.04); border-radius: 6px; color: #e0e0e0; }
 .opt {
   padding: 8px 10px; margin-bottom: 6px; border-radius: 4px; cursor: pointer;
   background: rgba(255,255,255,0.05); font-size: 13px; color: #e0e0e0;
