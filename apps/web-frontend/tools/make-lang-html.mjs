@@ -49,8 +49,17 @@ const NOSCRIPT = {
   ja: 'ビョルムリはJavaScriptが必要です。ブラウザでJavaScriptを有効にしてください。',
   es: 'Byeolmuri necesita JavaScript para funcionar. Activa JavaScript en tu navegador.'
 }
+// 공유 카드 그림의 설명. 사이트 이름은 meta.json 제목의 앞 토막을 쓴다.
+// 둘 다 원문이 한국어라 /en/ 링크를 카톡·슬랙에 붙이면 "별무리" 로 나왔다.
+const OG_IMAGE_ALT = {
+  ko: '별무리 – 밤하늘을 읽는 법을 배웁니다',
+  en: 'Byeolmuri – Learn to read the night sky',
+  ja: 'ビョルムリ – 夜空の読み方をまなぶ',
+  es: 'Byeolmuri – Aprende a leer el cielo nocturno'
+}
 for (const l of LANGS) {
   if (!NOSCRIPT[l]) throw new Error(`NOSCRIPT 에 ${l} 안내가 없습니다`)
+  if (!OG_IMAGE_ALT[l]) throw new Error(`OG_IMAGE_ALT 에 ${l} 설명이 없습니다`)
 }
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
@@ -96,6 +105,8 @@ function localize (html, lang, page) {
   out = out.replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(title)}</title>`)
   out = out.replace(/(<noscript>\s*<strong>)[\s\S]*?(<\/strong>\s*<\/noscript>)/, `$1${esc(NOSCRIPT[lang])}$2`)
   out = out.replace(/(<meta name="description" content=")[^"]*(")/, `$1${esc(description)}$2`)
+  out = out.replace(/(<meta property="og:site_name" content=")[^"]*(")/, `$1${esc(m.title.split(' – ')[0])}$2`)
+  out = out.replace(/(<meta property="og:image:alt" content=")[^"]*(")/, `$1${esc(OG_IMAGE_ALT[lang])}$2`)
   out = out.replace(/(<meta property="og:title" content=")[^"]*(")/, `$1${esc(title)}$2`)
   out = out.replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${esc(description)}$2`)
   out = out.replace(/(<meta property="og:locale" content=")[^"]*(")/,
