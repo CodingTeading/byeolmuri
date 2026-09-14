@@ -41,6 +41,18 @@ const SITE = 'https://byeolmuri.codingteading.com'
 const meta = JSON.parse(fs.readFileSync('src/i18n/meta.json', 'utf8'))
 const LANGS = Object.keys(meta)
 
+// 자바스크립트가 꺼진 방문자에게 보이는 안내. public/index.html 원문은 한국어라
+// 언어판을 구울 때 갈아 끼운다. 언어를 늘리면 여기도 한 줄 — 없으면 굽기가 멈춘다.
+const NOSCRIPT = {
+  ko: '별무리는 자바스크립트가 있어야 동작합니다. 브라우저에서 자바스크립트를 켜주세요.',
+  en: 'Byeolmuri needs JavaScript to run. Please turn on JavaScript in your browser.',
+  ja: 'ビョルムリはJavaScriptが必要です。ブラウザでJavaScriptを有効にしてください。',
+  es: 'Byeolmuri necesita JavaScript para funcionar. Activa JavaScript en tu navegador.'
+}
+for (const l of LANGS) {
+  if (!NOSCRIPT[l]) throw new Error(`NOSCRIPT 에 ${l} 안내가 없습니다`)
+}
+
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
   .replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
@@ -82,6 +94,7 @@ function localize (html, lang, page) {
 
   out = out.replace(/<html lang="[^"]*"/, `<html lang="${lang}"`)
   out = out.replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(title)}</title>`)
+  out = out.replace(/(<noscript>\s*<strong>)[\s\S]*?(<\/strong>\s*<\/noscript>)/, `$1${esc(NOSCRIPT[lang])}$2`)
   out = out.replace(/(<meta name="description" content=")[^"]*(")/, `$1${esc(description)}$2`)
   out = out.replace(/(<meta property="og:title" content=")[^"]*(")/, `$1${esc(title)}$2`)
   out = out.replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${esc(description)}$2`)
