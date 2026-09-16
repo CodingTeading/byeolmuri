@@ -35,7 +35,11 @@
 | `eph.py` | `.eph` 타일 파서. 포맷은 upstream `src/eph-file.c` 사양을 따름 |
 | `extract.py` | 타일에서 검색 대상 천체와 식별자를 뽑아냄 |
 | `korean-names.json` | **손으로 큐레이션한 한글 천체명** |
-| `build_index.py` | 위를 합쳐 `web-frontend/public/search-index.json` 생성 |
+| `japanese-names.json` · `spanish-names.json` | 같은 키·같은 구조의 일본어·스페인어 이름 (2026-09-16, 원어민 검수 전). 스페인어는 영어 엔진 이름과 같은 별 이름은 넣지 않았다 |
+| `build_index.py` | 위를 합쳐 `web-frontend/public/search-index.json` 생성. 언어는 `LANG_FILES` 에 한 줄 |
+
+행성·위성·달은 skydata 타일에 없어 이 색인에도 없다. 화면은 `src/locales/*.json` 의
+`events.body` 이름을 쓴다(`src/assets/search-index.js` 의 `localNamesFor`).
 
 ## 재생성
 

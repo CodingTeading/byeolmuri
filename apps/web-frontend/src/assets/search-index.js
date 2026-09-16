@@ -8,6 +8,8 @@
 // 엔진이 실제로 해석할 수 있는 천체만 들어있으므로 검색 결과를 누르면
 // 반드시 선택된다.
 
+import Vue from 'vue'
+
 const INDEX_URL = process.env.BASE_URL + 'search-index.json'
 
 // 검색어와 식별자를 같은 규칙으로 정규화한다.
@@ -123,11 +125,23 @@ export function lookupByName (name) {
  * 번역된 것처럼 보여 오해를 부른다.
  */
 export function localNamesFor (designations, lang) {
-  if (!entries || !designations) return []
-  for (const d of designations) {
-    const key = normalize(d)
-    const hit = entries.find(e => e.key === key)
-    if (hit && hit.rec.k && hit.rec.k[lang]) return hit.rec.k[lang].slice()
+  if (!designations) return []
+  if (entries) {
+    for (const d of designations) {
+      const key = normalize(d)
+      const hit = entries.find(e => e.key === key)
+      if (hit && hit.rec.k && hit.rec.k[lang]) return hit.rec.k[lang].slice()
+    }
+  }
+  // 행성·위성·달은 색인에 없다. 정보 카드와 오늘 밤 목록이 한국어 화면에서도
+  // Saturn 으로 나왔다. 날짜 탭이 쓰는 events.body 이름을 같이 쓴다.
+  const body = Vue.prototype.$bodyName
+  if (body) {
+    for (const d of designations) {
+      if (!d.startsWith('NAME ')) continue
+      const name = body(d.slice(5).toLowerCase(), lang)
+      if (name) return [name]
+    }
   }
   return []
 }

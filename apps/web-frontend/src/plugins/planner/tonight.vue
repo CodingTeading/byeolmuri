@@ -159,14 +159,9 @@ export default {
       return new Moment(d).format('HH:mm')
     },
     title: function (t) {
+      // 행성·위성 이름도 localNames 로 온다(search-index 의 localNamesFor).
       if (t.localNames && t.localNames.length) return t.localNames[0]
-      // 행성·위성은 검색 색인(성운·성단·별·별자리)에 없어 localNames 가 늘 비고,
-      // 한국어 화면에도 Saturn · Mars 처럼 영어로 나왔다. 날짜 탭이 쓰는
-      // events.body 이름을 같이 쓴다.
-      const plain = swh.cleanupOneSkySourceName(t.names[0])
-      const key = 'events.body.' + plain.toLowerCase()
-      if (t.module === 'planets' && this.$te(key)) return this.$t(key)
-      return plain
+      return swh.cleanupOneSkySourceName(t.names[0])
     },
     select: function (t) {
       const obj = this.$stel.getObj(t.names[0])
