@@ -8,9 +8,17 @@
 //      불필요한 부하를 주지 않는 것이 예의이기도 하다.
 //
 // 키는 Pages 환경변수 KMA_API_KEY 에 둔다. 저장소에는 넣지 않는다.
+//
+// **기상청 API 허브(apihub.kma.go.kr) 키다. 공공데이터포털 키가 아니다.**
+// 같은 단기예보가 창구 둘로 나온다 — 오퍼레이션 이름과 응답 구조는 글자 하나까지 같고
+// 주소와 인증 파라미터만 다르다.
+//   공공데이터포털 apis.data.go.kr/1360000/...           ?serviceKey=  88자 base64
+//   기상청 API 허브 apihub.kma.go.kr/api/typ02/openApi/... ?authKey=     22자 영숫자
+// 2026-09-16 에 공공데이터포털 창구로 SERVICE_KEY_IS_NOT_REGISTERED_ERROR 가 계속
+// 나서 구름결(weather.codingteading.com)과 같은 API 허브로 옮겼다.
 
 const ENDPOINT =
-  'https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst'
+  'https://apihub.kma.go.kr/api/typ02/openApi/VilageFcstInfoService_2.0/getVilageFcst'
 
 // 기상청 격자는 람베르트 정각원추도법이다. 아래 상수는 기상청 배포 코드 그대로.
 function toGrid (lat, lon) {
@@ -98,7 +106,7 @@ export async function onRequestGet (context) {
   const cached = await cache.match(cacheKey)
   if (cached) return cached
 
-  const target = `${ENDPOINT}?serviceKey=${env.KMA_API_KEY}` +
+  const target = `${ENDPOINT}?authKey=${encodeURIComponent(String(env.KMA_API_KEY).trim())}` +
     `&pageNo=1&numOfRows=1000&dataType=JSON` +
     `&base_date=${slot.baseDate}&base_time=${slot.baseTime}` +
     `&nx=${grid.nx}&ny=${grid.ny}`
