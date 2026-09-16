@@ -34,6 +34,10 @@ const swh = {
     StelWebEngine({
       wasmFile: wasmFile,
       canvas: canvasElem,
+      // 하늘 이름표는 번역하지 않는다(2026-09-17 시도 후 보류). 번역은 되지만
+      // 엔진이 자기 글꼴(stb_truetype)로 한글·가나를 그리는 부분이 불안정했다 —
+      // 서브셋 글꼴 조합에 따라 '성' 만 깨지거나 이름표가 통째로 사라졌다.
+      // 되살리려면 엔진이 브라우저 글꼴로 그리게(render_text 콜백) 다시 빌드하는 편이 낫다.
       translateFn: function (domain, str) {
         return str
         // return i18next.t(str, {ns: domain});
@@ -215,7 +219,12 @@ const swh = {
   nameForSkySourceType: function (otype) {
     const $stel = Vue.prototype.$stel
     const res = $stel.otypeToStr(otype)
-    return res || 'Unknown Type'
+    // 엔진은 영어 이름만 준다. 자주 보이는 종류는 locales 의 sky.otype 으로 바꾼다.
+    // 표에 없는 종류는 영어로 둔다. 폴백 언어(한국어)로 떨어지지 않게 그 언어 묶음만 본다.
+    const lang = Vue.prototype.$i18nLocale ? Vue.prototype.$i18nLocale() : 'ko'
+    const m = Vue.prototype.$localeMessages ? Vue.prototype.$localeMessages(lang) : null
+    const local = m && m.sky && m.sky.otype && m.sky.otype[otype]
+    return local || res || 'Unknown Type'
   },
 
   nameForGalaxyMorpho: function (morpho) {

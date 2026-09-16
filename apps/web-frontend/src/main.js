@@ -97,6 +97,9 @@ Vue.prototype.$langs = langs
 // 컴포넌트 밖(sw_helpers 같은 순수 모듈)에서 현재 언어를 물어볼 때 쓴다.
 // i18n 인스턴스를 직접 import 하면 순환 참조가 생긴다.
 Vue.prototype.$i18nLocale = function () { return i18n.locale }
+// 그 언어의 번역 묶음 원본. 폴백 언어로 떨어지지 않는다 — 영어 화면에
+// 한국어 종류 이름이 붙으면 안 된다. sw_helpers 의 nameForSkySourceType 이 쓴다.
+Vue.prototype.$localeMessages = function (lang) { return i18n.getLocaleMessage(lang) }
 // 행성·위성·달의 그 언어 이름(events.body). 검색 색인은 skydata 타일의
 // 성운·성단·별·별자리만 담아 행성이 없다. search-index 의 localNamesFor 가 쓴다.
 Vue.prototype.$bodyName = function (key, lang) {
