@@ -143,7 +143,14 @@
    "venus": "金星",
    "mars": "火星",
    "jupiter": "木星",
-   "saturn": "土星"
+   "saturn": "土星",
+   "uranus": "天王星",
+   "neptune": "海王星",
+   "io": "イオ",
+   "europa": "エウロパ",
+   "ganymede": "ガニメデ",
+   "callisto": "カリスト",
+   "titan": "タイタン"
   },
   "shower": {
    "QUA": "しぶんぎ座流星群",

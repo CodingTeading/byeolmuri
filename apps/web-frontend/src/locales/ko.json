@@ -143,7 +143,14 @@
    "venus": "금성",
    "mars": "화성",
    "jupiter": "목성",
-   "saturn": "토성"
+   "saturn": "토성",
+   "uranus": "천왕성",
+   "neptune": "해왕성",
+   "io": "이오",
+   "europa": "유로파",
+   "ganymede": "가니메데",
+   "callisto": "칼리스토",
+   "titan": "타이탄"
   },
   "shower": {
    "QUA": "사분의자리 유성우",

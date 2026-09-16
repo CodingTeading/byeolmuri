@@ -143,7 +143,14 @@
    "venus": "Venus",
    "mars": "Marte",
    "jupiter": "Júpiter",
-   "saturn": "Saturno"
+   "saturn": "Saturno",
+   "uranus": "Urano",
+   "neptune": "Neptuno",
+   "io": "Ío",
+   "europa": "Europa",
+   "ganymede": "Ganímedes",
+   "callisto": "Calisto",
+   "titan": "Titán"
   },
   "shower": {
    "QUA": "Cuadrántidas",
