@@ -36,9 +36,13 @@
     </v-card-title>
     <template v-if="!collapsed">
     <v-card-text style="padding-bottom: 5px;">
-      <v-row v-if="otherNames.length > 1" style="width: 100%;">
-        <v-col cols="12">
-          <span style="position: absolute;">{{ $t('Also known as') }}</span><span style="padding-left: 33.3333%">&nbsp;</span><span class="text-caption white--text" v-for="mname in otherNames1to7" :key="mname" style="margin-right: 15px; font-weight: 500;">{{ mname }}</span>
+      <!-- 라벨을 absolute 로 띄우고 값 앞에 1/3 폭을 비워 두던 구조였다. 라벨이
+           그보다 길면(es "También conocido como") 값 위로 넘쳐 겹쳤다.
+           아래 정보 줄과 같은 4:8 칸으로 두어 긴 라벨은 자기 칸에서 줄바꿈된다. -->
+      <v-row v-if="otherNames.length > 1" style="width: 100%;" no-gutters>
+        <v-col cols="4" style="padding-right: 8px;">{{ $t('Also known as') }}</v-col>
+        <v-col cols="8">
+          <span class="text-caption white--text" v-for="mname in otherNames1to7" :key="mname" style="margin-right: 15px; font-weight: 500;">{{ mname }}</span>
           <v-btn small icon class="grey--text" v-if="otherNames.length > 8" v-on:click.native="showMinorNames = !showMinorNames" style="margin-top: -5px; margin-bottom: -5px;"><v-icon>mdi-dots-horizontal</v-icon></v-btn>
           <span class="text-caption white--text" v-for="mname in otherNames8andMore" :key="mname" style="margin-right: 15px; font-weight: 500">{{ mname }}</span>
         </v-col>
