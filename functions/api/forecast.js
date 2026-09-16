@@ -113,9 +113,18 @@ export async function onRequestGet (context) {
 
   const header = payload && payload.response && payload.response.header
   if (!header || header.resultCode !== '00') {
-    return json({
-      error: '기상청 오류: ' + ((header && header.resultMsg) || 'unknown')
-    }, 502)
+    // 인증·한도 오류는 response.header 가 아니라 공공데이터포털 게이트웨이의
+    // OpenAPI_ServiceResponse.cmmMsgHeader 로 온다(키 미등록·트래픽 초과 등).
+    // 그걸 "unknown" 으로 뭉개 원인을 못 가렸다(2026-09-16). 코드와 사유만
+    // 내보내고 키는 내보내지 않는다.
+    const gw = payload && payload.OpenAPI_ServiceResponse &&
+      payload.OpenAPI_ServiceResponse.cmmMsgHeader
+    const detail = header
+      ? header.resultCode + ' ' + header.resultMsg
+      : gw
+        ? gw.returnReasonCode + ' ' + gw.errMsg + ' (' + gw.returnAuthMsg + ')'
+        : 'unknown'
+    return json({ error: '기상청 오류: ' + detail }, 502)
   }
 
   // 필요한 항목만 시각별로 모은다.
