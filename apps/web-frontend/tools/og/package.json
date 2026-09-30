@@ -1,0 +1,16 @@
+{
+  "name": "byeolmuri-og",
+  "private": true,
+  "type": "module",
+  "description": "별무리 공유 카드 생성기. 앱 빌드(Vue CLI 4)와 따로 둔다 — 옛 웹팩 빌드에 네이티브 의존성을 넣지 않기 위해서다.",
+  "scripts": {
+    "og": "node make-og.mjs",
+    "og:force": "node make-og.mjs --force",
+    "og:preview": "node make-og.mjs --preview"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "satori": "^0.33.4",
+    "sharp": "^0.34.4"
+  }
+}

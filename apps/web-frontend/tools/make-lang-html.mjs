@@ -62,6 +62,33 @@ for (const l of LANGS) {
   if (!OG_IMAGE_ALT[l]) throw new Error(`OG_IMAGE_ALT 에 ${l} 설명이 없습니다`)
 }
 
+/*
+ * 공유 카드 — 첫 화면은 언어별 한 장, 레슨은 레슨마다 한 장(2026-10-01 부터).
+ *
+ * 그전에는 레슨 76쪽이 전부 언어별 첫 화면 카드 한 장을 같이 썼고, 그 카드는 제목이
+ * 왼쪽 정렬이라 네이버가 가운데 630×630 만 잘라 쓸 때 "별무리" 가 "무리" 로 잘렸다.
+ * 카드는 tools/og/make-og.mjs 가 굽고 public/og/v2 에 커밋된다.
+ *
+ * OG_VERSION 은 head.js · plugins/learn/index.js · make-og.mjs 와 같이 올린다.
+ */
+const OG_VERSION = 'v2'
+const cardPath = (lang, page) => page
+  ? `/og/${OG_VERSION}/${lang}/learn/${page.id}.png`
+  : `/og/${OG_VERSION}/${lang}.png`
+
+/*
+ * ⛔ 카드가 없으면 **굽기를 멈춘다.** 레슨을 새로 넣고 카드를 안 구우면 og:image 가
+ * 404 를 가리키는데, 그러면 카톡·네이버에 빈 칸으로 나가고 아무도 모른다.
+ * 멈추면 배포가 막히지만 고치는 방법은 한 줄이다 — 그 편이 조용히 틀린 것보다 낫다.
+ */
+function assertCard (lang, page) {
+  const p = path.join(DIST, cardPath(lang, page))
+  if (!fs.existsSync(p)) {
+    throw new Error(`공유 카드가 없습니다: ${cardPath(lang, page)}\n` +
+      '  cd apps/web-frontend/tools/og && npm install && npm run og  — 구운 PNG 를 커밋한다')
+  }
+}
+
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
   .replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
@@ -106,15 +133,21 @@ function localize (html, lang, page) {
   out = out.replace(/(<noscript>\s*<strong>)[\s\S]*?(<\/strong>\s*<\/noscript>)/, `$1${esc(NOSCRIPT[lang])}$2`)
   out = out.replace(/(<meta name="description" content=")[^"]*(")/, `$1${esc(description)}$2`)
   out = out.replace(/(<meta property="og:site_name" content=")[^"]*(")/, `$1${esc(m.title.split(' – ')[0])}$2`)
-  out = out.replace(/(<meta property="og:image:alt" content=")[^"]*(")/, `$1${esc(OG_IMAGE_ALT[lang])}$2`)
+  // 레슨 카드의 설명은 그 레슨 제목이다. 페이지 언어로 쓴다.
+  out = out.replace(/(<meta property="og:image:alt" content=")[^"]*(")/,
+    `$1${esc(page ? `${m.title.split(' – ')[0]} – ${page.title}` : OG_IMAGE_ALT[lang])}$2`)
   out = out.replace(/(<meta property="og:title" content=")[^"]*(")/, `$1${esc(title)}$2`)
   out = out.replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${esc(description)}$2`)
   out = out.replace(/(<meta property="og:locale" content=")[^"]*(")/,
     `$1${lang === 'ko' ? 'ko_KR' : lang}$2`)
   out = out.replace(/(<meta property="og:url" content=")[^"]*(")/, `$1${SITE}${urlPath}$2`)
   out = out.replace(/(<link rel="canonical" href=")[^"]*(")/, `$1${SITE}${urlPath}$2`)
+  assertCard(lang, page)
   out = out.replace(/(<meta property="og:image" content=")[^"]*(")/,
-    `$1${SITE}/og/${lang}.png$2`)
+    `$1${SITE}${cardPath(lang, page)}$2`)
+  // twitter:image 는 og:image 와 같은 그림이어야 한다. 원문(public/index.html)에 한 줄 있다.
+  out = out.replace(/(<meta name="twitter:image" content=")[^"]*(")/,
+    `$1${SITE}${cardPath(lang, page)}$2`)
   // 레슨은 og:type 이 article 이다. 사이트 첫 화면만 website 다.
   if (page) {
     out = out.replace(/(<meta property="og:type" content=")[^"]*(")/, '$1article$2')

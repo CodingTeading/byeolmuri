@@ -31,7 +31,10 @@ function pageMeta (lang, path) {
   if (!lesson) return null
   return {
     title: lesson.title,
-    description: lesson.intro || lesson.subtitle || ''
+    description: lesson.intro || lesson.subtitle || '',
+    // 레슨마다 자기 공유 카드가 있다(tools/og/make-og.mjs 가 굽는다). 경로의 v2 는
+    // head.js · tools/make-lang-html.mjs 와 같이 올린다 — 셋이 어긋나면 없는 카드를 가리킨다.
+    image: '/og/v2/' + lang + '/learn/' + m[1] + '.png'
   }
 }
 
