@@ -63,18 +63,18 @@ for (const l of LANGS) {
 }
 
 /*
- * 공유 카드 — 첫 화면은 언어별 한 장, 레슨은 레슨마다 한 장(2026-10-01 부터).
+ * 공유 카드 — 첫 화면은 언어별 한 장, 레슨은 레슨마다 한 장(2026-09-30 부터). v3 부터 그림은 그 레슨이 실제로 띄우는 하늘이다.
  *
  * 그전에는 레슨 76쪽이 전부 언어별 첫 화면 카드 한 장을 같이 썼고, 그 카드는 제목이
  * 왼쪽 정렬이라 네이버가 가운데 630×630 만 잘라 쓸 때 "별무리" 가 "무리" 로 잘렸다.
- * 카드는 tools/og/make-og.mjs 가 굽고 public/og/v2 에 커밋된다.
+ * 카드는 tools/og/make-og.mjs 가 굽고 public/og/v3 에 커밋된다(하늘 그림은 tools/og/capture-sky.mjs).
  *
  * OG_VERSION 은 head.js · plugins/learn/index.js · make-og.mjs 와 같이 올린다.
  */
-const OG_VERSION = 'v2'
+const OG_VERSION = 'v3'  // v3: 하늘 그림이 주인공인 JPEG (2026-09-30). v2 글자 카드는 파일을 남겨 둔다
 const cardPath = (lang, page) => page
-  ? `/og/${OG_VERSION}/${lang}/learn/${page.id}.png`
-  : `/og/${OG_VERSION}/${lang}.png`
+  ? `/og/${OG_VERSION}/${lang}/learn/${page.id}.jpg`
+  : `/og/${OG_VERSION}/${lang}.jpg`
 
 /*
  * ⛔ 카드가 없으면 **굽기를 멈춘다.** 레슨을 새로 넣고 카드를 안 구우면 og:image 가

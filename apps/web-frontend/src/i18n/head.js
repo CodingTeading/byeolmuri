@@ -10,7 +10,7 @@ import { LANGS, withLang } from './langs'
 const SITE = 'https://byeolmuri.codingteading.com'
 // 공유 카드 경로의 판. 카드 모양을 바꾸면 tools/og/make-og.mjs · tools/make-lang-html.mjs ·
 // plugins/learn/index.js 와 함께 올린다 — 네이버·카카오가 옛 카드를 몇 주씩 들고 있다.
-const OG_VERSION = 'v2'
+const OG_VERSION = 'v3'
 
 // 페이지마다 다른 제목을 대 주는 함수들. 플러그인이 pageMeta 를 내보내면
 // main.js 가 여기 등록한다.
@@ -79,7 +79,7 @@ export function applyHead (lang, path) {
   setMeta('property', 'og:url', SITE + canonicalPath(path, lang))
   // 레슨은 자기 카드를 쓴다(페이지 해결기가 image 를 준다). 나머지는 언어별 첫 화면 카드.
   // twitter:image 는 og:image 와 같아야 한다 — 전에는 아예 없었다.
-  const image = SITE + (page && page.image ? page.image : '/og/' + OG_VERSION + '/' + lang + '.png')
+  const image = SITE + (page && page.image ? page.image : '/og/' + OG_VERSION + '/' + lang + '.jpg')
   setMeta('property', 'og:image', image)
   setMeta('property', 'og:image:alt', title)
   setMeta('name', 'twitter:image', image)

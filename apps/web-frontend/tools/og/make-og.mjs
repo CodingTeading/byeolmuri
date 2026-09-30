@@ -6,8 +6,10 @@
  *   npm run og:force      전부 다시
  *   npm run og:preview    몇 장만 preview/ 에 굽고, 네이버가 잘라 쓰는 모습을 한 장에 모은다
  *
- * 출력  ../../public/og/v2/{lang}.png              언어별 첫 화면
- *       ../../public/og/v2/{lang}/learn/{id}.png   레슨마다 한 장 (19편 × 4언어)
+ * 출력  ../../public/og/v3/{lang}.jpg              언어별 첫 화면
+ *       ../../public/og/v3/{lang}/learn/{id}.jpg   레슨마다 한 장 (19편 × 4언어)
+ *
+ * 그림  sky/{id}.jpg — capture-sky.mjs 가 레슨마다 앱이 그리는 하늘을 찍어 둔 것. 레슨의 하늘이 바뀌면 그것부터 다시 돌린다.
  *
  * ## 왜 이 모양인가
  *
@@ -44,7 +46,7 @@ import sharp from 'sharp'
 const HERE = dirname(fileURLToPath(import.meta.url))
 const APP = join(HERE, '..', '..')
 // 카드 모양이 바뀌면 경로의 버전을 올린다 — 네이버·카카오가 옛 카드를 몇 주씩 들고 있다.
-const OG_VERSION = 'v2'
+const OG_VERSION = 'v3'  // v3: 하늘 그림이 주인공 (2026-09-30). v2 는 글자 카드였다 — 파일은 남겨 둔다
 const OUT = join(APP, 'public', 'og', OG_VERSION)
 const CACHE_DIR = join(HERE, '.cache')
 const CACHE = join(CACHE_DIR, 'og.json')
@@ -135,30 +137,6 @@ const SPARKLE = 'data:image/svg+xml;base64,' + Buffer.from(
 ).toString('base64')
 const sparkle = (size) => ({ type: 'img', props: { src: SPARKLE, width: size, height: size, style: { width: size, height: size } } })
 
-/**
- * 별 무늬. **씨앗을 카드 id 로 고정한다** — 매번 다르게 뿌리면 해시 캐시가 소용없고
- * 다시 구울 때마다 모든 PNG 가 바뀌어 git 이 분다.
- * 가운데 칸에는 거의 뿌리지 않는다 — 글자 뒤의 점은 썸네일에서 잡음이다.
- */
-function stars (seed) {
-  let s = [...seed].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 2166136261)
-  const rnd = () => ((s = (s * 1664525 + 1013904223) >>> 0) / 4294967296)
-  const out = []
-  for (let i = 0; i < 70; i++) {
-    const x = rnd() * W
-    const y = 20 + rnd() * (H - 40)
-    if (x > CX + 20 && x < CX + CW - 20 && rnd() < 0.85) continue
-    // 양옆 상자는 반투명이라 뒤의 별이 글자 위로 비친다. 그 자리에는 뿌리지 않는다.
-    if (y > 80 && y < 400 && ((x > 50 && x < 265) || (x > 935 && x < 1150))) continue
-    const r = rnd() < 0.12 ? 3 : rnd() < 0.5 ? 2 : 1.4
-    out.push(h('div', {
-      position: 'absolute', left: x, top: y, width: r, height: r, borderRadius: r,
-      background: rnd() < 0.2 ? C.gold : '#ffffff', opacity: 0.35 + rnd() * 0.5,
-    }))
-  }
-  return out
-}
-
 /** 글자 폭 추정 — CJK 는 1em, 라틴은 0.56em. 제목 크기를 고르는 데만 쓴다. */
 const em = (t) => [...t].reduce((a, c) => a + (/[　-鿿가-힯＀-￯]/.test(c) ? 1 : c === ' ' ? 0.3 : 0.56), 0)
 
@@ -180,96 +158,84 @@ const splitTitle = (t) => {
   return i < 0 ? [t, null] : [t.slice(0, i), t.slice(i + 3)]
 }
 
-const chip = (text, { size = 24, bg = C.chip, color = C.gold } = {}) =>
-  h('div', { fontSize: size, fontWeight: 700, color, background: bg, padding: '8px 18px', borderRadius: 999 }, text)
+const chip = (text, { size = 24, bg = 'rgba(11, 16, 32, 0.72)', color = C.gold, border = 'rgba(255, 227, 160, 0.45)' } = {}) =>
+  h('div', { fontSize: size, fontWeight: 700, color, background: bg, border: `1.5px solid ${border}`, padding: '8px 20px', borderRadius: 999 }, text)
+
+// ---------- 하늘 그림 ----------
+/*
+ * v3 (2026-09-30): **이미지가 주인공이다** — 사용자 지적. v2 는 별 모양 + 제목 + 칩뿐인 글자 카드였다.
+ * 그림은 capture-sky.mjs 가 레슨마다 **앱이 실제로 그리는 하늘**을 찍어 둔 것(sky/<id>.jpg, 1200×470)이다.
+ * 위쪽 470 을 하늘로 채우고 아래로 어둡게 이어지는 띠에 칩 하나 + 제목만 둔다 —
+ * 네이버가 잘라 쓰는 가운데 630×630 의 3/4 이 하늘이다.
+ */
+const SKY_H = 470
+const SKY_DIR = join(HERE, 'sky')
+const skyUri = (name) => {
+  const p = join(SKY_DIR, `${name}.jpg`)
+  if (!existsSync(p)) throw new Error(`하늘 그림이 없다: sky/${name}.jpg — node capture-sky.mjs ${name === HOME_SKY ? '' : name}`)
+  return 'data:image/jpeg;base64,' + readFileSync(p).toString('base64')
+}
+const skyHash = (name) => createHash('md5').update(readFileSync(join(SKY_DIR, `${name}.jpg`))).digest('hex').slice(0, 10)
+// 첫 화면 카드에 쓸 하늘. 머리 위의 여름 대삼각형 — 은하수가 지나고 선 세 줄로 무엇인지 보인다.
+const HOME_SKY = 'summer-triangle'
 
 // ---------- 카드 틀 ----------
-function frame (lang, seed, { left, center, right }) {
-  return h('div', {
-    width: W, height: H, position: 'relative', fontFamily: 'PretendardJP',
-    backgroundImage: `radial-gradient(circle at 50% 38%, ${C.bg2} 0%, ${C.bg} 62%)`,
-  },
-  stars(seed),
-  // 위쪽 브랜드 띠
-  h('div', { position: 'absolute', left: 0, top: 0, width: W, height: 12, background: C.gold }),
-  // 왼쪽 보조 — 네이버 썸네일에서는 잘려도 되는 것만
-  h('div', { position: 'absolute', left: 60, top: 96, width: 195, flexDirection: 'column' }, left),
-  // 가운데 630 — 이 안만 봐도 무엇에 대한 카드인지 읽혀야 한다
-  h('div', {
-    position: 'absolute', left: CX + SAFE, top: 40, width: CW - SAFE * 2, height: H - 150,
-    flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center',
-  }, center),
-  // 오른쪽 보조
-  h('div', { position: 'absolute', left: 945, top: 96, width: 195, flexDirection: 'column' }, right),
-  // 아래 줄 — 출처(도메인만)와 로고. 공유 카드용이라 가운데 칸 밖이어도 된다.
-  h('div', { position: 'absolute', left: 60, bottom: 40, fontSize: 21, fontWeight: 400, color: C.faint }, DOMAIN),
-  h('div', { position: 'absolute', right: 60, bottom: 34, alignItems: 'center' },
-    sparkle(34),
-    h('div', { marginLeft: 10, fontSize: 25, fontWeight: 800, color: C.cream }, brandName(lang))),
+function frame (lang, skyName, center) {
+  return h('div', { width: W, height: H, position: 'relative', fontFamily: 'PretendardJP', background: C.bg },
+    { type: 'img', props: { src: skyUri(skyName), width: W, height: SKY_H, style: { position: 'absolute', left: 0, top: 0, width: W, height: SKY_H } } },
+    // 하늘이 아래 띠로 어둡게 이어지게 — 글자가 하늘 위에서도 읽히도록
+    h('div', { position: 'absolute', left: 0, top: SKY_H - 170, width: W, height: 170, backgroundImage: `linear-gradient(to bottom, rgba(11,16,32,0) 0%, rgba(11,16,32,0.85) 70%, ${C.bg} 100%)` }),
+    // 위쪽 브랜드 띠
+    h('div', { position: 'absolute', left: 0, top: 0, width: W, height: 10, background: C.gold }),
+    // 가운데 630 — 아래쪽에 칩과 제목. 위의 하늘을 가리지 않게 바닥에 붙인다.
+    h('div', {
+      position: 'absolute', left: CX + SAFE, bottom: 78, width: CW - SAFE * 2,
+      flexDirection: 'column', alignItems: 'center', textAlign: 'center',
+    }, center),
+    // 아래 줄 — 출처(도메인만)와 로고. 공유 카드용이라 가운데 칸 밖이어도 된다.
+    h('div', { position: 'absolute', left: 48, bottom: 30, fontSize: 20, fontWeight: 400, color: C.faint }, DOMAIN),
+    h('div', { position: 'absolute', right: 48, bottom: 24, alignItems: 'center' },
+      sparkle(30),
+      h('div', { marginLeft: 10, fontSize: 24, fontWeight: 800, color: C.cream }, brandName(lang))),
   )
 }
 
-const sideTitle = (text) => h('div', { fontSize: 20, fontWeight: 700, color: C.faint, marginBottom: 14, letterSpacing: 1 }, text)
-const sidePill = (text) => h('div', {
-  fontSize: 21, fontWeight: 700, color: C.ink, background: C.side, border: `1px solid ${C.sideLine}`,
-  padding: '10px 14px', borderRadius: 12, marginBottom: 10,
-}, text)
-
-/** 잘 보이는 달 — 1~12 를 4줄 3칸으로. 숫자라 언어가 바뀌어도 그대로 읽힌다. */
-function monthGrid (months) {
-  const on = new Set(months ?? [])
-  const rows = []
-  for (let r = 0; r < 4; r++) {
-    rows.push(h('div', { marginBottom: 8 }, [0, 1, 2].map((c) => {
-      const m = r * 3 + c + 1
-      return h('div', {
-        width: 56, height: 40, marginRight: 8, borderRadius: 9, alignItems: 'center', justifyContent: 'center',
-        fontSize: 20, fontWeight: 700,
-        background: on.has(m) ? C.gold : C.side, color: on.has(m) ? C.bg : C.faint,
-      }, String(m))
-    })))
+/**
+ * 제목 크기 — 가운데 칸(570)에 **두 줄 안**. v3 는 하늘이 위를 차지해 글자 칸이 좁으므로
+ * 부제를 떼고 앞부분만 쓴다("안드로메다은하 — 맨눈으로…" → "안드로메다은하"). 하한 44 는 그대로.
+ */
+function fitMain (text) {
+  const width = CW - SAFE * 2
+  for (const size of [60, 56, 52, 48, 44]) {
+    if (em(text) * size <= width * 2 * 0.92) return size
   }
-  return h('div', { flexDirection: 'column' }, rows)
+  return 44
 }
 
 // ---------- 카드 두 종류 ----------
 function homeCard (lang) {
   const t = T[lang]
-  const L = learnLocale[lang]
-  return frame(lang, `home-${lang}`, {
-    left: [sideTitle(t.tracks), ...Object.values(L.track).map(sidePill)],
-    center: [
-      sparkle(92),
-      h('div', { fontSize: 58, fontWeight: 800, color: C.cream, marginTop: 14 }, brandName(lang)),
-      h('div', { fontSize: fitTitle(t.tagline) > 46 ? 40 : 34, fontWeight: 700, color: C.ink, marginTop: 18, lineHeight: 1.3, textAlign: 'center' }, t.tagline),
-      h('div', { marginTop: 30, gap: 12 }, chip(fmt(t.lessons, lessons[lang].length)), chip(t.langs)),
-    ],
-    right: [sideTitle(t.levels), ...Object.values(L.level).map(sidePill)],
-  })
+  return frame(lang, HOME_SKY, [
+    h('div', { alignItems: 'center' },
+      sparkle(54),
+      h('div', { marginLeft: 14, fontSize: 60, fontWeight: 800, color: C.cream }, brandName(lang))),
+    h('div', { marginTop: 10, fontSize: 30, fontWeight: 700, color: C.ink, textAlign: 'center' }, t.tagline),
+  ])
 }
 
 function lessonCard (lang, l) {
-  const t = T[lang]
   const L = learnLocale[lang]
-  const [main, sub] = splitTitle(l.title)
-  const size = fitTitle(main)
-  return frame(lang, `${lang}-${l.id}`, {
-    left: [sideTitle(t.topic), ...(l.tags ?? []).slice(0, 4).map(sidePill)],
-    center: [
-      chip(`${L.track[l.track] ?? l.track} · ${L.level[l.level] ?? l.level}`, { size: 25 }),
-      h('div', { fontSize: size, fontWeight: 800, color: C.cream, marginTop: 24, lineHeight: 1.18, textAlign: 'center' }, main),
-      sub && h('div', { fontSize: 29, fontWeight: 400, color: C.muted, marginTop: 14, lineHeight: 1.3, textAlign: 'center' }, sub),
-      h('div', { marginTop: 28, gap: 12 },
-        chip(fmt(L.minutes, l.minutes), { bg: C.side, color: C.ink }),
-        l.steps ? chip(fmt(t.steps, l.steps), { bg: C.side, color: C.ink }) : null),
-    ],
-    right: l.months?.length ? [sideTitle(t.months), monthGrid(l.months)] : [],
-  })
+  const [main] = splitTitle(l.title)
+  return frame(lang, l.id, [
+    // 칩 하나에 갈래 · 단계 · 분량을 모은다. 칩을 여러 개 늘어놓으면 다시 글자 카드가 된다.
+    chip(`${L.track[l.track] ?? l.track} · ${L.level[l.level] ?? l.level} · ${fmt(L.minutes, l.minutes)}`, { size: 23 }),
+    h('div', { fontSize: fitMain(main), fontWeight: 800, color: C.cream, marginTop: 16, lineHeight: 1.15, textAlign: 'center' }, main),
+  ])
 }
 
 /** og:image:alt — 카드에 쓴 것을 그대로 말로. 페이지 언어로 쓴다. */
 export const altFor = (lang, l) => l
-  ? `${brandName(lang)} – ${l.title} (${learnLocale[lang].track[l.track] ?? ''} · ${fmt(learnLocale[lang].minutes, l.minutes)})`
+  ? `${brandName(lang)} – ${l.title}`
   : `${brandName(lang)} – ${T[lang].tagline}`
 
 // ---------- 굽기 ----------
@@ -277,8 +243,8 @@ async function render (tree, fonts) {
   const svg = await satori(tree, { width: W, height: H, fonts })
   const png = new Resvg(svg, { fitTo: { mode: 'width', value: W } }).render().asPng()
   // 팔레트 PNG 로 줄인다 — 밤하늘은 색이 적어 200KB 한도 안으로 넉넉히 들어간다.
-  // dither 를 끈다 — 켜 두면 둥근 그러데이션에 점무늬가 생겨 별과 구별이 안 된다.
-  return sharp(png).png({ palette: true, quality: 90, dither: 0, compressionLevel: 9, effort: 8 }).toBuffer()
+  // v3 는 하늘 사진이 들어가 JPEG 로 간다. 팔레트 PNG 로 줄이면 은하수·별빛이 뭉개진다(Nudge 도 같은 이유로 JPEG).
+  return sharp(png).jpeg({ quality: 84, mozjpeg: true }).toBuffer()
 }
 
 const GEN_HASH = createHash('md5').update(readFileSync(fileURLToPath(import.meta.url))).digest('hex').slice(0, 10)
@@ -290,9 +256,9 @@ async function main () {
 
   const jobs = []
   for (const lang of LANGS) {
-    jobs.push({ path: `${lang}.png`, key: keyOf({ lang, home: true, n: lessons[lang].length, T: T[lang], L: learnLocale[lang].track }), tree: () => homeCard(lang) })
+    jobs.push({ path: `${lang}.jpg`, key: keyOf({ lang, home: true, T: T[lang], sky: skyHash(HOME_SKY) }), tree: () => homeCard(lang) })
     for (const l of lessons[lang]) {
-      jobs.push({ path: `${lang}/learn/${l.id}.png`, key: keyOf({ lang, l, L: [learnLocale[lang].track, learnLocale[lang].level, learnLocale[lang].minutes] }), tree: () => lessonCard(lang, l) })
+      jobs.push({ path: `${lang}/learn/${l.id}.jpg`, key: keyOf({ lang, l, L: [learnLocale[lang].track, learnLocale[lang].level, learnLocale[lang].minutes], sky: skyHash(l.id) }), tree: () => lessonCard(lang, l) })
     }
   }
 
@@ -306,10 +272,12 @@ async function main () {
       const longest = lessons[lang].reduce((a, b) => (em(b.title) > em(a.title) ? b : a))
       pick.push({ name: `${lang}-lesson-longest`, tree: lessonCard(lang, longest) })
     }
-    pick.push({ name: 'ko-lesson-big-dipper', tree: lessonCard('ko', lessons.ko.find((l) => l.id === 'big-dipper')) })
+    for (const id of ['big-dipper', 'moon-phases', 'star-brightness']) {
+      pick.push({ name: `ko-lesson-${id}`, tree: lessonCard('ko', lessons.ko.find((l) => l.id === id)) })
+    }
     for (const p of pick) {
       const buf = await render(p.tree, fonts)
-      writeFileSync(join(dir, `${p.name}.png`), buf)
+      writeFileSync(join(dir, `${p.name}.jpg`), buf)
       console.log(`  ${p.name.padEnd(26)} ${Math.round(buf.length / 1024)}KB`)
     }
     console.log(`\n시안 ${pick.length}장 — ${dir}`)
